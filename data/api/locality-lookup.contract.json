@@ -1,0 +1,29 @@
+{
+  "name": "locality-lookup",
+  "method": "POST",
+  "path": "/api/locality-lookup",
+  "status": "DOCUMENTED — not implemented on this prototype",
+  "isolation": "Must not call Purulia voice-agent production, Supabase, or any live booth table.",
+  "purpose": "Map a user-known locality/area name through administrative hierarchy without requiring constituency or booth knowledge.",
+  "request": {
+    "contentType": "application/json",
+    "body": {
+      "locality": "string, required",
+      "districtHint": "string, optional",
+      "lang": "en | bn | hi"
+    }
+  },
+  "response": {
+    "contentType": "application/json",
+    "body": {
+      "locality": "string | null",
+      "district": "string | null",
+      "zillaParishad": "string | null",
+      "assemblyConstituency": "string | null",
+      "pollingBooth": "string | null",
+      "confidence": "number | null",
+      "status": "unmapped | partial | mapped"
+    }
+  },
+  "emptyPolicy": "If any level is unknown, return null. Never invent a booth."
+}

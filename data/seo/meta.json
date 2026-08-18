@@ -1,0 +1,20 @@
+{
+  "note": "No production host. Do not invent official URL, address, phone, or organiser.",
+  "robots": "noindex, nofollow",
+  "defaultOgImage": null,
+  "jsonLdType": "WebPage",
+  "emitEventJsonLd": false,
+  "emitEventJsonLdUntil": "venue and verification === VERIFIED",
+  "routes": {
+    "/": {
+      "en": {
+        "title": "BKS Durga Puja 2026 — seasonal gathering | Bharatiya Krishak Samaj",
+        "description": "A seasonal Durga Puja gathering under Bharatiya Krishak Samaj, West Bengal. Culture first. Venue, programme and donations are not claimed."
+      },
+      "bn": {
+        "title": "বি কে এস দুর্গা পূজা ২০২৬ — মরশুমি আয়োজন | ভারতীয় কৃষক সমাজ",
+        "description": "ভারতীয় কৃষক সমাজের মরশুমি দুর্গা পূজার আয়োজন, পশ্চিমবঙ্গ। আগে সংস্কৃতি। স্থান, অনুষ্ঠান ও চাঁদার দাবি নেই।"
+      }
+    }
+  }
+}

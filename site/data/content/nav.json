@@ -1,0 +1,25 @@
+{
+  "note": "Single navigation source of truth. Labels come from data/content/{lang}/ui.json. Do not duplicate route lists in HTML.",
+  "items": [
+    { "id": "home", "href": "#home", "labelPath": ["nav", "home"], "desktop": true },
+    { "id": "theme", "href": "#theme", "labelPath": ["nav", "theme"], "desktop": true, "homeSection": true },
+    { "id": "awards", "href": "#awards", "labelPath": ["nav", "awards"], "desktop": true, "homeSection": true },
+    { "id": "record", "href": "#record", "labelPath": ["nav", "record"], "desktop": true, "homeSection": true },
+    { "id": "nominate", "href": "#nominate", "labelPath": ["nav", "nominate"], "desktop": true, "homeSection": true },
+    { "id": "sponsor", "href": "#sponsor", "labelPath": ["nav", "sponsor"], "desktop": true, "homeSection": true },
+    { "id": "visit", "href": "#visit", "labelPath": ["nav", "visit"], "desktop": true, "homeSection": true },
+    { "id": "puja", "href": "#puja", "labelPath": ["nav", "thePuja"], "desktop": false },
+    { "id": "krishak", "href": "#krishak", "labelPath": ["nav", "krishakSamaj"], "desktop": false },
+    { "id": "ifs", "href": "#ifs", "labelPath": ["nav", "integratedFarming"], "desktop": false },
+    { "id": "mission", "href": "#mission", "labelPath": ["nav", "mission"], "desktop": false },
+    { "id": "participate", "href": "#participate", "labelPath": ["nav", "participate"], "desktop": false },
+    { "id": "community", "href": "#community", "labelPath": ["utility", "stories"], "desktop": false },
+    { "id": "programme", "href": "#programme", "labelPath": ["utility", "programme"], "desktop": false },
+    { "id": "contact", "href": "#contact", "labelPath": ["utility", "contact"], "desktop": false }
+  ],
+  "languages": [
+    { "id": "en", "shortPath": ["languages", "en"], "namePath": ["languageNames", "en"] },
+    { "id": "bn", "shortPath": ["languages", "bn"], "namePath": ["languageNames", "bn"] },
+    { "id": "hi", "shortPath": ["languages", "hi"], "namePath": ["languageNames", "hi"] }
+  ]
+}

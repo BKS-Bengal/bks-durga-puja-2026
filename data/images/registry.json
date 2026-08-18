@@ -1,0 +1,72 @@
+{
+  "images": [
+    {
+      "id": "bks-seal",
+      "slot": false,
+      "src": "assets/bks-seal.png",
+      "source": "BKS Brand System canonical seal (assets/logos/bks-logo.png)",
+      "rightsStatus": "bks-owned",
+      "location": "Brand System archive",
+      "date": "copied-2026-08-14",
+      "photographer": null,
+      "subject": "Canonical BKS seal — not a festival lockup, not redrawn",
+      "usagePermission": "local prototype only; do not alter pigments",
+      "alt": {
+        "en": "Seal of Bharatiya Krishak Samaj",
+        "bn": "ভারতীয় কৃষক সমাজের সিলমোহর"
+      },
+      "verification": "VERIFIED"
+    },
+    {
+      "id": "bks-seal-96",
+      "slot": false,
+      "src": "assets/bks-seal-96.png",
+      "source": "Downscaled from canonical BKS seal for header performance. Not redrawn.",
+      "rightsStatus": "bks-owned",
+      "location": "Brand System archive via bks-seal.png",
+      "date": "copied-2026-08-14",
+      "photographer": null,
+      "subject": "Canonical BKS seal at 96px — header only",
+      "usagePermission": "local prototype only; do not alter pigments",
+      "alt": {
+        "en": "Seal of Bharatiya Krishak Samaj",
+        "bn": "ভারতীয় কৃষক সমাজের সিলমোহর"
+      },
+      "verification": "VERIFIED"
+    },
+    {
+      "id": "hero-home",
+      "slot": true,
+      "src": null,
+      "source": null,
+      "rightsStatus": "empty-slot",
+      "location": null,
+      "date": null,
+      "photographer": null,
+      "subject": "Replaceable: this gathering — clay, hands, neighbourhood. Not stock goddess.",
+      "usagePermission": "none",
+      "alt": {
+        "en": "Photograph to come — this gathering, with permission",
+        "bn": "ছবি আসবে — এই আয়োজন, অনুমতি নিয়ে"
+      },
+      "verification": "EMPTY"
+    },
+    {
+      "id": "slot-editorial-css",
+      "slot": true,
+      "src": null,
+      "source": "CSS material fields in prototype/styles/app.css (clay, field, weave, drum, kitchen, hands, street, lamp, path)",
+      "rightsStatus": "original-css-not-photography",
+      "location": null,
+      "date": "2026-08-15",
+      "photographer": null,
+      "subject": "Intentional editorial placeholders. Not photographs. Not downloaded Puja imagery.",
+      "usagePermission": "prototype only",
+      "alt": {
+        "en": "Photograph forthcoming",
+        "bn": "ছবি আসবে"
+      },
+      "verification": "EMPTY"
+    }
+  ]
+}

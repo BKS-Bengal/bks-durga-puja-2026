@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "lang": "en",
+    "governance": "Campaign UX without payment. Forms are not stored on a server."
+  },
+  "kicker": "Campaign paths",
+  "h1": "Participate",
+  "lede": "Support the mission, join the movement, or ask to be a farmer we want to support. No payment is taken here. Submissions are not stored on a server.",
+  "privacy": "Give only what you are willing to put in a downloaded file on your own device. Phone numbers are not required. Nothing is sent to a database from this site.",
+  "paths": [
+    { "id": "farmer", "title": "Farmer", "body": "If you farm in West Bengal and want to be considered when a real intake exists, express interest. This is not enrolment and not a promise of ₹1 lakh." },
+    { "id": "supporter", "title": "Supporter", "body": "India and overseas supporters, including NRI friends of the Samaj, can register interest. There is no UPI, 80G, or donation receipt on this site." },
+    { "id": "volunteer", "title": "Volunteer", "body": "No roster and no shift tool until intake is approved. You may still leave a name so a future team can contact you — only if a backend is later approved." },
+    { "id": "partner", "title": "Partner", "body": "Organisations that may later walk with the mission. This is not a live sponsorship contract and not a payment." }
+  ],
+  "form": {
+    "h2": "Express interest",
+    "intro": "This form builds a file on your device. It does not pretend the Samaj has received it.",
+    "roleLabel": "I am interested as",
+    "roles": [
+      { "id": "farmer", "label": "Farmer" },
+      { "id": "supporter", "label": "Supporter" },
+      { "id": "volunteer", "label": "Volunteer" },
+      { "id": "partner", "label": "Partner" }
+    ],
+    "fields": [
+      { "id": "name", "label": "Name", "type": "text", "required": true, "autocomplete": "name" },
+      { "id": "locality", "label": "Locality / village / area", "type": "text", "required": true, "autocomplete": "address-level3" },
+      { "id": "district", "label": "District (if you know it)", "type": "text", "required": false, "autocomplete": "address-level2" },
+      { "id": "message", "label": "Anything you want us to know", "type": "textarea", "required": false }
+    ],
+    "consent": "I understand this file stays on my device unless I send it myself. Bharatiya Krishak Samaj has not collected this on a server.",
+    "submit": "Download this interest note",
+    "reset": "Clear",
+    "errors": {
+      "name": "Please add a name.",
+      "locality": "Please add a locality, village or area.",
+      "consent": "Please confirm you understand this is not stored on a server.",
+      "role": "Please choose how you want to take part."
+    },
+    "success": "A file has been prepared on your device. It has not been uploaded. No farmer has been funded."
+  },
+  "locatorCta": "Find my area (coming)",
+  "locatorHref": "#locator"
+}

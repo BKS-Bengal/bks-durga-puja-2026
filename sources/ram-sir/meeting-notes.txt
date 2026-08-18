@@ -1,0 +1,24 @@
+Overview
+
+The team aligned on a Durga Puja launch centered on the Krishak Samaj theme, using the BKS platform and KarmYog’s work to mobilize the agricultural community around integrated farming systems. The meeting set a crowdfunding goal to seed-fund 5,000 farmers across West Bengal and outlined immediate needs around research content and improving an AI voice agent for locality-to-booth mapping.
+
+Durga Puja Theme, Platform Experience, and Narrative
+Durga Puja theme: Krishak Samaj, showcasing an end-to-end experience on the BKS platform tied to KarmYog’s mobilization of the agricultural community toward integrated farming systems.
+Integrated farming system framing to include a holistic model (e.g., agro-tourism, retail, storage, and full ecosystem experience).
+Research & Website Content (BKS West Bengal)
+Requirement to conduct deep research on integrated farming in West Bengal and identify best practices.
+Output to be published on the BKS West Bengal website as core reference content supporting the Durga Puja campaign narrative.
+Crowdfunding Plan & Targets
+Plan to use AI to mobilize participation for an integrated farming pilot via crowdfunding.
+Coverage target: 295 constituencies, ~15 people per constituency (~5,000 farmers).
+Funding target: 1 lakh seed funding per farmer (total goal aligned to funding 5,000 farmers).
+Donor audience: NRIs and donors across India and globally.
+Launch timing: by Durga Puja.
+AI/Voice Agent & Geo-Hierarchy Mapping
+A voice agent has an initial version; it needs refinement to work reliably at every area level.
+Key mapping challenge: people generally know district (e.g., Murshidabad) and may know Zilla Parishad/Parishad district and sometimes assembly constituency, but typically do not know their polling booth.
+Needed capability: guide users from known locality/area names (e.g., “Jatragachi,” “Shalda”) through the hierarchy to identify the correct polling booth.
+Action items
+Do deep research on integrated farming in West Bengal, compile best practices, and prepare content for the BKS West Bengal website.
+Fine-tune the existing map so it works accurately for every area/locality level.
+Improve the voice agent to map users from locality/area -> district/Zilla Parishad -> assembly constituency -> polling booth (handling cases where users don’t know constituency/booth but know their area name).

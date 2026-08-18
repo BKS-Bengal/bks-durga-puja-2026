@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "lang": "en",
+    "governance": "All figures are mobilisation goals or calculated targets from SOURCE B. Not achieved results."
+  },
+  "kicker": "Mobilisation goal",
+  "h1": "The Mission",
+  "lede": "The brief asks for a Durga Puja launch that invites India and global / NRI supporters to seed Integrated Farming pilots. Nothing below is money already raised, farmers already enrolled, or a live payment.",
+  "notice": "These numbers are an ambition from the Krishak Samaj brief. They are not a live campaign dashboard.",
+  "stats": [
+    {
+      "id": "farmers",
+      "badge": "MOBILISATION GOAL",
+      "value": "5,000",
+      "label": "farmers we want to support",
+      "body": "A planned cohort, not a current enrolment count."
+    },
+    {
+      "id": "constituencies",
+      "badge": "BRIEF ARITHMETIC",
+      "value": "~295",
+      "label": "constituencies in the sketch",
+      "body": "The brief says approximately 295 constituencies and about 15 people per constituency. That arithmetic is not presented as an Election Commission map. Existing public research records 294 assembly constituencies in West Bengal."
+    },
+    {
+      "id": "seed",
+      "badge": "TARGET",
+      "value": "₹1 lakh",
+      "label": "seed funding per farmer (goal)",
+      "body": "A seed-funding target so a farmer can begin an Integrated Farming pilot in their locality. Not a disbursement record."
+    },
+    {
+      "id": "total",
+      "badge": "CALCULATED TARGET",
+      "value": "₹50 crore",
+      "label": "implied funding requirement",
+      "body": "5,000 farmers × ₹1,00,000 per farmer = ₹50 crore. This is derived arithmetic, not money in hand."
+    }
+  ],
+  "how": {
+    "h2": "How people can participate",
+    "body": "Supporters in India and overseas, including NRI donors, are named in the brief as the intended audience. This website does not collect donations, UPI, bank details, or tax-benefit claims. If a real donation system is later approved, it should plug into Participate without rewriting this story.",
+    "cta": "Express interest",
+    "href": "#participate"
+  }
+}

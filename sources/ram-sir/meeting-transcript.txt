@@ -1,0 +1,56 @@
+[00:00:01] Speaker 1: The one important critical aspect that we are going to be executing now is for Durga Puja.
+
+[00:00:11] Speaker 2: Okay.
+
+[00:00:11] Speaker 1: So, for Dur- and the- the- for Durga Puja, we are- our whole theme of Durga Puja is this time is around Krishak Samaj, and we will be creating an entire experience with the BKS platform and what KarmYog is done in, kind of, mobilizing the entire agricultural community for towards integrated farming systems.
+
+[00:00:30] Speaker 2: Mm-hm.
+
+[00:00:31] Speaker 1: What is integrated farming? You just start going and agriculture. It is an integrated farming where you have agro-tourism, you have retail, everything, everything kind of, full storage. I mean, it's a full in- the whole experience of integrated farming has to be. In fact, you should do a deep research of integrated farming in West Bengal, best practices, and that should go on the website of BKS West Bengal. Okay?
+
+[00:00:51] Speaker 2: Okay.
+
+[00:00:53] Speaker 1: But more importantly, our idea is to do that. It will be the first of its kind where we have- you're going to be us- using AI to mobilize the whole community of integrated- of this integrated farming system and do a crowdfunding where we want to get across these 295 constituencies. We are getting approximately 15 people per constituency, so 5,000 farmers. We want to get each of them a seed funding of 1 lakh per person. So then they can actually do this integrated farming system as a pilot, and the idea is for NRIs and people all over the world and India to donate to that cause and, and make this the reality. Okay?
+
+[00:01:36] Speaker 2: Mm-hm.
+
+[00:01:37] Speaker 1: So it will be- so by Puja, we will launch it where 55,000. Our target is to get 5,000 farmers to get 1 lakh each.
+
+[00:01:45] Speaker 2: Okay.
+
+[00:01:45] Speaker 1: To basically implement integrated farming in their locality, area, etc. So, so that is the overall picture. So in part of that, we have built a voice agent which actually- that you- so one is that map all that you are doing, that you built it. Now that map has to be fine-tuned so that every area.
+
+[00:02:06] Speaker 2: Okay.
+
+[00:02:06] Speaker 1: The other is to have- we are building a- I did the first version of building a voice agent to actually identify- to go at a specific area locality level. One is a Zilla Parishad, which is a Parishad district. People know they are this- or whatever. Then they know- then they know the assembly constituency. But then they can't- they don't know their polling booth. So they will know that they are too- you know you're in Shalda. You, you, you know you're- you know what I'm saying? So you know that area, or you know that in Shalda, too- whatever, some area.
+
+[00:02:38] Speaker 2: Mm-hm.
+
+[00:02:39] Speaker 1: So nobody knows their booth. So there's a hierarchy between- everybody knows which district they are. Shob knows they are in Mushidabad. Then they may not even know which assembly constituency it is, but they will know what area they are in, Jatragachi or whatever.
+
+[00:02:53] Speaker 2: Right.
+
+[00:02:54] Speaker 1: Okay?
+
+[00:03:09] Speaker 2: Mm-hmm.
+
+[00:03:10] Speaker 1: We are in this area. Okay?
+
+[00:04:14] Speaker 2: Okay.
+
+[00:04:15] Speaker 1: Yes?
+
+[00:04:24] Speaker 2: Okay. Okay, sure.
+
+[00:04:25] Speaker 1: That one.
+
+[00:04:30] Speaker 2: Okay.
+
+[00:04:31] Speaker 1: Because I- because I- because I don't want- I mean, I think you're also enjoying it. I'm also enjoying it. But Faka Vaji, I don't want. Okay? Then you- I want you to succeed also, na?
+
+[00:04:45] Speaker 2: Obviously. Obviously.
+
+[00:04:45] Speaker 1: Okay?
+
+[00:04:52] Speaker 2: Yes. Yes. Right. Okay. Okay. Thanks.
+

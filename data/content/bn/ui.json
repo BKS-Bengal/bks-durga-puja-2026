@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "lang": "bn",
+    "status": "NEXT VERSION",
+    "bengaliStatus": "DRAFT — NATIVE REVIEW REQUIRED",
+    "governance": "PROPOSED chrome. CONF-PUJA-001 open."
+  },
+  "brand": {
+    "parent": "ভারতীয় কৃষক সমাজ",
+    "chapter": "পশ্চিমবঙ্গ",
+    "site": "কৃষক সমাজ পূজা",
+    "brandSub": "ভারতীয় কৃষক সমাজ · পশ্চিমবঙ্গ",
+    "seasonal": "দুর্গা পূজা ২০২৬ — কৃষক সমাজ",
+    "hierarchyNote": "বি কে এস → দুর্গা পূজা ২০২৬ → কৃষক সমাজ → সমন্বিত চাষ → কৃষক সংগঠন"
+  },
+  "banner": "",
+  "skip": "সরাসরি মূল লেখায় যান",
+  "menu": "মেনু",
+  "menuClose": "মেনু বন্ধ করুন",
+  "languageGroup": "ভাষা",
+  "languageNames": {
+    "en": "ইংরেজি",
+    "bn": "বাংলা",
+    "hi": "হিন্দি"
+  },
+  "languageLive": {
+    "en": "Language English",
+    "bn": "ভাষা বাংলা",
+    "hi": "भाषा हिन्दी"
+  },
+  "nav": {
+    "home": "প্রথম পাতা",
+    "thePuja": "পূজা",
+    "krishakSamaj": "কৃষক সমাজ",
+    "integratedFarming": "সমন্বিত চাষ",
+    "mission": "অভিযান",
+    "participate": "যোগদান",
+    "theme": "থিম",
+    "awards": "পুরস্কার",
+    "record": "২০২৫-এর নজির",
+    "nominate": "নাম পাঠান",
+    "sponsor": "প্রায়োজক",
+    "visit": "প্যান্ডেল"
+  },
+  "utility": {
+    "programme": "কার্যক্রম",
+    "stories": "গল্প",
+    "contact": "যোগাযোগ",
+    "accessibility": "প্রবেশযোগ্যতা",
+    "sustainability": "পরিবেশ"
+  },
+  "languages": {
+    "en": "EN",
+    "bn": "বাং",
+    "hi": "हिं"
+  },
+  "footer": {
+    "hierarchy": "বি কে এস → দুর্গা পূজা ২০২৬ → কৃষক সমাজ → সমন্বিত চাষ → সমাজের অংশগ্রহণ। দ্বিতীয় সংগঠন নয়।",
+    "isolation": ""
+  },
+  "metaTags": {
+    "title": "বি কে এস দুর্গা পূজা ২০২৬ — কৃষক সমাজ | ভারতীয় কৃষক সমাজ",
+    "description": "ভারতীয় কৃষক সমাজ, পশ্চিমবঙ্গের মরশুমি দুর্গা পূজা। থিম কৃষক সমাজ ও সমন্বিত চাষ। স্থান, অনুষ্ঠান ও চাঁদার দাবি নেই। পাঁচ হাজার কৃষক একটি সংগঠনের লক্ষ্য।"
+  },
+  "draftNote": "বাংলা খসড়া — মাতৃভাষার সম্পাদনা বাকি। DRAFT — NATIVE REVIEW REQUIRED."
+}

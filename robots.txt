@@ -1,0 +1,6 @@
+# Isolated review prototype only. Do not treat as a public host.
+# CONF-PUJA-001 open. No production URL has been approved.
+# No canonical production URL is declared.
+User-agent: *
+Disallow: /
+

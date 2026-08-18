@@ -1,0 +1,38 @@
+{
+  "meta": { "lang": "bn", "bengaliStatus": "DRAFT — NATIVE REVIEW REQUIRED" },
+  "kicker": "যাচাইযোগ্য দাবি",
+  "h1": "গবেষণার উৎস",
+  "lede": "সমন্বিত চাষের তথ্য প্রাতিষ্ঠানিক পাতা থেকে সংক্ষেপে বলা। গবেষণা গদ্য নকল নয়, বি কে এস-এর ফলও নয়।",
+  "items": [
+    {
+      "id": "SRC-IFS-BCKV",
+      "title": "AICRP on Integrated Farming System — বিধান চন্দ্র কৃষি বিশ্ববিদ্যালয়",
+      "url": "https://bckv.edu.in/index.php/en/aicrp-on-integrated-farming-system-en",
+      "usedFor": "IFS কী; পশ্চিমবঙ্গে প্রায় ৯৬% ক্ষুদ্র/প্রান্তিক কৃষক; গয়েশপুর মডেল; উঁচু-নিচু বেড।"
+    },
+    {
+      "id": "SRC-IFS-ATARI",
+      "title": "ICAR-ATARI Kolkata — Integrated Farming",
+      "url": "https://www.atarikolkata.org/integrated-farming/",
+      "usedFor": "পশ্চিমবঙ্গের ছয় কৃষি-জলবায়ু অঞ্চল; স্থান-নির্দিষ্ট সমন্বিত চাষ।"
+    },
+    {
+      "id": "SRC-IFS-ICAR-LAUNCH",
+      "title": "ICAR — ATARI Kolkata প্রকল্প উদ্বোধন (৪ ফেব্রুয়ারি ২০২২)",
+      "url": "https://icar.org.in/en/node/13793",
+      "usedFor": "পশ্চিমবঙ্গে এলাকা-নির্দিষ্ট সমন্বিত চাষের প্রাতিষ্ঠানিক নিশ্চিতি।"
+    },
+    {
+      "id": "SRC-WBSRLM-IFC",
+      "title": "WBSRLM / আনন্দধারা — সমন্বিত চাষ ক্লাস্টার",
+      "url": "https://anandadhara.wb.gov.in/index.php/themes/farm",
+      "usedFor": "সরকারি ক্লাস্টার কাঠামো। বি কে এস-এর কর্মসূচি নয়।"
+    },
+    {
+      "id": "SRC-BKS-001",
+      "title": "কৃষক সমাজ ব্রিফ / রাম স্যারের বৈঠকের নোট (SRC-BKS-001)",
+      "url": null,
+      "usedFor": "থিম, সংগঠনের খসড়া (৫,০০০ × ১ লক্ষ), এলাকা-আগে ভয়েস এজেন্ট।"
+    }
+  ]
+}

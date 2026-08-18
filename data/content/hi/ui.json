@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "lang": "hi",
+    "status": "NEXT VERSION",
+    "hindiStatus": "DRAFT — NATIVE REVIEW REQUIRED",
+    "governance": "PROPOSED chrome. CONF-PUJA-001 open."
+  },
+  "brand": {
+    "parent": "भारतीय कृषक समाज",
+    "chapter": "पश्चिम बंगाल",
+    "site": "कृषक समाज पूजा",
+    "brandSub": "भारतीय कृषक समाज · पश्चिम बंगाल",
+    "seasonal": "दुर्गा पूजा 2026 — कृषक समाज",
+    "hierarchyNote": "बीकेएस → दुर्गा पूजा 2026 → कृषक समाज → समेकित कृषि → किसान संगठन"
+  },
+  "banner": "",
+  "skip": "सीधे मुख्य लेख पर जाएँ",
+  "menu": "मेनू",
+  "menuClose": "मेनू बंद करें",
+  "languageGroup": "भाषा",
+  "languageNames": {
+    "en": "अंग्रेज़ी",
+    "bn": "बांग्ला",
+    "hi": "हिन्दी"
+  },
+  "languageLive": {
+    "en": "Language English",
+    "bn": "ভাষা বাংলা",
+    "hi": "भाषा हिन्दी"
+  },
+  "nav": {
+    "home": "मुखपृष्ठ",
+    "thePuja": "पूजा",
+    "krishakSamaj": "कृषक समाज",
+    "integratedFarming": "समेकित कृषि",
+    "mission": "अभियान",
+    "participate": "सहभागिता",
+    "theme": "थीम",
+    "awards": "पुरस्कार",
+    "record": "2025 का ब्योरा",
+    "nominate": "नामांकन",
+    "sponsor": "प्रायोजन",
+    "visit": "पंडाल"
+  },
+  "utility": {
+    "programme": "कार्यक्रम",
+    "stories": "कहानियाँ",
+    "contact": "संपर्क",
+    "accessibility": "पहुँच",
+    "sustainability": "पर्यावरण"
+  },
+  "languages": {
+    "en": "EN",
+    "bn": "বাং",
+    "hi": "हिं"
+  },
+  "footer": {
+    "hierarchy": "बीकेएस → दुर्गा पूजा 2026 → कृषक समाज → समेकित कृषि → सामुदायिक भागीदारी। यह दूसरी संस्था नहीं है।",
+    "isolation": ""
+  },
+  "metaTags": {
+    "title": "बीकेएस दुर्गा पूजा 2026 — कृषक समाज | भारतीय कृषक समाज",
+    "description": "भारतीय कृषक समाज, पश्चिम बंगाल की मौसमी दुर्गा पूजा। विषय कृषक समाज और समेकित कृषि। स्थान, कार्यक्रम और दान का दावा नहीं। पाँच हज़ार किसान एक संगठन का लक्ष्य है।"
+  },
+  "draftNote": "हिन्दी मसौदा — मातृभाषा संपादन बाकी। DRAFT — NATIVE REVIEW REQUIRED."
+}

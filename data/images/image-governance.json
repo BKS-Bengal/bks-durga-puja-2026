@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "rule": "Never use a random internet image. Empty slots are honest.",
+    "updated": "2026-08-14"
+  },
+  "slots": [
+    {
+      "slotId": "hero-main",
+      "src": null,
+      "source": null,
+      "rightsStatus": "replaceable-slot",
+      "location": null,
+      "date": null,
+      "photographer": null,
+      "subject": "West Bengal making, neighbourhood, or the actual 2026 gathering — not stock goddess, not AI pandal",
+      "usagePermission": "none",
+      "alt": "Empty photograph slot. A verified BKS or committee image will replace this panel.",
+      "verificationStatus": "EMPTY",
+      "doNotUseIfEmpty": true
+    },
+    {
+      "slotId": "og-default",
+      "src": null,
+      "source": "prototype will fall back to field-green card with canonical seal",
+      "rightsStatus": "replaceable-slot",
+      "location": null,
+      "date": null,
+      "photographer": null,
+      "subject": "Open Graph card",
+      "usagePermission": "none",
+      "alt": "Bharatiya Krishak Samaj — Durga Puja 2026 seasonal gathering",
+      "verificationStatus": "EMPTY",
+      "doNotUseIfEmpty": true
+    },
+    {
+      "slotId": "seal",
+      "src": "prototype/assets/bks-logo.png",
+      "source": "Copied from BKS Brand System assets/logos/bks-logo.png for local prototype only",
+      "rightsStatus": "bks-owned",
+      "location": "Brand System archive",
+      "date": "copied 2026-08-14",
+      "photographer": null,
+      "subject": "Canonical BKS seal — do not redraw, do not recolour, not a second logo",
+      "usagePermission": "prototype-local",
+      "alt": "Seal of Bharatiya Krishak Samaj",
+      "verificationStatus": "VERIFIED",
+      "doNotUseIfEmpty": false
+    }
+  ]
+}

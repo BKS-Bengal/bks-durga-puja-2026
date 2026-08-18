@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bks.local/schemas/durga-puja-event.v1.json",
+  "title": "BKS Durga Puja 2026 event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "title",
+    "category",
+    "status",
+    "verificationStatus",
+    "source",
+    "last_updated",
+    "doNotPublishAsFact"
+  ],
+  "properties": {
+    "event_id": { "type": "string" },
+    "title": {
+      "type": "object",
+      "required": ["en", "bn"],
+      "properties": {
+        "en": { "type": "string" },
+        "bn": { "type": "string" }
+      }
+    },
+    "date": {
+      "type": ["string", "null"],
+      "description": "ISO date only when verified. Null if pending."
+    },
+    "start_time": { "type": ["string", "null"] },
+    "end_time": { "type": ["string", "null"] },
+    "location": {
+      "type": "object",
+      "properties": {
+        "label": { "type": ["string", "null"] },
+        "address": { "type": ["string", "null"] },
+        "geo": { "type": ["object", "null"] },
+        "status": { "enum": ["pending", "verified"] }
+      }
+    },
+    "category": {
+      "enum": [
+        "ritual",
+        "cultural",
+        "community",
+        "food",
+        "music",
+        "volunteer",
+        "knowledge",
+        "access"
+      ]
+    },
+    "description": {
+      "type": "object",
+      "properties": {
+        "en": { "type": "string" },
+        "bn": { "type": "string" }
+      }
+    },
+    "audience": { "type": "string" },
+    "status": {
+      "enum": [
+        "pending-verification",
+        "scheduled",
+        "cancelled",
+        "completed",
+        "unlisted"
+      ]
+    },
+    "source": { "type": "string" },
+    "sourceIds": { "type": "array", "items": { "type": "string" } },
+    "last_updated": { "type": "string" },
+    "share_path": { "type": "string" },
+    "cta": { "type": ["string", "null"] },
+    "verificationStatus": {
+      "enum": ["EMPTY", "PENDING", "RESEARCH-DERIVED", "VERIFIED"]
+    },
+    "doNotPublishAsFact": { "type": "boolean" },
+    "omniSocialReady": { "type": "boolean" }
+  }
+}

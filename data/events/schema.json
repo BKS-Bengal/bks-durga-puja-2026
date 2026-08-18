@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BKS Durga Puja 2026 event",
+  "type": "object",
+  "required": ["event_id", "title", "date", "category", "status", "source", "last_updated", "verification"],
+  "properties": {
+    "event_id": { "type": "string" },
+    "title": {
+      "type": "object",
+      "properties": { "en": { "type": "string" }, "bn": { "type": "string" } }
+    },
+    "date": { "type": ["string", "null"], "description": "ISO civil date YYYY-MM-DD" },
+    "tithi": { "type": ["string", "null"] },
+    "start_time": { "type": ["string", "null"] },
+    "end_time": { "type": ["string", "null"] },
+    "location": { "type": ["string", "null"] },
+    "category": {
+      "type": "string",
+      "enum": ["ritual", "cultural", "community", "knowledge", "food", "volunteer", "immersion"]
+    },
+    "description": {
+      "type": "object",
+      "properties": { "en": { "type": "string" }, "bn": { "type": "string" } }
+    },
+    "audience": { "type": ["string", "null"] },
+    "status": { "type": "string", "enum": ["draft", "civic-only", "confirmed", "cancelled", "empty"] },
+    "source": { "type": ["string", "null"] },
+    "last_updated": { "type": "string" },
+    "sharePath": { "type": "string" },
+    "verification": {
+      "type": "string",
+      "enum": ["VERIFIED", "RESEARCH-DERIVED", "PROPOSED", "PENDING", "EMPTY", "pending-ritual-panjika"]
+    },
+    "omniSocial": {
+      "type": "object",
+      "description": "Shape only — not connected",
+      "properties": {
+        "campaign": { "const": "krishak-samaj-ifs-2026" },
+        "seasonalTag": { "const": "durga-puja-2026" },
+        "caption": { "type": "object" },
+        "cta": { "type": ["string", "null"] },
+        "publishDate": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

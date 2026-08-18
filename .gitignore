@@ -1,0 +1,14 @@
+.vercel
+.env
+.env.*
+node_modules
+.DS_Store
+Thumbs.db
+*.log
+_qa/
+_checkpoints/
+data/omni-social/
+data/omnisocial/
+__pycache__/
+*.pyc
+

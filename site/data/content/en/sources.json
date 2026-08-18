@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "lang": "en",
+    "note": "Institutional sources for IFS SOURCE FACTS. Not BKS publications."
+  },
+  "kicker": "Traceable claims",
+  "h1": "Research sources",
+  "lede": "Factual lines on Integrated Farming are restated from institutional pages. They are not copied as academic prose and are not BKS results.",
+  "items": [
+    {
+      "id": "SRC-IFS-BCKV",
+      "title": "AICRP on Integrated Farming System — Bidhan Chandra Krishi Viswavidyalaya",
+      "url": "https://bckv.edu.in/index.php/en/aicrp-on-integrated-farming-system-en",
+      "usedFor": "What IFS is; ~96% small/marginal farmers in West Bengal; Gayeshpur on-station model; raised and sunken beds."
+    },
+    {
+      "id": "SRC-IFS-ATARI",
+      "title": "ICAR-ATARI Kolkata — Integrated Farming",
+      "url": "https://www.atarikolkata.org/integrated-farming/",
+      "usedFor": "Six agro-climatic zones of West Bengal; location-specific integrated farming; NABARD-supported model templates."
+    },
+    {
+      "id": "SRC-IFS-ICAR-LAUNCH",
+      "title": "ICAR — ATARI Kolkata project launch (4 February 2022)",
+      "url": "https://icar.org.in/en/node/13793",
+      "usedFor": "Institutional confirmation of area-specific integrated farming work in West Bengal."
+    },
+    {
+      "id": "SRC-WBSRLM-IFC",
+      "title": "WBSRLM / Anandadhara — farm livelihoods and Integrated Farming Clusters",
+      "url": "https://anandadhara.wb.gov.in/index.php/themes/farm",
+      "usedFor": "Government cluster architecture: crop, dairy, small ruminants, poultry, duckery, fishery, bee keeping, mushroom, compost, producer groups. Not a BKS programme."
+    },
+    {
+      "id": "SRC-BKS-001",
+      "title": "Krishak Samaj brief / Ram Sir meeting notes (SRC-BKS-001)",
+      "url": null,
+      "usedFor": "Theme, mobilisation sketch (5,000 × ₹1 lakh), locality-first voice agent, knowledge-layer request."
+    }
+  ]
+}

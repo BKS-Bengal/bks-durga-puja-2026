@@ -1,0 +1,12 @@
+_checkpoints
+_qa
+sources
+.env
+.env.*
+.git
+*.md
+prototype/assets/bks-logo.png
+prototype/assets/bks-seal.png
+prototype/styles/puja.css
+data/omni-social
+data/omnisocial

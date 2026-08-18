@@ -1,0 +1,38 @@
+{
+  "meta": { "lang": "hi", "hindiStatus": "DRAFT — NATIVE REVIEW REQUIRED" },
+  "kicker": "जाँच योग्य दावे",
+  "h1": "शोध स्रोत",
+  "lede": "समेकित कृषि की तथ्य-पंक्तियाँ संस्थागत पृष्ठों से संक्षेप में कही गई हैं। शोध गद्य की नकल नहीं, बीकेएस परिणाम भी नहीं।",
+  "items": [
+    {
+      "id": "SRC-IFS-BCKV",
+      "title": "AICRP on Integrated Farming System — बिधान चंद्र कृषि विश्वविद्यालय",
+      "url": "https://bckv.edu.in/index.php/en/aicrp-on-integrated-farming-system-en",
+      "usedFor": "IFS क्या है; पश्चिम बंगाल में लगभग 96% छोटे/सीमांत किसान; गयेशपुर मॉडल; ऊँची-नीची क्यारियाँ।"
+    },
+    {
+      "id": "SRC-IFS-ATARI",
+      "title": "ICAR-ATARI Kolkata — Integrated Farming",
+      "url": "https://www.atarikolkata.org/integrated-farming/",
+      "usedFor": "पश्चिम बंगाल के छह कृषि-जलवायु क्षेत्र; स्थान-विशिष्ट समेकित कृषि।"
+    },
+    {
+      "id": "SRC-IFS-ICAR-LAUNCH",
+      "title": "ICAR — ATARI Kolkata परियोजना शुभारंभ (4 फ़रवरी 2022)",
+      "url": "https://icar.org.in/en/node/13793",
+      "usedFor": "पश्चिम बंगाल में क्षेत्र-विशिष्ट समेकित कृषि कार्य की संस्थागत पुष्टि।"
+    },
+    {
+      "id": "SRC-WBSRLM-IFC",
+      "title": "WBSRLM / आनंदधारा — समेकित कृषि क्लस्टर",
+      "url": "https://anandadhara.wb.gov.in/index.php/themes/farm",
+      "usedFor": "सरकारी क्लस्टर ढाँचा। बीकेएस कार्यक्रम नहीं।"
+    },
+    {
+      "id": "SRC-BKS-001",
+      "title": "कृषक समाज ब्रीफ / राम सर की बैठक टिप्पणियाँ (SRC-BKS-001)",
+      "url": null,
+      "usedFor": "विषय, संगठन मसौदा (5,000 × ₹1 लाख), इलाका-पहले वॉइस एजेंट।"
+    }
+  ]
+}

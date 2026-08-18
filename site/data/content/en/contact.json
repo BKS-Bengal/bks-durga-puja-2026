@@ -1,0 +1,16 @@
+{
+  "meta": { "lang": "en" },
+  "h1": "Contact",
+  "lede": "West Bengal state office. Puja committee and pandal are still to be announced.",
+  "address": {
+    "org": "Bharatiya Krishak Samaj, West Bengal",
+    "lines": [
+      "F 127, Downtown Mall, Uniworld City",
+      "New Town, Kolkata 700 156"
+    ]
+  },
+  "email": { "label": "Email", "value": "contact@bkswbengal.org" },
+  "phone": { "label": "Phone", "value": "+91 86552 46764" },
+  "committee": { "governance": "EMPTY", "label": "Committee", "value": null },
+  "place": { "governance": "EMPTY", "label": "Puja place", "value": null }
+}

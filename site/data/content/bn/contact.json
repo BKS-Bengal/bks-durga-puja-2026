@@ -1,0 +1,16 @@
+{
+  "meta": { "lang": "bn" },
+  "h1": "যোগাযোগ",
+  "lede": "পশ্চিমবঙ্গ রাজ্য কার্যালয়। পূজার কমিটি ও মণ্ডপ এখনও ঘোষিত হয়নি।",
+  "address": {
+    "org": "ভারতীয় কৃষক সমাজ, পশ্চিমবঙ্গ",
+    "lines": [
+      "F 127, Downtown Mall, Uniworld City",
+      "New Town, Kolkata 700 156"
+    ]
+  },
+  "email": { "label": "ইমেল", "value": "contact@bkswbengal.org" },
+  "phone": { "label": "ফোন", "value": "+91 86552 46764" },
+  "committee": { "governance": "EMPTY", "label": "কমিটি", "value": null },
+  "place": { "governance": "EMPTY", "label": "পূজার স্থান", "value": null }
+}

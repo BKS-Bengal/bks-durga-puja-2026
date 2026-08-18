@@ -1,0 +1,295 @@
+{
+  "meta": {
+    "title": "BKS Durga Puja 2026 — research sources",
+    "date": "2026-08-14",
+    "rule": "Every important research claim in this workstream should cite a sourceId from this file. Do not use SEO blogs as primary evidence.",
+    "status": "WORKING REGISTER — not exhaustive of all human knowledge of Durga Puja"
+  },
+  "sources": [
+    {
+      "id": "SRC-BKS-001",
+      "title": "Ram Sir meeting: Durga Puja theme Krishak Samaj, IFS, crowdfunding sketch, voice agent",
+      "publisher": "BKS internal (transcript + notes)",
+      "url": null,
+      "files": [
+        "sources/ram-sir/meeting-transcript.txt",
+        "sources/ram-sir/meeting-notes.txt"
+      ],
+      "date": "undated in file; captured 2026-08-14",
+      "authority": "primary for BKS intent; not a public programme approval",
+      "classUse": "PENDING APPROVAL for public claims; VERIFIED as meeting record"
+    },
+    {
+      "id": "SRC-BKS-002",
+      "title": "BKS Brand System — Source of Truth v1.2.0",
+      "publisher": "BKS Brand System (read-only)",
+      "url": null,
+      "files": ["C:/Users/asits/Projects/bks-brand-system/BKS-BRAND-SYSTEM-SOURCE-OF-TRUTH.md"],
+      "date": "2026-08-14",
+      "authority": "brand hierarchy, tokens, photography, OmniSocial fail rules",
+      "classUse": "VERIFIED for this system's brand rules; still DRAFT pending Ram Sir"
+    },
+    {
+      "id": "SRC-BKS-003",
+      "title": "BKS Durga Puja 2026 — Campaign architecture (seasonal chip proposal)",
+      "publisher": "BKS Brand System (read-only)",
+      "url": null,
+      "files": ["C:/Users/asits/Projects/bks-brand-system/BKS-DURGA-PUJA-2026-ARCHITECTURE.md"],
+      "date": "2026-08-14",
+      "authority": "prior seasonal-layer proposal; this workstream extends, does not silently replace CONF-PUJA-001",
+      "classUse": "PROPOSED"
+    },
+    {
+      "id": "SRC-BKS-004",
+      "title": "BKS Approval register (CONF-PUJA-001 and related)",
+      "publisher": "BKS Brand System (read-only)",
+      "url": null,
+      "files": ["C:/Users/asits/Projects/bks-brand-system/APPROVAL-REGISTER.md"],
+      "date": "2026-08-14",
+      "authority": "open decisions",
+      "classUse": "PENDING APPROVAL"
+    },
+    {
+      "id": "SRC-UNESCO-001",
+      "title": "Durga Puja in Kolkata — UNESCO ICH element page",
+      "publisher": "UNESCO",
+      "url": "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703",
+      "date": "Inscribed 2021 (16.COM)",
+      "authority": "primary cultural definition of the inscribed element",
+      "classUse": "VERIFIED"
+    },
+    {
+      "id": "SRC-UNESCO-002",
+      "title": "Nomination file: Durga Puja in Kolkata (ICH-02)",
+      "publisher": "India / Sangeet Natak Akademi / UNESCO",
+      "url": "https://ich.unesco.org/doc/src/49244-EN.pdf",
+      "date": "Nomination cycle 2020–2021",
+      "authority": "bearers, Kumartuli, Barowari, ~5000 city Pujas (nomination-era)",
+      "classUse": "VERIFIED as dossier content; figures are not a 2026 census"
+    },
+    {
+      "id": "SRC-UNESCO-003",
+      "title": "Decision 16.COM 8.B.15",
+      "publisher": "UNESCO Intergovernmental Committee",
+      "url": "https://ich.unesco.org/en/decisions/16.COM/8.B.15",
+      "date": "2021-12",
+      "authority": "inscription decision; national inventory via SNA; JBMRC / Tapati Guha-Thakurta",
+      "classUse": "VERIFIED"
+    },
+    {
+      "id": "SRC-UNESCO-004",
+      "title": "Durga Puja inscribed on the Representative List",
+      "publisher": "UNESCO",
+      "url": "https://www.unesco.org/en/articles/durga-puja-inscribed-unesco-representative-list-intangible-cultural-heritage-humanity",
+      "date": "2021-12-15; updated 2023-04-20",
+      "authority": "public UNESCO news of inscription",
+      "classUse": "VERIFIED"
+    },
+    {
+      "id": "SRC-PIB-001",
+      "title": "UNESCO inscribes Durga Puja in Kolkata on the Representative List",
+      "publisher": "Press Information Bureau, Ministry of Culture, Government of India",
+      "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1781868",
+      "date": "2021-12-15",
+      "authority": "Government of India confirmation; 14 Indian ICH elements at that date",
+      "classUse": "VERIFIED"
+    },
+    {
+      "id": "SRC-PIB-002",
+      "title": "Ministry of Culture celebration of the inscription",
+      "publisher": "Press Information Bureau, Ministry of Culture",
+      "url": "https://pib.gov.in/Pressreleaseshare.aspx?PRID=1854898",
+      "date": "2022",
+      "authority": "Sangeet Natak Akademi as nodal ICH agency",
+      "classUse": "VERIFIED"
+    },
+    {
+      "id": "SRC-WBT-001",
+      "title": "West Bengal Tourism — Durga Puja",
+      "publisher": "Department of Tourism, Government of West Bengal",
+      "url": "https://www.wbtourism.gov.in/durgapuja",
+      "date": "accessed 2026-08-14",
+      "authority": "official tourism description; NOTE UNESCO year stated as 15 Dec 2020 — conflicts with PIB/UNESCO 2021",
+      "classUse": "RESEARCH-DERIVED civic colour; do not use the 2020 year"
+    },
+    {
+      "id": "SRC-AASAN-001",
+      "title": "AASAN Puja Permission Portal",
+      "publisher": "Government of West Bengal",
+      "url": "https://aasan.wb.gov.in/",
+      "date": "accessed 2026-08-14",
+      "authority": "civic permission architecture for committees; UNESCO 2021 statement on this portal is consistent with PIB",
+      "classUse": "VERIFIED for existence of single-window permission model"
+    },
+    {
+      "id": "SRC-UNESCO-A11Y-001",
+      "title": "UN India and UNESCO launch guidelines to make Durga Puja celebrations in West Bengal more accessible",
+      "publisher": "UNESCO",
+      "url": "https://www.unesco.org/en/articles/un-india-and-unesco-launch-guidelines-make-durga-puja-celebrations-west-bengal-more-accessible-and",
+      "date": "2025-09-18 / published 2025-09-19",
+      "authority": "SOP existence; not proof of BKS venue access",
+      "classUse": "VERIFIED as guidance; PROPOSED if applied to BKS"
+    },
+    {
+      "id": "SRC-UNESCO-A11Y-002",
+      "title": "Making Heritage Accessible to All: Reimagining Durga Puja Through Inclusion",
+      "publisher": "UNESCO",
+      "url": "https://www.unesco.org/en/articles/making-heritage-accessible-all-reimagining-durga-puja-through-inclusion",
+      "date": "2025",
+      "authority": "GoWB / IIT Kharagpur / OPDs / 24-pandal pilot",
+      "classUse": "VERIFIED as pilot elsewhere"
+    },
+    {
+      "id": "SRC-UNESCO-A11Y-003",
+      "title": "SOPs for Enhancing Universal Accessibility during Cultural Festivals — 2025 edition (English)",
+      "publisher": "UN in India / UNESCO / IIT Kharagpur",
+      "url": "https://articles.unesco.org/sites/default/files/medias/fichiers/2025/10/English%20SOP%20_0.pdf",
+      "date": "2025",
+      "authority": "detailed SOP; reference only",
+      "classUse": "RESEARCH-DERIVED checklist"
+    },
+    {
+      "id": "SRC-RPWD-001",
+      "title": "Rights of Persons with Disabilities Act, 2016",
+      "publisher": "Government of India",
+      "url": "https://www.indiacode.nic.in/",
+      "date": "2016",
+      "authority": "Indian law on accessibility of public cultural life",
+      "classUse": "VERIFIED legal frame; not a BKS compliance certificate"
+    },
+    {
+      "id": "SRC-CPCB-001",
+      "title": "Revised Guidelines for Idol Immersion, May 2020",
+      "publisher": "Central Pollution Control Board",
+      "url": "https://cpcb.nic.in/",
+      "date": "2020-05",
+      "authority": "national idol-immersion guidance cited by WBPCB",
+      "classUse": "VERIFIED as guidance"
+    },
+    {
+      "id": "SRC-WB-2018",
+      "title": "West Bengal Prevention and Control of Water Pollution (Procedure for Immersion of Idol after Pujas) Rules, 2018",
+      "publisher": "Government of West Bengal",
+      "url": null,
+      "date": "2018",
+      "authority": "state immersion rules; cited in WBPCB undertaking",
+      "classUse": "VERIFIED as legal instrument existence"
+    },
+    {
+      "id": "SRC-WBPCB-001",
+      "title": "WBPCB Puja undertaking 2025",
+      "publisher": "West Bengal Pollution Control Board",
+      "url": "https://www.wbpcb.gov.in/files/Fr-12-2025-12-57-46WBPCB_PUJA%20UNDERTAKING_2025.pdf",
+      "date": "2025",
+      "authority": "organiser undertaking: clay, no PoP, heights, thermocol, DJ, bins, scheduled immersion",
+      "classUse": "VERIFIED as required undertaking for organisers; not a BKS claim"
+    },
+    {
+      "id": "SRC-WBX-001",
+      "title": "SOP for Organizing Domestic or Community Festivals/Celebrations/Pujas",
+      "publisher": "Government of West Bengal (via WBXPress republication)",
+      "url": "https://wbxpress.com/sop-organizing-domestic-community-festivals-celebrations-pujas/",
+      "date": "accessed 2026-08-14",
+      "authority": "state SOP language aligned with CPCB/WBPCB",
+      "classUse": "RESEARCH-DERIVED"
+    },
+    {
+      "id": "SRC-DP-KOL-001",
+      "title": "2026 Durga Puja Calendar for Kolkata, West Bengal",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/navratri/durga-puja/durga-puja-calendar.html?geoname-id=1275004",
+      "date": "accessed 2026-08-14",
+      "authority": "recognised panchang; Kolkata geoname. Ritual-to-Gregorian mapping for 2026. NOT a government gazette.",
+      "classUse": "RESEARCH-DERIVED — do not freeze into UI until local panjika confirmation"
+    },
+    {
+      "id": "SRC-TAD-001",
+      "title": "Dussehra 2026 in India",
+      "publisher": "timeanddate.com",
+      "url": "https://www.timeanddate.com/holidays/india/dussehra",
+      "date": "accessed 2026-08-14",
+      "authority": "lists Dussehra as gazetted holiday Tuesday 20 October 2026",
+      "classUse": "RESEARCH-DERIVED civic holiday listing; not Bengali visarjan confirmation"
+    },
+    {
+      "id": "SRC-TAD-002",
+      "title": "Holidays and Observances in India in 2026",
+      "publisher": "timeanddate.com",
+      "url": "https://www.timeanddate.com/holidays/india/2026",
+      "date": "accessed 2026-08-14",
+      "authority": "Maha Saptami 18 Oct (restricted); Maha Ashtami 19 Oct (restricted); Dussehra 20 Oct (gazetted)",
+      "classUse": "RESEARCH-DERIVED; conflicts in labelling with Bengal committee practice"
+    },
+    {
+      "id": "SRC-SAMVAT-001",
+      "title": "Mahalaya Amavasya 2026",
+      "publisher": "samvat.in",
+      "url": "https://samvat.in/festivals/mahalaya-amavasya-2026/",
+      "date": "accessed 2026-08-14",
+      "authority": "Ashwin Krishna Amavasya → Saturday 10 October 2026",
+      "classUse": "RESEARCH-DERIVED; consistent with other panchang listings for Mahalaya date"
+    },
+    {
+      "id": "SRC-IE-001",
+      "title": "The humble origins of Kolkata’s first community Durga puja",
+      "publisher": "The Indian Express",
+      "url": "https://indianexpress.com/article/cities/kolkata/the-humble-origins-of-kolkatas-first-community-durga-puja-where-little-has-changed-8186233/",
+      "date": "2022",
+      "authority": "Barowari / sarbojanin history; notes 1759 Guptipara account and 1910 Bhowanipore",
+      "classUse": "RESEARCH-DERIVED; origin year disputed — do not freeze a year in UI"
+    },
+    {
+      "id": "SRC-STATESMAN-001",
+      "title": "Barowari Pujo",
+      "publisher": "The Statesman",
+      "url": "https://www.thestatesman.com/durga-puja/barowari-pujo-1503110807.html",
+      "date": "2022",
+      "authority": "1910 Bhowanipore Sanatan Dharmatsahini Sabha; later north Kolkata community Pujas",
+      "classUse": "RESEARCH-DERIVED"
+    },
+    {
+      "id": "SRC-VAM-001",
+      "title": "The new V&A website",
+      "publisher": "Victoria and Albert Museum",
+      "url": "https://www.vam.ac.uk/blog/digital/new-website",
+      "date": "2016",
+      "authority": "cultural-institution digital principles: large imagery, visit planning, brand online",
+      "classUse": "DESIGN REFERENCE — do not copy"
+    },
+    {
+      "id": "SRC-VAM-002",
+      "title": "The new V&A website — the inside story",
+      "publisher": "V&A / Made by Many",
+      "url": "https://www.vam.ac.uk/blog/digital/the-new-va-website-the-inside-story",
+      "date": "2016",
+      "authority": "display-agnostic content; start small; programme as structured objects",
+      "classUse": "DESIGN REFERENCE"
+    },
+    {
+      "id": "SRC-MPA-001",
+      "title": "V&A Museum visual identity system",
+      "publisher": "Mark Porter Associates",
+      "url": "https://markporter.com/work/v-a-museum",
+      "date": "accessed 2026-08-14",
+      "authority": "parent brand vs venue layer; hierarchy; light-touch colour",
+      "classUse": "DESIGN REFERENCE for parent/season relationship — not a palette to copy"
+    },
+    {
+      "id": "SRC-TGT-001",
+      "title": "In the Name of the Goddess: The Durga Pujas of Contemporary Kolkata (context)",
+      "publisher": "Tapati Guha-Thakurta / academic record via UNESCO process",
+      "url": "https://ich.unesco.org/en/decisions/16.COM/8.B.15",
+      "date": "research underpinning nomination",
+      "authority": "academic backbone of the UNESCO file",
+      "classUse": "RESEARCH-DERIVED"
+    },
+    {
+      "id": "SRC-DISCREPANT-BLOGS-001",
+      "title": "Conflicting 2026 public calendars (not used as authority)",
+      "publisher": "various commercial festival pages",
+      "url": null,
+      "note": "culturetoday.in, indiabonds, muhuratchoghadiya, astroyogi, capturedcreations, ABP Live mix 2025/2026 tables. Documented only to prove discrepancy. Not cited for UI dates.",
+      "classUse": "DISCREPANCY EVIDENCE ONLY"
+    }
+  ]
+}

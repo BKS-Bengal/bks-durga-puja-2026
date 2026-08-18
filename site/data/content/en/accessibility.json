@@ -1,0 +1,14 @@
+{
+  "meta": { "lang": "en" },
+  "h1": "Accessibility",
+  "digital": {
+    "governance": "PROPOSED",
+    "title": "This website",
+    "body": "The digital product aims for WCAG 2.2 AA: semantic headings, keyboard, visible focus, 48px targets, bilingual lang, reduced motion, and text that does not rely on colour alone."
+  },
+  "physical": {
+    "governance": "PENDING",
+    "title": "The physical gathering",
+    "body": "UNESCO and UN India, with IIT Kharagpur, published accessibility SOPs for Kolkata Pujas in 2025 (ramps, Braille, resting areas, trained volunteers). That work is a reference. It is not evidence that a BKS venue has those features. No ramp, toilet, or route is claimed here."
+  }
+}

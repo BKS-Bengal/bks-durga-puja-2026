@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "lang": "en",
+    "status": "NEXT VERSION",
+    "governance": "PROPOSED chrome. CONF-PUJA-001 open."
+  },
+  "brand": {
+    "parent": "Bharatiya Krishak Samaj",
+    "chapter": "West Bengal",
+    "site": "Krishak Samaj Puja",
+    "brandSub": "Bharatiya Krishak Samaj · West Bengal",
+    "seasonal": "Durga Puja 2026 — Krishak Samaj",
+    "hierarchyNote": "BKS → Durga Puja 2026 → Krishak Samaj → Integrated Farming → farmer mobilisation"
+  },
+  "banner": "",
+  "skip": "Skip to content",
+  "menu": "Menu",
+  "menuClose": "Close menu",
+  "languageGroup": "Language",
+  "languageNames": {
+    "en": "English",
+    "bn": "Bengali",
+    "hi": "Hindi"
+  },
+  "languageLive": {
+    "en": "Language English",
+    "bn": "ভাষা বাংলা",
+    "hi": "भाषा हिन्दी"
+  },
+  "nav": {
+    "home": "Home",
+    "thePuja": "The Puja",
+    "krishakSamaj": "Krishak Samaj",
+    "integratedFarming": "Integrated Farming",
+    "mission": "The Mission",
+    "participate": "Participate",
+    "theme": "The theme",
+    "awards": "Awards",
+    "record": "2025 record",
+    "nominate": "Nominate",
+    "sponsor": "Sponsor",
+    "visit": "Visit"
+  },
+  "utility": {
+    "programme": "Programme",
+    "stories": "Stories",
+    "contact": "Contact",
+    "accessibility": "Accessibility",
+    "sustainability": "Sustainability"
+  },
+  "languages": {
+    "en": "EN",
+    "bn": "বাং",
+    "hi": "हिं"
+  },
+  "footer": {
+    "hierarchy": "BKS → Durga Puja 2026 → Krishak Samaj → Integrated Farming → community participation. Not a second organisation.",
+    "isolation": ""
+  },
+  "metaTags": {
+    "title": "BKS Durga Puja 2026 — Krishak Samaj | Bharatiya Krishak Samaj",
+    "description": "A seasonal Durga Puja under Bharatiya Krishak Samaj, West Bengal, themed on Krishak Samaj and Integrated Farming. Venue, programme and donations are not claimed. The 5,000-farmer figure is a mobilisation goal."
+  },
+  "draftNote": "DRAFT — NATIVE REVIEW REQUIRED."
+}

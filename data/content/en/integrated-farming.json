@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "lang": "en",
+    "governance": "SOURCE FACT describes public research and policy. Not BKS farms, results, or schemes."
+  },
+  "kicker": "Livelihood system",
+  "h1": "Integrated Farming",
+  "lede": "Integrated Farming is a planned household system: the residue of one enterprise becomes an input for another. It is not a pile of unrelated agricultural activities, and it is not a BKS trademark.",
+  "what": {
+    "h2": "What Integrated Farming is",
+    "badge": "SOURCE FACT",
+    "body": "ICAR and the All India Coordinated Research Project on Integrated Farming Systems describe a resource-saving design — crop, livestock, aquaculture, trees and composting planned so they help each other. Waste is treated as a resource in the wrong place, not as rubbish. That is a national research concept."
+  },
+  "westBengal": {
+    "h2": "West Bengal context",
+    "badge": "SOURCE FACT",
+    "items": [
+      { "title": "Holdings", "body": "Bidhan Chandra Krishi Viswavidyalaya records that about 96% of farmers in West Bengal are small or marginal. That is a state fact, not a BKS membership count." },
+      { "title": "Agro-climatic zones", "body": "ICAR-ATARI Kolkata works with Krishi Vigyan Kendras across six zones of West Bengal: northern hill, terai and teesta, old alluvial, new alluvial, red and laterite, and coastal saline. Location-specific models matter because the state is not one farm." },
+      { "title": "Water in the farm", "body": "Rice–fish in seasonally flooded fields and backyard pond culture are documented public research themes in Bengal, including work that involves women. Those people are not BKS testimonials." },
+      { "title": "Raised and sunken beds", "body": "In low Gangetic land, a published BCKV / AICRP design holds vegetables on the raised bed and rice and fish in the sunken bed in the rains. Not a BKS invention." }
+    ]
+  },
+  "viz": {
+    "h2": "How the systems connect",
+    "intro": "Relationships, not a sector list. Each node feeds another. None of these is a live BKS facility.",
+    "center": "Farm household",
+    "summary": "Crop residue can feed livestock and compost. Livestock manure and compost return to soil. Pond and field water support fish, duck and horticulture. Soil and water hold the system. Produce moves toward storage, processing and markets. Income returns to the household. Climate stress is why diversification is researched — not a promise this site can keep.",
+    "nodes": [
+      { "id": "crop", "title": "Crop", "feeds": ["livestock", "compost", "market"], "body": "Cereals, pulses, oilseeds and fodder. Residue is feed or compost, not waste." },
+      { "id": "horticulture", "title": "Horticulture", "feeds": ["market", "household"], "body": "Vegetables, fruit and homestead trees on the same holding." },
+      { "id": "livestock", "title": "Livestock", "feeds": ["compost", "household", "market"], "body": "Dairy, poultry, duckery, and goat, sheep or piggery where relevant. Dung and leftover feed return to soil." },
+      { "id": "fishery", "title": "Fishery", "feeds": ["household", "market", "compost"], "body": "Ponds and rice–fish. Nutrient-rich pond silt can return to fields." },
+      { "id": "allied", "title": "Bee, mushroom", "feeds": ["market", "compost"], "body": "WBSRLM cluster guidance names bee keeping and mushroom among interlocking livelihoods. That is government architecture, not a BKS product." },
+      { "id": "compost", "title": "Waste / compost", "feeds": ["soil"], "body": "Crop residue, dung and pond silt as compost or vermicompost." },
+      { "id": "soil", "title": "Soil", "feeds": ["crop", "horticulture"], "body": "Organic return and less dependence on bought nutrients — a research aim, not a BKS result." },
+      { "id": "water", "title": "Water", "feeds": ["crop", "fishery", "horticulture"], "body": "Field, pond and homestead water planned together." },
+      { "id": "market", "title": "Market", "feeds": ["household"], "body": "Storage, processing, retail and Farmer Producer Organisations exist in public policy. This site does not run a warehouse or a shop." },
+      { "id": "household", "title": "Household income", "feeds": ["crop"], "body": "Diversified livelihood and more regular work across the year — the reason researchers study IFS, not a guaranteed outcome." }
+    ]
+  },
+  "circular": {
+    "h2": "Circular resource use",
+    "badge": "SOURCE FACT",
+    "body": "The point of integration is complementarity: product of one component as input of another, less bought chemical input, and a more even calendar of work. Climate-resilient farming is an aim of this research, not a certificate this page can issue."
+  },
+  "notBks": {
+    "h2": "What this page does not claim",
+    "badge": "PENDING",
+    "items": [
+      "BKS does not already run these models.",
+      "Named on-station examples such as the Gayeshpur 0.66 ha AICRP model are university farms, not BKS farms.",
+      "WBSRLM Integrated Farming Clusters, Mahila Kisan cadres and producer groups are government livelihoods architecture.",
+      "Agro-tourism appears in state homestay policy as a possibility, not as a live BKS product."
+    ]
+  },
+  "knowledge": {
+    "h2": "Knowledge layer",
+    "badge": "PENDING",
+    "body": "A fuller Integrated Farming reference is intended for the BKS West Bengal website. This Puja microsite keeps a campaign-sized explainer and sources. The public knowledge URL is not invented here.",
+    "cta": "Coming soon — BKS knowledge",
+    "disabled": true
+  },
+  "sourcesCta": "Research sources",
+  "sourcesHref": "#sources"
+}

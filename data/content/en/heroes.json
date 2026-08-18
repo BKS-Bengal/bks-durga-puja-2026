@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "lang": "en",
+    "governance": "All heroes PROPOSED. Default is next-version H1. CONF-PUJA-001 open."
+  },
+  "defaultId": "H1",
+  "variants": [
+    {
+      "id": "H1",
+      "label": "H1 — farmer and Puja",
+      "governance": "PROPOSED",
+      "who": "Bharatiya Krishak Samaj, West Bengal",
+      "what": "A seasonal Durga Puja themed on Krishak Samaj — culture first, then the farmer, then Integrated Farming.",
+      "when": "Sharadiya 2026. Civic holidays are documented. Ritual clocks await a named Panjika.",
+      "where": "West Bengal. Exact place to be announced.",
+      "why": "The Puja is the cultural door. Krishak Samaj is the bridge. Integrated Farming is the livelihood story. Mobilising about 5,000 farmers is the ambition, not a result.",
+      "next": "Know the initiative. Nothing here enrols you or takes money.",
+      "kicker": "Bharatiya Krishak Samaj · West Bengal",
+      "title": "A Durga Puja that sits with the farmer.",
+      "lede": "This Sharadiya, Bharatiya Krishak Samaj, West Bengal, gathers around Krishak Samaj — the agricultural community — and the living system of Integrated Farming. The Puja remains the cultural door. The mission is an ambition to support about 5,000 farmers. Venue and programme are not yet named.",
+      "ctaPrimary": "Know the Initiative",
+      "ctaSecondary": "The Puja",
+      "ctaPrimaryHref": "#mission",
+      "ctaSecondaryHref": "#puja"
+    },
+    {
+      "id": "H2",
+      "label": "H2 — living heritage",
+      "governance": "PROPOSED",
+      "who": "Bharatiya Krishak Samaj, West Bengal",
+      "what": "A seasonal presence beside Bengal’s public Puja — not a claim to own it.",
+      "when": "Sharadiya 2026. Civic dates only, pending Panjika.",
+      "where": "West Bengal. Exact place to be announced.",
+      "why": "UNESCO inscribed Durga Puja in Kolkata in 2021. That inscription is Kolkata’s, not this page.",
+      "next": "Read what is verified about the Puja.",
+      "kicker": "Bharatiya Krishak Samaj · West Bengal",
+      "title": "Clay, dhak, and a neighbourhood — BKS is a guest, not a second festival.",
+      "lede": "The image is clay from the river and returns to water. People walk. Kitchens open. Bharatiya Krishak Samaj does not own that heritage. This site only says where the Samaj might sit beside it in 2026 — with the farmer in view.",
+      "ctaPrimary": "Know the Initiative",
+      "ctaSecondary": "The Puja",
+      "ctaPrimaryHref": "#mission",
+      "ctaSecondaryHref": "#puja"
+    },
+    {
+      "id": "H3",
+      "label": "H3 — mobilisation",
+      "governance": "PROPOSED",
+      "who": "Bharatiya Krishak Samaj, West Bengal",
+      "what": "A gathering with paths for farmers, supporters, volunteers and partners — none of them a live payment.",
+      "when": "Sharadiya 2026. Civic dates only, pending Panjika.",
+      "where": "West Bengal. Exact place to be announced.",
+      "why": "Participation is neighbourhood work, not enrolment, and not a donation counter.",
+      "next": "Express interest. Support does not collect money on this site.",
+      "kicker": "Bharatiya Krishak Samaj · West Bengal",
+      "title": "Come for the Puja. Stay for the farmers we want to support.",
+      "lede": "You can read the Puja, understand Integrated Farming as a connected livelihood, and see a mobilisation goal of about 5,000 farmers. None of that is money collected, a farmer enrolled, or a venue invented.",
+      "ctaPrimary": "Know the Initiative",
+      "ctaSecondary": "The Puja",
+      "ctaPrimaryHref": "#mission",
+      "ctaSecondaryHref": "#puja"
+    }
+  ]
+}

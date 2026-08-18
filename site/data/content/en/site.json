@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "lang": "en",
+    "status": "ARCHIVAL EDITOR DUMP — not fetched by the prototype. Live UI is prototype/index.html plus heroes.json, events.json, stories.json. Hero fact row below is synced to H1. Nested page objects may lag; do not publish from them.",
+    "governance": "Farmer-and-public strings. Do not mix VERIFIED / PROPOSED / PENDING in one unlabelled sentence."
+  },
+  "brand": {
+    "parent": "Bharatiya Krishak Samaj",
+    "chapter": "West Bengal",
+    "seasonal": "Durga Puja 2026 — seasonal gathering, not a second brand",
+    "hierarchyNote": "BKS → seasonal Durga Puja campaign → community / culture → Krishak Samaj → integrated farming pathway"
+  },
+  "nav": {
+    "home": "Home",
+    "thePuja": "The Puja",
+    "programme": "Programme",
+    "community": "Community",
+    "participate": "Participate",
+    "krishakSamaj": "Krishak Samaj",
+    "access": "Accessibility",
+    "care": "Sustainability",
+    "contact": "Contact",
+    "language": "English",
+    "languageSwitch": "বাংলা"
+  },
+  "hero": {
+    "id": "H1",
+    "who": "Bharatiya Krishak Samaj, West Bengal",
+    "what": "A seasonal Durga Puja gathering. Culture first. Krishak Samaj is a path beside it.",
+    "where": "West Bengal. Exact place to be announced.",
+    "when": "Sharadiya 2026. Civic holidays are documented. Ritual clocks await a named Panjika.",
+    "why": "Neighbourhoods already gather. The Samaj will not invent a second religion, nor hide that it is a farmers’ samaj.",
+    "next": "Read The Puja. Nothing here enrols you or takes money.",
+    "kicker": "Bharatiya Krishak Samaj · West Bengal",
+    "seasonal": "Durga Puja 2026 — seasonal gathering, not a second brand",
+    "title": "This autumn, the Samaj sits with the Puja — it does not replace it.",
+    "lede": "Durga Puja in Bengal is neighbourhood, clay, dhak, food and homecoming. Bharatiya Krishak Samaj may keep a seasonal presence in that gathering. Until a venue and a committee are named, this page will not pretend those things exist.",
+    "ctaPrimary": "Read The Puja",
+    "ctaSecondary": "Participate",
+    "imageStatus": "No verified BKS Puja photograph in this archive. Hero uses a replaceable slot.",
+    "slotLabel": "Photograph to come — making, neighbourhood, or the actual gathering"
+  },
+    "heroAlt": [
+    {
+      "id": "H2",
+      "selected": false,
+      "title": "Clay, dhak, and a neighbourhood — BKS is a guest, not a second festival.",
+      "lede": "The image is clay from the river and returns to water. People walk. Kitchens open. Bharatiya Krishak Samaj does not own that heritage. This site only says where the Samaj might sit beside it in 2026."
+    },
+    {
+      "id": "H3",
+      "selected": false,
+      "title": "Come to understand the Puja. Stay, if you wish, for the Samaj.",
+      "lede": "You can read the Puja, watch the civic calendar, or wait with us until volunteer and support routes are actually open. The farm conversation lives on its own page. It does not rewrite the rite."
+    }
+  ],
+  "thePuja": {
+    "kicker": "Culture · RESEARCH-DERIVED and VERIFIED civic fact",
+    "h2": "The Puja is a public homecoming",
+    "lede": "Durga Puja is the autumn gathering of Bengal: worship, neighbourhood, craft and return. This page explains the season. It does not sell farming inside the ritual.",
+    "unescoTitle": "UNESCO inscription",
+    "unescoBody": "Durga Puja in Kolkata was inscribed in 2021 on UNESCO’s Representative List of the Intangible Cultural Heritage of Humanity. That fact belongs to the city and its communities. It is not a BKS badge.",
+    "unescoClass": "VERIFIED",
+    "unescoSource": "UNESCO ICH; Ministry of Culture / PIB, 15 December 2021",
+    "sequenceTitle": "The public days",
+    "sequenceNote": "Meanings below are cultural. Gregorian dates for 2026 are not published as fact until the committee’s panjika is confirmed.",
+    "days": [
+      { "id": "mahalaya", "name": "Mahalaya", "bn": "মহালয়া", "text": "Pitru Paksha ends and Devi Paksha begins. In Bengal this dawn is also cultural memory: the goddess is turned toward the living year." },
+      { "id": "shashthi", "name": "Shashthi", "bn": "ষষ্ঠী", "text": "Bodhon — the public awakening of the image. Amantran and Adhivas belong to this threshold." },
+      { "id": "saptami", "name": "Saptami", "bn": "সপ্তমী", "text": "Nabapatrika / Kolabou. Full public worship typically begins." },
+      { "id": "ashtami", "name": "Ashtami", "bn": "অষ্টমী", "text": "Pushpanjali, Kumari Puja, and Sandhi Puja at the join of Ashtami and Navami." },
+      { "id": "navami", "name": "Navami", "bn": "নবমী", "text": "Culminating worship in many committees." },
+      { "id": "dashami", "name": "Dashami", "bn": "দশমী", "text": "Sindoor Khela, Bijoya, and immersion — often on a civil day fixed with the police as well as the tithi." }
+    ]
+  },
+  "programme": {
+    "kicker": "Programme",
+    "h2": "What happens, when we know",
+    "lede": "Events will appear here as structured records: day, time, place, audience, source. Until the committee confirms a timetable, every row is pending verification.",
+    "empty": "No verified 2026 programme yet."
+  },
+  "community": {
+    "kicker": "Community",
+    "h2": "Puja is made by people",
+    "lede": "Organisers, artisans, priests, dhakis, cooks, volunteers, neighbours. We will not invent them. When a person is named, they will have a source, consent, and a photograph with rights.",
+    "empty": "Story wells are empty on purpose."
+  },
+  "participate": {
+    "kicker": "Participate",
+    "h2": "Six ways to walk in — none of them pretend to be open if they are not",
+    "paths": [
+      { "id": "visit", "intent": "I WANT TO VISIT", "title": "Visit", "body": "When a venue is published, this path will hold place, hours, and what to expect. It is empty of a pin today.", "cta": "Venue pending", "formStatus": "none" },
+      { "id": "volunteer", "intent": "I WANT TO VOLUNTEER", "title": "Volunteer", "body": "Community Puja already runs on volunteer labour. A BKS roster is not open on this page.", "cta": "Interest — coming soon", "formStatus": "coming-soon" },
+      { "id": "participate", "intent": "I WANT TO PARTICIPATE", "title": "Take part", "body": "Be present, help, follow the programme, or join the Samaj conversation. Participation is not enrolment.", "cta": "See paths", "formStatus": "none" },
+      { "id": "support", "intent": "I WANT TO SUPPORT", "title": "Support", "body": "A seed-funding idea was discussed for farmers. It is not approved and not collecting money here.", "cta": "Not collecting money", "formStatus": "none", "governance": "PENDING APPROVAL" },
+      { "id": "programme", "intent": "I WANT TO KNOW THE PROGRAMME", "title": "Programme", "body": "The timetable will be machine-readable when it is real.", "cta": "Open programme", "formStatus": "none" },
+      { "id": "contact", "intent": "I WANT TO CONTACT THE COMMITTEE", "title": "Contact", "body": "Names and numbers appear only when verified.", "cta": "Contact slots", "formStatus": "none" }
+    ]
+  },
+  "krishakSamaj": {
+    "kicker": "Krishak Samaj · not inside the ritual copy",
+    "h2": "The farm is a neighbour of this season — not its costume",
+    "lede": "Ram Sir named Krishak Samaj as the theme of Durga Puja this time. That is a meeting record. It is not yet a funded programme, and it must not rewrite the Puja as an agricultural advertisement.",
+    "themeClass": "PENDING APPROVAL",
+    "culturalTitle": "Cultural context",
+    "culturalBody": "Sharad and Puja sit in the same autumn. Rice, plantain, clay, river and community cooking already belong to Bengal’s material year. That is context. It is not a BKS scheme.",
+    "culturalClass": "RESEARCH-DERIVED",
+    "claimTitle": "What BKS has not approved on this page",
+    "claimBody": "About 5,000 farmers and ₹1 lakh seed each remain a discussion sketch for Ram Sir. This page will not show a rupee counter, UPI, 80G, a funding application, or a guaranteed farmer benefit.",
+    "claimClass": "PENDING APPROVAL"
+  },
+  "access": {
+    "kicker": "Access",
+    "h2": "This page should be usable. The venue is not yet documented.",
+    "digital": "The digital experience must work with keyboard, screen reader, visible focus, large targets, and reduced motion. Bengali and English are equal.",
+    "physical": "UNESCO and UN India published accessibility SOPs for Durga Puja in West Bengal in 2025. Those documents are a reference. They are not proof that a BKS gathering is step-free, has ramps, or has accessible toilets.",
+    "physicalClass": "PENDING APPROVAL"
+  },
+  "care": {
+    "kicker": "Care of place · Proposed",
+    "h2": "What a committee could explore",
+    "lede": "West Bengal already requires clay idols, forbids plaster of Paris, and sets rules for paint, thermocol, noise and immersion. BKS does not claim those practices until a named committee confirms them.",
+    "items": [
+      "Could explore: clay and natural colour, as WBPCB already asks organisers to undertake.",
+      "Could explore: bins for flowers and nirmalya before any immersion.",
+      "Recommended: no DJ on an immersion procession, in line with the state undertaking.",
+      "Proposed: a public note after the season on what was actually done — not a green badge in advance."
+    ]
+  },
+  "contact": {
+    "kicker": "Contact",
+    "h2": "Committee contact",
+    "lede": "Empty until names are verified.",
+    "empty": "No public telephone, email, or address has been approved for this experience."
+  },
+  "footer": {
+    "note": "Seasonal campaign layer. Canonical identity remains Bharatiya Krishak Samaj. Do not treat this prototype as production.",
+    "parent": "BKS Brand System is the parent identity. This repository does not replace it."
+  }
+}

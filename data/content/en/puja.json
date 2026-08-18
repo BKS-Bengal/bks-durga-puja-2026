@@ -1,0 +1,53 @@
+{
+  "meta": { "lang": "en", "note": "Mirrors prototype/index.html The Puja view. Live strings are data-en on that page." },
+  "h1": "The Puja",
+  "lede": "Worship, craft, food, music and neighbourhood. Festival facts are separated from what is not yet true of a BKS gathering.",
+  "unesco": {
+    "governance": "VERIFIED",
+    "class": "SOURCE FACT",
+    "sourceId": "SRC-UNESCO-001",
+    "title": "What UNESCO inscribed",
+    "body": "In December 2021, ‘Durga Puja in Kolkata’ was inscribed on UNESCO’s Representative List of the Intangible Cultural Heritage of Humanity. The inscribed element is Kolkata’s Puja — not this page, and not an unnamed venue."
+  },
+  "clay": {
+    "governance": "VERIFIED",
+    "class": "SOURCE FACT",
+    "sourceId": "SRC-UNESCO-001",
+    "title": "Clay",
+    "body": "Images are unfired clay, traditionally from the Ganga, made in artisanal workshops. Eyes are painted from Mahalaya. The image returns to water on the tenth day. That is the festival’s material fact, not a BKS workshop."
+  },
+  "dhak": {
+    "governance": "VERIFIED",
+    "class": "SOURCE FACT",
+    "sourceId": "SRC-UNESCO-001",
+    "title": "Dhak",
+    "body": "Traditional Bengali drumming is named in the UNESCO inscription. Dhakis keep that sound. No unnamed drummer is exhibited here, and this page does not autoplay audio."
+  },
+  "housePublic": {
+    "governance": "RESEARCH-DERIVED",
+    "class": "SOURCE FACT",
+    "sourceId": "SRC-UN-INDIA-001",
+    "title": "House and neighbourhood",
+    "body": "Household (bonedi bari) Pujas and public barowari / sarbojanin Pujas coexist. A city theme-pandal is not the same as a district neighbourhood gathering. BKS will not use those committee words until a real committee chooses them."
+  },
+  "bhog": {
+    "governance": "RESEARCH-DERIVED",
+    "class": "SOURCE FACT",
+    "sourceId": "SRC-HINDU-BHOG-001",
+    "title": "Bhog",
+    "body": "Bhog is food offered and then shared. Community kitchens often serve khichuri, mixed vegetables, fries, chutney and payesh. Whether BKS will serve bhog is not decided here."
+  },
+  "bksPosition": {
+    "governance": "PROPOSED",
+    "class": "BKS POSITIONING",
+    "sourceId": "SRC-BKS-001",
+    "title": "Where the Samaj sits",
+    "body": "Ram Sir has said the 2026 theme is Krishak Samaj. On this site that conversation lives on its own page. It does not rewrite Saptami, Sandhi Puja, or visarjan as farming."
+  },
+  "pending": {
+    "governance": "PENDING",
+    "class": "PENDING INFORMATION",
+    "title": "Not yet true of a BKS gathering",
+    "body": "Venue, committee, physical programme, photography, and ritual clocks from a named Panjika are not on file. This site will not invent a pandal list."
+  }
+}

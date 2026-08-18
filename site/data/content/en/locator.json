@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "lang": "en",
+    "governance": "UI/API-ready stub. No polling-booth data. Production voice agent is not called."
+  },
+  "kicker": "Locality first",
+  "h1": "Find your area",
+  "lede": "People usually know a district, village, locality or neighbourhood. They often do not know the assembly constituency or the polling booth. This entry is locality-first. Booth mapping is being prepared. We will not invent polling data.",
+  "hierarchyLabel": "Intended hierarchy",
+  "levels": [
+    { "id": "locality", "label": "Locality / area" },
+    { "id": "district", "label": "District" },
+    { "id": "zilla", "label": "Zilla Parishad / relevant administrative level" },
+    { "id": "ac", "label": "Assembly constituency" },
+    { "id": "booth", "label": "Polling booth" }
+  ],
+  "promptLabel": "Name the place you know",
+  "placeholder": "For example: Jatragachi, Shalda, a para, a village",
+  "ask": "Ask",
+  "empty": "Booth mapping is being prepared. We will not invent polling data.",
+  "heard": "We heard this locality name. District, constituency and booth remain unmapped until an approved API exists.",
+  "apiNote": "This component is ready for POST /api/locality-lookup. The contract is documented. It is not implemented and does not call Purulia production.",
+  "conversation": [
+    { "role": "agent", "text": "Tell me the area, village or neighbourhood you know. You do not need the booth number." }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "lang": "en",
+    "governance": "Krishak Samaj is the thematic bridge. IFS details live on the Integrated Farming page. Mission numbers live on The Mission."
+  },
+  "kicker": "Thematic bridge",
+  "h1": "Krishak Samaj",
+  "lede": "The 2026 Durga Puja theme names the agricultural community. The Puja stays the cultural door. Integrated Farming is the livelihood story that follows.",
+  "legend": "This page is people and purpose. The farm-as-system diagram lives on Integrated Farming. Funding arithmetic lives on The Mission.",
+  "why": {
+    "h2": "Why Krishak Samaj",
+    "badge": "BKS POSITIONING",
+    "body": "Ram Sir named Krishak Samaj as the 2026 Durga Puja theme: an experience on the BKS platform that connects culture with mobilising the agricultural community toward Integrated Farming Systems. That is direction, not a finished programme and not a second brand."
+  },
+  "farmer": {
+    "h2": "The farmer",
+    "badge": "BKS POSITIONING",
+    "body": "The farmer — the annadata — must never feel like a secondary object here. This site speaks of farmers we want to support. It does not call people beneficiaries, and it does not promise that anyone has already received seed funding."
+  },
+  "ecosystem": {
+    "h2": "The living ecosystem",
+    "badge": "SOURCE FACT",
+    "body": "Public research in West Bengal treats farming as more than a crop plot: animals, ponds, trees, compost, soil and water are planned so one residue becomes another input. That is an institutional idea, not a list of BKS farms.",
+    "cta": "See how the systems connect",
+    "href": "#ifs"
+  },
+  "themes": [
+    { "badge": "SOURCE FACT", "title": "Community", "body": "A public Puja is neighbourhood work. That is Bengal’s fact, not a BKS membership drive." },
+    { "badge": "SOURCE FACT", "title": "Seasonality", "body": "Sharadiya Puja sits in the harvest season. Nabapatrika binds the rite to nine plants." },
+    { "badge": "SOURCE FACT", "title": "Food", "body": "Bhog is a shared kitchen after offering. Whether BKS cooks is not decided here." },
+    { "badge": "SOURCE FACT", "title": "Bengal", "body": "Clay, dhak, homecoming. The Samaj is a guest in that culture." },
+    { "badge": "SOURCE FACT", "title": "Livelihoods and craft", "body": "Artisan labour is a seasonal economy. No unnamed kumor is exhibited here." },
+    { "badge": "PENDING", "title": "Knowledge on the main site", "body": "Deeper Integrated Farming reference copy is intended for the BKS West Bengal website. No URL is invented here." }
+  ]
+}
