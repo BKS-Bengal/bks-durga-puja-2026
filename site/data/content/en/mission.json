@@ -1,46 +1,45 @@
 {
   "meta": {
-    "lang": "en",
-    "governance": "All figures are mobilisation goals or calculated targets from SOURCE B. Not achieved results."
+    "lang": "en"
   },
-  "kicker": "Mobilisation goal",
+  "kicker": "The 5,000-farm initiative",
   "h1": "The Mission",
-  "lede": "The brief asks for a Durga Puja launch that invites India and global / NRI supporters to seed Integrated Farming pilots. Nothing below is money already raised, farmers already enrolled, or a live payment.",
-  "notice": "These numbers are an ambition from the Krishak Samaj brief. They are not a live campaign dashboard.",
+  "lede": "Join 5,000 Non-Resident Bengalis in establishing 5,000 integrated model farms across Bengal’s villages — launching from a live showcase at Durga Puja 2026.",
+  "notice": "One village farm. One NRB patron. ₹1 lakh seed per farm.",
   "stats": [
     {
       "id": "farmers",
-      "badge": "MOBILISATION GOAL",
+      "badge": "FARMS",
       "value": "5,000",
-      "label": "farmers we want to support",
-      "body": "A planned cohort, not a current enrolment count."
+      "label": "village integrated farms",
+      "body": "Local teams of 2–3 progressive farmers or FPOs put in land, labour and working capital."
     },
     {
-      "id": "constituencies",
-      "badge": "BRIEF ARITHMETIC",
-      "value": "~295",
-      "label": "constituencies in the sketch",
-      "body": "The brief says approximately 295 constituencies and about 15 people per constituency. That arithmetic is not presented as an Election Commission map. Existing public research records 294 assembly constituencies in West Bengal."
+      "id": "patrons",
+      "badge": "PATRONS",
+      "value": "5,000",
+      "label": "Non-Resident Bengali patrons",
+      "body": "Anyone with a native village in Bengal — whether they live abroad or in Kolkata."
     },
     {
       "id": "seed",
-      "badge": "TARGET",
+      "badge": "SEED",
       "value": "₹1 lakh",
-      "label": "seed funding per farmer (goal)",
-      "body": "A seed-funding target so a farmer can begin an Integrated Farming pilot in their locality. Not a disbursement record."
+      "label": "per farm",
+      "body": "In full, or ₹20,000 every two months over the year."
     },
     {
       "id": "total",
-      "badge": "CALCULATED TARGET",
+      "badge": "SCALE",
       "value": "₹50 crore",
-      "label": "implied funding requirement",
-      "body": "5,000 farmers × ₹1,00,000 per farmer = ₹50 crore. This is derived arithmetic, not money in hand."
+      "label": "5,000 × ₹1 lakh",
+      "body": "The mobilisation to seed Bengal’s agricultural resurgence between Puja 2026 and Puja 2027."
     }
   ],
   "how": {
-    "h2": "How people can participate",
-    "body": "Supporters in India and overseas, including NRI donors, are named in the brief as the intended audience. This website does not collect donations, UPI, bank details, or tax-benefit claims. If a real donation system is later approved, it should plug into Participate without rewriting this story.",
-    "cta": "Express interest",
-    "href": "#participate"
+    "h2": "How people take part",
+    "body": "Adopt a village farm, become a cluster or zonal Puja patron, or name your ancestral district so BKS can match you to soil you come from. Digital tracking follows every farm.",
+    "cta": "Adopt a village farm",
+    "href": "#fund"
   }
 }

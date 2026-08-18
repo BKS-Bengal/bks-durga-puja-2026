@@ -7,6 +7,9 @@ Thumbs.db
 *.log
 _qa/
 _checkpoints/
+_tmp*
+.agents/
+skills-lock.json
 data/omni-social/
 data/omnisocial/
 __pycache__/

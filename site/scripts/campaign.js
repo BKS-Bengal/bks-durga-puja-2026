@@ -43,9 +43,6 @@
     if (whenEl) whenEl.textContent = when;
     if (whereEl) whereEl.textContent = where;
     if (datesEl) datesEl.textContent = when + " · " + where;
-    const cats = (puja.categories || []).length;
-    const catCount = document.getElementById("count-categories");
-    if (catCount) catCount.textContent = String(cats || 7);
   }
 
   function downloadJson(filename, payload) {
@@ -194,7 +191,7 @@
       escapeHtml(d.recPressCta) + "</a><a class='btn btn-secondary' href='https://www.bkswbengal.org' rel='noopener noreferrer'>" +
       escapeHtml(d.recOrgCta) + "</a></p></section>" +
 
-      "<section class='campaign-section' id='sponsor'>" +
+      "<section class='campaign-section' id='sponsor-puja'>" +
       "<p class='kicker'>" + escapeHtml(d.sponsorEyebrow) + "</p><h2>" + escapeHtml(d.sponsorTitle) + "</h2>" +
       "<p>" + escapeHtml(d.sponsorText) + "</p>" +
       "<div class='sponsor-why'><article><h3>" + escapeHtml(d.why1) + "</h3><p>" + escapeHtml(d.why1Text) +
@@ -289,5 +286,5 @@
     }
   }
 
-  global.BksCampaign = { render: render, applyStrings: applyStrings };
+  global.BksCampaign = { render: render, applyStrings: applyStrings, downloadJson: downloadJson };
 })(window);

@@ -27,8 +27,9 @@
   </script>
   <link rel="icon" href="assets/bks-seal-96.png" type="image/png">
   <link rel="stylesheet" href="styles/fonts.css">
-  <link rel="stylesheet" href="styles/tokens.css">
-  <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="styles/tokens.css?v=art7">
+  <link rel="stylesheet" href="styles/app.css?v=art7">
+  <link rel="stylesheet" href="styles/art.css?v=art7">
 </head>
 <body>
   <a class="skip" href="#main" data-ui="skip">Skip to content</a>
@@ -75,36 +76,40 @@
       <div class="hero-band hero-band--photo">
         <div class="wrap-wide hero-grid">
           <div class="hero-copy">
-            <p class="hero-kicker-live" data-campaign="heroKicker">First of its kind in West Bengal</p>
+            <p class="hero-kicker-live" data-campaign="heroKicker">Bharatiya Krishak Samaj · West Bengal</p>
             <p class="hero-whenwhere" id="hero-dates">16–20 October 2026 · Kolkata, West Bengal</p>
-            <h1 data-campaign="heroTitle">A Durga Puja for the annadata.</h1>
-            <p class="lede lede-live" data-campaign="heroLead">Krishak Samaj Puja is the first Durga Puja in West Bengal built around sustainable agriculture — the soil, the seed, the water and the hands that feed Bengal. Presented by Bharatiya Krishak Samaj, West Bengal, it carries a state-wide farmer awards ceremony inside the pandal, honouring the cultivators whose work usually goes unseen.</p>
+            <h1 data-campaign="heroTitle">A Durga Puja that sits with the farmer.</h1>
+            <p class="lede lede-live" data-campaign="heroLead">This Sharadiya, the Puja opens the door. Krishak Samaj names the annadata. Integrated Farming is the livelihood we will show.</p>
             <dl class="hero-meta">
               <div><dt data-campaign="metaWhenLabel">When</dt><dd id="meta-when">16–20 October 2026</dd></div>
               <div><dt data-campaign="metaWhereLabel">Where</dt><dd id="meta-where">Kolkata, West Bengal</dd></div>
               <div><dt data-campaign="metaWhoLabel">Presented by</dt><dd data-campaign="metaWho">Bharatiya Krishak Samaj, West Bengal</dd></div>
             </dl>
             <div class="cta-row">
-              <a class="btn btn-primary" href="#sponsor" data-campaign="heroCta1">Become a sponsor</a>
-              <a class="btn btn-ghost" href="#nominate" data-campaign="heroCta2">Nominate a farmer</a>
+              <a class="btn btn-primary" href="#mission" data-campaign="heroCta1">Know the Initiative</a>
+              <a class="btn btn-ghost" href="#puja" data-campaign="heroCta2">The Puja</a>
             </div>
             <p class="hero-credit" data-campaign="heroCredit">Pictured: Durga Puja Mahotsav 2025 at the IIT Kharagpur Research Park, organised by KarmYog for the 21st Century Foundation.</p>
           </div>
-          <aside class="nom-card" aria-label="Nominations">
-            <p class="kicker" data-campaign="countEyebrow">Nominations open</p>
-            <p class="nom-card-figure"><strong id="count-nominations">0</strong> <span data-campaign="countNominationsLabel">farmers nominated</span></p>
+          <aside class="nom-card" aria-label="Mobilisation">
+            <p class="kicker" data-campaign="countEyebrow">The initiative</p>
+            <p class="nom-card-figure"><strong id="count-nominations">5,000</strong> <span data-campaign="countNominationsLabel">village farms</span></p>
             <div class="nom-card-split">
-              <p><strong id="count-districts">0</strong> <span data-campaign="countDistrictsLabel">districts represented</span></p>
-              <p><strong id="count-categories">7</strong> <span data-campaign="countCategoriesLabel">award categories</span></p>
+              <p><strong id="count-districts">5,000</strong> <span data-campaign="countDistrictsLabel">NRB patrons</span></p>
+              <p><strong id="count-seed">₹1 lakh</strong> <span data-campaign="countCategoriesLabel">seed per farm</span></p>
             </div>
-            <p class="muted" data-campaign="countNote">Any farmer in West Bengal may be nominated, by themselves or by anyone who knows their work. There is no fee to enter and no fee to win.</p>
+            <p class="muted" data-campaign="countNote">One farm. One patron. ₹1 lakh seeds an integrated model farm — in full, or ₹20,000 every two months.</p>
           </aside>
         </div>
       </div>
 
-      <div class="diff-strip wrap-wide" id="diff-strip"></div>
+      <section class="story-arc" id="story-arc" aria-label="Narrative"></section>
 
       <div class="wrap-wide">
+        <div id="nrb-root"></div>
+
+        <div class="diff-strip" id="diff-strip"></div>
+
         <dl class="facts">
           <div><dt data-en="Who" data-bn="কে" data-hi="कौन">Who</dt><dd data-hero="who">Bharatiya Krishak Samaj, West Bengal</dd></div>
           <div><dt data-en="What" data-bn="কী" data-hi="क्या">What</dt><dd data-hero="what">A seasonal Durga Puja themed on Krishak Samaj.</dd></div>
@@ -116,15 +121,13 @@
 
         <div id="campaign-root"></div>
 
-        <section class="story-arc" id="story-arc" aria-label="Narrative"></section>
-
         <section class="explore" aria-labelledby="explore-heading">
           <div id="explore-copy">
             <h2 id="explore-heading">Inside this gathering</h2>
             <p class="muted">Six rooms. The Puja stays the cultural entry.</p>
           </div>
           <div class="explore-grid">
-            <a class="explore-card" href="#puja">
+            <a class="explore-card explore-card--puja" href="#puja">
               <p class="kicker" data-en="Culture" data-bn="সংস্কৃতি" data-hi="संस्कृति">Culture</p>
               <h2 data-en="The Puja" data-bn="পূজা" data-hi="पूजा">The Puja</h2>
               <p data-en="What the days mean. What BKS does not yet claim." data-bn="দিনগুলোর অর্থ। বি কে এস এখনও যা দাবি করে না।" data-hi="दिनों का अर्थ। बीकेएस अभी जो दावा नहीं करता।">What the days mean. What BKS does not yet claim.</p>
@@ -139,20 +142,20 @@
               <h2 data-en="Integrated Farming" data-bn="সমন্বিত চাষ" data-hi="समेकित कृषि">Integrated Farming</h2>
               <p data-en="How crop, animals, water and markets connect." data-bn="ফসল, পশু, জল ও বাজার কীভাবে যুক্ত।" data-hi="फसल, पशु, जल और बाज़ार कैसे जुड़ते हैं।">How crop, animals, water and markets connect.</p>
             </a>
+            <a class="explore-card" href="#demo">
+              <p class="kicker" data-en="Showcase" data-bn="প্রদর্শনী" data-hi="प्रदर्शन">Showcase</p>
+              <h2 data-en="Demo farm" data-bn="ডেমো খামার" data-hi="डेमो फार्म">Demo farm</h2>
+              <p data-en="East Kolkata Wetlands, 500 metres from Sector V. The live Durga Puja pavilion, being built." data-bn="ইস্ট কলকাতা ওয়েটল্যান্ডস, সেক্টর ফাইভ থেকে ৫০০ মিটার। দুর্গাপূজার জীবন্ত প্যাভিলিয়ন, নির্মাণাধীন।" data-hi="ईस्ट कोलकाता वेटलैंड्स, सेक्टर V से 500 मीटर। दुर्गा पूजा का जीवंत पवेलियन, निर्माणाधीन।">East Kolkata Wetlands, 500 metres from Sector V. The live Durga Puja pavilion, being built.</p>
+            </a>
+            <a class="explore-card" href="#fund">
+              <p class="kicker" data-en="NRB" data-bn="এনআরবি" data-hi="एनआरबी">NRB</p>
+              <h2 data-en="Fund a farm" data-bn="খামারে বীজ" data-hi="फार्म का बीज">Fund a farm</h2>
+              <p data-en="₹1 lakh seeds one village farm, in full or ₹20,000 every two months." data-bn="১ লক্ষ টাকা একটি গ্রামের খামারের বীজ, একবারে অথবা দুই মাস অন্তর ২০,০০০ টাকা।" data-hi="₹1 लाख एक गाँव फार्म का बीज, एक बार में या हर दो महीने ₹20,000।">₹1 lakh seeds one village farm, in full or ₹20,000 every two months.</p>
+            </a>
             <a class="explore-card" href="#mission">
               <p class="kicker" data-en="Ambition" data-bn="লক্ষ্য" data-hi="लक्ष्य">Ambition</p>
               <h2 data-en="The Mission" data-bn="অভিযান" data-hi="अभियान">The Mission</h2>
               <p data-en="About 5,000 farmers. A goal, not a result." data-bn="প্রায় পাঁচ হাজার কৃষক। লক্ষ্য, ফল নয়।" data-hi="लगभग पाँच हज़ार किसान। लक्ष्य, परिणाम नहीं।">About 5,000 farmers. A goal, not a result.</p>
-            </a>
-            <a class="explore-card" href="#participate">
-              <p class="kicker" data-en="Action" data-bn="কাজ" data-hi="कर्म">Action</p>
-              <h2 data-en="Participate" data-bn="যোগদান" data-hi="सहभागिता">Participate</h2>
-              <p data-en="Express interest. No payment is taken here." data-bn="আগ্রহ জানান। এখানে পেমেন্ট নেই।" data-hi="रुचि दिखाएँ। यहाँ भुगतान नहीं।">Express interest. No payment is taken here.</p>
-            </a>
-            <a class="explore-card" href="#programme">
-              <p class="kicker" data-en="Calendar" data-bn="পঞ্জিকা" data-hi="पञ्जिका">Calendar</p>
-              <h2 data-en="Programme" data-bn="কার্যক্রম" data-hi="कार्यक्रम">Programme</h2>
-              <p data-en="Civic holidays now. Named BKS events: to be announced." data-bn="এখন নাগরিক ছুটি। নামসহ অনুষ্ঠান: ঘোষিত হবে।" data-hi="अभी नागरिक छुट्टियाँ। नामित बीकेएस कार्यक्रम: घोषित होंगे।">Civic holidays now. Named BKS events: to be announced.</p>
             </a>
           </div>
         </section>
@@ -321,6 +324,6 @@
   </footer>
   <script src="scripts/offline-data.js"></script>
   <script src="scripts/campaign.js" defer></script>
-  <script src="scripts/app.js" defer></script>
+  <script src="scripts/app.js?v=art4" defer></script>
 </body>
 </html>

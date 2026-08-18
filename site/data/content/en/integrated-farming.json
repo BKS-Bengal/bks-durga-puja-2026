@@ -1,66 +1,255 @@
 {
   "meta": {
     "lang": "en",
-    "governance": "SOURCE FACT describes public research and policy. Not BKS farms, results, or schemes."
+    "source": "Integrated Farming System content blueprint for the BKS website, 18 Aug 2026"
   },
-  "kicker": "Livelihood system",
-  "h1": "Integrated Farming",
-  "lede": "Integrated Farming is a planned household system: the residue of one enterprise becomes an input for another. It is not a pile of unrelated agricultural activities, and it is not a BKS trademark.",
+  "kicker": "Rural resurgence · dedicated page",
+  "h1": "What is an Integrated Farming System (IFS)?",
+  "lede": "An Integrated Farming System (IFS) is a holistic, circular agricultural model where multiple agricultural enterprises—such as crop cultivation, horticulture, dairy, poultry, aquaculture, agroforestry, and beekeeping—are combined on a single piece of land. In a traditional monoculture setup, a farmer relies on one single crop (like paddy) and bears huge market, weather, and input risks. In an Integrated Farming System, the waste or by-product of one component becomes the direct, free input for another. This closed-loop system slashes external input costs, maximizes soil vitality, optimizes water use, and generates multiple, steady streams of daily, monthly, and seasonal income.",
+  "photoCap": "Durga Puja Mahotsav 2025, IIT Kharagpur Research Park — KarmYog for the 21st Century Foundation.",
   "what": {
-    "h2": "What Integrated Farming is",
-    "badge": "SOURCE FACT",
-    "body": "ICAR and the All India Coordinated Research Project on Integrated Farming Systems describe a resource-saving design — crop, livestock, aquaculture, trees and composting planned so they help each other. Waste is treated as a resource in the wrong place, not as rubbish. That is a national research concept."
+    "h2": "Monoculture versus a closed loop",
+    "body": "One standing crop carries the whole year’s risk. An integrated farm turns leftover into input — so work, water and cash move through the year.",
+    "contrast": [
+      {
+        "id": "mono",
+        "title": "Single crop",
+        "body": "One standing crop, often paddy. Market, weather and bought inputs hit the whole year at once."
+      },
+      {
+        "id": "ifs",
+        "title": "Integrated loop",
+        "body": "Several enterprises on the same land. One leftover becomes the next free input. Daily, monthly and seasonal income together."
+      }
+    ]
   },
-  "westBengal": {
-    "h2": "West Bengal context",
-    "badge": "SOURCE FACT",
+  "need": {
+    "h2": "Why West Bengal Urgently Needs IFS",
+    "intro": "West Bengal is one of the most biologically fertile regions in the world, blessed with rich alluvial soil, abundant groundwater, and varied agro-climatic zones. However, the state’s agrarian economy faces several structural bottlenecks:",
     "items": [
-      { "title": "Holdings", "body": "Bidhan Chandra Krishi Viswavidyalaya records that about 96% of farmers in West Bengal are small or marginal. That is a state fact, not a BKS membership count." },
-      { "title": "Agro-climatic zones", "body": "ICAR-ATARI Kolkata works with Krishi Vigyan Kendras across six zones of West Bengal: northern hill, terai and teesta, old alluvial, new alluvial, red and laterite, and coastal saline. Location-specific models matter because the state is not one farm." },
-      { "title": "Water in the farm", "body": "Rice–fish in seasonally flooded fields and backyard pond culture are documented public research themes in Bengal, including work that involves women. Those people are not BKS testimonials." },
-      { "title": "Raised and sunken beds", "body": "In low Gangetic land, a published BCKV / AICRP design holds vegetables on the raised bed and rice and fish in the sunken bed in the rains. Not a BKS invention." }
+      {
+        "title": "Extreme Land Fragmentation",
+        "body": "Over 90% of farmers in Bengal are small and marginal landholders, owning less than 1 hectare. Single-crop farming on tiny parcels simply cannot sustain a modern rural household."
+      },
+      {
+        "title": "High Input Costs & Low Margins",
+        "body": "Heavy dependence on commercial chemical fertilizers, hybrid seeds, and pesticides eats away farmer margins and degrades long-term soil fertility."
+      },
+      {
+        "title": "Climate & Flood Vulnerabilities",
+        "body": "Monsoonal flooding, cyclone impacts, and delayed rains frequently wipe out single standing crops."
+      },
+      {
+        "title": "Seasonality of Cash Flow",
+        "body": "Monoculture leaves farmers cash-poor between harvesting seasons, pushing them into vicious debt cycles with middlemen."
+      }
+    ],
+    "outro": "The Integrated Farming System directly solves these vulnerabilities by maximizing the productivity per square meter of small land parcels, insulating farmers from market price crashes, and restoring natural soil resilience."
+  },
+  "pillars": {
+    "h2": "The Core Modules of a Bengal Model Integrated Farm",
+    "intro": "A standard BKS model integrated farm (designed for 1 to 2.5 acre holdings) is structured around five symbiotic pillars.",
+    "items": [
+      {
+        "id": "pond",
+        "letter": "A",
+        "title": "Aquaculture & Water Harvesting (The Central Engine)",
+        "body": "At the heart of the farm lies a well-engineered pond. It serves as both a rainwater harvesting reservoir and a high-yield fishery for native carps (Rohu, Katla, Mrigal) and high-value indigenous fish. The pond water is naturally enriched with nutrients, making it ideal for gravity-fed micro-irrigation."
+      },
+      {
+        "id": "bund",
+        "letter": "B",
+        "title": "Bund & Embankment Multi-Tier Horticulture",
+        "body": "The raised bunds (dykes) surrounding the pond are never left idle. They are planted in three vertical tiers. Canopy Tier: Coconut, Betel nut (Supari), Drumstick (Sajna), and Papaya. Climbing Tier: Trellises built over the pond edge for bottle gourd (Lau), bitter gourd (Karela), and pointed gourd (Potol). Ground Tier: High-value turmeric, ginger, and seasonal green leafy vegetables."
+      },
+      {
+        "id": "stock",
+        "letter": "C",
+        "title": "Livestock & Poultry Integration",
+        "body": "Directly adjacent to or cantilevered over the farm pond, small-scale dairy units (2–4 indigenous or crossbred cows) and poultry/duckery sheds are installed. Duck-Fish Symbiosis: Ducks forage on aquatic weeds and insects while their droppings drop directly into the pond as natural plankton feed. Cow Dung & Bio-Gas: Cow dung and urine fuel an on-site mini-biogas unit (providing domestic cooking fuel and lighting) and produce rich bio-slurry for composting."
+      },
+      {
+        "id": "soil",
+        "letter": "D",
+        "title": "Zero-Cost Bio-Inputs & Soil Regeneration",
+        "body": "No crop residue or animal waste leaves the farm. Through vermicomposting beds, Jeevamrutha preparation tanks, and biochar pits, farm biomass is converted directly into organic compost, eliminating the need for expensive chemical fertilizers."
+      },
+      {
+        "id": "tech",
+        "letter": "E",
+        "title": "Smart Technology & Precision Monitoring (AI-Enabled)",
+        "body": "Integrating 21st-century technology into traditional agriculture: soil moisture sensors and automated drip irrigation; solar-powered aeration for fish ponds; real-time digital crop health diagnostics and yield tracking connected to the BKS network."
+      }
+    ]
+  },
+  "loops": {
+    "h2": "How the Circular Economy of IFS Works",
+    "intro": "The power of an integrated farm lies in its zero-waste cyclical loops.",
+    "items": [
+      {
+        "from": "Pond Silt",
+        "to": "Fields",
+        "body": "Nutrient-dense bottom silt from the pond is excavated annually to enrich vegetable and crop beds."
+      },
+      {
+        "from": "Crop Residue",
+        "to": "Livestock",
+        "body": "Paddy straw, maize stalks, and green fodder grown on field borders feed the cattle and goats."
+      },
+      {
+        "from": "Manure",
+        "to": "Energy and Organic Fertilizer",
+        "body": "Cattle manure produces clean biogas for energy, while residual bio-slurry fertilizes the vegetable patches and enhances pond plankton."
+      },
+      {
+        "from": "Horticulture Leaves",
+        "to": "Fishery Feed",
+        "body": "Surplus vegetable leaves, azolla culture, and kitchen greens directly supplement fish and poultry feed."
+      }
+    ],
+    "footnote": "This closed-loop system reduces external farming expenditure by 50% to 70% while improving total output value."
+  },
+  "impact": {
+    "h2": "Economic & Social Impact for Bengal Farmers",
+    "caveat": "Figures below are illustrative, model-based potential. Actual outcomes vary by farm size, location, management, crop mix, input costs and market conditions.",
+    "items": [
+      {
+        "title": "365-Day Cash Flow",
+        "body": "Daily income from milk and eggs, weekly income from fresh vegetables and green herbs, monthly income from fish harvest, and seasonal income from grain/fruit harvests."
+      },
+      {
+        "title": "3x to 5x Income Multiplier",
+        "body": "A marginal farmer earning ₹40,000 to ₹60,000 annually under single-crop paddy can generate ₹2,00,000 to ₹3,50,000+ net profit per acre per year under a well-managed IFS."
+      },
+      {
+        "title": "Climate Resilience",
+        "body": "Even if heavy unseasonal rains damage a standing field crop, the aquaculture, dairy, fruit trees, and poultry units continue generating income unhindered."
+      },
+      {
+        "title": "Youth Re-engagement",
+        "body": "Transforming farming into a multi-enterprise, tech-enabled micro-business stops distress migration and attracts rural youth to stay and build local enterprises."
+      }
     ]
   },
   "viz": {
-    "h2": "How the systems connect",
-    "intro": "Relationships, not a sector list. Each node feeds another. None of these is a live BKS facility.",
+    "h2": "How the pieces feed each other",
+    "intro": "The ring reads clockwise. The list under it names each transfer. Tap a card to highlight what it feeds next.",
     "center": "Farm household",
-    "summary": "Crop residue can feed livestock and compost. Livestock manure and compost return to soil. Pond and field water support fish, duck and horticulture. Soil and water hold the system. Produce moves toward storage, processing and markets. Income returns to the household. Climate stress is why diversification is researched — not a promise this site can keep.",
+    "summary": "Residue feeds livestock and compost. Manure and compost return to soil. Pond and field water support fish, duck and horticulture. Produce moves to market. Income returns to the household.",
     "nodes": [
-      { "id": "crop", "title": "Crop", "feeds": ["livestock", "compost", "market"], "body": "Cereals, pulses, oilseeds and fodder. Residue is feed or compost, not waste." },
-      { "id": "horticulture", "title": "Horticulture", "feeds": ["market", "household"], "body": "Vegetables, fruit and homestead trees on the same holding." },
-      { "id": "livestock", "title": "Livestock", "feeds": ["compost", "household", "market"], "body": "Dairy, poultry, duckery, and goat, sheep or piggery where relevant. Dung and leftover feed return to soil." },
-      { "id": "fishery", "title": "Fishery", "feeds": ["household", "market", "compost"], "body": "Ponds and rice–fish. Nutrient-rich pond silt can return to fields." },
-      { "id": "allied", "title": "Bee, mushroom", "feeds": ["market", "compost"], "body": "WBSRLM cluster guidance names bee keeping and mushroom among interlocking livelihoods. That is government architecture, not a BKS product." },
-      { "id": "compost", "title": "Waste / compost", "feeds": ["soil"], "body": "Crop residue, dung and pond silt as compost or vermicompost." },
-      { "id": "soil", "title": "Soil", "feeds": ["crop", "horticulture"], "body": "Organic return and less dependence on bought nutrients — a research aim, not a BKS result." },
-      { "id": "water", "title": "Water", "feeds": ["crop", "fishery", "horticulture"], "body": "Field, pond and homestead water planned together." },
-      { "id": "market", "title": "Market", "feeds": ["household"], "body": "Storage, processing, retail and Farmer Producer Organisations exist in public policy. This site does not run a warehouse or a shop." },
-      { "id": "household", "title": "Household income", "feeds": ["crop"], "body": "Diversified livelihood and more regular work across the year — the reason researchers study IFS, not a guaranteed outcome." }
+      {
+        "id": "crop",
+        "title": "Crop",
+        "feeds": [
+          "livestock",
+          "compost",
+          "market"
+        ],
+        "body": "Cereals, pulses, oilseeds and fodder. Residue is feed or compost."
+      },
+      {
+        "id": "horticulture",
+        "title": "Horticulture",
+        "feeds": [
+          "market",
+          "household"
+        ],
+        "body": "Vegetables, fruit and homestead trees on the same holding."
+      },
+      {
+        "id": "livestock",
+        "title": "Livestock",
+        "feeds": [
+          "compost",
+          "household",
+          "market"
+        ],
+        "body": "Dairy, poultry, duckery. Dung and leftover feed return to soil."
+      },
+      {
+        "id": "fishery",
+        "title": "Fishery",
+        "feeds": [
+          "household",
+          "market",
+          "compost"
+        ],
+        "body": "Ponds and rice–fish. Pond silt returns to fields."
+      },
+      {
+        "id": "allied",
+        "title": "Bee, mushroom",
+        "feeds": [
+          "market",
+          "compost"
+        ],
+        "body": "Allied livelihoods on the same holding."
+      },
+      {
+        "id": "compost",
+        "title": "Compost",
+        "feeds": [
+          "soil"
+        ],
+        "body": "Crop residue, dung and pond silt as compost."
+      },
+      {
+        "id": "soil",
+        "title": "Soil",
+        "feeds": [
+          "crop",
+          "horticulture"
+        ],
+        "body": "Organic return keeps the loop closed."
+      },
+      {
+        "id": "water",
+        "title": "Water",
+        "feeds": [
+          "crop",
+          "fishery",
+          "horticulture"
+        ],
+        "body": "Field, pond and homestead water planned together."
+      },
+      {
+        "id": "market",
+        "title": "Market",
+        "feeds": [
+          "household"
+        ],
+        "body": "Produce, milk, eggs, fish and fruit toward local markets and FPOs."
+      },
+      {
+        "id": "household",
+        "title": "Household",
+        "feeds": [
+          "crop"
+        ],
+        "body": "Daily, monthly and seasonal cash on the same land."
+      }
     ]
   },
-  "circular": {
-    "h2": "Circular resource use",
-    "badge": "SOURCE FACT",
-    "body": "The point of integration is complementarity: product of one component as input of another, less bought chemical input, and a more even calendar of work. Climate-resilient farming is an aim of this research, not a certificate this page can issue."
-  },
-  "notBks": {
-    "h2": "What this page does not claim",
-    "badge": "PENDING",
+  "prototype": {
+    "h2": "The East Kolkata Wetland Prototype & 5,000 Village Scale-Up",
+    "status": "To prove this model at scale, Bharatiya Krishak Samaj (BKS) is constructing the First Live IFS Demo Farm in the East Kolkata Wetlands, adjacent to Salt Lake Sector V.",
     "items": [
-      "BKS does not already run these models.",
-      "Named on-station examples such as the Gayeshpur 0.66 ha AICRP model are university farms, not BKS farms.",
-      "WBSRLM Integrated Farming Clusters, Mahila Kisan cadres and producer groups are government livelihoods architecture.",
-      "Agro-tourism appears in state homestay policy as a possibility, not as a live BKS product."
+      {
+        "title": "Live Demonstration",
+        "body": "Showcases real-time aquaculture, raised-bund organic horticulture, solar integration, and precision livestock management."
+      },
+      {
+        "title": "Durga Puja 2026 Showcase",
+        "body": "Serving as the central live pavilion for Krishak Samaj Puja 2026, offering millions of urban and diaspora visitors a firsthand view of modern sustainable farming."
+      },
+      {
+        "title": "Mission 5,000 Farms",
+        "body": "Using this prototype as the operational blueprint, BKS is identifying 5,000 farming teams across Bengal's districts to establish 5,000 localized integrated model farms between Durga Puja 2026 and 2027, powered by global Non-Resident Bengali patronage and local farmer producer organizations."
+      }
     ]
   },
-  "knowledge": {
-    "h2": "Knowledge layer",
-    "badge": "PENDING",
-    "body": "A fuller Integrated Farming reference is intended for the BKS West Bengal website. This Puja microsite keeps a campaign-sized explainer and sources. The public knowledge URL is not invented here.",
-    "cta": "Coming soon — BKS knowledge",
-    "disabled": true
-  },
+  "ctaFund": "Adopt a village farm",
+  "ctaDemo": "See the live demo farm",
   "sourcesCta": "Research sources",
   "sourcesHref": "#sources"
 }

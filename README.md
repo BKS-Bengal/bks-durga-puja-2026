@@ -1,40 +1,31 @@
 # BKS Durga Puja 2026
 
-Isolated workstream for the **seasonal** digital experience. Not a second BKS identity. Not production.
+Isolated static microsite for the **seasonal** Krishak Samaj Puja 2026 experience. Not a second BKS identity. Not production.
 
-**Phase:** offline site — Krishak Samaj / Integrated Farming / 5,000-farmer mobilisation  
-**Authority:** Krishak Samaj brief (SOURCE B), with Phase 0/1 reports as status boundary (SOURCE A)  
-**CONF-PUJA-001:** **OPEN**. Treated as a seasonal campaign until explicitly approved otherwise.
+**Canonical implementation:** `site/` (HTML / CSS / JS, hash routes, offline JSON).  
+Do not mix with Purulia Voice Agent, OmniSocial, Amul + GOBARdhan, or other chapter production. See `ISOLATION.md`.
 
-See `BKS-DURGA-PUJA-2026-NEXT-VERSION.md` for audit, requirements, IA, and architecture.
+## Local preview
 
-## Do not mix with
-
-Purulia Voice Agent production, Purulia booth extraction, Newtown / Vatika, Biophilic, OmniSocial production, BKS Brand System production, Supabase, existing Vercel sites, Amul + GOBARdhan.
-
-See `ISOLATION.md`.
-
-## Offline site
-
-The finished local copy is the `site` folder. Double-click `OPEN-OFFLINE.bat`, or open `site/index.html`. No internet is required.
-
-Optional local server, from `site`:
+From `site`:
 
 ```
-python -m http.server 8765
+python -m http.server 8780
 ```
 
-Then open **http://127.0.0.1:8765/**
+Then open **http://127.0.0.1:8780/**
 
-- Bengali: **http://127.0.0.1:8765/?lang=bn**
-- Hindi: **http://127.0.0.1:8765/?lang=hi**
+- Bengali: **http://127.0.0.1:8780/?lang=bn**
+- Hindi: **http://127.0.0.1:8780/?lang=hi**
 
-No payment is collected. Interest forms download on this device only. Venue, committee and pandal remain to be announced. This folder is not a production deploy.
+Or double-click `OPEN-OFFLINE.bat`. No payment is collected. Forms download JSON on this device only. Venue, committee and pandal remain to be announced.
+
+Bengali and Hindi copy is **DRAFT — NATIVE REVIEW REQUIRED**. English Integrated Farming copy is the restored source text.
 
 ## Brand
 
-Canonical seal and digital tokens are copied from the BKS Brand System for local use only. Do not redraw the seal. Do not add a vermillion palette.
+Keep `site/assets/bks-seal-96.png` as the header seal. Keep `site/assets/puja-2025/idol-durga-2025.jpg` as the hero photograph. Do not redraw the seal. Do not replace the hero image.
 
 ## Deployment
 
-Do not deploy in this phase. Deployment target is ambiguous until named. Never overwrite chapter production.
+Do not deploy until explicitly asked. Never overwrite chapter production (`bkswbengal.org` or other live properties).

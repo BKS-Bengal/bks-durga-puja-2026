@@ -1,5 +1,6 @@
 /* BKS digital tokens — copied from Brand System v1.2.0 as documented values.
-   Not a new palette. Logo pigments are logo-only. No seasonal vermillion. */
+   Logo pigments stay logo-only. Seasonal festival tints below are ADDITIONS
+   for this Durga Puja microsite. They do not replace brand green or gold. */
 
 :root {
   --bks-logo-green-text: #0e5306;
@@ -9,16 +10,15 @@
   --color-brand-primary-soft: #1f5237;
   --color-brand-primary-deep: #0f2818;
   --color-brand-secondary: #c98a1f;
-  /* Documented Phase-1 addition: tint of brand gold for draft/governance banners.
-     Not a vermillion seasonal palette. Not a festival token. */
+  /* Documented Phase-1 addition: tint of brand gold for draft/governance banners. */
   --color-brand-secondary-tint: #fbeecb;
   --color-brand-accent: #a6461f;
   --color-surface-default: #f6f1e4;
   --color-surface-card: #fffdf7;
   --color-surface-raised: #ffffff;
   --color-text-primary: #201a10;
-  --color-text-secondary: #4a3f2a;
-  --color-text-muted: #7a6d52;
+  --color-text-secondary: #3d3424;
+  --color-text-muted: #5a4e36;
   --color-text-on-brand: #f3ecdb;
   --color-border-default: #ddd0ab;
   --color-action-primary: #c98a1f;
@@ -37,12 +37,20 @@
   --radius-card: 14px;
   --shadow-quiet: 0 1px 0 rgba(32, 26, 16, 0.04), 0 12px 32px rgba(15, 40, 24, 0.06);
 
-  /* Editorial slot materials — derived from BKS surfaces, not a festival palette.
-     Used only for honest photograph-pending fields (clay, light, weave). */
+  /* Editorial slot materials — derived from BKS surfaces. */
   --slot-clay: #d8c4a0;
   --slot-field: #1a3f2a;
   --slot-lamp: #efe4c8;
   --slot-weave: #cbb892;
+
+  /* Seasonal Durga Puja microsite tints. Additive to BKS green/gold. */
+  --fest-sindoor: #8f2d1e;
+  --fest-sindoor-deep: #5c1c14;
+  --fest-marigold: #e0c27a;
+  --fest-turmeric: #d4a017;
+  --fest-terracotta: #c45c32;
+  --fest-pond: #143d4a;
+  --fest-soil: #4a3424;
 }
 
 @media (prefers-reduced-motion: reduce) {

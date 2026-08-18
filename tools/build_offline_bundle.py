@@ -22,6 +22,7 @@ PACK_FILES = [
     "participate.json",
     "locator.json",
     "sources.json",
+    "nrb.json",
 ]
 
 FONT_CSS_URL = (
@@ -73,6 +74,7 @@ def build_bundle():
                 "participate": "participate",
                 "locator": "locator",
                 "sources": "sources",
+                "nrb": "nrb",
             }
             pack[mapping[name.replace(".json", "")]] = load_json(path)
         packs[lang] = pack

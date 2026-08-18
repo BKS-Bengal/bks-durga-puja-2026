@@ -38,8 +38,12 @@
     "awards": "Awards",
     "record": "2025 record",
     "nominate": "Nominate",
-    "sponsor": "Sponsor",
-    "visit": "Visit"
+    "sponsor": "Bulk sponsor",
+    "visit": "Visit",
+    "demo": "Demo farm",
+    "fund": "Fund a farm",
+    "nrbWho": "Who is an NRB",
+    "faq": "FAQ"
   },
   "utility": {
     "programme": "Programme",

@@ -9,8 +9,14 @@
   const drawer = document.getElementById("nav-drawer");
   const backdrop = document.getElementById("nav-backdrop");
   const closeBtn = document.getElementById("nav-close");
-  const live = document.getElementById("live");
-  const HOME_SECTIONS = ["theme", "awards", "record", "nominate", "sponsor", "visit", "press"];
+  const NRB_DISTRICTS = [
+    "Alipurduar", "Bankura", "Birbhum", "Cooch Behar", "Dakshin Dinajpur",
+    "Darjeeling", "Hooghly", "Howrah", "Jalpaiguri", "Jhargram", "Kalimpong",
+    "Kolkata", "Malda", "Murshidabad", "Nadia", "North 24 Parganas",
+    "Paschim Bardhaman", "Paschim Medinipur", "Purba Bardhaman",
+    "Purba Medinipur", "Purulia", "South 24 Parganas", "Uttar Dinajpur"
+  ];
+  const HOME_SECTIONS = ["nrb", "sambhavana", "about", "demo", "model", "fund", "sponsor", "village", "faq", "theme", "awards", "record", "nominate", "visit", "press", "ifs-tease"];
   const state = {
     lang: "en",
     heroId: "H1",
@@ -23,6 +29,7 @@
     participate: {},
     locator: {},
     sources: {},
+    nrb: {},
     events: null,
     stories: null,
     navSpec: null,
@@ -77,6 +84,7 @@
     applyUi();
     renderNav();
     renderCampaign();
+    renderNrb();
     updateMeta();
     setUrlLang(lang);
     const ui = state.ui[lang];
@@ -185,6 +193,295 @@
     if (window.BksCampaign && state.campaign) {
       window.BksCampaign.render(state.campaign, state.lang);
     }
+  }
+
+  function nrbPack() {
+    return (state.nrb && (state.nrb[state.lang] || state.nrb.en)) || null;
+  }
+
+  function nrbFormPayload(form, kind) {
+    const data = {};
+    new FormData(form).forEach((value, key) => { data[key] = value; });
+    data.kind = kind;
+    data.stored = false;
+    data.production = false;
+    data.gateway = "not_connected";
+    data.amount_raised = 0;
+    data.farms_pledged = 0;
+    data.createdAt = new Date().toISOString();
+    data.note = "Downloaded locally from BKS Durga Puja 2026. Not submitted to a server. No payment taken.";
+    return data;
+  }
+
+  function downloadNrbJson(filename, payload) {
+    if (window.BksCampaign && typeof window.BksCampaign.downloadJson === "function") {
+      window.BksCampaign.downloadJson(filename, payload);
+      return;
+    }
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  function bindNrbForms() {
+    const nrb = nrbPack() || {};
+    const fund = nrb.fund || {};
+    const bulk = nrb.bulk || {};
+    const operator = nrb.operator || {};
+
+    const pledge = document.getElementById("nrb-pledge-form");
+    if (pledge) {
+      pledge.addEventListener("submit", (e) => {
+        e.preventDefault();
+        downloadNrbJson("bks-nrb-farm-pledge.json", nrbFormPayload(pledge, "nrb_pledge"));
+        const status = document.getElementById("nrb-pledge-status");
+        if (status) status.textContent = fund.status || "No payment is taken here.";
+      });
+    }
+
+    const bulkForm = document.getElementById("nrb-bulk-form");
+    if (bulkForm) {
+      bulkForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        downloadNrbJson("bks-nrb-bulk-interest.json", nrbFormPayload(bulkForm, "nrb_bulk"));
+        const status = document.getElementById("nrb-bulk-status");
+        if (status) status.textContent = bulk.status || "Allocation will be done by BKS, not by this website.";
+      });
+      document.querySelectorAll("[data-nrb-tier]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const count = btn.getAttribute("data-nrb-tier");
+          const field = bulkForm.querySelector('[name="farm_count"]');
+          if (field) field.value = count;
+        });
+      });
+    }
+
+    const village = document.getElementById("nrb-village-form");
+    if (village) {
+      village.addEventListener("submit", (e) => {
+        e.preventDefault();
+        downloadNrbJson("bks-nrb-village-interest.json", nrbFormPayload(village, "nrb_village"));
+        const status = document.getElementById("nrb-village-status");
+        const copy = (nrb.village || {}).status;
+        if (status) status.textContent = copy || "Not matched to a live farm list.";
+      });
+    }
+
+    const opForm = document.getElementById("nrb-operator-form");
+    if (opForm) {
+      opForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        downloadNrbJson("bks-nrb-operator-demo.json", nrbFormPayload(opForm, "nrb_operator_demo"));
+        const status = document.getElementById("nrb-operator-status");
+        if (status) status.textContent = operator.status || "Not posted to a public feed.";
+      });
+    }
+  }
+
+  function renderNrb() {
+    const root = document.getElementById("nrb-root");
+    const nrb = nrbPack();
+    if (!root || !nrb) return;
+    const who = nrb.who || {};
+    const opportunity = nrb.opportunity || {};
+    const about = nrb.about || {};
+    const model = nrb.model || {};
+    const village = nrb.village || {};
+    const faq = nrb.faq || {};
+    const photos = nrb.photos || {};
+    const demo = nrb.demo || {};
+    const fund = nrb.fund || {};
+    const bulk = nrb.bulk || {};
+    const operator = nrb.operator || {};
+
+    const facts = (demo.facts || []).map((row) =>
+      "<div><dt>" + escapeHtml(row.label) + "</dt><dd>" + escapeHtml(row.value) + "</dd></div>"
+    ).join("");
+
+    const steps = (fund.steps || []).map((label, i) =>
+      "<li><span class='nrb-step-num'>" + String(i + 1) + "</span><span>" + escapeHtml(label) + "</span></li>"
+    ).join("");
+
+    const tiers = (bulk.tiers || []).map((tier) =>
+      "<button type='button' class='nrb-tier' data-nrb-tier='" + escapeHtml(tier.count || "5") + "'>" +
+      "<p class='kicker'>" + escapeHtml(tier.note) + "</p><h3>" + escapeHtml(tier.name) + "</h3>" +
+      "<p class='stat-value'>" + escapeHtml(tier.amount) + "</p></button>"
+    ).join("");
+
+    const pujaOpts = (bulk.pujaOptions || []).map((opt) =>
+      '<option value="' + escapeHtml(opt.id) + '">' + escapeHtml(opt.label) + "</option>"
+    ).join("");
+
+    const updateOpts = (operator.types || []).map((opt) =>
+      '<option value="' + escapeHtml(opt.id) + '">' + escapeHtml(opt.label) + "</option>"
+    ).join("");
+
+    const modelPoints = (model.points || []).map((item) =>
+      "<article class='ifs-need-card'><h3>" + escapeHtml(item.title) + "</h3><p>" + escapeHtml(item.body) + "</p></article>"
+    ).join("");
+
+    const faqItems = (faq.items || []).map((item) =>
+      "<details class='nrb-faq'><summary>" + escapeHtml(item.q) + "</summary><p>" + escapeHtml(item.a) + "</p></details>"
+    ).join("");
+
+    const districtOpts = ['<option value="">' + escapeHtml(village.fieldDistrict || "District") + "</option>"]
+      .concat(NRB_DISTRICTS.map((name) => '<option value="' + escapeHtml(name) + '">' + escapeHtml(name) + "</option>"))
+      .join("");
+
+    function photoFigure(src, alt, cap, extraClass) {
+      if (!src) return "";
+      return "<figure class='nrb-photo " + (extraClass || "") + "'><img src='" + escapeHtml(src) +
+        "' alt='" + escapeHtml(alt) + "' width='1600' height='1067'>" +
+        (cap ? "<figcaption>" + escapeHtml(cap) + "</figcaption>" : "") + "</figure>";
+    }
+
+    const ifs = state.ifs[state.lang] || {};
+    const tease = ((state.home[state.lang] || {}).ifsTease) || {};
+    const ifsBody = (ifs.what && ifs.what.body) || ifs.lede || "";
+
+    const htmlFund =
+      "<section class='campaign-section nrb-fund-stage' id='fund'>" +
+      "<div class='nrb-split nrb-split--fest'>" +
+      "<div><p class='kicker'>" + escapeHtml(fund.eyebrow) + "</p><h2>" + escapeHtml(fund.title) + "</h2>" +
+      "<p>" + escapeHtml(fund.lede) + "</p>" +
+      "<div class='nrb-who'><h3>" + escapeHtml(fund.whoLabel) + "</h3><p>" + escapeHtml(fund.whoBody) + "</p></div>" +
+      "<div class='nrb-instalments'><p class='kicker'>" + escapeHtml(fund.modelEyebrow) + "</p>" +
+      "<h3>" + escapeHtml(fund.modelTitle) + "</h3><ol class='nrb-steps'>" + steps + "</ol>" +
+      "<p class='muted'>" + escapeHtml(fund.modelNote) + "</p></div></div>" +
+      photoFigure(photos.fundSrc, photos.fundAlt, photos.fundCap, "nrb-photo--tall") +
+      "</div>" +
+      "<form class='campaign-form campaign-form--fest' id='nrb-pledge-form' novalidate><h3>" + escapeHtml(fund.formTitle) + "</h3>" +
+      "<div class='form-grid'><label>" + escapeHtml(fund.fieldName) +
+      "<input name='name' required></label><label>" + escapeHtml(fund.fieldEmail) +
+      "<input name='email' type='email' required></label><label>" + escapeHtml(fund.fieldPhone) +
+      "<input name='phone' required></label><label>" + escapeHtml(fund.fieldVillage) +
+      "<input name='native_village' required></label><label>" + escapeHtml(fund.fieldLocation) +
+      "<input name='lives_now'></label><label>" + escapeHtml(fund.fieldType) +
+      "<select name='donor_type'><option value='individual'>" + escapeHtml(fund.typeIndividual) +
+      "</option><option value='bulk'>" + escapeHtml(fund.typeBulk) +
+      "</option></select></label></div>" +
+      "<label class='consent-row'><input type='checkbox' name='consent' required> " +
+      escapeHtml(fund.consent) + "</label>" +
+      "<div class='cta-row'><button type='submit' class='btn btn-primary'>" + escapeHtml(fund.submit) +
+      "</button></div><p class='muted'>" +
+      escapeHtml(fund.status) + "</p>" +
+      "<p class='muted' id='nrb-pledge-status'></p></form></section>";
+
+    root.innerHTML =
+      "<section class='campaign-section' id='about'>" +
+      "<div class='nrb-split'><div><p class='kicker'>" + escapeHtml(about.eyebrow) + "</p><h2>" +
+      escapeHtml(about.title) + "</h2><p>" + escapeHtml(about.lede) + "</p>" +
+      "<div class='nrb-who'><p>" + escapeHtml(about.mandate) + "</p></div></div>" +
+      (photos.aboutSrc ? "<figure class='nrb-photo nrb-photo--portrait'><img src='" +
+        escapeHtml(photos.aboutSrc) + "' alt='" + escapeHtml(photos.aboutAlt) +
+        "' width='640' height='800'></figure>" : "") +
+      "</div></section>" +
+
+      "<section class='campaign-section nrb-sambhavana' id='sambhavana'>" +
+      "<p class='kicker'>" + escapeHtml(opportunity.eyebrow) + "</p><h2>" + escapeHtml(opportunity.title) + "</h2>" +
+      "<p>" + escapeHtml(opportunity.lede) + "</p></section>" +
+
+      "<section class='campaign-section nrb-story' id='nrb'>" +
+      "<div class='nrb-split nrb-split--reverse'>" +
+      photoFigure(photos.whoSrc, photos.whoAlt, photos.whoCap, "nrb-photo--portrait") +
+      "<div><p class='kicker'>" + escapeHtml(who.eyebrow) + "</p><h2>" + escapeHtml(who.title) + "</h2>" +
+      "<p>" + escapeHtml(who.lede) + "</p></div></div></section>" +
+
+      "<section class='campaign-section nrb-ifs-tease' id='ifs-tease'>" +
+      "<div class='nrb-split'><div><p class='kicker'>" + escapeHtml(tease.eyebrow || ifs.kicker) +
+      "</p><h2>" + escapeHtml(ifs.h1 || "") + "</h2><p>" + escapeHtml(ifsBody) + "</p>" +
+      "<p class='cta-row'><a class='btn btn-primary' href='#ifs'>" +
+      escapeHtml(tease.cta || "") + "</a></p></div>" +
+      photoFigure(photos.fundSrc, photos.fundAlt, ifs.photoCap || photos.fundCap, "") +
+      "</div></section>" +
+
+      "<section class='campaign-section nrb-demo' id='demo'>" +
+      "<div class='nrb-demo-head'><div><p class='kicker'>" + escapeHtml(demo.eyebrow) + "</p>" +
+      "<h2>" + escapeHtml(demo.title) + "</h2><p>" + escapeHtml(demo.lede) + "</p></div>" +
+      "<p class='nrb-status'><span class='badge badge-pending'>" + escapeHtml(demo.statusBadge) +
+      "</span><span>" + escapeHtml(demo.statusNote) + "</span></p></div>" +
+      photoFigure(photos.demoSrc, photos.demoAlt, photos.demoCap, "nrb-photo--wide") +
+      "<dl class='facts nrb-facts'>" + facts + "</dl>" +
+      "<div class='nrb-feed' aria-live='polite'><p class='kicker'>" + escapeHtml(demo.feedEyebrow) + "</p>" +
+      "<h3>" + escapeHtml(demo.feedTitle) + "</h3>" +
+      "<div class='nrb-feed-frame'>" +
+      "<svg class='nrb-feed-schematic' viewBox='0 0 320 120' aria-hidden='true' focusable='false'>" +
+      "<rect x='8' y='18' width='304' height='84' rx='6' fill='#eef4ea' stroke='#163a26' stroke-width='1.4'/>" +
+      "<ellipse cx='108' cy='62' rx='58' ry='28' fill='#143d4a'/>" +
+      "<ellipse cx='108' cy='62' rx='40' ry='16' fill='#1f6a6a' opacity='0.55'/>" +
+      "<path d='M54 42 C70 28 146 28 162 42' fill='none' stroke='#4a3424' stroke-width='3'/>" +
+      "<path d='M168 38 l8 -16 m0 16 l8 -14 m0 14 l6 -12' stroke='#163a26' stroke-width='2' fill='none'/>" +
+      "<path d='M196 70 h96' stroke='#c45c32' stroke-width='2'/>" +
+      "<path d='M208 70 v-18 m24 18 v-22 m24 22 v-14 m24 14 v-20' stroke='#163a26' stroke-width='2'/>" +
+      "<circle cx='52' cy='86' r='4' fill='#8f2d1e'/>" +
+      "<circle cx='268' cy='38' r='4' fill='#c98a1f'/>" +
+      "</svg>" +
+      "<p class='nrb-feed-empty'>" + escapeHtml(demo.feedEmpty) + "</p></div></div>" +
+      "<div class='nrb-operator'><p class='kicker'>" + escapeHtml(operator.eyebrow) + "</p>" +
+      "<h3>" + escapeHtml(operator.title) + "</h3><p>" + escapeHtml(operator.lede) + "</p>" +
+      "<form class='campaign-form' id='nrb-operator-form' novalidate>" +
+      "<div class='form-grid'><label>" + escapeHtml(operator.fieldKind) +
+      "<select name='kind'><option value='register'>" + escapeHtml(operator.kindRegister) +
+      "</option><option value='update'>" + escapeHtml(operator.kindUpdate) +
+      "</option></select></label><label>" + escapeHtml(operator.fieldOperator) +
+      "<input name='operator_name' required></label><label>" + escapeHtml(operator.fieldContact) +
+      "<input name='contact' required></label><label>" + escapeHtml(operator.fieldUpdateType) +
+      "<select name='update_type'>" + updateOpts + "</select></label></div>" +
+      "<label>" + escapeHtml(operator.fieldNote) + "<textarea name='note' rows='3'></textarea></label>" +
+      "<div class='cta-row'><button type='submit' class='btn btn-primary'>" + escapeHtml(operator.submit) +
+      "</button></div><p class='muted' id='nrb-operator-status'>" + escapeHtml(operator.status) +
+      "</p></form></div></section>" +
+
+      "<section class='campaign-section' id='model'>" +
+      "<p class='kicker'>" + escapeHtml(model.eyebrow) + "</p><h2>" + escapeHtml(model.title) + "</h2>" +
+      "<p>" + escapeHtml(model.lede) + "</p>" +
+      "<div class='ifs-need-grid'>" + modelPoints + "</div>" +
+      "<p class='cta-row'><a class='btn btn-secondary' href='#ifs'>" + escapeHtml((state.ui[state.lang] && state.ui[state.lang].nav && state.ui[state.lang].nav.integratedFarming) || "Integrated Farming") + "</a></p></section>" +
+
+      htmlFund +
+
+      "<section class='campaign-section' id='sponsor'>" +
+      "<p class='kicker'>" + escapeHtml(bulk.eyebrow) + "</p><h2>" + escapeHtml(bulk.title) + "</h2>" +
+      "<p>" + escapeHtml(bulk.lede) + "</p>" +
+      "<div class='nrb-tier-grid'>" + tiers + "</div>" +
+      "<form class='campaign-form' id='nrb-bulk-form' novalidate><h3>" + escapeHtml(bulk.formTitle) + "</h3>" +
+      "<div class='form-grid'><label>" + escapeHtml(fund.fieldName) +
+      "<input name='name' required></label><label>" + escapeHtml(fund.fieldEmail) +
+      "<input name='email' type='email' required></label><label>" + escapeHtml(fund.fieldPhone) +
+      "<input name='phone' required></label><label>" + escapeHtml(bulk.fieldCount) +
+      "<input name='farm_count' type='number' min='1' step='1' placeholder='5'></label>" +
+      "<label>" + escapeHtml(bulk.pujaLabel) + "<select name='puja_tag'>" + pujaOpts +
+      "</select></label></div>" +
+      "<label class='consent-row'><input type='checkbox' name='consent' required> " +
+      escapeHtml(fund.consent) + "</label>" +
+      "<div class='cta-row'><button type='submit' class='btn btn-primary'>" + escapeHtml(bulk.submit) +
+      "</button></div><p class='muted'>" +
+      escapeHtml(bulk.status) + "</p>" +
+      "<p class='muted' id='nrb-bulk-status'></p></form>" +
+      "<p class='muted'><a href='#sponsor-puja'>" + escapeHtml(bulk.pujaLink || "") + "</a></p>" +
+      "</section>" +
+
+      "<section class='campaign-section' id='village'>" +
+      "<p class='kicker'>" + escapeHtml(village.eyebrow) + "</p><h2>" + escapeHtml(village.title) + "</h2>" +
+      "<p>" + escapeHtml(village.lede) + "</p>" +
+      "<form class='campaign-form' id='nrb-village-form' novalidate>" +
+      "<div class='form-grid'><label>" + escapeHtml(village.fieldDistrict) +
+      "<select name='district' required>" + districtOpts + "</select></label>" +
+      "<label>" + escapeHtml(village.fieldBlock) +
+      "<input name='block_village' required></label></div>" +
+      "<div class='cta-row'><button type='submit' class='btn btn-primary'>" + escapeHtml(village.submit) +
+      "</button></div><p class='muted'>" +
+      escapeHtml(village.status) + "</p>" +
+      "<p class='muted' id='nrb-village-status'></p></form></section>" +
+
+      "<section class='campaign-section' id='faq'>" +
+      "<p class='kicker'>" + escapeHtml(faq.eyebrow) + "</p><h2>" + escapeHtml(faq.title) + "</h2>" +
+      faqItems + "</section>";
+
+    bindNrbForms();
   }
 
   function markCurrent(page) {
@@ -296,16 +593,18 @@
     if (!home || !arc || !home.storyArc) return;
     const heading = home.storyArc.h2;
     const lede = home.storyArc.lede;
-    const steps = home.storyArc.steps.map((step) =>
-      "<a class='story-step' href='" + step.href + "'>" +
-      "<p class='kicker'>" + step.kicker + "</p>" +
-      "<h3>" + step.title + "</h3>" +
-      "<p>" + step.body + "</p></a>"
+    const steps = home.storyArc.steps.map((step, i) =>
+      "<li class='story-path-item'>" +
+      "<a href='" + step.href + "'>" +
+      "<span class='story-path-num' aria-hidden='true'>" + String(i + 1) + "</span>" +
+      "<span class='story-path-copy'><p class='kicker'>" + step.kicker + "</p>" +
+      "<h3>" + step.title + "</h3><p>" + step.body + "</p></span></a></li>"
     ).join("");
     arc.innerHTML =
+      "<div class='wrap-wide story-path-inner'>" +
       "<h2>" + heading + "</h2>" +
       "<p class='muted'>" + lede + "</p>" +
-      "<div class='story-arc-grid'>" + steps + "</div>";
+      "<ol class='story-path'>" + steps + "</ol></div>";
     const exploreHead = document.getElementById("explore-copy");
     if (exploreHead && home.explore) {
       exploreHead.innerHTML = "<h2 id='explore-heading'>" + home.explore.h2 + "</h2><p class='muted'>" + home.explore.lede + "</p>";
@@ -334,31 +633,102 @@
     const page = state.ifs[state.lang];
     const rootEl = document.getElementById("ifs-body");
     if (!page || !rootEl) return;
-    const wb = (page.westBengal.items || []).map((item) =>
-      "<li><h3>" + item.title + "</h3><p>" + item.body + "</p></li>"
+    const contrast = (page.what.contrast || []).map((card) =>
+      "<article class='ifs-contrast-card ifs-contrast-card--" + escapeHtml(card.id) + "'><h3>" +
+      escapeHtml(card.title) + "</h3><p>" + escapeHtml(card.body) + "</p></article>"
     ).join("");
-    const nodes = (page.viz.nodes || []).map((node) => {
+    const need = (page.need.items || []).map((item) =>
+      "<article class='ifs-need-card'><h3>" + escapeHtml(item.title) + "</h3><p>" + escapeHtml(item.body) + "</p></article>"
+    ).join("");
+    const pillars = (page.pillars.items || []).map((item) =>
+      "<article class='ifs-pillar' data-pillar='" + escapeHtml(item.id) + "'>" +
+      "<span class='ifs-pillar-letter'>" + escapeHtml(item.letter) + "</span>" +
+      "<h3>" + escapeHtml(item.title) + "</h3><p>" + escapeHtml(item.body) + "</p></article>"
+    ).join("");
+    const loops = (page.loops.items || []).map((item) =>
+      "<li class='ifs-loop'><span>" + escapeHtml(item.from) + "</span>" +
+      "<span class='ifs-loop-arrow' aria-hidden='true'>→</span>" +
+      "<span>" + escapeHtml(item.to) + "</span>" +
+      "<p>" + escapeHtml(item.body) + "</p></li>"
+    ).join("");
+    const cycleNodes = (page.loops.items || []).map((item, i) =>
+      "<li class='ifs-cycle-node' style='--i:" + i + "'>" +
+      "<span>" + escapeHtml(item.from) + "</span>" +
+      "<span class='ifs-loop-arrow' aria-hidden='true'>→</span>" +
+      "<span>" + escapeHtml(item.to) + "</span></li>"
+    ).join("");
+    const impact = (page.impact.items || []).map((item, i) =>
+      "<article class='stat-card" + (i === 1 ? " stat-card--featured" : "") + "'>" +
+      "<h3>" + escapeHtml(item.title) + "</h3><p>" + escapeHtml(item.body) + "</p></article>"
+    ).join("");
+    const nodes = ((page.viz && page.viz.nodes) || []).map((node) => {
       const feeds = (node.feeds || []).join(", ");
-      return "<article class='ifs-node' tabindex='0' data-node='" + node.id + "'>" +
-        "<h3>" + node.title + "</h3>" +
-        "<p>" + node.body + "</p>" +
-        "<p class='muted'>→ " + feeds + "</p></article>";
+      return "<article class='ifs-node' tabindex='0' data-node='" + escapeHtml(node.id) +
+        "' data-feeds='" + escapeHtml((node.feeds || []).join(" ")) + "'>" +
+        "<h3>" + escapeHtml(node.title) + "</h3>" +
+        "<p>" + escapeHtml(node.body) + "</p>" +
+        "<p class='muted'>→ " + escapeHtml(feeds) + "</p></article>";
     }).join("");
-    const notItems = (page.notBks.items || []).map((item) => "<li>" + item + "</li>").join("");
+    const proto = (page.prototype.items || []).map((item) =>
+      "<div><dt>" + escapeHtml(item.title) + "</dt><dd>" + escapeHtml(item.body) + "</dd></div>"
+    ).join("");
     rootEl.innerHTML =
-      "<header class='page-head'><p class='kicker'>" + page.kicker + "</p><h1>" + page.h1 + "</h1><p class='lede'>" + page.lede + "</p></header>" +
-      "<hr class='rule'>" +
+      "<header class='page-head'><p class='kicker'>" + escapeHtml(page.kicker) + "</p><h1>" +
+      escapeHtml(page.h1) + "</h1><p class='lede'>" + escapeHtml(page.lede) + "</p></header>" +
       "<p class='native-draft' data-ui='draft-note'></p>" +
-      "<section class='layer layer--fact'><h2>" + page.what.h2 + "</h2><p><span class='badge badge-research'>" + page.what.badge + "</span> " + page.what.body + "</p></section>" +
-      "<section class='layer layer--fact'><h2>" + page.westBengal.h2 + "</h2><p><span class='badge badge-research'>" + page.westBengal.badge + "</span></p><ul class='source-list'>" + wb + "</ul></section>" +
-      "<section class='ifs-viz' aria-labelledby='ifs-viz-heading'><h2 id='ifs-viz-heading'>" + page.viz.h2 + "</h2><p class='muted'>" + page.viz.intro + "</p>" +
-      "<p class='ifs-center'><span class='badge badge-proposed'>" + page.viz.center + "</span></p>" +
-      "<div class='ifs-map'>" + nodes + "</div>" +
-      "<p class='ifs-summary'>" + page.viz.summary + "</p></section>" +
-      "<section class='layer layer--fact'><h2>" + page.circular.h2 + "</h2><p><span class='badge badge-research'>" + page.circular.badge + "</span> " + page.circular.body + "</p></section>" +
-      "<section class='layer layer--pending'><h2>" + page.notBks.h2 + "</h2><p><span class='badge badge-pending'>" + page.notBks.badge + "</span></p><ul>" + notItems + "</ul></section>" +
-      "<section class='layer layer--pending'><h2>" + page.knowledge.h2 + "</h2><p><span class='badge badge-pending'>" + page.knowledge.badge + "</span> " + page.knowledge.body + "</p>" +
-      "<p class='card-foot'><span class='btn btn-secondary is-disabled' aria-disabled='true'>" + page.knowledge.cta + "</span> <a class='btn btn-secondary' href='" + page.sourcesHref + "'>" + page.sourcesCta + "</a></p></section>";
+
+      "<figure class='ifs-hero-photo'>" +
+      "<img src='assets/puja-2025/aarti-procession-2025.jpg' width='1600' height='1067' alt='Evening aarti in the bamboo pavilion, Durga Puja Mahotsav 2025, IIT Kharagpur Research Park'>" +
+      "<figcaption>" + escapeHtml(page.photoCap || page.pillars.intro) + "</figcaption></figure>" +
+
+      "<section class='campaign-section'><h2>" + escapeHtml(page.what.h2) + "</h2>" +
+      "<p>" + escapeHtml(page.what.body) + "</p>" +
+      "<div class='ifs-contrast'>" + contrast + "</div></section>" +
+
+      "<section class='campaign-section'><h2>" + escapeHtml(page.need.h2) + "</h2>" +
+      "<p>" + escapeHtml(page.need.intro) + "</p>" +
+      "<div class='ifs-need-grid'>" + need + "</div>" +
+      (page.need.outro ? "<p>" + escapeHtml(page.need.outro) + "</p>" : "") +
+      "</section>" +
+
+      "<section class='campaign-section'><h2>" + escapeHtml(page.pillars.h2) + "</h2>" +
+      "<p>" + escapeHtml(page.pillars.intro) + "</p>" +
+      "<div class='ifs-pillar-grid'>" + pillars + "</div></section>" +
+
+      "<section class='campaign-section'><h2>" + escapeHtml(page.loops.h2) + "</h2>" +
+      "<p>" + escapeHtml(page.loops.intro) + "</p>" +
+      "<div class='ifs-cycle' role='img' aria-label='" + escapeHtml(page.loops.h2) + "'>" +
+      "<p class='ifs-cycle-center'>" + escapeHtml((page.viz && page.viz.center) || "") + "</p>" +
+      "<ol class='ifs-cycle-ring'>" + cycleNodes + "</ol></div>" +
+      "<ol class='ifs-loop-list'>" + loops + "</ol>" +
+      "<p class='muted'>" + escapeHtml(page.loops.footnote) + "</p></section>" +
+
+      "<section class='campaign-section'><h2>" + escapeHtml(page.impact.h2) + "</h2>" +
+      (page.impact.caveat ? "<p class='ifs-caveat'>" + escapeHtml(page.impact.caveat) + "</p>" : "") +
+      "<div class='stat-grid ifs-impact-grid'>" + impact + "</div></section>" +
+
+      "<section class='ifs-viz' aria-labelledby='ifs-viz-heading'><h2 id='ifs-viz-heading'>" +
+      escapeHtml((page.viz && page.viz.h2) || "") + "</h2><p class='muted'>" + escapeHtml((page.viz && page.viz.intro) || "") + "</p>" +
+      "<p class='ifs-center'>" + escapeHtml((page.viz && page.viz.center) || "") +
+      "</p><div class='ifs-map'>" + nodes + "</div>" +
+      "<p class='ifs-summary'>" + escapeHtml((page.viz && page.viz.summary) || "") + "</p></section>" +
+
+      "<section class='campaign-section'><h2>" + escapeHtml(page.prototype.h2) + "</h2>" +
+      "<p>" + escapeHtml(page.prototype.status) + "</p>" +
+      "<dl class='facts nrb-facts'>" + proto + "</dl>" +
+      "<p class='cta-row'><a class='btn btn-primary' href='#fund'>" + escapeHtml(page.ctaFund) +
+      "</a><a class='btn btn-secondary' href='#demo'>" + escapeHtml(page.ctaDemo) +
+      "</a></p></section>";
+
+    rootEl.querySelectorAll(".ifs-node").forEach((node) => {
+      node.addEventListener("click", () => {
+        const feeds = (node.getAttribute("data-feeds") || "").split(/\s+/);
+        rootEl.querySelectorAll(".ifs-node").forEach((n) => {
+          const on = n === node || feeds.indexOf(n.getAttribute("data-node")) !== -1;
+          n.classList.toggle("is-on", on);
+        });
+      });
+    });
   }
 
   function renderMission() {
@@ -371,7 +741,7 @@
     rootEl.innerHTML =
       "<header class='page-head'><p class='kicker'>" + page.kicker + "</p><h1>" + page.h1 + "</h1><p class='lede'>" + page.lede + "</p></header>" +
       "<hr class='rule'>" +
-      "<p class='legend'><span class='badge badge-pending'>NOT ACHIEVED</span> " + page.notice + "</p>" +
+      "<p class='legend'>" + page.notice + "</p>" +
       "<div class='stat-grid'>" + stats + "</div>" +
       "<section class='layer layer--position'><h2>" + page.how.h2 + "</h2><p>" + page.how.body + "</p><p class='card-foot'><a class='btn btn-primary' href='" + page.how.href + "'>" + page.how.cta + "</a></p></section>";
   }
@@ -653,6 +1023,7 @@
     state.participate[lang] = pack.participate;
     state.locator[lang] = pack.locator;
     state.sources[lang] = pack.sources;
+    state.nrb[lang] = pack.nrb;
   }
 
   function loadJson(path) {
@@ -677,9 +1048,10 @@
       loadJson(base + "mission.json"),
       loadJson(base + "participate.json"),
       loadJson(base + "locator.json"),
-      loadJson(base + "sources.json")
-    ]).then(([ui, heroes, home, krishak, ifs, mission, participate, locator, sources]) => {
-      applyPack(lang, { ui, heroes, home, krishak, ifs, mission, participate, locator, sources });
+      loadJson(base + "sources.json"),
+      loadJson(base + "nrb.json")
+    ]).then(([ui, heroes, home, krishak, ifs, mission, participate, locator, sources, nrb]) => {
+      applyPack(lang, { ui, heroes, home, krishak, ifs, mission, participate, locator, sources, nrb });
     });
   }
 

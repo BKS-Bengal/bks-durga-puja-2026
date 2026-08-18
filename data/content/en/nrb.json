@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "lang": "en",
+    "source": "BKS Durga Puja website content architecture, 18 Aug 2026",
+    "governance": "Visitor copy. Forms on this offline page download locally; payment gateway is not connected yet."
+  },
+  "photos": {
+    "fundSrc": "assets/puja-2025/aarti-procession-2025.jpg",
+    "fundAlt": "Evening aarti procession through the bamboo pavilion at Durga Puja Mahotsav 2025, IIT Kharagpur Research Park",
+    "fundCap": "Aarti at Durga Puja Mahotsav 2025, IIT Kharagpur Research Park — KarmYog for the 21st Century Foundation.",
+    "whoSrc": "assets/puja-2025/conch-aarti-2025.jpg",
+    "whoAlt": "Priest sounding the conch during evening aarti at Durga Puja Mahotsav 2025",
+    "whoCap": "Conch aarti, Durga Puja Mahotsav 2025.",
+    "demoSrc": "assets/puja-2025/idol-durga-2025.jpg",
+    "demoAlt": "Clay Durga image in the bamboo pavilion, Durga Puja Mahotsav 2025, IIT Kharagpur Research Park",
+    "demoCap": "Durga Puja Mahotsav 2025, IIT Kharagpur Research Park — the festival language this year’s live farm pavilion grows from.",
+    "aboutSrc": "assets/mahacharya-sourabh-j-sarkar.jpg",
+    "aboutAlt": "Mahacharya Sourabh J. Sarkar, State President, Bharatiya Krishak Samaj, West Bengal"
+  },
+  "who": {
+    "eyebrow": "Who is an NRB?",
+    "title": "Non-Resident Bengali — beyond geography.",
+    "lede": "Whether you live in New York, London, Bengaluru, or even a high-rise in Kolkata, your roots lie in a native village where your parents or grandparents grew up. That deep emotional bond and longing to see your ancestral soil prosper is what unites us. This Durga Puja, transform nostalgia into tangible impact."
+  },
+  "opportunity": {
+    "eyebrow": "Sambhavana",
+    "title": "Bengal’s agricultural resurgence.",
+    "lede": "Bengal stands at the historic threshold of an economic and agricultural renaissance. With unprecedented development initiatives and funding momentum underway, the possibility for historic transformation is here. Great possibilities only deliver when citizens actively take ownership. We cannot let this historic moment pass by. NRBs have the power, perspective, and resources to ensure this agricultural rebirth becomes a living reality."
+  },
+  "about": {
+    "eyebrow": "About Bharatiya Krishak Samaj",
+    "title": "A farmers’ movement, West Bengal chapter.",
+    "lede": "Rooted in India’s post-independence agricultural movement since 1955, formally structured in 2007, and now reinvigorated for the 21st century. Spearheaded in West Bengal under the leadership of State President Mahacharya Sourabh J. Sarkar.",
+    "mandate": "Mobilising technology, grassroots farmer producer networks, and modern agribusiness practices to make Bengal’s farming self-reliant, sustainable, and prosperous."
+  },
+  "model": {
+    "eyebrow": "The 5,000 Integrated Farms Initiative",
+    "title": "One village farm. One NRB patron.",
+    "lede": "5,000 village locations paired with 5,000 dedicated NRB patrons. Identified local teams of 2 to 3 progressive farmers or FPOs contribute their land, sweat equity, and working capital. The contribution ask is ₹1,00,000 per farm — staggered as ₹20,000 every two months over the year. A BKS digital portal will let patrons anywhere in the world follow planting cycles and operational milestones. As farms expand, donors may also join local FPOs as commercial equity partners.",
+    "points": [
+      { "title": "The target", "body": "5,000 village locations paired with 5,000 dedicated NRB patrons." },
+      { "title": "On the ground", "body": "Local teams of 2–3 progressive farmers / FPOs — land, labour and working capital." },
+      { "title": "The contribution", "body": "₹1 lakh per farm, or ₹20,000 every two months over the year." },
+      { "title": "Follow the farm", "body": "Digital tracking of progress, planting cycles and milestones from anywhere in the world." }
+    ]
+  },
+  "village": {
+    "eyebrow": "Ancestral place",
+    "title": "Search your district or block.",
+    "lede": "Connect your support to the soil you come from. Name your ancestral district or block and BKS will match you to a village farm.",
+    "fieldDistrict": "District",
+    "fieldBlock": "Block / village / para",
+    "submit": "Connect my village",
+    "status": "BKS will match your place to a farm and write back."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Farms, funds, and how patronage works.",
+    "items": [
+      { "q": "What is an FPO here?", "a": "A Farmer Producer Organisation — the local vehicle for each village farm. Identified teams of two to three progressive farmers or FPOs put in land, sweat equity and working capital. Your ₹1 lakh is the seed that sits beside that." },
+      { "q": "How is ₹1 lakh used?", "a": "Seed for one integrated model farm: pond and water, bund horticulture, livestock, bio-inputs and the working cycle of the farm. Land and labour come from the local farmer team." },
+      { "q": "Can I pay in instalments?", "a": "Yes. ₹20,000 every two months over the year, or ₹1 lakh in one contribution. Register here and Bharatiya Krishak Samaj will complete the payment with you — UPI, net banking, or international cards." },
+      { "q": "Is there a tax receipt?", "a": "Bharatiya Krishak Samaj, West Bengal will share contribution documentation with every patron. The applicable tax pathway will be confirmed with you when your adoption is completed." },
+      { "q": "How do I follow the farm?", "a": "A BKS digital portal will carry planting cycles and operational milestones. This page will also carry daily and weekly video from the East Kolkata Wetland demo farm as those dispatches are posted." }
+    ]
+  },
+  "demo": {
+    "eyebrow": "Durga Puja 2026 · live integrated farm pandal",
+    "title": "East Kolkata Wetlands — 500 metres from Sector V",
+    "lede": "Not just a temporary pandal, but a fully functional, live model integrated farm created over months. It sits on the boundary between urban high-tech (Sector V, Kolkata’s IT & tech capital) and the rural wetland ecosystem — showing how AI, smart agriculture and modern sustainable practice will power the future of Bengal farming. Walk through a live blueprint of what will be replicated across 5,000 villages between Durga Puja 2026 and Durga Puja 2027.",
+    "statusBadge": "BEING BUILT",
+    "statusNote": "The first live IFS demo farm is being built here as the central pavilion of Krishak Samaj Puja 2026.",
+    "facts": [
+      { "label": "Place", "value": "East Kolkata Wetlands · 500 m from Sector V" },
+      { "label": "What you walk through", "value": "A working integrated farm, not only a festive facade" },
+      { "label": "Seed for this farm", "value": "₹1,00,000" },
+      { "label": "Then", "value": "The same blueprint, 5,000 villages, Puja 2026 to Puja 2027" }
+    ],
+    "feedEyebrow": "Progress feed",
+    "feedTitle": "Daily and weekly dispatches from the Wetland demo farm",
+    "feedEmpty": "Video and photo dispatches from construction and planting will appear here as they are posted."
+  },
+  "fund": {
+    "eyebrow": "Fund a farm",
+    "title": "Adopt a village farm.",
+    "lede": "₹1,00,000 seeds one integrated model farm. Pay in full, or ₹20,000 every two months over the year. Name your native village. Bharatiya Krishak Samaj will pair you with a local farmer team and open digital tracking of that farm.",
+    "whoLabel": "Who this is for",
+    "whoBody": "Non-Resident Bengalis — anyone with a native village in Bengal, whether you live abroad or in a high-rise in Kolkata — who want a named farm they can follow.",
+    "modelEyebrow": "Flexible contribution",
+    "modelTitle": "₹1 lakh = five instalments of ₹20,000",
+    "modelNote": "Staggered every two months over the year, or a single contribution. UPI, net banking and international cards will be used to complete the adoption.",
+    "steps": ["₹20,000", "₹20,000", "₹20,000", "₹20,000", "₹20,000"],
+    "formTitle": "Adopt one village farm",
+    "fieldName": "Your name",
+    "fieldEmail": "Email",
+    "fieldPhone": "Phone",
+    "fieldVillage": "Native village / para",
+    "fieldLocation": "Where you live now",
+    "fieldType": "Patron type",
+    "typeIndividual": "Single farm patron — ₹1 lakh",
+    "typeBulk": "Bulk / Puja patron — see the tiers below",
+    "consent": "Bharatiya Krishak Samaj, West Bengal may contact me to complete this farm adoption.",
+    "submit": "Register my adoption",
+    "status": "Register here. BKS will contact you to complete the contribution."
+  },
+  "bulk": {
+    "eyebrow": "Puja patronage",
+    "title": "Tiered sponsorship — farms and the festival together.",
+    "lede": "Adopt village farms and take title on major Puja elements. Allocation is by Bharatiya Krishak Samaj. Naming recognition and digital tracking come with every farm.",
+    "tiers": [
+      { "id": "farms1", "name": "Single Farm Patron", "amount": "₹1 lakh", "note": "1 village farm · naming + tracking", "count": "1" },
+      { "id": "farms5", "name": "Cluster Farm Patron", "amount": "₹5 lakhs", "note": "5 farms · e.g. Pratima / Idol Sponsor", "count": "5" },
+      { "id": "farms10", "name": "Zonal Patron", "amount": "₹10 lakhs", "note": "10 farms · e.g. Mahabhog / Lighting", "count": "10" },
+      { "id": "farms20", "name": "Regional Benefactor", "amount": "₹20 lakhs+", "note": "Regional cluster · Festival Pavilion Benefactor", "count": "20" }
+    ],
+    "pujaLabel": "Puja element",
+    "pujaOptions": [
+      { "id": "none", "label": "Farms only, for now" },
+      { "id": "idol", "label": "Pratima / Idol Sponsor" },
+      { "id": "bhog", "label": "Mahabhog" },
+      { "id": "lighting", "label": "Lighting & Illumination" },
+      { "id": "pavilion", "label": "Festival Pavilion Benefactor" },
+      { "id": "other", "label": "Other" }
+    ],
+    "fieldCount": "How many farms",
+    "formTitle": "Become a Puja patron",
+    "submit": "Register patronage",
+    "status": "BKS will allocate farms and confirm Puja honours with you.",
+    "pujaLink": "Puja naming packages continue further down this page."
+  },
+  "operator": {
+    "eyebrow": "Local farmer team · Wetland demo",
+    "title": "Register the demo site, or send an update.",
+    "lede": "For the East Kolkata Wetlands live farm: the local team of progressive farmers building the Durga Puja pavilion. Photo and video dispatches will be published on the progress feed.",
+    "fieldKind": "What are you sending",
+    "kindRegister": "Register the demo site",
+    "kindUpdate": "Progress update",
+    "fieldOperator": "Your name",
+    "fieldContact": "Contact number",
+    "fieldNote": "Site note or update caption",
+    "fieldUpdateType": "Update type",
+    "types": [
+      { "id": "text", "label": "Text" },
+      { "id": "photo", "label": "Photo" },
+      { "id": "video", "label": "Video" },
+      { "id": "milestone", "label": "Milestone" }
+    ],
+    "submit": "Send to BKS",
+    "status": "The team will publish verified updates on the public feed."
+  }
+}

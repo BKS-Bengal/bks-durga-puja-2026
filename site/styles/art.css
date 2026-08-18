@@ -1,0 +1,499 @@
+/* Visual art-direction overlay. Does not change approved copy, logo, or hero photograph. */
+
+body {
+  background-color: var(--color-surface-default);
+  background-image:
+    radial-gradient(circle at 12% 8%, color-mix(in srgb, var(--fest-marigold) 16%, transparent) 0 18%, transparent 42%),
+    radial-gradient(circle at 88% 0%, color-mix(in srgb, var(--fest-sindoor) 10%, transparent) 0 14%, transparent 40%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 80;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='72' height='72'><circle cx='8' cy='8' r='1.2' fill='%238f2d1e'/><circle cx='36' cy='8' r='1.2' fill='%23c98a1f'/><circle cx='64' cy='8' r='1.2' fill='%238f2d1e'/><circle cx='22' cy='36' r='1.1' fill='%23163a26'/><circle cx='50' cy='36' r='1.1' fill='%23163a26'/><circle cx='36' cy='64' r='1.2' fill='%238f2d1e'/></svg>");
+}
+
+.kicker {
+  color: #8f2d1e;
+  font-weight: 650;
+}
+.nom-card .kicker,
+.award-index {
+  color: #8f2d1e;
+}
+
+.hero-kicker-live,
+.nrb-sambhavana .kicker,
+.nrb-ifs-tease .kicker,
+.story-path-copy .kicker,
+.quote-band .kicker,
+.guide-panel .kicker,
+.stat-card--featured .kicker,
+.site-footer .kicker {
+  color: #f6e7b8;
+}
+
+.hero-band--photo {
+  background:
+    linear-gradient(90deg, rgba(30, 8, 5, 0.94) 0%, rgba(72, 18, 11, 0.78) 22%, rgba(96, 26, 16, 0.16) 42%, rgba(96, 26, 16, 0.06) 58%, rgba(96, 26, 16, 0.04) 100%),
+    url("../assets/puja-2025/idol-durga-2025.jpg") 52% 38% / cover;
+}
+
+.hero-band--photo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 12px;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--fest-sindoor) 0 10px,
+      var(--fest-marigold) 10px 14px,
+      var(--color-brand-primary) 14px 22px,
+      var(--fest-turmeric) 22px 26px
+    );
+}
+
+.hero-band--photo h1 {
+  text-shadow: 0 2px 18px rgba(20, 6, 4, 0.45);
+  max-width: 12.5rem;
+  font-size: clamp(2rem, 4.4vw, 3.55rem);
+  margin-top: 0;
+  text-align: left;
+}
+
+.hero-copy {
+  max-width: 24rem;
+  justify-self: start;
+  align-self: start;
+  padding-right: 0.5rem;
+  text-align: left;
+}
+
+.hero-band--photo .lede {
+  max-width: 24rem;
+}
+
+.hero-meta {
+  max-width: 24rem;
+}
+
+.nom-card {
+  max-width: 19rem;
+  justify-self: start;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-grid {
+    grid-template-columns: minmax(12.5rem, 32%) minmax(0, 1fr);
+    align-items: stretch;
+    min-height: 36rem;
+    gap: 1rem 1.1rem;
+  }
+  .hero-copy {
+    grid-column: 1;
+    max-width: none;
+    align-self: start;
+  }
+  .hero-band--photo .hero-meta {
+    grid-template-columns: 1fr;
+  }
+  .nom-card {
+    grid-column: 2;
+    align-self: end;
+    justify-self: end;
+    max-width: 16rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-band--photo {
+    padding-top: 1.35rem;
+  }
+  .hero-grid {
+    grid-template-columns: minmax(14rem, 18rem) minmax(14rem, 1fr) minmax(14rem, 17rem);
+    gap: 1.2rem 1.6rem;
+    align-items: stretch;
+    min-height: 38rem;
+  }
+  .hero-copy {
+    grid-column: 1;
+    align-self: start;
+    padding-top: 0.1rem;
+    max-width: none;
+  }
+  .nom-card {
+    grid-column: 3;
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 0.35rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-band--photo {
+    background-color: #1e0805;
+    background-image: none;
+  }
+  .hero-band--photo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 22.5rem;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      linear-gradient(180deg, rgba(30, 8, 5, 0.08) 0%, rgba(30, 8, 5, 0.04) 62%, rgba(30, 8, 5, 0.55) 100%),
+      url("../assets/puja-2025/idol-durga-2025.jpg") 52% 38% / cover;
+  }
+  .hero-band--photo::after {
+    top: 22.5rem;
+    bottom: auto;
+    transform: translateY(-12px);
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 22.5rem auto auto;
+    min-height: 22.5rem;
+    align-items: start;
+    gap: 0.85rem;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-copy {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 22rem;
+    padding: 0.35rem 0.15rem 0.5rem;
+    align-self: start;
+  }
+  .hero-band--photo .hero-meta div {
+    padding: 0.45rem 0.7rem;
+  }
+  .hero-credit {
+    font-size: 0.72rem;
+    margin-top: 0.55rem;
+  }
+  .nom-card {
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 22rem;
+    justify-self: start;
+    align-self: start;
+    margin: 0 0.15rem 0.75rem;
+  }
+  .hero-band--photo h1 {
+    max-width: 14rem;
+    font-size: clamp(1.85rem, 8vw, 2.25rem);
+  }
+  .hero-band--photo .lede {
+    font-size: 0.95rem;
+  }
+}
+
+.hero-band--photo .lede,
+.hero-credit {
+  color: #fff8ea;
+  text-shadow: 0 1px 10px rgba(20, 6, 4, 0.55);
+}
+
+.hero-meta dt {
+  color: #f3e6c8;
+}
+
+.nom-card {
+  border-top: 4px solid var(--fest-sindoor);
+  box-shadow: 0 18px 40px rgba(80, 18, 12, 0.18);
+}
+
+.campaign-section {
+  padding-top: 2rem;
+  border-top: 0;
+  background-image: radial-gradient(circle at 0 0, #8f2d1e 0 3px, transparent 4px);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 0 0.35rem;
+}
+
+.nrb-fund-stage {
+  background-image: none;
+}
+
+.nrb-sambhavana {
+  background-color: #5c1c14;
+  background-image: linear-gradient(120deg, #5c1c14 0%, #8f2d1e 58%, #c45c32 140%);
+  color: #fff8ea;
+}
+
+.nrb-ifs-tease {
+  background-color: #0f2818;
+  background-image: none;
+  color: #fff8ea;
+}
+
+.nrb-sambhavana,
+.nrb-ifs-tease {
+  position: relative;
+  overflow: hidden;
+}
+
+.nrb-sambhavana::before,
+.nrb-ifs-tease::before {
+  content: "";
+  position: absolute;
+  width: 9rem;
+  height: 9rem;
+  right: -2.4rem;
+  top: -2.8rem;
+  border: 2px solid color-mix(in srgb, var(--fest-marigold) 45%, transparent);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.nrb-sambhavana h2,
+.nrb-ifs-tease h2,
+.nrb-sambhavana p,
+.nrb-ifs-tease p {
+  color: #fff8ea;
+}
+
+.nrb-ifs-tease .btn-primary {
+  background: var(--fest-marigold);
+  color: #201a10;
+  border-color: var(--fest-marigold);
+}
+
+.ifs-contrast-card.ifs-contrast-card--ifs {
+  background-color: #163a26;
+  color: #fff8ea;
+  border-color: transparent;
+}
+.ifs-contrast-card.ifs-contrast-card--ifs h3,
+.ifs-contrast-card.ifs-contrast-card--ifs p {
+  color: #fff8ea;
+}
+
+.ifs-pillar[data-pillar="pond"] {
+  background-color: #143d4a;
+  color: #fff8ea;
+}
+.ifs-pillar[data-pillar="bund"] {
+  background-color: #f4e4b0;
+  color: #201a10;
+}
+.ifs-pillar[data-pillar="stock"] {
+  background-color: #edd0bf;
+  color: #201a10;
+}
+.ifs-pillar[data-pillar="soil"] {
+  background-color: #1f5237;
+  color: #fff8ea;
+}
+.ifs-pillar[data-pillar="tech"] {
+  background-color: #0f2818;
+  color: #f6e7b8;
+}
+.ifs-pillar[data-pillar="pond"] p,
+.ifs-pillar[data-pillar="soil"] p,
+.ifs-pillar[data-pillar="tech"] p {
+  color: #f3e6c8;
+}
+.ifs-pillar[data-pillar="bund"] p,
+.ifs-pillar[data-pillar="stock"] p {
+  color: #3d3424;
+}
+
+.ifs-cycle {
+  background:
+    radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--fest-marigold) 22%, #fffdf7) 0 20%, transparent 21%),
+    repeating-conic-gradient(from 12deg, transparent 0 18deg, color-mix(in srgb, var(--fest-sindoor) 16%, transparent) 18deg 19deg);
+  border-color: var(--fest-sindoor);
+}
+.ifs-cycle-center {
+  background: var(--fest-sindoor-deep);
+  color: #fff8ea;
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--fest-marigold) 40%, transparent);
+}
+.ifs-cycle-node {
+  color: #201a10;
+  background: #fffdf7;
+  border-color: var(--fest-sindoor);
+  box-shadow: 0 8px 18px rgba(92, 28, 20, 0.12);
+}
+
+.stat-card--featured {
+  background-color: #5c1c14;
+  color: #fff8ea;
+}
+.stat-card--featured h3,
+.stat-card--featured p {
+  color: #fff8ea;
+}
+
+.guide-panel,
+.quote-band {
+  background-color: #5c1c14;
+  background-image: linear-gradient(160deg, #5c1c14, #0f2818);
+  color: #fff8ea;
+}
+.guide-panel a,
+.quote-band h2 {
+  color: #fff8ea;
+}
+
+.nrb-tier:nth-child(4),
+.nrb-tier:nth-child(4) .kicker,
+.nrb-tier:nth-child(4) h3,
+.nrb-tier:nth-child(4) .stat-value {
+  color: #fff8ea;
+}
+.nrb-tier:nth-child(4) .kicker,
+.nrb-tier:nth-child(4) .stat-value {
+  color: #f6e7b8;
+}
+
+.nrb-photo figcaption,
+.ifs-hero-photo figcaption {
+  color: #fff8ea;
+  background: var(--fest-sindoor-deep);
+}
+
+.facts > div {
+  background: transparent;
+  border: 0;
+  border-left: 3px solid var(--fest-sindoor);
+  border-radius: 0;
+  padding: 0.55rem 0 0.55rem 0.85rem;
+  box-shadow: none;
+}
+.facts dt {
+  color: var(--fest-sindoor);
+  letter-spacing: 0.08em;
+}
+
+.diff-strip {
+  gap: 0;
+  background: transparent;
+}
+.diff-strip article {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--color-border-default);
+  border-radius: 0;
+  padding: 1.1rem 0 1.2rem;
+  box-shadow: none;
+}
+.diff-strip article:first-child {
+  border-top: 0;
+}
+@media (min-width: 768px) {
+  .diff-strip { grid-template-columns: 1.3fr 0.85fr 0.85fr; }
+  .diff-strip article {
+    padding-right: 1.2rem;
+    border-top: 0;
+    border-left: 3px solid var(--fest-terracotta);
+  }
+}
+
+@media (min-width: 1100px) {
+  .award-grid { grid-template-columns: 1.15fr 0.85fr; }
+  .award-card:nth-child(1) { grid-column: 1 / -1; }
+}
+
+.nrb-feed {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+.nrb-feed-frame {
+  margin-top: 0.75rem;
+  padding: 1.1rem 1rem 1.2rem;
+  border: 1px solid #c98a1f;
+  border-radius: 4px 22px 4px 22px;
+  background-color: #fffdf7;
+  background-image:
+    linear-gradient(180deg, #e8f0e4 0%, #fffdf7 42%),
+    repeating-linear-gradient(
+      -18deg,
+      transparent 0 10px,
+      rgba(26, 63, 42, 0.06) 10px 11px
+    );
+  position: relative;
+}
+.nrb-feed-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0.45rem;
+  border: 1px dashed color-mix(in srgb, var(--fest-sindoor) 35%, transparent);
+  border-radius: 2px 16px 2px 16px;
+  pointer-events: none;
+}
+.nrb-feed-schematic {
+  display: block;
+  width: min(22rem, 100%);
+  height: auto;
+  margin: 0.2rem auto 0.7rem;
+}
+.nrb-feed-empty {
+  min-height: 0;
+  display: block;
+  place-items: unset;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-weight: 550;
+  max-width: 36rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn-primary {
+  background: var(--fest-sindoor);
+  border-color: var(--fest-sindoor);
+  color: #fff8ea;
+}
+.btn-secondary {
+  border-color: var(--color-brand-primary);
+  color: var(--color-brand-primary);
+}
+
+.ifs-map {
+  display: grid;
+  gap: 0.65rem;
+}
+.ifs-node {
+  border-radius: 0 14px 0 14px;
+  border-color: var(--fest-marigold);
+}
+.ifs-node.is-on {
+  background: var(--fest-sindoor-deep);
+  color: #fff8ea;
+  border-color: var(--fest-sindoor-deep);
+}
+.ifs-node.is-on p,
+.ifs-node.is-on h3,
+.ifs-node.is-on .muted {
+  color: #fff8ea;
+}
+
+@media (min-width: 1100px) {
+  .ifs-map {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.award-index {
+  color: var(--fest-sindoor);
+}
+
+.site-footer {
+  border-top: 4px solid var(--fest-marigold);
+}

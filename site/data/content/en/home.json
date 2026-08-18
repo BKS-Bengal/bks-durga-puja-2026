@@ -5,15 +5,19 @@
   "heroStatus": "Hero language is a hypothesis for review — replaceable. Venue is not claimed.",
   "storyArc": {
     "h2": "One story, in order",
-    "lede": "Culture opens the door. The farmer stays in view. Integrated Farming explains the livelihood. The mission invites participation.",
+    "lede": "The Puja opens the door. Krishak Samaj names the farmer. Integrated Farming is the livelihood. Then the live farm, then the seed.",
     "steps": [
-      { "id": "culture", "kicker": "Culture", "title": "The Puja", "body": "Why Durga Puja matters in Bengal — neighbourhood, clay, dhak, food, homecoming.", "href": "#puja" },
-      { "id": "people", "kicker": "People", "title": "The farmer", "body": "The annadata is not a secondary object on this site.", "href": "#krishak" },
-      { "id": "bridge", "kicker": "Bridge", "title": "Krishak Samaj", "body": "The 2026 theme connects the Puja to the agricultural community.", "href": "#krishak" },
-      { "id": "system", "kicker": "System", "title": "Integrated Farming", "body": "Crop, animals, water, waste and markets as one household system — not a list of sectors.", "href": "#ifs" },
-      { "id": "ambition", "kicker": "Ambition", "title": "5,000 farmers", "body": "A mobilisation goal. Not money raised. Not farmers already enrolled.", "href": "#mission" },
-      { "id": "action", "kicker": "Action", "title": "Participate", "body": "Express interest. No payment is taken on this website.", "href": "#participate" }
+      { "id": "culture", "kicker": "Culture", "title": "The Puja", "body": "Neighbourhood, clay, dhak, food, homecoming.", "href": "#puja" },
+      { "id": "bridge", "kicker": "People", "title": "Krishak Samaj", "body": "The theme names the annadata.", "href": "#krishak" },
+      { "id": "system", "kicker": "Livelihood", "title": "Integrated Farming", "body": "Crop, animals, water and markets as one household.", "href": "#ifs" },
+      { "id": "demo", "kicker": "Showcase", "title": "Demo farm", "body": "East Kolkata Wetlands, being built.", "href": "#demo" },
+      { "id": "fund", "kicker": "Seed", "title": "Fund a farm", "body": "₹1 lakh, or ₹20,000 every two months.", "href": "#fund" },
+      { "id": "ambition", "kicker": "Ambition", "title": "5,000 farms", "body": "One village farm. One NRB patron.", "href": "#mission" }
     ]
+  },
+  "ifsTease": {
+    "eyebrow": "The livelihood",
+    "cta": "See how the farm loops"
   },
   "explore": {
     "h2": "Inside this gathering",
