@@ -16,7 +16,7 @@
     "Paschim Bardhaman", "Paschim Medinipur", "Purba Bardhaman",
     "Purba Medinipur", "Purulia", "South 24 Parganas", "Uttar Dinajpur"
   ];
-  const HOME_SECTIONS = ["nrb", "sambhavana", "about", "demo", "model", "fund", "sponsor", "village", "faq", "theme", "awards", "record", "nominate", "visit", "press", "ifs-tease"];
+  const HOME_SECTIONS = ["nrb", "sambhavana", "about", "demo", "model", "fund", "sponsor", "village", "faq", "theme", "awards", "record", "nominate", "visit", "press", "ifs-tease", "prep"];
   const state = {
     lang: "en",
     heroId: "H1",
@@ -296,6 +296,7 @@
     const fund = nrb.fund || {};
     const bulk = nrb.bulk || {};
     const operator = nrb.operator || {};
+    const prep = nrb.prep || ((state.nrb.en || {}).prep) || {};
 
     const facts = (demo.facts || []).map((row) =>
       "<div><dt>" + escapeHtml(row.label) + "</dt><dd>" + escapeHtml(row.value) + "</dd></div>"
@@ -338,6 +339,25 @@
         (cap ? "<figcaption>" + escapeHtml(cap) + "</figcaption>" : "") + "</figure>";
     }
 
+    function prepFigure(src, alt, cap, w, h, extraClass) {
+      if (!src) return "";
+      return "<figure class='prep-photo " + (extraClass || "") + "'><img src='" + escapeHtml(src) +
+        "' alt='" + escapeHtml(alt) + "' width='" + escapeHtml(String(w || "")) +
+        "' height='" + escapeHtml(String(h || "")) + "'>" +
+        (cap ? "<figcaption>" + escapeHtml(cap) + "</figcaption>" : "") + "</figure>";
+    }
+
+    const htmlPrep = prep.title
+      ? "<section class='campaign-section prep-update' id='prep'>" +
+        "<p class='kicker'>" + escapeHtml(prep.eyebrow || "") + "</p>" +
+        "<h2>" + escapeHtml(prep.title) + "</h2>" +
+        "<p>" + escapeHtml(prep.lede || "") + "</p>" +
+        "<div class='prep-photos'>" +
+        prepFigure(prep.primarySrc, prep.primaryAlt, prep.primaryCap, prep.primaryWidth, prep.primaryHeight, "prep-photo--primary") +
+        prepFigure(prep.supportSrc, prep.supportAlt, prep.supportCap, prep.supportWidth, prep.supportHeight, "prep-photo--support") +
+        "</div></section>"
+      : "";
+
     const ifs = state.ifs[state.lang] || {};
     const tease = ((state.home[state.lang] || {}).ifsTease) || {};
     const ifsBody = (ifs.what && ifs.what.body) || ifs.lede || "";
@@ -371,6 +391,7 @@
       "<p class='muted' id='nrb-pledge-status'></p></form></section>";
 
     root.innerHTML =
+      htmlPrep +
       "<section class='campaign-section' id='about'>" +
       "<div class='nrb-split'><div><p class='kicker'>" + escapeHtml(about.eyebrow) + "</p><h2>" +
       escapeHtml(about.title) + "</h2><p>" + escapeHtml(about.lede) + "</p>" +

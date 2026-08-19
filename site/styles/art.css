@@ -37,9 +37,20 @@ body::after {
   color: #f6e7b8;
 }
 
+.site-header {
+  background: #123221;
+  border-bottom: 2px solid #c98a1f;
+}
+
 .hero-band--photo {
   background:
-    linear-gradient(90deg, rgba(30, 8, 5, 0.94) 0%, rgba(72, 18, 11, 0.78) 22%, rgba(96, 26, 16, 0.16) 42%, rgba(96, 26, 16, 0.06) 58%, rgba(96, 26, 16, 0.04) 100%),
+    linear-gradient(90deg,
+      rgba(18, 6, 4, 0.93) 0%,
+      rgba(48, 14, 9, 0.78) 16%,
+      rgba(72, 20, 12, 0.28) 32%,
+      rgba(72, 20, 12, 0.08) 44%,
+      rgba(40, 12, 8, 0.02) 58%,
+      transparent 72%),
     url("../assets/puja-2025/idol-durga-2025.jpg") 52% 38% / cover;
 }
 
@@ -62,45 +73,84 @@ body::after {
 }
 
 .hero-band--photo h1 {
-  text-shadow: 0 2px 18px rgba(20, 6, 4, 0.45);
-  max-width: 12.5rem;
-  font-size: clamp(2rem, 4.4vw, 3.55rem);
-  margin-top: 0;
+  text-shadow: 0 2px 22px rgba(20, 6, 4, 0.5);
+  max-width: 13.6rem;
+  font-size: clamp(2.15rem, 3.6vw, 3.35rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin-top: 0.15rem;
+  margin-bottom: 0.85rem;
   text-align: left;
 }
 
 .hero-copy {
-  max-width: 24rem;
+  max-width: 26rem;
   justify-self: start;
   align-self: start;
-  padding-right: 0.5rem;
+  padding-right: 0.35rem;
   text-align: left;
 }
 
 .hero-band--photo .lede {
-  max-width: 24rem;
+  max-width: 26rem;
+  font-size: 1.02rem;
+  line-height: 1.55;
 }
 
 .hero-meta {
-  max-width: 24rem;
+  max-width: 26rem;
+  border: 1px solid rgba(246, 231, 184, 0.22);
+  background: rgba(18, 8, 6, 0.42);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .hero-meta {
+    background: rgba(18, 8, 6, 0.88);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+.hero-band--photo .hero-meta div {
+  background: transparent;
+}
+
+.hero-whenwhere {
+  color: #e7c56a;
+}
+
+.hero-kicker-live {
+  background: rgba(18, 8, 6, 0.35);
+  border-color: rgba(246, 231, 184, 0.28);
 }
 
 .nom-card {
-  max-width: 19rem;
+  max-width: 18.5rem;
   justify-self: start;
+  background: #f4ead6;
+  border: 0;
+  border-radius: 16px;
+  padding: 1.25rem 1.3rem 1.35rem;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero-grid {
-    grid-template-columns: minmax(12.5rem, 32%) minmax(0, 1fr);
+    grid-template-columns: minmax(15rem, 36%) minmax(0, 1fr);
     align-items: stretch;
-    min-height: 36rem;
-    gap: 1rem 1.1rem;
+    min-height: 34rem;
+    gap: 1rem 1.2rem;
   }
   .hero-copy {
     grid-column: 1;
     max-width: none;
     align-self: start;
+  }
+  .hero-band--photo h1 {
+    max-width: 100%;
+    font-size: clamp(2.05rem, 4.2vw, 2.7rem);
   }
   .hero-band--photo .hero-meta {
     grid-template-columns: 1fr;
@@ -109,31 +159,43 @@ body::after {
     grid-column: 2;
     align-self: end;
     justify-self: end;
-    max-width: 16rem;
+    max-width: 16.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-band--photo {
-    padding-top: 1.35rem;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+    min-height: 38rem;
   }
   .hero-grid {
-    grid-template-columns: minmax(14rem, 18rem) minmax(14rem, 1fr) minmax(14rem, 17rem);
-    gap: 1.2rem 1.6rem;
+    grid-template-columns: minmax(16rem, 22rem) minmax(10rem, 1fr) minmax(15rem, 18.5rem);
+    gap: 1.15rem 1.8rem;
     align-items: stretch;
-    min-height: 38rem;
+    min-height: 36rem;
   }
   .hero-copy {
     grid-column: 1;
     align-self: start;
-    padding-top: 0.1rem;
+    padding-top: 0.35rem;
     max-width: none;
+  }
+  .hero-band--photo h1 {
+    max-width: 16.25rem;
   }
   .nom-card {
     grid-column: 3;
     align-self: end;
     justify-self: end;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-band--photo h1 {
+    font-size: clamp(2.45rem, 3.1vw, 3.45rem);
+    max-width: 17rem;
   }
 }
 
@@ -141,6 +203,8 @@ body::after {
   .hero-band--photo {
     background-color: #1e0805;
     background-image: none;
+    min-height: 0;
+    padding-bottom: 1.4rem;
   }
   .hero-band--photo::before {
     content: "";
@@ -152,7 +216,7 @@ body::after {
     pointer-events: none;
     z-index: 0;
     background:
-      linear-gradient(180deg, rgba(30, 8, 5, 0.08) 0%, rgba(30, 8, 5, 0.04) 62%, rgba(30, 8, 5, 0.55) 100%),
+      linear-gradient(180deg, rgba(30, 8, 5, 0.06) 0%, rgba(30, 8, 5, 0.04) 58%, rgba(30, 8, 5, 0.58) 100%),
       url("../assets/puja-2025/idol-durga-2025.jpg") 52% 38% / cover;
   }
   .hero-band--photo::after {
@@ -165,19 +229,19 @@ body::after {
     grid-template-rows: 22.5rem auto auto;
     min-height: 22.5rem;
     align-items: start;
-    gap: 0.85rem;
+    gap: 0.9rem;
     position: relative;
     z-index: 1;
   }
   .hero-copy {
     grid-column: 1;
     grid-row: 2;
-    max-width: 22rem;
-    padding: 0.35rem 0.15rem 0.5rem;
+    max-width: none;
+    padding: 0.25rem 0.05rem 0.4rem;
     align-self: start;
   }
   .hero-band--photo .hero-meta div {
-    padding: 0.45rem 0.7rem;
+    padding: 0.5rem 0.75rem;
   }
   .hero-credit {
     font-size: 0.72rem;
@@ -186,17 +250,18 @@ body::after {
   .nom-card {
     grid-column: 1;
     grid-row: 3;
-    max-width: 22rem;
-    justify-self: start;
+    max-width: none;
+    justify-self: stretch;
     align-self: start;
-    margin: 0 0.15rem 0.75rem;
+    margin: 0 0 0.5rem;
   }
   .hero-band--photo h1 {
-    max-width: 14rem;
-    font-size: clamp(1.85rem, 8vw, 2.25rem);
+    max-width: none;
+    font-size: clamp(1.95rem, 8.4vw, 2.45rem);
   }
   .hero-band--photo .lede {
-    font-size: 0.95rem;
+    font-size: 0.98rem;
+    max-width: none;
   }
 }
 
@@ -487,6 +552,47 @@ body::after {
 @media (min-width: 1100px) {
   .ifs-map {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.prep-update {
+  padding-top: 1.5rem;
+}
+.prep-update h2 {
+  max-width: 24rem;
+}
+.prep-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  margin-top: 1rem;
+}
+.prep-photo {
+  margin: 0;
+  background: #1a0c08;
+  border-radius: 4px 18px 4px 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(80, 18, 12, 0.18);
+}
+.prep-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.prep-photo--support {
+  max-width: 36rem;
+}
+.prep-photo figcaption {
+  margin: 0;
+  padding: 0.55rem 0.8rem 0.7rem;
+  font-size: 0.82rem;
+  color: #f3e6c8;
+  background: #5c1c14;
+}
+@media (min-width: 1024px) {
+  .prep-photo--support {
+    max-width: 42rem;
   }
 }
 
