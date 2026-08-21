@@ -87,6 +87,14 @@
     renderNrb();
     updateMeta();
     setUrlLang(lang);
+    document.querySelectorAll('a[href^="https://bks-pujo-"]').forEach((a) => {
+      try {
+        const url = new URL(a.href);
+        url.searchParams.set("lang", lang);
+        a.href = url.toString();
+      } catch (e) { /* ignore */ }
+    });
+    const live = document.getElementById("live");
     const ui = state.ui[lang];
     if (live && ui && ui.languageLive) live.textContent = ui.languageLive[lang] || ui.languageLive.en;
     try { localStorage.setItem("bks-puja-lang", lang); } catch (e) { /* ignore */ }
@@ -192,14 +200,21 @@
       const audienceLabel = (ui.navGroups && ui.navGroups.participate) || "Participate";
       html += "<p class='nav-group-label' id='nav-g-audience'>" + audienceLabel + "</p>";
       html += "<div class='nav-group' role='group' aria-labelledby='nav-g-audience'>";
-      [
-        { href: "https://bks-pujo-sponsor.vercel.app/", label: "Sponsors" },
-        { href: "https://bks-pujo-government.vercel.app/", label: "Government &amp; Institutions" },
-        { href: "https://bks-pujo-farmtech-agritech.vercel.app/", label: "Farmers / FarmTech + AgriTech" },
-        { href: "https://bks-pujo-public.vercel.app/", label: "Public / Puja" },
-        { href: "https://bks-pujo-nrb.vercel.app/", label: "NRB / Supporters" }
-      ].forEach(function (item) {
-        html += "<a href='" + item.href + "'>" + item.label + "</a>";
+      const doorLabels = {
+        en: ["Sponsors", "Government &amp; Institutions", "Farmers / FarmTech and AgriTech", "Public / Puja", "NRB / Supporters"],
+        bn: ["পৃষ্ঠপোষকতা", "Government &amp; Institutions", "কৃষক / FarmTech and AgriTech", "পূজা", "সমর্থক / NRB"],
+        hi: ["प्रायोजन", "Government &amp; Institutions", "किसान / FarmTech and AgriTech", "पूजा", "समर्थक / NRB"]
+      };
+      const doorHrefs = [
+        "https://bks-pujo-sponsor.vercel.app/",
+        "https://bks-pujo-government.vercel.app/",
+        "https://bks-pujo-farmtech-agritech.vercel.app/",
+        "https://bks-pujo-public.vercel.app/",
+        "https://bks-pujo-nrb.vercel.app/"
+      ];
+      const labels = doorLabels[state.lang] || doorLabels.en;
+      doorHrefs.forEach(function (href, i) {
+        html += "<a href='" + href + "'>" + (labels[i] || doorLabels.en[i]) + "</a>";
       });
       html += "</div>";
       (spec.groups || []).forEach((group) => {
