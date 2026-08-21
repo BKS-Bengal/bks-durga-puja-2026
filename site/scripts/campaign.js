@@ -229,9 +229,10 @@
       "<section class='campaign-section' id='visit'>" +
       "<p class='kicker'>" + escapeHtml(d.visitEyebrow) + "</p><h2>" + escapeHtml(d.visitTitle) + "</h2>" +
       "<p>" + escapeHtml(d.visitText) + "</p>" +
-      "<p class='legend'><span class='badge badge-pending'>ASSUMED</span> " +
+      "<p class='legend'><span class='badge'>LOCATION</span> " +
       escapeHtml(puja.venue && puja.venue.detail ? (puja.venue.detail[lang] || puja.venue.detail.en) : "") +
       " · " + escapeHtml(puja.ceremony ? (puja.ceremony[lang] || puja.ceremony.en) : "") + "</p>" +
+      "<p><a class='maps-link' href='https://www.google.com/maps/search/?api=1&amp;query=Munshir%20Bheri%20Management%20Fishermen%27s%20Committee%2C%20Near%20Sukantanagar%2C%20Salt%20Lake%20Sector%20V%2C%20East%20Kolkata%20Wetlands%2C%20Kolkata%20700091%2C%20West%20Bengal' target='_blank' rel='noopener noreferrer'>View on Google Maps</a></p>" +
       "<div class='programme-list'><div><strong>" + escapeHtml(d.prog1) + "</strong><span> " +
       escapeHtml(d.prog1Text) + "</span></div><div><strong>" + escapeHtml(d.prog2) +
       "</strong><span> " + escapeHtml(d.prog2Text) + "</span></div><div><strong>" +
