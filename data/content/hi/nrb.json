@@ -11,7 +11,7 @@
     "whoSrc": "assets/puja-2025/conch-aarti-2025.jpg",
     "whoAlt": "2025 दुर्गा पूजा महोत्सव में संध्या आरती पर शंख",
     "whoCap": "शंख आरती, दुर्गा पूजा महोत्सव 2025।",
-    "demoSrc": "assets/puja-2025/idol-durga-2025.jpg",
+    "demoSrc": "",
     "demoAlt": "2025 दुर्गा पूजा महोत्सव में माटी की प्रतिमा, आईआईटी खड़गपुर रिसर्च पार्क",
     "demoCap": "दुर्गा पूजा महोत्सव 2025, आईआईटी खड़गपुर रिसर्च पार्क — इसी उत्सव की भाषा से इस वर्ष का जीवंत फार्म पवेलियन उठ रहा है।",
     "aboutSrc": "assets/mahacharya-sourabh-j-sarkar.jpg",
@@ -36,45 +36,84 @@
   "model": {
     "eyebrow": "5,000 समेकित फार्म पहल",
     "title": "एक गाँव फार्म। एक एनआरबी संरक्षक।",
-    "lede": "5,000 गाँव स्थान, 5,000 समर्पित एनआरबी संरक्षक। चिह्नित स्थानीय 2 से 3 अग्रणी किसान या FPO टीमें भूमि, श्रम और कार्यशील पूँजी देती हैं। योगदान प्रति फार्म ₹1,00,000 — वर्ष में हर दो महीने ₹20,000। बीकेएस डिजिटल पोर्टल पर विश्व में कहीं से रोपण चक्र और माइलस्टोन देखे जा सकते हैं। फार्म बढ़ने पर स्थानीय FPO में व्यावसायिक साझेदार बनने का मार्ग भी खुला है।",
+    "lede": "A mobilisation target of about 5,000 village locations paired with about 5,000 dedicated NRB patrons. Identified local teams of 2 to 3 progressive farmers or FPOs are intended to contribute land, labour, and working capital. The proposed seed is ₹1,00,000 per farm — or ₹20,000 every two months. A later digital portal may let patrons follow planting cycles. None of that is payment on this page, and none of it is already completed.",
     "points": [
-      { "title": "लक्ष्य", "body": "5,000 गाँव स्थान, 5,000 समर्पित एनआरबी संरक्षक।" },
-      { "title": "मैदान पर", "body": "2–3 अग्रणी किसान / FPO — भूमि, श्रम और कार्यशील पूँजी।" },
-      { "title": "योगदान", "body": "प्रति फार्म ₹1 लाख, या हर दो महीने ₹20,000।" },
-      { "title": "फार्म का अनुसरण", "body": "विश्व में कहीं से प्रगति, रोपण चक्र और माइलस्टोन।" }
+      {
+        "title": "The target",
+        "body": "About 5,000 village locations paired with about 5,000 dedicated NRB patrons — a goal, not a completed count."
+      },
+      {
+        "title": "On the ground",
+        "body": "Local teams of 2–3 progressive farmers / FPOs — land, labour and working capital."
+      },
+      {
+        "title": "The contribution",
+        "body": "₹1 lakh per farm is the proposed seed-support figure, or ₹20,000 every two months over the year."
+      },
+      {
+        "title": "Follow the farm",
+        "body": "Digital tracking of progress, planting cycles and milestones from anywhere in the world."
+      }
     ]
   },
   "village": {
     "eyebrow": "पैतृक स्थान",
     "title": "ज़िला या ब्लॉक खोजें।",
-    "lede": "जिस मिट्टी से आप आए हैं, वहीं अपना समर्थन जोड़िए। पैतृक ज़िला या ब्लॉक लिखिए, बीकेएस आपको एक गाँव फार्म से मिलाएगा।",
+    "lede": "Name your ancestral district or block if you want later pairing to be considered. This page does not match you to a farm.",
     "fieldDistrict": "ज़िला",
     "fieldBlock": "ब्लॉक / गाँव / पाड़ा",
-    "submit": "मेरा गाँव जोड़ें",
-    "status": "बीकेएस आपके स्थान को एक फार्म से मिलाकर लिखेगा।"
+    "submit": "Express village interest",
+    "status": "The information has been downloaded as a file to your device. This website does not match you to a farm."
   },
   "faq": {
     "eyebrow": "प्रश्न",
     "title": "फार्म, धन और संरक्षण कैसे काम करता है।",
     "items": [
-      { "q": "यहाँ FPO क्या है?", "a": "किसान उत्पादक संगठन — प्रत्येक गाँव फार्म का स्थानीय वाहन। दो-तीन अग्रणी किसान या FPO भूमि, श्रम और कार्यशील पूँजी देते हैं। आपका ₹1 लाख उसके साथ बीज है।" },
-      { "q": "₹1 लाख कैसे खर्च होता है?", "a": "एक समेकित मॉडल फार्म का बीज: तालाब और जल, मेंड़ बागवानी, पशुधन, जैव इनपुट और फार्म का कार्य चक्र। भूमि और श्रम स्थानीय किसान टीम का।" },
-      { "q": "किस्तों में दिया जा सकता है?", "a": "हाँ। वर्ष में हर दो महीने ₹20,000, या एक बार में ₹1 लाख। यहाँ पंजीकरण कीजिए, भारतीय कृषक समाज यूपीआई, नेट बैंकिंग या अंतरराष्ट्रीय कार्ड से योगदान पूरा करेगा।" },
-      { "q": "कर रसीद मिलेगी?", "a": "भारतीय कृषक समाज, पश्चिम बंगाल प्रत्येक संरक्षक को योगदान का दस्तावेज़ देगा। ग्रहण पूरा होने पर लागू कर-मार्ग आपके साथ पुष्ट किया जाएगा।" },
-      { "q": "फार्म कैसे देखूँ?", "a": "बीकेएस डिजिटल पोर्टल पर रोपण चक्र और माइलस्टोन रहेंगे। ईस्ट कोलकाता वेटलैंड डेमो फार्म के दैनिक और साप्ताहिक वीडियो इस पृष्ठ पर भी आएंगे।" }
+      {
+        "q": "What is an FPO here?",
+        "a": "A Farmer Producer Organisation — the local vehicle for each village farm. Identified teams of two to three progressive farmers or FPOs put in land, sweat equity and working capital. Your ₹1 lakh is the seed that sits beside that."
+      },
+      {
+        "q": "How is ₹1 lakh used?",
+        "a": "Seed for one integrated model farm: pond and water, bund horticulture, livestock, bio-inputs and the working cycle of the farm. Land and labour come from the local farmer team."
+      },
+      {
+        "q": "Can I pay in instalments?",
+        "a": "The proposed pattern is ₹20,000 every two months over the year, or ₹1 lakh in one contribution. This page does not take payment. If a farm pairing is later arranged off this website, Bharatiya Krishak Samaj would complete any contribution with you then."
+      },
+      {
+        "q": "Is there a tax receipt?",
+        "a": "This page does not issue a receipt. Any tax pathway would be confirmed only if a contribution is later completed off this website."
+      },
+      {
+        "q": "How do I follow the farm?",
+        "a": "A BKS digital portal will carry planting cycles and operational milestones. This page will also carry daily and weekly video from the East Kolkata Wetland demo farm as those dispatches are posted."
+      }
     ]
   },
   "demo": {
     "eyebrow": "दुर्गा पूजा 2026 · जीवंत समेकित फार्म पंडाल",
     "title": "ईस्ट कोलकाता वेटलैंड्स — सेक्टर V से 500 मीटर",
-    "lede": "केवल अस्थायी पंडाल नहीं — महीनों में बना एक पूर्ण काम करने वाला, जीवंत मॉडल समेकित फार्म। शहरी हाई-टेक (सेक्टर V, कोलकाता की आईटी और तकनीक राजधानी) और ग्रामीण आर्द्रभूमि की सीमा पर — दिखाता है कि एआई, स्मार्ट कृषि और आधुनिक टिकाऊ अभ्यास बंगाल की खेती का भविष्य कैसे चलाएंगे। दुर्गा पूजा 2026 से 2027 के बीच 5,000 गाँवों में जो दोहराया जाएगा, उसका जीवंत ब्लूप्रिंट चलकर देखिए।",
+    "lede": "A live integrated-farm demonstration is being built in the East Kolkata Wetlands, 500 metres from Sector V — intended as the 2026 pavilion, not only a festive facade. Whether that plot is also the dump-yard transformation story is pending confirmation. The 5,000-village pairing is a mobilisation target, not a completed replication.",
     "statusBadge": "निर्माणाधीन",
     "statusNote": "कृषक समाज पूजा 2026 के केंद्रीय पवेलियन के रूप में यहाँ पहला जीवंत आईएफएस डेमो फार्म बन रहा है।",
     "facts": [
-      { "label": "स्थान", "value": "ईस्ट कोलकाता वेटलैंड्स · सेक्टर V से 500 मी" },
-      { "label": "जो चलकर देखेंगे", "value": "काम करने वाला समेकित फार्म, केवल उत्सव मुखौटा नहीं" },
-      { "label": "इस फार्म का बीज", "value": "₹1,00,000" },
-      { "label": "फिर", "value": "वही ब्लूप्रिंट, 5,000 गाँव, पूजा 2026 से पूजा 2027" }
+      {
+        "label": "Place",
+        "value": "East Kolkata Wetlands · 500 m from Sector V"
+      },
+      {
+        "label": "What you walk through",
+        "value": "A working integrated farm, not only a festive facade"
+      },
+      {
+        "label": "Seed for this farm",
+        "value": "₹1,00,000"
+      },
+      {
+        "label": "Then",
+        "value": "The same blueprint, 5,000 villages, Puja 2026 to Puja 2027"
+      }
     ],
     "feedEyebrow": "प्रगति फ़ीड",
     "feedTitle": "वेटलैंड डेमो फार्म की दैनिक और साप्ताहिक खबर",
@@ -82,15 +121,21 @@
   },
   "fund": {
     "eyebrow": "फार्म का बीज",
-    "title": "एक गाँव फार्म अपनाइए।",
-    "lede": "₹1,00,000 एक समेकित मॉडल फार्म का बीज है। एक बार में दीजिए, या वर्ष में हर दो महीने ₹20,000। अपना मूल गाँव लिखिए। भारतीय कृषक समाज आपको स्थानीय किसान टीम से मिलाएगा और उस फार्म का डिजिटल अनुसरण खोलेगा।",
+    "title": "Express interest in a village farm.",
+    "lede": "₹1 lakh is the proposed seed for one integrated model farm — in full, or ₹20,000 every two months. Name your native village. This page does not take payment. Bharatiya Krishak Samaj may later pair interested patrons with a local farmer team.",
     "whoLabel": "किसके लिए",
     "whoBody": "नॉन-रेजिडेंट बंगाली — बंगाल के गाँव से जुड़े कोई भी, विदेश में हों या कोलकाता की ऊँची इमारत में — जो एक नामित फार्म देखना चाहते हैं।",
     "modelEyebrow": "लचीला योगदान",
     "modelTitle": "₹1 लाख = पाँच किस्तें, प्रत्येक ₹20,000",
-    "modelNote": "वर्ष में हर दो महीने, या एक बार में। ग्रहण यूपीआई, नेट बैंकिंग या अंतरराष्ट्रीय कार्ड से पूरा होगा।",
-    "steps": ["₹20,000", "₹20,000", "₹20,000", "₹20,000", "₹20,000"],
-    "formTitle": "एक गाँव फार्म अपनाइए",
+    "modelNote": "A proposed staggered pattern. This page does not take payment. Any later contribution would be completed off this website.",
+    "steps": [
+      "₹20,000",
+      "₹20,000",
+      "₹20,000",
+      "₹20,000",
+      "₹20,000"
+    ],
+    "formTitle": "Express interest in one village farm",
     "fieldName": "आपका नाम",
     "fieldEmail": "ईमेल",
     "fieldPhone": "फ़ोन",
@@ -99,40 +144,82 @@
     "fieldType": "संरक्षक प्रकार",
     "typeIndividual": "एकल फार्म संरक्षक — ₹1 लाख",
     "typeBulk": "बल्क / पूजा संरक्षक — नीचे के स्तर",
-    "consent": "भारतीय कृषक समाज, पश्चिम बंगाल इस फार्म ग्रहण को पूरा करने के लिए मुझसे संपर्क कर सकता है।",
-    "submit": "मेरा ग्रहण दर्ज करें",
-    "status": "यहाँ पंजीकरण कीजिए। योगदान पूरा करने के लिए बीकेएस संपर्क करेगा।"
+    "consent": "This website does not submit your details to BKS. The information is downloaded as a file to your device. If you choose to send that file to BKS, subsequent handling is outside this website.",
+    "submit": "Express interest",
+    "status": "The information has been downloaded as a file to your device. It has not been uploaded. Nothing here takes money."
   },
   "bulk": {
     "eyebrow": "पूजा संरक्षण",
     "title": "स्तरीय प्रायोजन — फार्म और उत्सव साथ।",
-    "lede": "गाँव फार्म अपनाइए, पूजा के प्रमुख अंगों पर नाम रखिए। आवंटन भारतीय कृषक समाज करेगा। प्रत्येक फार्म पर नाम-स्वीकृति और डिजिटल अनुसरण।",
+    "lede": "Organisations may register interest in supporting farms and the festival together. Allocation, if any, is by Bharatiya Krishak Samaj. This is not an online booking and not a payment.",
     "tiers": [
-      { "id": "farms1", "name": "एकल फार्म संरक्षक", "amount": "₹1 लाख", "note": "1 गाँव फार्म · नाम और अनुसरण", "count": "1" },
-      { "id": "farms5", "name": "क्लस्टर संरक्षक", "amount": "₹5 लाख", "note": "5 फार्म · प्रतिमा प्रायोजक", "count": "5" },
-      { "id": "farms10", "name": "ज़ोनल संरक्षक", "amount": "₹10 लाख", "note": "10 फार्म · महाभोग / प्रकाश", "count": "10" },
-      { "id": "farms20", "name": "क्षेत्रीय हितैषी", "amount": "₹20 लाख+", "note": "क्षेत्रीय क्लस्टर · उत्सव पवेलियन", "count": "20" }
+      {
+        "id": "farms1",
+        "name": "एकल फार्म संरक्षक",
+        "amount": "₹1 लाख",
+        "note": "1 गाँव फार्म · नाम और अनुसरण",
+        "count": "1"
+      },
+      {
+        "id": "farms5",
+        "name": "क्लस्टर संरक्षक",
+        "amount": "₹5 लाख",
+        "note": "5 फार्म · प्रतिमा प्रायोजक",
+        "count": "5"
+      },
+      {
+        "id": "farms10",
+        "name": "ज़ोनल संरक्षक",
+        "amount": "₹10 लाख",
+        "note": "10 फार्म · महाभोग / प्रकाश",
+        "count": "10"
+      },
+      {
+        "id": "farms20",
+        "name": "क्षेत्रीय हितैषी",
+        "amount": "₹20 लाख+",
+        "note": "क्षेत्रीय क्लस्टर · उत्सव पवेलियन",
+        "count": "20"
+      }
     ],
     "pujaLabel": "पूजा अंग",
     "pujaOptions": [
-      { "id": "none", "label": "अभी केवल फार्म" },
-      { "id": "idol", "label": "प्रतिमा प्रायोजक" },
-      { "id": "bhog", "label": "महाभोग" },
-      { "id": "lighting", "label": "प्रकाश और आलोक" },
-      { "id": "pavilion", "label": "उत्सव पवेलियन हितैषी" },
-      { "id": "other", "label": "अन्य" }
+      {
+        "id": "none",
+        "label": "अभी केवल फार्म"
+      },
+      {
+        "id": "idol",
+        "label": "प्रतिमा प्रायोजक"
+      },
+      {
+        "id": "bhog",
+        "label": "महाभोग"
+      },
+      {
+        "id": "lighting",
+        "label": "प्रकाश और आलोक"
+      },
+      {
+        "id": "pavilion",
+        "label": "उत्सव पवेलियन हितैषी"
+      },
+      {
+        "id": "other",
+        "label": "अन्य"
+      }
     ],
     "fieldCount": "कितने फार्म",
-    "formTitle": "पूजा संरक्षक बनिए",
-    "submit": "संरक्षण दर्ज करें",
-    "status": "बीकेएस फार्म आवंटित कर पूजा सम्मान आपके साथ पुष्ट करेगा।",
+    "formTitle": "Express interest in Puja patronage",
+    "submit": "Express interest",
+    "status": "The information has been downloaded as a file to your device. This website does not allocate farms or confirm honours.",
     "pujaLink": "पूजा नामकरण पैकेज इस पृष्ठ के नीचे हैं।"
   },
   "operator": {
     "eyebrow": "स्थानीय किसान टीम · वेटलैंड डेमो",
-    "title": "डेमो साइट दर्ज करें, या एक अपडेट भेजें।",
-    "lede": "ईस्ट कोलकाता वेटलैंड्स के जीवंत फार्म के लिए: दुर्गा पूजा पवेलियन बना रही अग्रणी किसान टीम। फ़ोटो और वीडियो प्रगति फ़ीड पर प्रकाशित होंगे।",
-    "fieldKind": "आप क्या भेज रहे हैं",
+    "title": "Leave a demo-site note.",
+    "lede": "For the East Kolkata Wetlands live farm: the local team of progressive farmers building the Durga Puja pavilion. This form only downloads a file. It does not publish an update.",
+    "fieldKind": "What this note is",
     "kindRegister": "डेमो साइट दर्ज करें",
     "kindUpdate": "प्रगति अपडेट",
     "fieldOperator": "आपका नाम",
@@ -140,12 +227,24 @@
     "fieldNote": "साइट नोट या अपडेट कैप्शन",
     "fieldUpdateType": "अपडेट प्रकार",
     "types": [
-      { "id": "text", "label": "पाठ" },
-      { "id": "photo", "label": "फ़ोटो" },
-      { "id": "video", "label": "वीडियो" },
-      { "id": "milestone", "label": "मील का पत्थर" }
+      {
+        "id": "text",
+        "label": "पाठ"
+      },
+      {
+        "id": "photo",
+        "label": "फ़ोटो"
+      },
+      {
+        "id": "video",
+        "label": "वीडियो"
+      },
+      {
+        "id": "milestone",
+        "label": "मील का पत्थर"
+      }
     ],
-    "submit": "बीकेएस को भेजें",
-    "status": "सत्यापित अपडेट सार्वजनिक फ़ीड पर प्रकाशित होंगे।"
+    "submit": "Download this note",
+    "status": "The information has been downloaded as a file to your device. Nothing has been published."
   }
 }

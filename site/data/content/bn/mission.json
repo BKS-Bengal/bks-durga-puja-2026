@@ -5,42 +5,42 @@
   },
   "kicker": "৫,০০০ খামার উদ্যোগ",
   "h1": "অভিযান",
-  "lede": "৫,০০০ নন-রেসিডেন্ট বাঙালি বাংলার গ্রামে ৫,০০০ সমন্বিত মডেল খামার গড়ুন — দুর্গাপূজা ২০২৬-এর জীবন্ত প্রদর্শনী থেকে যাত্রা।",
-  "notice": "এক গ্রামের খামার। এক এনআরবি পৃষ্ঠপোষক। খামারপ্রতি ১ লক্ষ টাকা বীজ।",
+  "lede": "A mobilisation target of about 5,000 Non-Resident Bengali patrons alongside about 5,000 village integrated farms — launching from a live showcase at Durga Puja 2026. These figures are a goal, not a completed count, and ₹1 lakh is proposed seed-support, not money already collected.",
+  "notice": "One village farm. One NRB patron. ₹1 lakh proposed seed per farm. Not collected on this website.",
   "stats": [
     {
       "id": "farmers",
-      "badge": "খামার",
-      "value": "৫,০০০",
-      "label": "গ্রামের সমন্বিত খামার",
-      "body": "২–৩ জনের অগ্রণী কৃষক বা FPO দল জমি, শ্রম ও কার্যকরী মূলধন দেন।"
+      "badge": "FARMS",
+      "value": "5,000",
+      "label": "village integrated farms (target)",
+      "body": "Local teams of 2–3 progressive farmers or FPOs put in land, labour and working capital."
     },
     {
       "id": "patrons",
-      "badge": "পৃষ্ঠপোষক",
-      "value": "৫,০০০",
-      "label": "নন-রেসিডেন্ট বাঙালি পৃষ্ঠপোষক",
-      "body": "বাংলার গ্রামের সঙ্গে যুক্ত যে কেউ — বিদেশে থাকুন বা কলকাতায়।"
+      "badge": "PATRONS",
+      "value": "5,000",
+      "label": "Non-Resident Bengali patrons (target)",
+      "body": "Anyone with a native village in Bengal — whether they live abroad or in Kolkata."
     },
     {
       "id": "seed",
-      "badge": "বীজ",
-      "value": "১ লক্ষ টাকা",
-      "label": "খামারপ্রতি",
-      "body": "একবারে, অথবা বছরে দুই মাস অন্তর ২০,০০০ টাকা।"
+      "badge": "SEED",
+      "value": "₹1 lakh",
+      "label": "per farm",
+      "body": "In full, or ₹20,000 every two months over the year."
     },
     {
       "id": "total",
-      "badge": "পরিসর",
-      "value": "৫০ কোটি টাকা",
-      "label": "৫,০০০ × ১ লক্ষ",
-      "body": "পূজা ২০২৬ থেকে পূজা ২০২৭-এ বাংলার কৃষি পুনরুত্থানের বীজ।"
+      "badge": "TARGET SCALE",
+      "value": "₹50 crore",
+      "label": "5,000 × ₹1 lakh (arithmetic of the target)",
+      "body": "The mobilisation aim between Puja 2026 and Puja 2027. Not funds already raised."
     }
   ],
   "how": {
     "h2": "মানুষ কীভাবে যোগ দেন",
-    "body": "একটি গ্রামের খামার গ্রহণ করুন, ক্লাস্টার বা অঞ্চলের পূজা পৃষ্ঠপোষক হোন, অথবা পৈতৃক জেলার নাম দিন যাতে বি কে এস আপনাকে আপনার মাটির সঙ্গে মিলাতে পারে। প্রতি খামারের সঙ্গে ডিজিটাল অনুসরণ।",
-    "cta": "গ্রামের খামার গ্রহণ করুন",
+    "body": "Express interest in a village farm, or in cluster or zonal Puja patronage, or name your ancestral district. This website does not complete a pairing or take payment.",
+    "cta": "Learn how support works",
     "href": "#fund"
   }
 }

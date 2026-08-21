@@ -1,5 +1,8 @@
 {
-  "meta": { "lang": "hi", "hindiStatus": "DRAFT — NATIVE REVIEW REQUIRED" },
+  "meta": {
+    "lang": "hi",
+    "hindiStatus": "DRAFT — NATIVE REVIEW REQUIRED"
+  },
   "slotLabel": "चित्र आएगा — यह आयोजन, अनुमति के साथ। मंडप का चित्र नहीं।",
   "slotCaption": "चित्र स्थान · अधिकार EMPTY · स्वीकृत चित्र आने पर माटी, प्रकाश, पड़ोस।",
   "heroStatus": "हीरो की भाषा समीक्षा का मसौदा है — बदली जा सकती है। स्थान का दावा नहीं।",
@@ -7,12 +10,48 @@
     "h2": "एक कथा, क्रम से",
     "lede": "पूजा द्वार खोलती है। कृषक समाज किसान का नाम लेता है। समेकित कृषि आजीविका है। फिर जीवंत फार्म, फिर बीज।",
     "steps": [
-      { "id": "culture", "kicker": "संस्कृति", "title": "पूजा", "body": "पड़ोस, माटी, ढाक, भोजन, घर वापसी।", "href": "#puja" },
-      { "id": "bridge", "kicker": "लोग", "title": "कृषक समाज", "body": "विषय अन्नदाता का नाम लेता है।", "href": "#krishak" },
-      { "id": "system", "kicker": "आजीविका", "title": "समेकित कृषि", "body": "फसल, पशु, जल और बाज़ार एक घर में।", "href": "#ifs" },
-      { "id": "demo", "kicker": "प्रदर्शन", "title": "डेमो फार्म", "body": "ईस्ट कोलकाता वेटलैंड्स, निर्माणाधीन।", "href": "#demo" },
-      { "id": "fund", "kicker": "बीज", "title": "फार्म का बीज", "body": "₹1 लाख, या हर दो महीने ₹20,000।", "href": "#fund" },
-      { "id": "ambition", "kicker": "लक्ष्य", "title": "5,000 फार्म", "body": "एक गाँव फार्म। एक एनआरबी संरक्षक।", "href": "#mission" }
+      {
+        "id": "culture",
+        "kicker": "संस्कृति",
+        "title": "पूजा",
+        "body": "पड़ोस, माटी, ढाक, भोजन, घर वापसी।",
+        "href": "#puja"
+      },
+      {
+        "id": "bridge",
+        "kicker": "लोग",
+        "title": "कृषक समाज",
+        "body": "विषय अन्नदाता का नाम लेता है।",
+        "href": "#krishak"
+      },
+      {
+        "id": "system",
+        "kicker": "आजीविका",
+        "title": "समेकित कृषि",
+        "body": "फसल, पशु, जल और बाज़ार एक घर में।",
+        "href": "#ifs"
+      },
+      {
+        "id": "demo",
+        "kicker": "प्रदर्शन",
+        "title": "डेमो फार्म",
+        "body": "ईस्ट कोलकाता वेटलैंड्स, निर्माणाधीन।",
+        "href": "#demo"
+      },
+      {
+        "id": "fund",
+        "kicker": "बीज",
+        "title": "Learn how support works",
+        "body": "This Durga Puja is the public beginning of a mobilisation target: about 5,000 integrated farms. ₹1 lakh is the proposed seed for one village farm — or ₹20,000 every two months — with one NRB patron each, from Puja 2026 to Puja 2027. That is a goal, not money already collected.",
+        "href": "#fund"
+      },
+      {
+        "id": "ambition",
+        "kicker": "लक्ष्य",
+        "title": "5,000 फार्म",
+        "body": "About 5,000 village farms is a mobilisation target, not a completed count.",
+        "href": "#mission"
+      }
     ]
   },
   "ifsTease": {

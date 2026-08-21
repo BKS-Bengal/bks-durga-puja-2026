@@ -8,9 +8,9 @@
   "brand": {
     "parent": "भारतीय कृषक समाज",
     "chapter": "पश्चिम बंगाल",
-    "site": "कृषक समाज पूजा",
-    "brandSub": "भारतीय कृषक समाज · पश्चिम बंगाल",
-    "seasonal": "दुर्गा पूजा 2026 — कृषक समाज",
+    "site": "भारतीय कृषक समाज पूजा",
+    "brandSub": "KarmYog for the 21st Century द्वारा आयोजित",
+    "seasonal": "दुर्गा पूजा 2026 — भारतीय कृषक समाज पूजा",
     "hierarchyNote": "बीकेएस → दुर्गा पूजा 2026 → कृषक समाज → समेकित कृषि → किसान संगठन"
   },
   "banner": "",
@@ -31,20 +31,26 @@
   "nav": {
     "home": "मुखपृष्ठ",
     "thePuja": "पूजा",
-    "krishakSamaj": "कृषक समाज",
+    "krishakSamaj": "भारतीय कृषक समाज",
     "integratedFarming": "समेकित कृषि",
     "mission": "अभियान",
     "participate": "सहभागिता",
     "theme": "थीम",
     "awards": "पुरस्कार",
     "record": "2025 का ब्योरा",
-    "nominate": "नामांकन",
+    "nominate": "Nominate",
     "sponsor": "बल्क प्रायोजक",
     "visit": "पंडाल",
     "demo": "डेमो फार्म",
     "fund": "फार्म का बीज",
     "nrbWho": "एनआरबी कौन",
     "faq": "प्रश्न"
+  },
+  "navGroups": {
+    "thePuja": "पूजा",
+    "theInitiative": "पहल",
+    "participate": "सहभागिता",
+    "about": "परिचय"
   },
   "utility": {
     "programme": "कार्यक्रम",

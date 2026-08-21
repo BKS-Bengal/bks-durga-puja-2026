@@ -27,6 +27,7 @@ body::after {
 }
 
 .hero-kicker-live,
+.hero-organizer,
 .nrb-sambhavana .kicker,
 .nrb-ifs-tease .kicker,
 .story-path-copy .kicker,
@@ -74,9 +75,9 @@ body::after {
 
 .hero-band--photo h1 {
   text-shadow: 0 2px 22px rgba(20, 6, 4, 0.5);
-  max-width: 13.6rem;
-  font-size: clamp(2.15rem, 3.6vw, 3.35rem);
-  line-height: 1.12;
+  max-width: 32rem;
+  font-size: clamp(1.65rem, 3.1vw, 2.55rem);
+  line-height: 1.14;
   letter-spacing: -0.02em;
   margin-top: 0.15rem;
   margin-bottom: 0.85rem;
@@ -84,7 +85,7 @@ body::after {
 }
 
 .hero-copy {
-  max-width: 26rem;
+  max-width: 32rem;
   justify-self: start;
   align-self: start;
   padding-right: 0.35rem;
@@ -92,7 +93,7 @@ body::after {
 }
 
 .hero-band--photo .lede {
-  max-width: 26rem;
+  max-width: 32rem;
   font-size: 1.02rem;
   line-height: 1.55;
 }
@@ -138,7 +139,7 @@ body::after {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero-grid {
-    grid-template-columns: minmax(15rem, 36%) minmax(0, 1fr);
+    grid-template-columns: minmax(18rem, 42%) minmax(0, 1fr);
     align-items: stretch;
     min-height: 34rem;
     gap: 1rem 1.2rem;
@@ -150,16 +151,10 @@ body::after {
   }
   .hero-band--photo h1 {
     max-width: 100%;
-    font-size: clamp(2.05rem, 4.2vw, 2.7rem);
+    font-size: clamp(1.85rem, 3.8vw, 2.45rem);
   }
   .hero-band--photo .hero-meta {
-    grid-template-columns: 1fr;
-  }
-  .nom-card {
-    grid-column: 2;
-    align-self: end;
-    justify-self: end;
-    max-width: 16.5rem;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -170,7 +165,7 @@ body::after {
     min-height: 38rem;
   }
   .hero-grid {
-    grid-template-columns: minmax(16rem, 22rem) minmax(10rem, 1fr) minmax(15rem, 18.5rem);
+    grid-template-columns: minmax(18rem, 32rem) minmax(0, 1fr);
     gap: 1.15rem 1.8rem;
     align-items: stretch;
     min-height: 36rem;
@@ -182,20 +177,14 @@ body::after {
     max-width: none;
   }
   .hero-band--photo h1 {
-    max-width: 16.25rem;
-  }
-  .nom-card {
-    grid-column: 3;
-    align-self: end;
-    justify-self: end;
-    margin-bottom: 0.2rem;
+    max-width: 32rem;
   }
 }
 
 @media (min-width: 1280px) {
   .hero-band--photo h1 {
-    font-size: clamp(2.45rem, 3.1vw, 3.45rem);
-    max-width: 17rem;
+    font-size: clamp(2.15rem, 2.8vw, 2.85rem);
+    max-width: 32rem;
   }
 }
 
@@ -226,7 +215,7 @@ body::after {
   }
   .hero-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 22.5rem auto auto;
+    grid-template-rows: 22.5rem auto;
     min-height: 22.5rem;
     align-items: start;
     gap: 0.9rem;
@@ -246,14 +235,6 @@ body::after {
   .hero-credit {
     font-size: 0.72rem;
     margin-top: 0.55rem;
-  }
-  .nom-card {
-    grid-column: 1;
-    grid-row: 3;
-    max-width: none;
-    justify-self: stretch;
-    align-self: start;
-    margin: 0 0 0.5rem;
   }
   .hero-band--photo h1 {
     max-width: none;

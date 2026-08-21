@@ -266,13 +266,13 @@
       e.preventDefault();
       downloadJson("bks-durga-puja-nomination.json", formPayload(nom));
       const status = document.getElementById("nomination-status");
-      if (status) status.textContent = (d.rt && d.rt.errOffline) || "Downloaded locally. Not sent.";
+      if (status) status.textContent = (d.rt && d.rt.downloaded) || "The information has been downloaded as a file to your device.";
     }
     function onSponsor(e) {
       e.preventDefault();
       downloadJson("bks-durga-puja-sponsor-enquiry.json", formPayload(sponsor));
       const status = document.getElementById("sponsor-status");
-      if (status) status.textContent = (d.rt && d.rt.errOffline) || "Downloaded locally. Not sent.";
+      if (status) status.textContent = (d.rt && d.rt.downloaded) || "The information has been downloaded as a file to your device.";
     }
     if (nom) {
       nom.addEventListener("submit", onNom);

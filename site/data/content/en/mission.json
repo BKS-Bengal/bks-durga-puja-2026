@@ -4,21 +4,21 @@
   },
   "kicker": "The 5,000-farm initiative",
   "h1": "The Mission",
-  "lede": "Join 5,000 Non-Resident Bengalis in establishing 5,000 integrated model farms across Bengal’s villages — launching from a live showcase at Durga Puja 2026.",
-  "notice": "One village farm. One NRB patron. ₹1 lakh seed per farm.",
+  "lede": "A mobilisation target of about 5,000 Non-Resident Bengali patrons alongside about 5,000 village integrated farms — launching from a live showcase at Durga Puja 2026. These figures are a goal, not a completed count, and ₹1 lakh is proposed seed-support, not money already collected.",
+  "notice": "One village farm. One NRB patron. ₹1 lakh proposed seed per farm. Not collected on this website.",
   "stats": [
     {
       "id": "farmers",
       "badge": "FARMS",
       "value": "5,000",
-      "label": "village integrated farms",
+      "label": "village integrated farms (target)",
       "body": "Local teams of 2–3 progressive farmers or FPOs put in land, labour and working capital."
     },
     {
       "id": "patrons",
       "badge": "PATRONS",
       "value": "5,000",
-      "label": "Non-Resident Bengali patrons",
+      "label": "Non-Resident Bengali patrons (target)",
       "body": "Anyone with a native village in Bengal — whether they live abroad or in Kolkata."
     },
     {
@@ -30,16 +30,16 @@
     },
     {
       "id": "total",
-      "badge": "SCALE",
+      "badge": "TARGET SCALE",
       "value": "₹50 crore",
-      "label": "5,000 × ₹1 lakh",
-      "body": "The mobilisation to seed Bengal’s agricultural resurgence between Puja 2026 and Puja 2027."
+      "label": "5,000 × ₹1 lakh (arithmetic of the target)",
+      "body": "The mobilisation aim between Puja 2026 and Puja 2027. Not funds already raised."
     }
   ],
   "how": {
     "h2": "How people take part",
-    "body": "Adopt a village farm, become a cluster or zonal Puja patron, or name your ancestral district so BKS can match you to soil you come from. Digital tracking follows every farm.",
-    "cta": "Adopt a village farm",
+    "body": "Express interest in a village farm, or in cluster or zonal Puja patronage, or name your ancestral district. This website does not complete a pairing or take payment.",
+    "cta": "Learn how support works",
     "href": "#fund"
   }
 }

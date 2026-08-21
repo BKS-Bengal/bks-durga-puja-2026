@@ -1,5 +1,8 @@
 {
-  "meta": { "lang": "bn", "bengaliStatus": "DRAFT — NATIVE REVIEW REQUIRED" },
+  "meta": {
+    "lang": "bn",
+    "bengaliStatus": "DRAFT — NATIVE REVIEW REQUIRED"
+  },
   "slotLabel": "ছবি আসবে — এই আয়োজন, অনুমতি নিয়ে। মণ্ডপের ছবি নয়।",
   "slotCaption": "ছবির জায়গা · অধিকার EMPTY · অনুমোদিত ছবি এলে মাটি, আলো, পাড়া।",
   "heroStatus": "হিরোর ভাষা পর্যালোচনার খসড়া — বদলানো যাবে। স্থানের দাবি নেই।",
@@ -7,12 +10,48 @@
     "h2": "এক গল্প, ক্রমে",
     "lede": "পূজা দরজা খোলে। কৃষক সমাজ অন্নদাতার নাম করে। সমন্বিত চাষ জীবিকা। তারপর জীবন্ত খামার, তারপর বীজ।",
     "steps": [
-      { "id": "culture", "kicker": "সংস্কৃতি", "title": "পূজা", "body": "পাড়া, মাটি, ঢাক, খাবার, বাড়ি ফেরা।", "href": "#puja" },
-      { "id": "bridge", "kicker": "মানুষ", "title": "কৃষক সমাজ", "body": "থিম অন্নদাতার নাম করে।", "href": "#krishak" },
-      { "id": "system", "kicker": "জীবিকা", "title": "সমন্বিত চাষ", "body": "ফসল, পশু, জল ও বাজার এক ঘরে।", "href": "#ifs" },
-      { "id": "demo", "kicker": "প্রদর্শনী", "title": "ডেমো খামার", "body": "ইস্ট কলকাতা ওয়েটল্যান্ডস, নির্মাণাধীন।", "href": "#demo" },
-      { "id": "fund", "kicker": "বীজ", "title": "খামারে বীজ", "body": "১ লক্ষ, অথবা দুই মাস অন্তর ২০,০০০।", "href": "#fund" },
-      { "id": "ambition", "kicker": "লক্ষ্য", "title": "৫,০০০ খামার", "body": "এক গ্রামের খামার। এক এনআরবি পৃষ্ঠপোষক।", "href": "#mission" }
+      {
+        "id": "culture",
+        "kicker": "সংস্কৃতি",
+        "title": "পূজা",
+        "body": "পাড়া, মাটি, ঢাক, খাবার, বাড়ি ফেরা।",
+        "href": "#puja"
+      },
+      {
+        "id": "bridge",
+        "kicker": "মানুষ",
+        "title": "কৃষক সমাজ",
+        "body": "থিম অন্নদাতার নাম করে।",
+        "href": "#krishak"
+      },
+      {
+        "id": "system",
+        "kicker": "জীবিকা",
+        "title": "সমন্বিত চাষ",
+        "body": "ফসল, পশু, জল ও বাজার এক ঘরে।",
+        "href": "#ifs"
+      },
+      {
+        "id": "demo",
+        "kicker": "প্রদর্শনী",
+        "title": "ডেমো খামার",
+        "body": "ইস্ট কলকাতা ওয়েটল্যান্ডস, নির্মাণাধীন।",
+        "href": "#demo"
+      },
+      {
+        "id": "fund",
+        "kicker": "বীজ",
+        "title": "Learn how support works",
+        "body": "This Durga Puja is the public beginning of a mobilisation target: about 5,000 integrated farms. ₹1 lakh is the proposed seed for one village farm — or ₹20,000 every two months — with one NRB patron each, from Puja 2026 to Puja 2027. That is a goal, not money already collected.",
+        "href": "#fund"
+      },
+      {
+        "id": "ambition",
+        "kicker": "লক্ষ্য",
+        "title": "৫,০০০ খামার",
+        "body": "About 5,000 village farms is a mobilisation target, not a completed count.",
+        "href": "#mission"
+      }
     ]
   },
   "ifsTease": {

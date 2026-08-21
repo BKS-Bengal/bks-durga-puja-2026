@@ -11,7 +11,7 @@
     "whoSrc": "assets/puja-2025/conch-aarti-2025.jpg",
     "whoAlt": "Priest sounding the conch during evening aarti at Durga Puja Mahotsav 2025",
     "whoCap": "Conch aarti, Durga Puja Mahotsav 2025.",
-    "demoSrc": "assets/puja-2025/idol-durga-2025.jpg",
+    "demoSrc": "",
     "demoAlt": "Clay Durga image in the bamboo pavilion, Durga Puja Mahotsav 2025, IIT Kharagpur Research Park",
     "demoCap": "Durga Puja Mahotsav 2025, IIT Kharagpur Research Park — the festival language this year’s live farm pavilion grows from.",
     "aboutSrc": "assets/mahacharya-sourabh-j-sarkar.jpg",
@@ -21,12 +21,12 @@
     "eyebrow": "Current update",
     "title": "BKS Durga Puja 2026 — Preparation Begins",
     "lede": "Durga Puja preparation and countdown start.",
-    "primarySrc": "assets/puja-2026/photo_2026-08-19_11-15-15.jpg",
+    "primarySrc": "assets/puja-2026/photo_2026-08-19_11-15-12.jpg",
     "primaryAlt": "Community members during BKS Durga Puja 2026 preparation.",
-    "primaryCap": "Community members with bamboo during BKS Durga Puja 2026 preparation.",
+    "primaryCap": "Community members during BKS Durga Puja 2026 preparation.",
     "primaryWidth": 1024,
-    "primaryHeight": 368,
-    "supportSrc": "assets/puja-2026/photo_2026-08-19_11-15-12.jpg",
+    "primaryHeight": 768,
+    "supportSrc": "",
     "supportAlt": "Community members during BKS Durga Puja 2026 preparation.",
     "supportCap": "Community members during BKS Durga Puja 2026 preparation.",
     "supportWidth": 1024,
@@ -51,22 +51,22 @@
   "model": {
     "eyebrow": "The 5,000 Integrated Farms Initiative",
     "title": "One village farm. One NRB patron.",
-    "lede": "5,000 village locations paired with 5,000 dedicated NRB patrons. Identified local teams of 2 to 3 progressive farmers or FPOs contribute their land, sweat equity, and working capital. The contribution ask is ₹1,00,000 per farm — staggered as ₹20,000 every two months over the year. A BKS digital portal will let patrons anywhere in the world follow planting cycles and operational milestones. As farms expand, donors may also join local FPOs as commercial equity partners.",
+    "lede": "A mobilisation target of about 5,000 village locations paired with about 5,000 dedicated NRB patrons. Identified local teams of 2 to 3 progressive farmers or FPOs are intended to contribute land, labour, and working capital. The proposed seed is ₹1,00,000 per farm — or ₹20,000 every two months. A later digital portal may let patrons follow planting cycles. None of that is payment on this page, and none of it is already completed.",
     "points": [
-      { "title": "The target", "body": "5,000 village locations paired with 5,000 dedicated NRB patrons." },
+      { "title": "The target", "body": "About 5,000 village locations paired with about 5,000 dedicated NRB patrons — a goal, not a completed count." },
       { "title": "On the ground", "body": "Local teams of 2–3 progressive farmers / FPOs — land, labour and working capital." },
-      { "title": "The contribution", "body": "₹1 lakh per farm, or ₹20,000 every two months over the year." },
+      { "title": "The contribution", "body": "₹1 lakh per farm is the proposed seed-support figure, or ₹20,000 every two months over the year." },
       { "title": "Follow the farm", "body": "Digital tracking of progress, planting cycles and milestones from anywhere in the world." }
     ]
   },
   "village": {
     "eyebrow": "Ancestral place",
     "title": "Search your district or block.",
-    "lede": "Connect your support to the soil you come from. Name your ancestral district or block and BKS will match you to a village farm.",
+    "lede": "Name your ancestral district or block if you want later pairing to be considered. This page does not match you to a farm.",
     "fieldDistrict": "District",
     "fieldBlock": "Block / village / para",
-    "submit": "Connect my village",
-    "status": "BKS will match your place to a farm and write back."
+    "submit": "Express village interest",
+    "status": "The information has been downloaded as a file to your device. This website does not match you to a farm."
   },
   "faq": {
     "eyebrow": "FAQ",
@@ -74,17 +74,17 @@
     "items": [
       { "q": "What is an FPO here?", "a": "A Farmer Producer Organisation — the local vehicle for each village farm. Identified teams of two to three progressive farmers or FPOs put in land, sweat equity and working capital. Your ₹1 lakh is the seed that sits beside that." },
       { "q": "How is ₹1 lakh used?", "a": "Seed for one integrated model farm: pond and water, bund horticulture, livestock, bio-inputs and the working cycle of the farm. Land and labour come from the local farmer team." },
-      { "q": "Can I pay in instalments?", "a": "Yes. ₹20,000 every two months over the year, or ₹1 lakh in one contribution. Register here and Bharatiya Krishak Samaj will complete the payment with you — UPI, net banking, or international cards." },
-      { "q": "Is there a tax receipt?", "a": "Bharatiya Krishak Samaj, West Bengal will share contribution documentation with every patron. The applicable tax pathway will be confirmed with you when your adoption is completed." },
+      { "q": "Can I pay in instalments?", "a": "The proposed pattern is ₹20,000 every two months over the year, or ₹1 lakh in one contribution. This page does not take payment. If a farm pairing is later arranged off this website, Bharatiya Krishak Samaj would complete any contribution with you then." },
+      { "q": "Is there a tax receipt?", "a": "This page does not issue a receipt. Any tax pathway would be confirmed only if a contribution is later completed off this website." },
       { "q": "How do I follow the farm?", "a": "A BKS digital portal will carry planting cycles and operational milestones. This page will also carry daily and weekly video from the East Kolkata Wetland demo farm as those dispatches are posted." }
     ]
   },
   "demo": {
     "eyebrow": "Durga Puja 2026 · live integrated farm pandal",
     "title": "East Kolkata Wetlands — 500 metres from Sector V",
-    "lede": "Not just a temporary pandal, but a fully functional, live model integrated farm created over months. It sits on the boundary between urban high-tech (Sector V, Kolkata’s IT & tech capital) and the rural wetland ecosystem — showing how AI, smart agriculture and modern sustainable practice will power the future of Bengal farming. Walk through a live blueprint of what will be replicated across 5,000 villages between Durga Puja 2026 and Durga Puja 2027.",
+    "lede": "A live integrated-farm demonstration is being built in the East Kolkata Wetlands, 500 metres from Sector V — intended as the 2026 pavilion, not only a festive facade. Whether that plot is also the dump-yard transformation story is pending confirmation. The 5,000-village pairing is a mobilisation target, not a completed replication.",
     "statusBadge": "BEING BUILT",
-    "statusNote": "The first live IFS demo farm is being built here as the central pavilion of Krishak Samaj Puja 2026.",
+    "statusNote": "The first live IFS demo farm is being built here as the central pavilion of Bharatiya Krishak Samaj Pujo 2026.",
     "facts": [
       { "label": "Place", "value": "East Kolkata Wetlands · 500 m from Sector V" },
       { "label": "What you walk through", "value": "A working integrated farm, not only a festive facade" },
@@ -96,16 +96,16 @@
     "feedEmpty": "Video and photo dispatches from construction and planting will appear here as they are posted."
   },
   "fund": {
-    "eyebrow": "Fund a farm",
-    "title": "Adopt a village farm.",
-    "lede": "₹1,00,000 seeds one integrated model farm. Pay in full, or ₹20,000 every two months over the year. Name your native village. Bharatiya Krishak Samaj will pair you with a local farmer team and open digital tracking of that farm.",
+    "eyebrow": "Support a farm",
+    "title": "Express interest in a village farm.",
+    "lede": "₹1 lakh is the proposed seed for one integrated model farm — in full, or ₹20,000 every two months. Name your native village. This page does not take payment. Bharatiya Krishak Samaj may later pair interested patrons with a local farmer team.",
     "whoLabel": "Who this is for",
     "whoBody": "Non-Resident Bengalis — anyone with a native village in Bengal, whether you live abroad or in a high-rise in Kolkata — who want a named farm they can follow.",
     "modelEyebrow": "Flexible contribution",
     "modelTitle": "₹1 lakh = five instalments of ₹20,000",
-    "modelNote": "Staggered every two months over the year, or a single contribution. UPI, net banking and international cards will be used to complete the adoption.",
+    "modelNote": "A proposed staggered pattern. This page does not take payment. Any later contribution would be completed off this website.",
     "steps": ["₹20,000", "₹20,000", "₹20,000", "₹20,000", "₹20,000"],
-    "formTitle": "Adopt one village farm",
+    "formTitle": "Express interest in one village farm",
     "fieldName": "Your name",
     "fieldEmail": "Email",
     "fieldPhone": "Phone",
@@ -114,14 +114,14 @@
     "fieldType": "Patron type",
     "typeIndividual": "Single farm patron — ₹1 lakh",
     "typeBulk": "Bulk / Puja patron — see the tiers below",
-    "consent": "Bharatiya Krishak Samaj, West Bengal may contact me to complete this farm adoption.",
-    "submit": "Register my adoption",
-    "status": "Register here. BKS will contact you to complete the contribution."
+    "consent": "This website does not submit your details to BKS. The information is downloaded as a file to your device. If you choose to send that file to BKS, subsequent handling is outside this website.",
+    "submit": "Express interest",
+    "status": "The information has been downloaded as a file to your device. It has not been uploaded. Nothing here takes money."
   },
   "bulk": {
     "eyebrow": "Puja patronage",
     "title": "Tiered sponsorship — farms and the festival together.",
-    "lede": "Adopt village farms and take title on major Puja elements. Allocation is by Bharatiya Krishak Samaj. Naming recognition and digital tracking come with every farm.",
+    "lede": "Organisations may register interest in supporting farms and the festival together. Allocation, if any, is by Bharatiya Krishak Samaj. This is not an online booking and not a payment.",
     "tiers": [
       { "id": "farms1", "name": "Single Farm Patron", "amount": "₹1 lakh", "note": "1 village farm · naming + tracking", "count": "1" },
       { "id": "farms5", "name": "Cluster Farm Patron", "amount": "₹5 lakhs", "note": "5 farms · e.g. Pratima / Idol Sponsor", "count": "5" },
@@ -138,16 +138,16 @@
       { "id": "other", "label": "Other" }
     ],
     "fieldCount": "How many farms",
-    "formTitle": "Become a Puja patron",
-    "submit": "Register patronage",
-    "status": "BKS will allocate farms and confirm Puja honours with you.",
+    "formTitle": "Express interest in Puja patronage",
+    "submit": "Express interest",
+    "status": "The information has been downloaded as a file to your device. This website does not allocate farms or confirm honours.",
     "pujaLink": "Puja naming packages continue further down this page."
   },
   "operator": {
     "eyebrow": "Local farmer team · Wetland demo",
-    "title": "Register the demo site, or send an update.",
-    "lede": "For the East Kolkata Wetlands live farm: the local team of progressive farmers building the Durga Puja pavilion. Photo and video dispatches will be published on the progress feed.",
-    "fieldKind": "What are you sending",
+    "title": "Leave a demo-site note.",
+    "lede": "For the East Kolkata Wetlands live farm: the local team of progressive farmers building the Durga Puja pavilion. This form only downloads a file. It does not publish an update.",
+    "fieldKind": "What this note is",
     "kindRegister": "Register the demo site",
     "kindUpdate": "Progress update",
     "fieldOperator": "Your name",
@@ -160,7 +160,7 @@
       { "id": "video", "label": "Video" },
       { "id": "milestone", "label": "Milestone" }
     ],
-    "submit": "Send to BKS",
-    "status": "The team will publish verified updates on the public feed."
+    "submit": "Download this note",
+    "status": "The information has been downloaded as a file to your device. Nothing has been published."
   }
 }

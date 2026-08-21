@@ -3,7 +3,13 @@
   "trailingSlash": true,
   "rewrites": [
     { "source": "/", "destination": "/site/index.html" },
-    { "source": "/site", "destination": "/site/index.html" }
+    { "source": "/site", "destination": "/site/index.html" },
+    { "source": "/sponsors", "destination": "/site/sponsors/index.html" },
+    { "source": "/farmers", "destination": "/site/farmers/index.html" },
+    { "source": "/stakeholders", "destination": "/site/stakeholders/index.html" },
+    { "source": "/public", "destination": "/site/public/index.html" },
+    { "source": "/nrb", "destination": "/site/nrb/index.html" },
+    { "source": "/start", "destination": "/site/start/index.html" }
   ],
   "headers": [
     {

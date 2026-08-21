@@ -11,7 +11,7 @@
     "whoSrc": "assets/puja-2025/conch-aarti-2025.jpg",
     "whoAlt": "২০২৫ দুর্গাপূজা মহোৎসবে সন্ধ্যার আরতিতে শঙ্খ",
     "whoCap": "শঙ্খ আরতি, দুর্গাপূজা মহোৎসব ২০২৫।",
-    "demoSrc": "assets/puja-2025/idol-durga-2025.jpg",
+    "demoSrc": "",
     "demoAlt": "২০২৫ দুর্গাপূজা মহোৎসবে মাটির প্রতিমা, আইআইটি খড়গপুর রিসার্চ পার্ক",
     "demoCap": "দুর্গাপূজা মহোৎসব ২০২৫, আইআইটি খড়গপুর রিসার্চ পার্ক — এই বছরের লাইভ খামার প্যাভিলিয়ন এই উৎসবের ভাষা থেকেই গড়ে উঠছে।",
     "aboutSrc": "assets/mahacharya-sourabh-j-sarkar.jpg",
@@ -36,45 +36,84 @@
   "model": {
     "eyebrow": "৫,০০০ সমন্বিত খামার উদ্যোগ",
     "title": "এক গ্রামের খামার। এক এনআরবি পৃষ্ঠপোষক।",
-    "lede": "৫,০০০ গ্রামের স্থান, ৫,০০০ নিবেদিত এনআরবি পৃষ্ঠপোষক। চিহ্নিত স্থানীয় ২ থেকে ৩ জনের অগ্রণী কৃষক বা FPO দল জমি, শ্রম ও কার্যকরী মূলধন দেন। অবদান খামারপ্রতি ১,০০,০০০ টাকা — বছরে দুই মাস অন্তর ২০,০০০ টাকা। বি কে এস ডিজিটাল পোর্টালে বিশ্বের যেকোনও জায়গা থেকে রোপণচক্র ও মাইলস্টোন অনুসরণ করা যাবে। খামার বাড়লে স্থানীয় FPO-তে বাণিজ্যিক অংশীদার হওয়ার পথও খোলা।",
+    "lede": "A mobilisation target of about 5,000 village locations paired with about 5,000 dedicated NRB patrons. Identified local teams of 2 to 3 progressive farmers or FPOs are intended to contribute land, labour, and working capital. The proposed seed is ₹1,00,000 per farm — or ₹20,000 every two months. A later digital portal may let patrons follow planting cycles. None of that is payment on this page, and none of it is already completed.",
     "points": [
-      { "title": "লক্ষ্য", "body": "৫,০০০ গ্রামের স্থান, ৫,০০০ নিবেদিত এনআরবি পৃষ্ঠপোষক।" },
-      { "title": "মাঠে", "body": "২–৩ জনের অগ্রণী কৃষক / FPO — জমি, শ্রম ও কার্যকরী মূলধন।" },
-      { "title": "অবদান", "body": "খামারপ্রতি ১ লক্ষ টাকা, অথবা দুই মাস অন্তর ২০,০০০ টাকা।" },
-      { "title": "খামার অনুসরণ", "body": "বিশ্বের যেকোনও জায়গা থেকে অগ্রগতি, রোপণচক্র ও মাইলস্টোন।" }
+      {
+        "title": "The target",
+        "body": "About 5,000 village locations paired with about 5,000 dedicated NRB patrons — a goal, not a completed count."
+      },
+      {
+        "title": "On the ground",
+        "body": "Local teams of 2–3 progressive farmers / FPOs — land, labour and working capital."
+      },
+      {
+        "title": "The contribution",
+        "body": "₹1 lakh per farm is the proposed seed-support figure, or ₹20,000 every two months over the year."
+      },
+      {
+        "title": "Follow the farm",
+        "body": "Digital tracking of progress, planting cycles and milestones from anywhere in the world."
+      }
     ]
   },
   "village": {
     "eyebrow": "পৈতৃক স্থান",
     "title": "জেলা বা ব্লক খুঁজুন।",
-    "lede": "যে মাটি থেকে আপনি এসেছেন, সেখানেই আপনার সমর্থন যুক্ত করুন। পৈতৃক জেলা বা ব্লকের নাম দিন, বি কে এস আপনাকে একটি গ্রামের খামারের সঙ্গে মিলিয়ে দেবে।",
+    "lede": "Name your ancestral district or block if you want later pairing to be considered. This page does not match you to a farm.",
     "fieldDistrict": "জেলা",
     "fieldBlock": "ব্লক / গ্রাম / পাড়া",
-    "submit": "আমার গ্রাম যুক্ত করুন",
-    "status": "বি কে এস আপনার স্থান একটি খামারের সঙ্গে মিলিয়ে জানাবে।"
+    "submit": "Express village interest",
+    "status": "The information has been downloaded as a file to your device. This website does not match you to a farm."
   },
   "faq": {
     "eyebrow": "প্রশ্ন",
     "title": "খামার, তহবিল, পৃষ্ঠপোষকতা কীভাবে কাজ করে।",
     "items": [
-      { "q": "এখানে FPO কী?", "a": "কৃষক উৎপাদক সংগঠন — প্রতি গ্রাম খামারের স্থানীয় বাহন। দুই-তিনজন অগ্রণী কৃষক বা FPO জমি, শ্রম ও কার্যকরী মূলধন দেন। আপনার ১ লক্ষ টাকা তার পাশে বীজ।" },
-      { "q": "১ লক্ষ টাকা কীভাবে খরচ হয়?", "a": "একটি সমন্বিত মডেল খামারের বীজ: পুকুর ও জল, আলের বাগান, পশুপালন, জৈব উপকরণ ও খামারের কাজের চক্র। জমি ও শ্রম স্থানীয় কৃষক দলের।" },
-      { "q": "কিস্তিতে দেওয়া যায়?", "a": "হ্যাঁ। বছরে দুই মাস অন্তর ২০,০০০ টাকা, অথবা একবারে ১ লক্ষ। এখানে নাম লিখুন, ভারতীয় কৃষক সমাজ ইউপিআই, নেট ব্যাংকিং বা আন্তর্জাতিক কার্ডে অবদান সম্পূর্ণ করবে।" },
-      { "q": "করের রসিদ পাওয়া যাবে?", "a": "ভারতীয় কৃষক সমাজ, পশ্চিমবঙ্গ প্রতি পৃষ্ঠপোষককে অবদানের নথি দেবে। গ্রহণ সম্পূর্ণ হলে প্রযোজ্য করপথ আপনার সঙ্গে নিশ্চিত করা হবে।" },
-      { "q": "খামার কীভাবে অনুসরণ করব?", "a": "বি কে এস ডিজিটাল পোর্টালে রোপণচক্র ও মাইলস্টোন থাকবে। ইস্ট কলকাতা ওয়েটল্যান্ড ডেমো খামারের দৈনিক ও সাপ্তাহিক ভিডিও এই পাতায়ও আসবে।" }
+      {
+        "q": "What is an FPO here?",
+        "a": "A Farmer Producer Organisation — the local vehicle for each village farm. Identified teams of two to three progressive farmers or FPOs put in land, sweat equity and working capital. Your ₹1 lakh is the seed that sits beside that."
+      },
+      {
+        "q": "How is ₹1 lakh used?",
+        "a": "Seed for one integrated model farm: pond and water, bund horticulture, livestock, bio-inputs and the working cycle of the farm. Land and labour come from the local farmer team."
+      },
+      {
+        "q": "Can I pay in instalments?",
+        "a": "The proposed pattern is ₹20,000 every two months over the year, or ₹1 lakh in one contribution. This page does not take payment. If a farm pairing is later arranged off this website, Bharatiya Krishak Samaj would complete any contribution with you then."
+      },
+      {
+        "q": "Is there a tax receipt?",
+        "a": "This page does not issue a receipt. Any tax pathway would be confirmed only if a contribution is later completed off this website."
+      },
+      {
+        "q": "How do I follow the farm?",
+        "a": "A BKS digital portal will carry planting cycles and operational milestones. This page will also carry daily and weekly video from the East Kolkata Wetland demo farm as those dispatches are posted."
+      }
     ]
   },
   "demo": {
     "eyebrow": "দুর্গাপূজা ২০২৬ · লাইভ সমন্বিত খামার প্যান্ডেল",
     "title": "ইস্ট কলকাতা ওয়েটল্যান্ডস — সেক্টর ফাইভ থেকে ৫০০ মিটার",
-    "lede": "শুধু অস্থায়ী প্যান্ডেল নয় — মাসের পর মাস গড়া একটি পুরোপুরি কাজ করা, জীবন্ত মডেল সমন্বিত খামার। শহুরে হাই-টেক (সেক্টর ফাইভ, কলকাতার আইটি ও প্রযুক্তি রাজধানী) আর গ্রামীণ জলাভূমির সীমানায় — দেখাবে কীভাবে এআই, স্মার্ট কৃষি ও আধুনিক টেকসই চর্চা বাংলার চাষের ভবিষ্যৎ চালাবে। দুর্গাপূজা ২০২৬ থেকে ২০২৭-এর মধ্যে ৫,০০০ গ্রামে যা ছড়াবে, তার জীবন্ত নকশা হেঁটে দেখুন।",
+    "lede": "A live integrated-farm demonstration is being built in the East Kolkata Wetlands, 500 metres from Sector V — intended as the 2026 pavilion, not only a festive facade. Whether that plot is also the dump-yard transformation story is pending confirmation. The 5,000-village pairing is a mobilisation target, not a completed replication.",
     "statusBadge": "নির্মাণাধীন",
     "statusNote": "কৃষক সমাজ পূজা ২০২৬-এর কেন্দ্রীয় প্যাভিলিয়ন হিসেবে এখানে প্রথম লাইভ আইএফএস ডেমো খামার গড়ে উঠছে।",
     "facts": [
-      { "label": "স্থান", "value": "ইস্ট কলকাতা ওয়েটল্যান্ডস · সেক্টর ফাইভ থেকে ৫০০ মি" },
-      { "label": "যা হেঁটে দেখবেন", "value": "কাজ করা সমন্বিত খামার, শুধু উৎসবের মুখোশ নয়" },
-      { "label": "এই খামারের বীজ", "value": "১,০০,০০০ টাকা" },
-      { "label": "তারপর", "value": "একই নকশা, ৫,০০০ গ্রাম, পূজা ২০২৬ থেকে পূজা ২০২৭" }
+      {
+        "label": "Place",
+        "value": "East Kolkata Wetlands · 500 m from Sector V"
+      },
+      {
+        "label": "What you walk through",
+        "value": "A working integrated farm, not only a festive facade"
+      },
+      {
+        "label": "Seed for this farm",
+        "value": "₹1,00,000"
+      },
+      {
+        "label": "Then",
+        "value": "The same blueprint, 5,000 villages, Puja 2026 to Puja 2027"
+      }
     ],
     "feedEyebrow": "অগ্রগতির ফিড",
     "feedTitle": "ওয়েটল্যান্ড ডেমো খামারের দৈনিক ও সাপ্তাহিক খবর",
@@ -82,15 +121,21 @@
   },
   "fund": {
     "eyebrow": "খামারে বীজ",
-    "title": "একটি গ্রামের খামার গ্রহণ করুন।",
-    "lede": "১,০০,০০০ টাকা একটি সমন্বিত মডেল খামারের বীজ। একবারে দিন, অথবা বছরে দুই মাস অন্তর ২০,০০০ টাকা। নিজ গ্রামের নাম লিখুন। ভারতীয় কৃষক সমাজ আপনাকে স্থানীয় কৃষক দলের সঙ্গে মিলিয়ে সেই খামারের ডিজিটাল অনুসরণ খুলে দেবে।",
+    "title": "Express interest in a village farm.",
+    "lede": "₹1 lakh is the proposed seed for one integrated model farm — in full, or ₹20,000 every two months. Name your native village. This page does not take payment. Bharatiya Krishak Samaj may later pair interested patrons with a local farmer team.",
     "whoLabel": "কার জন্য",
     "whoBody": "নন-রেসিডেন্ট বাঙালি — বাংলার গ্রামের সঙ্গে যুক্ত যে কেউ, বিদেশে থাকুন বা কলকাতার উঁচু বাড়িতে — যাঁরা একটি নামসহ খামার অনুসরণ করতে চান।",
     "modelEyebrow": "নমনীয় অবদান",
     "modelTitle": "১ লক্ষ = পাঁচ কিস্তি, প্রতিটি ২০,০০০ টাকা",
-    "modelNote": "বছরে দুই মাস অন্তর, অথবা একবারে। গ্রহণ সম্পূর্ণ হবে ইউপিআই, নেট ব্যাংকিং বা আন্তর্জাতিক কার্ডে।",
-    "steps": ["২০,০০০", "২০,০০০", "২০,০০০", "২০,০০০", "২০,০০০"],
-    "formTitle": "একটি গ্রামের খামার গ্রহণ করুন",
+    "modelNote": "A proposed staggered pattern. This page does not take payment. Any later contribution would be completed off this website.",
+    "steps": [
+      "২০,০০০",
+      "২০,০০০",
+      "২০,০০০",
+      "২০,০০০",
+      "২০,০০০"
+    ],
+    "formTitle": "Express interest in one village farm",
     "fieldName": "আপনার নাম",
     "fieldEmail": "ইমেল",
     "fieldPhone": "ফোন",
@@ -99,40 +144,82 @@
     "fieldType": "পৃষ্ঠপোষকের ধরন",
     "typeIndividual": "এক খামারের পৃষ্ঠপোষক — ১ লক্ষ টাকা",
     "typeBulk": "বাল্ক / পূজার পৃষ্ঠপোষক — নিচের স্তর",
-    "consent": "ভারতীয় কৃষক সমাজ, পশ্চিমবঙ্গ এই খামার গ্রহণ সম্পূর্ণ করতে আমার সঙ্গে যোগাযোগ করতে পারে।",
-    "submit": "আমার গ্রহণ নথি করুন",
-    "status": "এখানে নাম লিখুন। অবদান সম্পূর্ণ করতে বি কে এস যোগাযোগ করবে।"
+    "consent": "This website does not submit your details to BKS. The information is downloaded as a file to your device. If you choose to send that file to BKS, subsequent handling is outside this website.",
+    "submit": "Express interest",
+    "status": "The information has been downloaded as a file to your device. It has not been uploaded. Nothing here takes money."
   },
   "bulk": {
     "eyebrow": "পূজার পৃষ্ঠপোষকতা",
     "title": "স্তরভিত্তিক স্পনসরশিপ — খামার ও উৎসব একসঙ্গে।",
-    "lede": "গ্রামের খামার গ্রহণ করুন, পূজার প্রধান উপাদানে নাম রাখুন। বরাদ্দ ভারতীয় কৃষক সমাজ করবে। প্রতি খামারে নামস্বীকৃতি ও ডিজিটাল অনুসরণ।",
+    "lede": "Organisations may register interest in supporting farms and the festival together. Allocation, if any, is by Bharatiya Krishak Samaj. This is not an online booking and not a payment.",
     "tiers": [
-      { "id": "farms1", "name": "এক খামারের পৃষ্ঠপোষক", "amount": "১ লক্ষ টাকা", "note": "১ গ্রামের খামার · নাম ও অনুসরণ", "count": "1" },
-      { "id": "farms5", "name": "ক্লাস্টার পৃষ্ঠপোষক", "amount": "৫ লক্ষ টাকা", "note": "৫ খামার · যেমন প্রতিমা স্পনসর", "count": "5" },
-      { "id": "farms10", "name": "অঞ্চল পৃষ্ঠপোষক", "amount": "১০ লক্ষ টাকা", "note": "১০ খামার · মহাভোগ / আলো", "count": "10" },
-      { "id": "farms20", "name": "আঞ্চলিক হিতৈষী", "amount": "২০ লক্ষ+", "note": "আঞ্চলিক ক্লাস্টার · উৎসব প্যাভিলিয়ন", "count": "20" }
+      {
+        "id": "farms1",
+        "name": "এক খামারের পৃষ্ঠপোষক",
+        "amount": "১ লক্ষ টাকা",
+        "note": "১ গ্রামের খামার · নাম ও অনুসরণ",
+        "count": "1"
+      },
+      {
+        "id": "farms5",
+        "name": "ক্লাস্টার পৃষ্ঠপোষক",
+        "amount": "৫ লক্ষ টাকা",
+        "note": "৫ খামার · যেমন প্রতিমা স্পনসর",
+        "count": "5"
+      },
+      {
+        "id": "farms10",
+        "name": "অঞ্চল পৃষ্ঠপোষক",
+        "amount": "১০ লক্ষ টাকা",
+        "note": "১০ খামার · মহাভোগ / আলো",
+        "count": "10"
+      },
+      {
+        "id": "farms20",
+        "name": "আঞ্চলিক হিতৈষী",
+        "amount": "২০ লক্ষ+",
+        "note": "আঞ্চলিক ক্লাস্টার · উৎসব প্যাভিলিয়ন",
+        "count": "20"
+      }
     ],
     "pujaLabel": "পূজার উপাদান",
     "pujaOptions": [
-      { "id": "none", "label": "এখন শুধু খামার" },
-      { "id": "idol", "label": "প্রতিমা স্পনসর" },
-      { "id": "bhog", "label": "মহাভোগ" },
-      { "id": "lighting", "label": "আলো ও আলোকসজ্জা" },
-      { "id": "pavilion", "label": "উৎসব প্যাভিলিয়ন হিতৈষী" },
-      { "id": "other", "label": "অন্য" }
+      {
+        "id": "none",
+        "label": "এখন শুধু খামার"
+      },
+      {
+        "id": "idol",
+        "label": "প্রতিমা স্পনসর"
+      },
+      {
+        "id": "bhog",
+        "label": "মহাভোগ"
+      },
+      {
+        "id": "lighting",
+        "label": "আলো ও আলোকসজ্জা"
+      },
+      {
+        "id": "pavilion",
+        "label": "উৎসব প্যাভিলিয়ন হিতৈষী"
+      },
+      {
+        "id": "other",
+        "label": "অন্য"
+      }
     ],
     "fieldCount": "কত খামার",
-    "formTitle": "পূজার পৃষ্ঠপোষক হোন",
-    "submit": "পৃষ্ঠপোষকতা নথি করুন",
-    "status": "বি কে এস খামার বরাদ্দ ও পূজার সম্মান আপনার সঙ্গে নিশ্চিত করবে।",
+    "formTitle": "Express interest in Puja patronage",
+    "submit": "Express interest",
+    "status": "The information has been downloaded as a file to your device. This website does not allocate farms or confirm honours.",
     "pujaLink": "পূজার নামকরণের প্যাকেজ এই পাতার নিচেই আছে।"
   },
   "operator": {
     "eyebrow": "স্থানীয় কৃষক দল · ওয়েটল্যান্ড ডেমো",
-    "title": "ডেমো সাইট নথি করুন, বা একটি আপডেট পাঠান।",
-    "lede": "ইস্ট কলকাতা ওয়েটল্যান্ডসের লাইভ খামারের জন্য: দুর্গাপূজার প্যাভিলিয়ন গড়া অগ্রণী কৃষক দল। ছবি ও ভিডিও অগ্রগতির ফিডে প্রকাশিত হবে।",
-    "fieldKind": "কী পাঠাচ্ছেন",
+    "title": "Leave a demo-site note.",
+    "lede": "For the East Kolkata Wetlands live farm: the local team of progressive farmers building the Durga Puja pavilion. This form only downloads a file. It does not publish an update.",
+    "fieldKind": "What this note is",
     "kindRegister": "ডেমো সাইট নথি",
     "kindUpdate": "অগ্রগতির আপডেট",
     "fieldOperator": "আপনার নাম",
@@ -140,12 +227,24 @@
     "fieldNote": "সাইটের নোট বা আপডেটের ক্যাপশন",
     "fieldUpdateType": "আপডেটের ধরন",
     "types": [
-      { "id": "text", "label": "লেখা" },
-      { "id": "photo", "label": "ছবি" },
-      { "id": "video", "label": "ভিডিও" },
-      { "id": "milestone", "label": "মাইলস্টোন" }
+      {
+        "id": "text",
+        "label": "লেখা"
+      },
+      {
+        "id": "photo",
+        "label": "ছবি"
+      },
+      {
+        "id": "video",
+        "label": "ভিডিও"
+      },
+      {
+        "id": "milestone",
+        "label": "মাইলস্টোন"
+      }
     ],
-    "submit": "বি কে এস-এ পাঠান",
-    "status": "যাচাই করা আপডেট পাবলিক ফিডে প্রকাশিত হবে।"
+    "submit": "Download this note",
+    "status": "The information has been downloaded as a file to your device. Nothing has been published."
   }
 }

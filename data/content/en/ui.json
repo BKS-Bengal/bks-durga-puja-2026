@@ -7,10 +7,10 @@
   "brand": {
     "parent": "Bharatiya Krishak Samaj",
     "chapter": "West Bengal",
-    "site": "Krishak Samaj Puja",
-    "brandSub": "Bharatiya Krishak Samaj · West Bengal",
-    "seasonal": "Durga Puja 2026 — Krishak Samaj",
-    "hierarchyNote": "BKS → Durga Puja 2026 → Krishak Samaj → Integrated Farming → farmer mobilisation"
+    "site": "Bharatiya Krishak Samaj Pujo",
+    "brandSub": "Organised by KarmYog for the 21st Century",
+    "seasonal": "Durga Puja 2026 — Bharatiya Krishak Samaj Pujo",
+    "hierarchyNote": "Bharatiya Krishak Samaj → Bharatiya Krishak Samaj Pujo → Integrated Farming → farmer mobilisation"
   },
   "banner": "",
   "skip": "Skip to content",
@@ -30,7 +30,7 @@
   "nav": {
     "home": "Home",
     "thePuja": "The Puja",
-    "krishakSamaj": "Krishak Samaj",
+    "krishakSamaj": "Bharatiya Krishak Samaj",
     "integratedFarming": "Integrated Farming",
     "mission": "The Mission",
     "participate": "Participate",
@@ -41,10 +41,19 @@
     "sponsor": "Bulk sponsor",
     "visit": "Visit",
     "demo": "Demo farm",
-    "fund": "Fund a farm",
+    "fund": "Learn how support works",
     "nrbWho": "Who is an NRB",
     "faq": "FAQ"
   },
+  "navGroups": {
+    "thePuja": "The Puja",
+    "theInitiative": "The Initiative",
+    "participate": "Participate",
+    "about": "About"
+  },
+  "crumbHome": "Home",
+  "crumbSection": "On this page",
+  "crumbPage": "Page",
   "utility": {
     "programme": "Programme",
     "stories": "Stories",
@@ -58,12 +67,12 @@
     "hi": "हिं"
   },
   "footer": {
-    "hierarchy": "BKS → Durga Puja 2026 → Krishak Samaj → Integrated Farming → community participation. Not a second organisation.",
+    "hierarchy": "Bharatiya Krishak Samaj, West Bengal · Bharatiya Krishak Samaj Pujo · organised by KarmYog for the 21st Century. Bharatiya Krishak Samaj is the organising partner.",
     "isolation": ""
   },
   "metaTags": {
-    "title": "BKS Durga Puja 2026 — Krishak Samaj | Bharatiya Krishak Samaj",
-    "description": "A seasonal Durga Puja under Bharatiya Krishak Samaj, West Bengal, themed on Krishak Samaj and Integrated Farming. Venue, programme and donations are not claimed. The 5,000-farmer figure is a mobilisation goal."
+    "title": "Bharatiya Krishak Samaj Pujo 2026 | Bharatiya Krishak Samaj",
+    "description": "A seasonal Durga Puja under Bharatiya Krishak Samaj, West Bengal, organised with KarmYog for the 21st Century. The Puja names the farmer, shows Integrated Farming, and invites Non-Resident Bengalis to seed village farms. Venue, programme and donations are not claimed."
   },
   "draftNote": "DRAFT — NATIVE REVIEW REQUIRED."
 }

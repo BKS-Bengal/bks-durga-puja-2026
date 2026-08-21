@@ -8,9 +8,9 @@
   "brand": {
     "parent": "ভারতীয় কৃষক সমাজ",
     "chapter": "পশ্চিমবঙ্গ",
-    "site": "কৃষক সমাজ পূজা",
-    "brandSub": "ভারতীয় কৃষক সমাজ · পশ্চিমবঙ্গ",
-    "seasonal": "দুর্গা পূজা ২০২৬ — কৃষক সমাজ",
+    "site": "ভারতীয় কৃষক সমাজ পূজা",
+    "brandSub": "KarmYog for the 21st Century আয়োজিত",
+    "seasonal": "দুর্গা পূজা ২০২৬ — ভারতীয় কৃষক সমাজ পূজা",
     "hierarchyNote": "বি কে এস → দুর্গা পূজা ২০২৬ → কৃষক সমাজ → সমন্বিত চাষ → কৃষক সংগঠন"
   },
   "banner": "",
@@ -31,20 +31,26 @@
   "nav": {
     "home": "প্রথম পাতা",
     "thePuja": "পূজা",
-    "krishakSamaj": "কৃষক সমাজ",
+    "krishakSamaj": "ভারতীয় কৃষক সমাজ",
     "integratedFarming": "সমন্বিত চাষ",
     "mission": "অভিযান",
     "participate": "যোগদান",
     "theme": "থিম",
     "awards": "পুরস্কার",
     "record": "২০২৫-এর নজির",
-    "nominate": "নাম পাঠান",
+    "nominate": "Nominate",
     "sponsor": "বাল্ক স্পনসর",
     "visit": "প্যান্ডেল",
     "demo": "ডেমো খামার",
     "fund": "খামারে বীজ",
     "nrbWho": "এনআরবি কে",
     "faq": "প্রশ্ন"
+  },
+  "navGroups": {
+    "thePuja": "পূজা",
+    "theInitiative": "উদ্যোগ",
+    "participate": "যোগদান",
+    "about": "পরিচিতি"
   },
   "utility": {
     "programme": "কার্যক্রম",

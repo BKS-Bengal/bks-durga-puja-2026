@@ -29,7 +29,7 @@
     "items": [
       {
         "title": "Extreme Land Fragmentation",
-        "body": "Over 90% of farmers in Bengal are small and marginal landholders, owning less than 1 hectare. Single-crop farming on tiny parcels simply cannot sustain a modern rural household."
+        "body": "Most farmers in Bengal are small and marginal landholders, often on less than 1 hectare. Single-crop farming on tiny parcels simply cannot sustain a modern rural household."
       },
       {
         "title": "High Input Costs & Low Margins",
@@ -48,7 +48,7 @@
   },
   "pillars": {
     "h2": "The Core Modules of a Bengal Model Integrated Farm",
-    "intro": "A standard BKS model integrated farm (designed for 1 to 2.5 acre holdings) is structured around five symbiotic pillars.",
+    "intro": "An illustrative BKS model integrated farm (sketched for about 1 to 2.5 acre holdings) is structured around five symbiotic pillars. Mix, scale and results vary.",
     "items": [
       {
         "id": "pond",
@@ -71,7 +71,7 @@
       {
         "id": "soil",
         "letter": "D",
-        "title": "Zero-Cost Bio-Inputs & Soil Regeneration",
+        "title": "Bio-inputs and soil regeneration",
         "body": "No crop residue or animal waste leaves the farm. Through vermicomposting beds, Jeevamrutha preparation tanks, and biochar pits, farm biomass is converted directly into organic compost, eliminating the need for expensive chemical fertilizers."
       },
       {
@@ -107,18 +107,18 @@
         "body": "Surplus vegetable leaves, azolla culture, and kitchen greens directly supplement fish and poultry feed."
       }
     ],
-    "footnote": "This closed-loop system reduces external farming expenditure by 50% to 70% while improving total output value."
+    "footnote": "Illustrative, model-based: a well-run closed loop can reduce bought-in farm costs while lifting output. The 50% to 70% range is not a guarantee. Outcomes vary by farm size, location, management, crop mix, input costs, yields and market conditions."
   },
   "impact": {
     "h2": "Economic & Social Impact for Bengal Farmers",
     "caveat": "Figures below are illustrative, model-based potential. Actual outcomes vary by farm size, location, management, crop mix, input costs and market conditions.",
     "items": [
       {
-        "title": "365-Day Cash Flow",
+        "title": "365-day cash flow (illustrative model)",
         "body": "Daily income from milk and eggs, weekly income from fresh vegetables and green herbs, monthly income from fish harvest, and seasonal income from grain/fruit harvests."
       },
       {
-        "title": "3x to 5x Income Multiplier",
+        "title": "3× to 5× income range (illustrative model)",
         "body": "A marginal farmer earning ₹40,000 to ₹60,000 annually under single-crop paddy can generate ₹2,00,000 to ₹3,50,000+ net profit per acre per year under a well-managed IFS."
       },
       {
@@ -240,15 +240,15 @@
       },
       {
         "title": "Durga Puja 2026 Showcase",
-        "body": "Serving as the central live pavilion for Krishak Samaj Puja 2026, offering millions of urban and diaspora visitors a firsthand view of modern sustainable farming."
+        "body": "Intended as the central live pavilion for Bharatiya Krishak Samaj Pujo 2026, so visitors can see a working farm model. No attendance figure is claimed here."
       },
       {
         "title": "Mission 5,000 Farms",
-        "body": "Using this prototype as the operational blueprint, BKS is identifying 5,000 farming teams across Bengal's districts to establish 5,000 localized integrated model farms between Durga Puja 2026 and 2027, powered by global Non-Resident Bengali patronage and local farmer producer organizations."
+        "body": "Using this prototype as the operational blueprint, the mobilisation target is about 5,000 farming teams across Bengal’s districts and about 5,000 local integrated model farms between Durga Puja 2026 and 2027. That is a goal, not a completed count."
       }
     ]
   },
-  "ctaFund": "Adopt a village farm",
+  "ctaFund": "Learn how support works",
   "ctaDemo": "See the live demo farm",
   "sourcesCta": "Research sources",
   "sourcesHref": "#sources"

@@ -1,0 +1,828 @@
+{
+  "meta": {
+    "status": "LOCAL REVIEW",
+    "note": "English copy for the six-experience local review. Bangla and Hindi of new experience copy are PENDING NATIVE REVIEW. Do not treat this as a locked slogan set."
+  },
+  "shared": {
+    "event": "Bharatiya Krishak Samaj Pujo",
+    "partnerLabel": "Organising partner",
+    "partner": "Bharatiya Krishak Samaj",
+    "karmyogLabel": "Organised by",
+    "karmyog": "KarmYog for the 21st Century",
+    "titleLabel": "Title sponsorship opportunity",
+    "titleValue": "Pending confirmation",
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "menuClose": "Close menu",
+    "language": "Language",
+    "homeHolding": "Home",
+    "ecosystem": "How would you like to participate?",
+    "noPayment": "Nothing on this page takes money. Forms download as a file on this device. They are not sent to a server.",
+    "dates": "16–20 October 2026",
+    "where": "Kolkata, West Bengal. Exact pandal address to be announced.",
+    "pendingLang": "New experience copy is in English. Bangla and Hindi translations are pending native review.",
+    "footerNote": "Bharatiya Krishak Samaj Pujo · organising partner Bharatiya Krishak Samaj · organised by KarmYog for the 21st Century.",
+    "footerNoteSponsor": "Bharatiya Krishak Samaj Pujo · organising partner Bharatiya Krishak Samaj · organised by KarmYog for the 21st Century · title sponsorship opportunity — pending confirmation.",
+    "contactEmail": "contact@bkswbengal.org",
+    "contactPhone": "+91 86552 46764",
+    "address": "Bharatiya Krishak Samaj, West Bengal · F 127, Downtown Mall, Uniworld City, New Town, Kolkata 700 156",
+    "backToMain": "Back to Bharatiya Krishak Samaj Pujo",
+    "doorsEyebrow": "Participate",
+    "doorsTitle": "How would you like to participate?",
+    "doorsLede": "Bharatiya Krishak Samaj Pujo is one gathering with several doors. Choose the path that matches who you are. Nothing on these pages takes money.",
+    "faqLabel": "Questions this page should answer",
+    "loopLabel": "The loop"
+  },
+  "transformation": {
+    "eyebrow": "The place",
+    "title": "A location being turned into an integrated farm",
+    "lede": "The strategic intent is to transform a difficult-looking site — described in review as dump-yard-like — into a working integrated farm, after moving the work to the side with better access. Before-photographs and the exact plot identity are pending confirmation. Do not read the stages below as a finished documentary.",
+    "pending": "This sequence is the intended story. Before-photographs, the named plot, and completion status are not yet approved — the frames are empty on purpose.",
+    "stages": [
+      {
+        "id": "before",
+        "kicker": "1 · Before",
+        "title": "How the site stood",
+        "body": "The intended opening of the story is a difficult-looking place. No before-photograph is published here."
+      },
+      {
+        "id": "access",
+        "kicker": "2 · Access",
+        "title": "The work was shifted for access",
+        "body": "The team moved to the side people can reach. The map of that decision is still to be confirmed."
+      },
+      {
+        "id": "build",
+        "kicker": "3 · Build",
+        "title": "What is being developed",
+        "body": "The vision is a live integrated farm — crop, water, animals and market on one holding — not a painted backdrop."
+      },
+      {
+        "id": "progress",
+        "kicker": "4 · Progress",
+        "title": "Visible milestones",
+        "body": "A public progress feed sits here for verified stills and notes when the team posts them. Nothing is invented in the meantime."
+      },
+      {
+        "id": "farm",
+        "kicker": "5 · Farm",
+        "title": "The emerging model",
+        "body": "Leftover becomes input: pond, bund horticulture, livestock, bio-inputs and careful tools. That is the farm people should be able to walk."
+      },
+      {
+        "id": "future",
+        "kicker": "6 · Future",
+        "title": "The larger aim",
+        "body": "The mobilisation already on this project is about 5,000 village integrated farms, with one NRB patron each. That is a goal, not a result already achieved."
+      }
+    ]
+  },
+  "experiences": {
+    "sponsors": {
+      "id": "sponsors",
+      "name": "Sponsors",
+      "documentTitle": "Sponsors | Bharatiya Krishak Samaj Pujo",
+      "metaDescription": "Sponsorship around Bharatiya Krishak Samaj Pujo — a seasonal Durga Puja that names the farmer and Integrated Farming. Organised by KarmYog for the 21st Century. No payment is taken here.",
+      "kicker": "For corporate sponsors",
+      "h1": "A sponsorship conversation around Bharatiya Krishak Samaj Pujo — not a four-day booking.",
+      "lede": "This page is for sponsors and corporate decision-makers. Durga Puja is when Bengal is outdoors together. Bharatiya Krishak Samaj Pujo places the farmer and Integrated Farming inside that week, as Season 1 of a three-year movement. No audience, media-reach, or return is guaranteed here. The ask is a conversation, not an online payment.",
+      "pendingNote": "",
+      "primaryCta": "Express Sponsor Interest",
+      "primaryHref": "#enquire",
+      "secondaryCta": "Why this is not four days",
+      "secondaryHref": "#season",
+      "heroCredit": "Pictured: evening gathering at Durga Puja Mahotsav 2025, IIT Kharagpur Research Park — KarmYog for the 21st Century Foundation. Used here as a record of people together, not as a product shot of the idol.",
+      "nav": [
+        {
+          "id": "opportunity",
+          "label": "Opportunity",
+          "href": "#opportunity"
+        },
+        {
+          "id": "different",
+          "label": "Why different",
+          "href": "#different"
+        },
+        {
+          "id": "season",
+          "label": "The season",
+          "href": "#season"
+        },
+        {
+          "id": "transformation",
+          "label": "Transformation",
+          "href": "#transformation"
+        },
+        {
+          "id": "partner",
+          "label": "Partner",
+          "href": "#partner"
+        },
+        {
+          "id": "enquire",
+          "label": "Enquire",
+          "href": "#enquire"
+        },
+        {
+          "id": "faq",
+          "label": "FAQ",
+          "href": "#faq"
+        }
+      ],
+      "sections": [
+        {
+          "id": "opportunity",
+          "kicker": "The opportunity",
+          "title": "Enter at the beginning of the platform.",
+          "body": "This page is for prospective sponsors, corporate decision-makers, and strategic partners. The ask is a conversation, not an online payment. Sector names that have not been defined for public use are not listed as marketing claims on this page."
+        },
+        {
+          "id": "different",
+          "kicker": "Why this is different",
+          "title": "Decision-makers and the public gathering, in one living week.",
+          "body": "A conference gathers buyers in a hall. A typical mass event gathers a crowd without the people who decide budgets. Durga Puja in Bengal is when the city is outdoors together. Bharatiya Krishak Samaj Pujo places an agricultural story — farmer, award, live farm — inside that week. That is the intended setting. It is not a guaranteed footfall, media-reach, or income figure."
+        },
+        {
+          "id": "season",
+          "kicker": "Not just four days",
+          "title": "Season 1 of a three-year movement.",
+          "body": "Joining the first season means being present at the start of a platform that is meant to continue: a continuing narrative, a visible transformation of a place into an integrated farm, and ongoing participation across three years. Year 2 and Year 3 programmes are not published here. This is a seasonal storytelling model — not a claim that the Puja is a television reality show."
+        },
+        {
+          "id": "audience",
+          "kicker": "Who the platform connects",
+          "title": "Facts already on this project — not new statistics.",
+          "body": "Sharadiya 2026 is dated 16–20 October 2026 in Kolkata, West Bengal; the exact pandal address is still to be announced. The gathering is organised as Bharatiya Krishak Samaj Pujo. The mobilisation described on this project is a target of about 5,000 village farms and about 5,000 NRB patrons, with ₹1 lakh as the proposed seed figure per farm. Those figures are a goal. This page does not invent footfall, media-reach, or income numbers."
+        },
+        {
+          "id": "now",
+          "kicker": "Why enter now",
+          "title": "The first season is when the platform is named.",
+          "body": "A title sponsor is not yet appointed. Entering in Season 1 is entering while the public identity of the platform is still being formed. No revenue guarantee is offered on this page."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the opportunity?",
+          "a": "A sponsorship conversation around Bharatiya Krishak Samaj Pujo, not a four-day booking. The ask is a conversation, not an online payment."
+        },
+        {
+          "q": "Why is this different from conventional event sponsorship?",
+          "a": "Durga Puja is when Bengal is outdoors together. This Pujo places the farmer and Integrated Farming inside that week. That is the intended setting. No footfall, media-reach or return is guaranteed."
+        },
+        {
+          "q": "Is this only a four-day Puja?",
+          "a": "The civic window is 16 to 20 October 2026. The page also describes a platform meant to continue. Year 2 and Year 3 programmes are not published. Season 1 of a three-year movement remains pending confirmation as locked public language."
+        },
+        {
+          "q": "What is the longer-term movement?",
+          "a": "Intended continuing work around farmer visibility, Integrated Farming and a live demonstration being built. Later-year programmes are not published here."
+        },
+        {
+          "q": "Who is the organising partner?",
+          "a": "Bharatiya Krishak Samaj. Organised by KarmYog for the 21st Century. Bharatiya Krishak Samaj does not occupy the title-sponsor slot."
+        },
+        {
+          "q": "Is a title sponsor already confirmed?",
+          "a": "No. The title-sponsorship opportunity is pending confirmation."
+        },
+        {
+          "q": "Are package amounts confirmed?",
+          "a": "Figures already on the campaign page, including the 10 lakh and 2.5 lakh class amounts, are shown as assumed. They are not confirmed commercial rates."
+        },
+        {
+          "q": "What does expressing interest do?",
+          "a": "The form downloads a JSON file to your device. This website does not submit it to a server."
+        },
+        {
+          "q": "How does the enquiry process work?",
+          "a": "You may send the downloaded file to BKS outside this website. The committee uses the file only if you send it."
+        },
+        {
+          "q": "Does this website take payment?",
+          "a": "No."
+        },
+        {
+          "q": "Is audience or ROI guaranteed?",
+          "a": "No."
+        },
+        {
+          "q": "Where does this sit in the ecosystem?",
+          "a": "This is the sponsor organ of Bharatiya Krishak Samaj Pujo. The main Pujo site remains the umbrella."
+        }
+      ]
+    },
+    "farmers": {
+      "id": "farmers",
+      "name": "Farmers / FarmTech + AgriTech",
+      "documentTitle": "Farmers / FarmTech + AgriTech | Bharatiya Krishak Samaj Pujo",
+      "metaDescription": "Integrated Farming, FarmTech and AgriTech at Bharatiya Krishak Samaj Pujo. Express interest. No enrolment and no payment on this page.",
+      "kicker": "For farmers, FarmTech and AgriTech",
+      "h1": "A farming livelihood you can walk — not a slogan on a pandal wall.",
+      "lede": "This Pujo puts the annadata in view, honours farmers who are rarely photographed, and then shows Integrated Farming as a working system on small land. The live demonstration is being built. How you formally join a farm programme is not a fake registration on this page.",
+      "pendingNote": "",
+      "primaryCta": "Express farmer interest",
+      "primaryHref": "#participate",
+      "secondaryCta": "See the live farm",
+      "secondaryHref": "#demo",
+      "heroCredit": "",
+      "nav": [
+        {
+          "id": "why-ifs",
+          "label": "Why IFS",
+          "href": "#why-ifs"
+        },
+        {
+          "id": "farmer",
+          "label": "The farmer",
+          "href": "#farmer"
+        },
+        {
+          "id": "loop",
+          "label": "The loop",
+          "href": "#loop"
+        },
+        {
+          "id": "farmtech",
+          "label": "FarmTech + AgriTech",
+          "href": "#farmtech"
+        },
+        {
+          "id": "demo",
+          "label": "Live farm",
+          "href": "#demo"
+        },
+        {
+          "id": "participate",
+          "label": "Express interest",
+          "href": "#participate"
+        },
+        {
+          "id": "faq",
+          "label": "FAQ",
+          "href": "#faq"
+        }
+      ],
+      "sections": [
+        {
+          "id": "why-ifs",
+          "kicker": "Why Integrated Farming",
+          "title": "One crop carries the whole year’s risk. A loop does not.",
+          "body": "On a small holding, a single standing crop — often paddy — meets weather, price and bought inputs at once. An integrated farm keeps several enterprises on the same land so leftover becomes the next input: pond silt to beds, residue to animals, manure to soil and energy. That is the livelihood this Pujo is trying to show, in plain view."
+        },
+        {
+          "id": "farmer",
+          "kicker": "Why the farmer matters",
+          "title": "The annadata is the person who feeds the household.",
+          "body": "The Puja is when Bengal gathers. This gathering is meant to bring the unnamed farmer into recognition — including an award ceremony on Ashtami evening for farmers the state does not usually photograph. Nominations on the main site have no entry fee. Recognition is not a substitute for a working farm. It is why the farm story is allowed to stand next to the festival."
+        },
+        {
+          "id": "model",
+          "kicker": "The model",
+          "title": "Pond, bund, animals, soil, and careful tools.",
+          "body": "The model already written for this project is a closed loop on about 1 to 2.5 acres: a pond as water and fish; bund horticulture in tiers; livestock and poultry beside the water; on-farm compost and bio-inputs; then monitoring tools where they earn their keep. It is a working sketch, not a guarantee of anyone’s income."
+        },
+        {
+          "id": "demo",
+          "kicker": "Demonstration",
+          "title": "A live farm is being built in the East Kolkata Wetlands, 500 metres from Sector V.",
+          "body": "That location is already on this project as the 2026 pavilion — a working farm, not only a festive facade. Status: being built. Whether the dump-yard-like transformation story and this wetland plot are the same piece of land is pending confirmation. Daily dispatches will appear when they are posted."
+        },
+        {
+          "id": "scale",
+          "kicker": "Larger vision",
+          "title": "About 5,000 village farms is the mobilisation goal.",
+          "body": "That figure is an aim already published on this project, between Puja 2026 and Puja 2027 — not a completed count. Your role on this page is the farmer on the land. How patrons attach is a separate door. This page does not enrol you into a paid programme."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is this?",
+          "a": "A farmer-facing door of Bharatiya Krishak Samaj Pujo. It shows Integrated Farming as a livelihood, not as a slogan on a pandal wall."
+        },
+        {
+          "q": "Who is it for?",
+          "a": "Farmers in West Bengal, agricultural readers, and FarmTech / AgriTech participants who need to understand the model."
+        },
+        {
+          "q": "What is integrated farming?",
+          "a": "Several enterprises on one holding so leftover becomes the next input: crop, horticulture, livestock, poultry, fishery, water, compost, soil, allied livelihoods, household and market."
+        },
+        {
+          "q": "What does FarmTech mean here?",
+          "a": "The careful-tools layer already in the project model: monitoring, drip, pond energy and diagnostics where they earn their keep. A fuller definition is to be confirmed."
+        },
+        {
+          "q": "What does AgriTech mean here?",
+          "a": "Agricultural technology in that same model-based sketch. It is not a named vendor programme on this page. To be confirmed if more public definition is required."
+        },
+        {
+          "q": "What is the demonstration farm?",
+          "a": "A live integrated-farm demonstration in the East Kolkata Wetlands, 500 metres from Sector V, is being built. It is not presented as finished."
+        },
+        {
+          "q": "What can a farmer learn?",
+          "a": "Why a loop can carry less risk than a single crop, how the enterprises feed each other, and that a public demonstration is being built. Model numbers are illustrative."
+        },
+        {
+          "q": "How can I participate?",
+          "a": "Express farmer interest. The form downloads a file to your device. It is not enrolment."
+        },
+        {
+          "q": "Is farmer enrolment currently open?",
+          "a": "No. Only an interest note is live. The intake mechanism beyond this note is to be confirmed."
+        },
+        {
+          "q": "Is 1 lakh rupees guaranteed?",
+          "a": "No. One lakh rupees is proposed seed-support in the patron model. It is not a farmer grant paid on this page."
+        },
+        {
+          "q": "Is there any payment on this site?",
+          "a": "No. Nothing on this page takes money."
+        },
+        {
+          "q": "How is the larger 5,000-farm vision being approached?",
+          "a": "About 5,000 village farms is a mobilisation target, not a completed count."
+        },
+        {
+          "q": "Who organises this?",
+          "a": "Organised by KarmYog for the 21st Century. Bharatiya Krishak Samaj is the organising partner, not the title sponsor."
+        },
+        {
+          "q": "What happens after I download the file?",
+          "a": "The website does not submit it to a server. If you send the file to BKS, that handling is outside this website."
+        }
+      ]
+    },
+    "stakeholders": {
+      "id": "stakeholders",
+      "name": "Government & Institutions",
+      "documentTitle": "Government & Influencers | Bharatiya Krishak Samaj Pujo",
+      "metaDescription": "Institutional briefing for Bharatiya Krishak Samaj Pujo. What is being proposed, why it matters, and how to request a conversation. No government endorsement is claimed.",
+      "kicker": "For institutions",
+      "h1": "What is being built — and why it matters to the state that must feed itself.",
+      "lede": "This briefing is for government stakeholders, institutions, influencers and ecosystem partners. It explains the initiative and how to request a conversation. West Bengal’s assembly has 294 seats; that number is the scale of the stakeholder universe, not a list of endorsements. Nothing here is a claimed government partnership or scheme.",
+      "pendingNote": "",
+      "primaryCta": "Request a briefing",
+      "primaryHref": "#connect",
+      "secondaryCta": "See the transformation",
+      "secondaryHref": "#transformation",
+      "heroCredit": "",
+      "nav": [
+        {
+          "id": "built",
+          "label": "The initiative",
+          "href": "#built"
+        },
+        {
+          "id": "why",
+          "label": "Why it matters",
+          "href": "#why"
+        },
+        {
+          "id": "execution",
+          "label": "Execution",
+          "href": "#execution"
+        },
+        {
+          "id": "transformation",
+          "label": "Transformation",
+          "href": "#transformation"
+        },
+        {
+          "id": "scale",
+          "label": "Scale",
+          "href": "#scale"
+        },
+        {
+          "id": "connect",
+          "label": "Connect",
+          "href": "#connect"
+        },
+        {
+          "id": "faq",
+          "label": "FAQ",
+          "href": "#faq"
+        }
+      ],
+      "sections": [
+        {
+          "id": "built",
+          "kicker": "What is being built",
+          "title": "A seasonal Puja that carries a live farming demonstration and a longer mobilisation.",
+          "body": "Bharatiya Krishak Samaj Pujo is a Sharadiya 2026 gathering in Kolkata under Bharatiya Krishak Samaj as organizing partner, organised with KarmYog for the 21st Century. Beside the festival sits a live integrated-farm demonstration (East Kolkata Wetlands, 500 metres from Sector V, being built) and a stated aim to seed about 5,000 village farms."
+        },
+        {
+          "id": "why",
+          "kicker": "Why it matters",
+          "title": "Farming is the thing the festival was timed to — and the thing public life often skips.",
+          "body": "West Bengal’s small and marginal holdings, input costs, flood and cyclone risk, and seasonal cash gaps are already described in this project’s Integrated Farming material. This page does not add new impact percentages. It asks institutional readers to look at a public demonstration they can eventually walk, and a mobilisation that needs local legitimacy."
+        },
+        {
+          "id": "execution",
+          "kicker": "Execution",
+          "title": "Festival as the visible week; farm as the continuing work.",
+          "body": "The Puja is the public platform — neighbourhood, awards, exhibition. The farm is the proof. The 5,000-farm aim pairs each village site with a patron and a local farmer team. Payment is not taken on this website. Venue and committee remain to be announced where they are not yet named."
+        },
+        {
+          "id": "vision",
+          "kicker": "Integrated farm vision",
+          "title": "A closed-loop holding, shown in public.",
+          "body": "The model on file combines water, horticulture, livestock, soil repair and careful tools on one small farm. The demonstration is being built so the model is not only a diagram in a brief."
+        },
+        {
+          "id": "scale",
+          "kicker": "Scale",
+          "title": "About 5,000 village farms — a mobilisation already on this project.",
+          "body": "Those numbers are a goal, not a completed census and not a government target adopted by any department on this page. Patronage amounts live on the NRB door. This briefing does not sell a commercial package."
+        },
+        {
+          "id": "role",
+          "kicker": "Stakeholder role",
+          "title": "Institutions can look, question, and help the work sit in the right places.",
+          "body": "MLAs, officers and civic voices are invited to understand the execution, visit when the demonstration can be walked, and say clearly what would make the village-farm pairing responsible. This is a request for a briefing, not a campaign advertisement."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the initiative?",
+          "a": "Bharatiya Krishak Samaj Pujo: a Sharadiya 2026 gathering that names the farmer, shows Integrated Farming, and is building a live demonstration."
+        },
+        {
+          "q": "Who is organising it?",
+          "a": "Organised by KarmYog for the 21st Century. Bharatiya Krishak Samaj is the organising partner."
+        },
+        {
+          "q": "What is being proposed?",
+          "a": "A public demonstration of Integrated Farming and a mobilisation target of about 5,000 village farms. Those farms are a goal, not a government target on this page."
+        },
+        {
+          "q": "What is being executed?",
+          "a": "The Puja is the visible week. The farm demonstration in the East Kolkata Wetlands, 500 metres from Sector V, is being built."
+        },
+        {
+          "q": "What role can institutions play?",
+          "a": "Look, question, visit when the demonstration can be walked, and say what would make village-farm pairing responsible."
+        },
+        {
+          "q": "Is government already endorsing it?",
+          "a": "No. Nothing here is a claimed government partnership, endorsement or scheme."
+        },
+        {
+          "q": "What does the 294 figure mean?",
+          "a": "West Bengal's assembly has 294 seats. That is the scale of the stakeholder universe, not a list of endorsements."
+        },
+        {
+          "q": "How can an MLA or institution request a briefing?",
+          "a": "Use the form on this page. It downloads a file to your device. You may also write to contact@bkswbengal.org or call +91 86552 46764."
+        },
+        {
+          "q": "What information is currently confirmed?",
+          "a": "Civic dates 16 to 20 October 2026 in Kolkata; organiser and organising partner as named; demonstration being built. Venue, committee and ritual clocks remain to be announced."
+        },
+        {
+          "q": "Does requesting a briefing log me with a department?",
+          "a": "No. The website does not submit the form to a server."
+        },
+        {
+          "q": "Where does this sit in the ecosystem?",
+          "a": "This is the government and influencer organ of Bharatiya Krishak Samaj Pujo. The main Pujo site remains the umbrella."
+        }
+      ]
+    },
+    "public": {
+      "id": "public",
+      "name": "Public",
+      "documentTitle": "Public / Puja | Bharatiya Krishak Samaj Pujo",
+      "metaDescription": "Bharatiya Krishak Samaj Pujo — a Durga Puja that puts the farmer in the gathering. Venue, committee and ritual clocks remain to be announced.",
+      "kicker": "For visitors",
+      "h1": "A Durga Puja that puts the farmer in the gathering.",
+      "lede": "Worship, craft, food, music and neighbourhood. This Pujo is organised as Bharatiya Krishak Samaj Pujo. It does not rewrite Saptami or visarjan as an advertisement. Programme details that are not yet true are not invented here.",
+      "pendingNote": "Venue, committee and ritual clocks from a named Panjika remain to be announced.",
+      "primaryCta": "Explore the Puja",
+      "primaryHref": "../index.html#puja",
+      "secondaryCta": "Awards and visit",
+      "secondaryHref": "../index.html#awards",
+      "heroCredit": "Pictured: Durga Puja Mahotsav 2025 at the IIT Kharagpur Research Park, organised by KarmYog for the 21st Century Foundation.",
+      "nav": [
+        {
+          "id": "story",
+          "label": "The story",
+          "href": "#story"
+        },
+        {
+          "id": "programme",
+          "label": "Programme",
+          "href": "../index.html#programme"
+        },
+        {
+          "id": "theme",
+          "label": "Theme",
+          "href": "../index.html#theme"
+        },
+        {
+          "id": "awards",
+          "label": "Awards",
+          "href": "../index.html#awards"
+        },
+        {
+          "id": "visit",
+          "label": "Visit",
+          "href": "../index.html#visit"
+        },
+        {
+          "id": "faq",
+          "label": "FAQ",
+          "href": "#faq"
+        }
+      ],
+      "sections": [
+        {
+          "id": "story",
+          "kicker": "The story",
+          "title": "The Puja gathers people. Then the farmer is seen. Then a farm can be shown.",
+          "body": "This Sharadiya, the public meeting-place is still the Puja. The farmer who grows food is meant to be recognised — including an award for people Bengal does not usually photograph. Integrated Farming is the livelihood being demonstrated. The larger aim is village farms that patrons can help seed. Full festival facts, UNESCO notes, and what is not yet true of a BKS gathering live on the existing Puja pages."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is Bharatiya Krishak Samaj Pujo?",
+          "a": "A Durga Puja that puts the farmer in the gathering. Worship, craft, food, music and neighbourhood remain the centre. It does not rewrite Saptami or visarjan as an advertisement."
+        },
+        {
+          "q": "When is it?",
+          "a": "Sharadiya 2026. Civic dates on this project are 16 to 20 October 2026."
+        },
+        {
+          "q": "Where is it?",
+          "a": "Kolkata, West Bengal. Exact pandal address is to be announced."
+        },
+        {
+          "q": "What is confirmed?",
+          "a": "The event name, organiser (KarmYog for the 21st Century), organising partner (Bharatiya Krishak Samaj), and the civic window. Photographs from 2025 Mahotsav are historical or reference unless labelled otherwise."
+        },
+        {
+          "q": "What is still to be announced?",
+          "a": "Venue, committee and ritual clocks from a named Panjika."
+        },
+        {
+          "q": "What is the farmer connection?",
+          "a": "The gathering names the farmer, recognises unnamed farmers, including Ashtami awards, then shows Integrated Farming as a livelihood, then a live farm being built."
+        },
+        {
+          "q": "What is Integrated Farming?",
+          "a": "A loop on small land: leftover becomes input. Details live on the farmer door and the Integrated Farming page."
+        },
+        {
+          "q": "How can the public participate?",
+          "a": "Visit when the address is announced, explore the Puja pages, nominate a farmer (no entry fee as published), or leave volunteer interest. No shifts are open on this website."
+        },
+        {
+          "q": "Does this website take payment?",
+          "a": "No."
+        },
+        {
+          "q": "Where does this sit in the ecosystem?",
+          "a": "This is the public Puja organ of Bharatiya Krishak Samaj Pujo. The main Pujo site remains the umbrella."
+        }
+      ]
+    },
+    "nrb": {
+      "id": "nrb",
+      "name": "Supporters / NRB",
+      "documentTitle": "NRB / Supporters | Bharatiya Krishak Samaj Pujo",
+      "metaDescription": "Non-Resident Bengalis and supporters can express interest in a village integrated farm. About 5,000 farms is a target. No payment is taken on this page.",
+      "kicker": "For Non-Resident Bengalis and supporters",
+      "h1": "From wherever you are, this Pujo is a way to take part in Bengal’s farming story.",
+      "lede": "If your native village is in Bengal — whether you live abroad or in a high-rise in Kolkata — you can express interest in seeding one village integrated farm. About 5,000 patrons and 5,000 farms is a mobilisation target, not a completed count. Nothing on this page takes money.",
+      "pendingNote": "",
+      "primaryCta": "Express supporter interest",
+      "primaryHref": "#contribute",
+      "secondaryCta": "Learn how it works",
+      "secondaryHref": "#how",
+      "heroCredit": "Community during BKS Durga Puja 2026 preparation — 19 August 2026. People, not a product shot.",
+      "nav": [
+        {
+          "id": "why",
+          "label": "Why NRBs",
+          "href": "#why"
+        },
+        {
+          "id": "puja",
+          "label": "The Puja",
+          "href": "#puja"
+        },
+        {
+          "id": "farmer",
+          "label": "Farmer",
+          "href": "#farmer"
+        },
+        {
+          "id": "transformation",
+          "label": "Transformation",
+          "href": "#transformation"
+        },
+        {
+          "id": "vision",
+          "label": "The target",
+          "href": "#vision"
+        },
+        {
+          "id": "contribute",
+          "label": "Participate",
+          "href": "#contribute"
+        },
+        {
+          "id": "faq",
+          "label": "FAQ",
+          "href": "#faq"
+        }
+      ],
+      "sections": [
+        {
+          "id": "why",
+          "kicker": "Why NRBs",
+          "title": "You can stand with a village farm without standing in the village every day.",
+          "body": "The working definition already on this project: a Non-Resident Bengali is anyone with roots in a native village — New York, London, Bengaluru, or a Kolkata high-rise. The role is patronage of a named farm, not a souvenir from a pandal."
+        },
+        {
+          "id": "puja",
+          "kicker": "The Puja as the entry",
+          "title": "The festival is when Bengal is paying attention together.",
+          "body": "Bharatiya Krishak Samaj Pujo is a seasonal gathering in Kolkata. It is the week the farmer, the award, and the live farm can be seen in public. You do not have to be in the pandal to register interest in seeding a village farm."
+        },
+        {
+          "id": "farmer",
+          "kicker": "The annadata",
+          "title": "The person who grows the food should not stay unnamed.",
+          "body": "Recognition — including Ashtami awards — is how this Pujo insists the farmer is part of the gathering. Your patronage is meant to sit beside a local farmer team that still puts in land, labour and working capital."
+        },
+        {
+          "id": "how",
+          "kicker": "How it works",
+          "title": "₹1 lakh is the proposed seed for one farm — in full, or ₹20,000 every two months.",
+          "body": "One farm. One patron. That pairing is the intended model. Bharatiya Krishak Samaj, West Bengal is meant to pair you with a local team later. UPI, cards and tax paperwork are completed off this page when an adoption is real. This form only registers interest as a downloaded file. It does not take payment."
+        },
+        {
+          "id": "vision",
+          "kicker": "Collective vision",
+          "title": "Target: about 5,000 patrons · about 5,000 farms.",
+          "body": "That pairing is the mobilisation already published on this project, from Puja 2026 toward Puja 2027. It is a goal. It is not a claim that 5,000 farms or 5,000 patrons already exist."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why should NRBs participate?",
+          "a": "If your native village is in Bengal, whether you live abroad or in a Kolkata high-rise, this Pujo is a way to take part in Bengal's farming story from wherever you are."
+        },
+        {
+          "q": "What does participation mean?",
+          "a": "Expressing interest in seeding a village integrated farm. Pairing with a local farmer team is intended later. It is not live allocation on this website."
+        },
+        {
+          "q": "How does the Puja connect to the farmer?",
+          "a": "The festival is when Bengal is paying attention together. The farmer is named, recognised, and then a farm livelihood is shown."
+        },
+        {
+          "q": "What is the integrated farming vision?",
+          "a": "A closed-loop holding, crop, animals, water, soil, market, shown as a demonstration being built, and as a model for village farms."
+        },
+        {
+          "q": "What does the 5,000 goal represent?",
+          "a": "A mobilisation target: about 5,000 patrons and about 5,000 farms. It is not a completed count."
+        },
+        {
+          "q": "How does support work?",
+          "a": "One lakh rupees is the proposed seed for one farm, or 20,000 rupees every two months. That is proposed, not collected here."
+        },
+        {
+          "q": "Is payment available on this site?",
+          "a": "No. No UPI, card or gateway."
+        },
+        {
+          "q": "What happens after I download the interest form?",
+          "a": "The file stays on your device. This website does not submit it to a server. You may send it to BKS separately."
+        },
+        {
+          "q": "Are tax / 80G documents available?",
+          "a": "To be confirmed. They are not issued on this website."
+        },
+        {
+          "q": "Who organises this?",
+          "a": "Organised by KarmYog for the 21st Century. Bharatiya Krishak Samaj is the organising partner."
+        },
+        {
+          "q": "Where does this sit in the ecosystem?",
+          "a": "This is the NRB and supporter organ of Bharatiya Krishak Samaj Pujo. The main Pujo site remains the umbrella."
+        }
+      ]
+    },
+    "umbrella": {
+      "id": "umbrella",
+      "name": "Participate",
+      "documentTitle": "How would you like to participate? | Bharatiya Krishak Samaj Pujo",
+      "metaDescription": "Choose how to take part in Bharatiya Krishak Samaj Pujo: farmer, supporter, sponsor, volunteer, institution, or visitor.",
+      "kicker": "Participate",
+      "h1": "How would you like to participate?",
+      "lede": "Bharatiya Krishak Samaj Pujo is one gathering with several doors. Choose the path that matches who you are. Nothing on these pages takes money.",
+      "pendingNote": "",
+      "primaryCta": "Choose a path",
+      "primaryHref": "#paths",
+      "secondaryCta": "Home",
+      "secondaryHref": "../index.html",
+      "heroCredit": "",
+      "nav": [],
+      "sections": [],
+      "paths": [
+        {
+          "href": "../farmers/",
+          "kicker": "Farming",
+          "title": "Farmer",
+          "body": "The livelihood, the live farm, and how to express interest."
+        },
+        {
+          "href": "../nrb/",
+          "kicker": "Diaspora",
+          "title": "Supporter / NRI",
+          "body": "Express interest in seeding a village farm from wherever you are."
+        },
+        {
+          "href": "../sponsors/",
+          "kicker": "Organisations",
+          "title": "Sponsor",
+          "body": "A conversation around Season 1 — not a four-day booking."
+        },
+        {
+          "href": "../index.html#participate",
+          "kicker": "Community",
+          "title": "Volunteer",
+          "body": "Leave a name for a future roster. No shifts are open on this page."
+        },
+        {
+          "href": "../stakeholders/",
+          "kicker": "Institutions",
+          "title": "Institution / Government / Influencer",
+          "body": "What is being proposed, and how to request a briefing. No endorsement is claimed."
+        },
+        {
+          "href": "../public/",
+          "kicker": "Visitors",
+          "title": "The Puja",
+          "body": "Worship, neighbourhood, farmer, visit and awards. Unconfirmed details stay unconfirmed."
+        }
+      ]
+    }
+  },
+  "loop": {
+    "eyebrow": "The loop",
+    "title": "Leftover becomes the next input.",
+    "lede": "An integrated farm keeps several enterprises on one holding. This is a working sketch, not a guarantee of income or zero-waste.",
+    "items": [
+      {
+        "title": "Crop",
+        "body": "Cereals, pulses, oilseeds and fodder. Residue becomes feed or compost."
+      },
+      {
+        "title": "Horticulture",
+        "body": "Vegetables, fruit and homestead trees on the same holding."
+      },
+      {
+        "title": "Livestock",
+        "body": "Dairy beside the water. Dung returns to soil and energy."
+      },
+      {
+        "title": "Poultry",
+        "body": "Birds and duckery near the pond. Leftover feed returns to compost."
+      },
+      {
+        "title": "Fishery / aquaculture",
+        "body": "The pond as water and fish. Silt returns to beds."
+      },
+      {
+        "title": "Water harvesting",
+        "body": "The pond stores rain and feeds irrigation."
+      },
+      {
+        "title": "Compost",
+        "body": "Residue, dung and silt as on-farm inputs."
+      },
+      {
+        "title": "Soil",
+        "body": "Organic return keeps the loop closed."
+      },
+      {
+        "title": "Bee / mushroom",
+        "body": "Allied livelihoods on the same holding."
+      },
+      {
+        "title": "Household / market",
+        "body": "Produce feeds the house and the market. Income returns to the farm."
+      }
+    ]
+  },
+  "farmtech": {
+    "eyebrow": "FarmTech + AgriTech",
+    "title": "Careful tools where they earn their keep.",
+    "body": "On this project, FarmTech and AgriTech names the technology layer already written into the Integrated Farming model: monitoring, drip, pond energy and diagnostics where they help a small farm. That is a model-based sketch. A fuller public definition of FarmTech and AgriTech as a named programme is to be confirmed. This page does not list vendors, apps, or guaranteed yields."
+  }
+}

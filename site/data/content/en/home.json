@@ -1,18 +1,23 @@
 {
-  "meta": { "lang": "en", "status": "NEXT VERSION", "note": "Live hero comes from heroes.json. This file owns home story-arc and explore cards." },
+  "meta": { "lang": "en", "status": "NEXT VERSION", "note": "Live hero comes from campaign.json and heroes.json. This file owns home story-arc, bridge, and explore cards." },
   "slotLabel": "Photograph forthcoming · this gathering, with permission. Not a pandal image.",
   "slotCaption": "Image slot · rights EMPTY · clay, light and neighbourhood when photography is approved.",
   "heroStatus": "Hero language is a hypothesis for review — replaceable. Venue is not claimed.",
+  "bridge": {
+    "eyebrow": "Why a Puja talks about farms",
+    "title": "The gathering names the farmer. The farm is what you can help seed.",
+    "body": "Durga Puja is when Bengal comes home. This Pujo puts the annadata — the farmer who feeds the household — in view, honours that work, and then shows Integrated Farming as a livelihood on small land. If you live away from Bengal, this is how you can take part: not by watching a festival from afar, but by helping seed a village farm."
+  },
   "storyArc": {
     "h2": "One story, in order",
-    "lede": "The Puja opens the door. Krishak Samaj names the farmer. Integrated Farming is the livelihood. Then the live farm, then the seed.",
+    "lede": "Six steps. Each one follows from the last. You do not need insider language to follow them.",
     "steps": [
-      { "id": "culture", "kicker": "Culture", "title": "The Puja", "body": "Neighbourhood, clay, dhak, food, homecoming.", "href": "#puja" },
-      { "id": "bridge", "kicker": "People", "title": "Krishak Samaj", "body": "The theme names the annadata.", "href": "#krishak" },
-      { "id": "system", "kicker": "Livelihood", "title": "Integrated Farming", "body": "Crop, animals, water and markets as one household.", "href": "#ifs" },
-      { "id": "demo", "kicker": "Showcase", "title": "Demo farm", "body": "East Kolkata Wetlands, being built.", "href": "#demo" },
-      { "id": "fund", "kicker": "Seed", "title": "Fund a farm", "body": "₹1 lakh, or ₹20,000 every two months.", "href": "#fund" },
-      { "id": "ambition", "kicker": "Ambition", "title": "5,000 farms", "body": "One village farm. One NRB patron.", "href": "#mission" }
+      { "id": "culture", "kicker": "1 · The Puja", "title": "A gathering people can join", "body": "This Sharadiya, the Puja is the public meeting-place: neighbourhood, clay, dhak, food, homecoming. Neighbours in Kolkata and Bengalis living away from Bengal can enter the work here.", "href": "#puja" },
+      { "id": "bridge", "kicker": "2 · The farmer", "title": "The annadata comes into view", "body": "The gathering is not only spectacle. It names the farmer who grows food, so the person who feeds Bengal is seen — not left unnamed.", "href": "#krishak" },
+      { "id": "awards", "kicker": "3 · Recognition", "title": "An award ceremony for the unknown farmer", "body": "An award ceremony on Ashtami evening recognises the unnamed farmer — people Bengal does not usually photograph. Nominations are open on this site. There is no entry fee.", "href": "#awards" },
+      { "id": "system", "kicker": "4 · Livelihood", "title": "Why Integrated Farming follows", "body": "Once the farmer is in view, the next question is livelihood. Integrated Farming keeps crop, animals, water and market on one holding, so leftover becomes input — a model a small farm can run.", "href": "#ifs" },
+      { "id": "demo", "kicker": "5 · Demonstration", "title": "See it on a live farm", "body": "That model is being built as a working farm in the East Kolkata Wetlands, 500 metres from Sector V — the 2026 pavilion, not a drawing on a wall.", "href": "#demo" },
+      { "id": "fund", "kicker": "6 · The seed", "title": "This Puja is the seed", "body": "This Durga Puja is the public beginning of a mobilisation target: about 5,000 integrated farms. ₹1 lakh is the proposed seed for one village farm — or ₹20,000 every two months — with one NRB patron each, from Puja 2026 to Puja 2027. That is a goal, not money already collected.", "href": "#fund" }
     ]
   },
   "ifsTease": {
@@ -20,7 +25,7 @@
     "cta": "See how the farm loops"
   },
   "explore": {
-    "h2": "Inside this gathering",
-    "lede": "Six rooms. The Puja stays the cultural entry. Krishak Samaj and Integrated Farming carry the livelihood story."
+    "h2": "Go deeper",
+    "lede": "Standalone pages for the Puja, the farm system, and how to take part. The story above is the map."
   }
 }

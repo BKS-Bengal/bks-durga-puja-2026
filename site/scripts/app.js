@@ -16,7 +16,7 @@
     "Paschim Bardhaman", "Paschim Medinipur", "Purba Bardhaman",
     "Purba Medinipur", "Purulia", "South 24 Parganas", "Uttar Dinajpur"
   ];
-  const HOME_SECTIONS = ["nrb", "sambhavana", "about", "demo", "model", "fund", "sponsor", "village", "faq", "theme", "awards", "record", "nominate", "visit", "press", "ifs-tease", "prep"];
+  const HOME_SECTIONS = ["nrb", "sambhavana", "about", "demo", "model", "fund", "sponsor", "village", "faq", "theme", "awards", "record", "nominate", "visit", "press", "ifs-tease", "prep", "story-arc", "story-bridge", "initiative", "doors"];
   const state = {
     lang: "en",
     heroId: "H1",
@@ -172,21 +172,90 @@
     if (!ui || !spec) return;
     const desktop = document.getElementById("nav-desktop");
     const drawerList = document.getElementById("nav-drawer-list");
-    function links(filterDesktop) {
-      return spec.items
-        .filter((item) => (filterDesktop ? item.desktop : true))
-        .map((item) => {
-          const label = getByPath(ui, item.labelPath) || item.id;
-          return "<a href='" + item.href + "'>" + label + "</a>";
-        }).join("");
+    const byId = {};
+    (spec.items || []).forEach((item) => { byId[item.id] = item; });
+
+    function itemLink(item, withKind) {
+      const label = getByPath(ui, item.labelPath) || item.id;
+      const kind = item.homeSection ? "section" : (item.id === "home" ? "home" : "page");
+      const kindLabel = kind === "section" ? (ui.crumbSection || "On this page") : (kind === "page" ? (ui.crumbPage || "Page") : "");
+      const kindHtml = withKind && kindLabel ? " <span class='nav-kind'>" + kindLabel + "</span>" : "";
+      return "<a href='" + item.href + "' data-nav-kind='" + kind + "'>" + label + kindHtml + "</a>";
     }
-    if (desktop) desktop.innerHTML = links(true);
+
+    if (desktop) {
+      desktop.innerHTML = spec.items.filter((item) => item.desktop).map((item) => itemLink(item, false)).join("");
+    }
     if (drawerList) {
-      drawerList.innerHTML = links(false);
+      const used = { home: true };
+      let html = itemLink(byId.home || { id: "home", href: "#home", labelPath: ["nav", "home"] }, false);
+      const audienceLabel = (ui.navGroups && ui.navGroups.participate) || "Participate";
+      html += "<p class='nav-group-label' id='nav-g-audience'>" + audienceLabel + "</p>";
+      html += "<div class='nav-group' role='group' aria-labelledby='nav-g-audience'>";
+      [
+        { href: "https://bks-pujo-sponsor.vercel.app/", label: "Sponsors" },
+        { href: "https://bks-pujo-government.vercel.app/", label: "Government &amp; Institutions" },
+        { href: "https://bks-pujo-farmtech-agritech.vercel.app/", label: "Farmers / FarmTech + AgriTech" },
+        { href: "https://bks-pujo-public.vercel.app/", label: "Public / Puja" },
+        { href: "https://bks-pujo-nrb.vercel.app/", label: "NRB / Supporters" }
+      ].forEach(function (item) {
+        html += "<a href='" + item.href + "'>" + item.label + "</a>";
+      });
+      html += "</div>";
+      (spec.groups || []).forEach((group) => {
+        const label = getByPath(ui, group.labelPath) || group.id;
+        html += "<p class='nav-group-label' id='nav-g-" + group.id + "'>" + label + "</p>";
+        html += "<div class='nav-group' role='group' aria-labelledby='nav-g-" + group.id + "'>";
+        (group.items || []).forEach((id) => {
+          const item = byId[id];
+          if (!item) return;
+          used[id] = true;
+          html += itemLink(item, true);
+        });
+        html += "</div>";
+      });
+      spec.items.forEach((item) => {
+        if (!used[item.id]) html += itemLink(item, true);
+      });
+      drawerList.innerHTML = html;
       drawerList.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
     }
     renderLangBars();
     markCurrent(pageFromHash());
+    renderCrumbs(pageFromHash());
+  }
+
+  function renderCrumbs(page) {
+    const el = document.getElementById("crumbs");
+    const ui = state.ui[state.lang];
+    const spec = state.navSpec;
+    if (!el) return;
+    const homeSection = HOME_SECTIONS.indexOf(page) !== -1;
+    if (!ui || !spec || page === "home" || homeSection) {
+      el.hidden = true;
+      el.innerHTML = "";
+      return;
+    }
+    const byId = {};
+    spec.items.forEach((item) => { byId[item.id] = item; });
+    const item = byId[page];
+    const homeLabel = (ui.nav && ui.nav.home) || "Home";
+    const sep = " <span class='crumb-sep' aria-hidden='true'>/</span> ";
+    const parts = ["<a href='#home'>" + homeLabel + "</a>"];
+    const group = (spec.groups || []).find((g) => (g.items || []).indexOf(page) !== -1);
+    if (group) {
+      const gLabel = getByPath(ui, group.labelPath) || group.id;
+      const firstPage = (group.items || []).map((id) => byId[id]).find((i) => i && !i.homeSection);
+      if (firstPage && firstPage.id !== page) {
+        parts.push("<a href='" + firstPage.href + "'>" + gLabel + "</a>");
+      } else {
+        parts.push("<span>" + gLabel + "</span>");
+      }
+    }
+    const label = item ? (getByPath(ui, item.labelPath) || page) : page;
+    parts.push("<span aria-current='page'>" + label + "</span>");
+    el.hidden = false;
+    el.innerHTML = parts.join(sep);
   }
 
   function renderCampaign() {
@@ -238,7 +307,7 @@
         e.preventDefault();
         downloadNrbJson("bks-nrb-farm-pledge.json", nrbFormPayload(pledge, "nrb_pledge"));
         const status = document.getElementById("nrb-pledge-status");
-        if (status) status.textContent = fund.status || "No payment is taken here.";
+        if (status) status.textContent = fund.status || "The information has been downloaded as a file to your device.";
       });
     }
 
@@ -248,7 +317,7 @@
         e.preventDefault();
         downloadNrbJson("bks-nrb-bulk-interest.json", nrbFormPayload(bulkForm, "nrb_bulk"));
         const status = document.getElementById("nrb-bulk-status");
-        if (status) status.textContent = bulk.status || "Allocation will be done by BKS, not by this website.";
+        if (status) status.textContent = bulk.status || "The information has been downloaded as a file to your device.";
       });
       document.querySelectorAll("[data-nrb-tier]").forEach((btn) => {
         btn.addEventListener("click", () => {
@@ -266,7 +335,7 @@
         downloadNrbJson("bks-nrb-village-interest.json", nrbFormPayload(village, "nrb_village"));
         const status = document.getElementById("nrb-village-status");
         const copy = (nrb.village || {}).status;
-        if (status) status.textContent = copy || "Not matched to a live farm list.";
+        if (status) status.textContent = copy || "The information has been downloaded as a file to your device.";
       });
     }
 
@@ -276,7 +345,7 @@
         e.preventDefault();
         downloadNrbJson("bks-nrb-operator-demo.json", nrbFormPayload(opForm, "nrb_operator_demo"));
         const status = document.getElementById("nrb-operator-status");
-        if (status) status.textContent = operator.status || "Not posted to a public feed.";
+        if (status) status.textContent = operator.status || "The information has been downloaded as a file to your device.";
       });
     }
   }
@@ -415,9 +484,7 @@
       "<div class='nrb-split'><div><p class='kicker'>" + escapeHtml(tease.eyebrow || ifs.kicker) +
       "</p><h2>" + escapeHtml(ifs.h1 || "") + "</h2><p>" + escapeHtml(ifsBody) + "</p>" +
       "<p class='cta-row'><a class='btn btn-primary' href='#ifs'>" +
-      escapeHtml(tease.cta || "") + "</a></p></div>" +
-      photoFigure(photos.fundSrc, photos.fundAlt, ifs.photoCap || photos.fundCap, "") +
-      "</div></section>" +
+      escapeHtml(tease.cta || "") + "</a></p></div></div></section>" +
 
       "<section class='campaign-section nrb-demo' id='demo'>" +
       "<div class='nrb-demo-head'><div><p class='kicker'>" + escapeHtml(demo.eyebrow) + "</p>" +
@@ -523,6 +590,8 @@
       view.hidden = !on;
     });
     markCurrent(page);
+    renderCrumbs(page);
+    updateMeta();
     closeMenu();
     if (homeSection) {
       const target = document.getElementById(page);
@@ -609,7 +678,7 @@
   }
 
   function renderHome() {
-    const home = state.home[state.lang];
+    const home = state.home[state.lang] || state.home.en;
     const arc = document.getElementById("story-arc");
     if (!home || !arc || !home.storyArc) return;
     const heading = home.storyArc.h2;
@@ -626,6 +695,14 @@
       "<h2>" + heading + "</h2>" +
       "<p class='muted'>" + lede + "</p>" +
       "<ol class='story-path'>" + steps + "</ol></div>";
+    const bridge = document.getElementById("story-bridge");
+    if (bridge && home.bridge) {
+      bridge.innerHTML =
+        "<div class='wrap-wide story-bridge-inner'>" +
+        "<p class='kicker'>" + home.bridge.eyebrow + "</p>" +
+        "<h2>" + home.bridge.title + "</h2>" +
+        "<p>" + home.bridge.body + "</p></div>";
+    }
     const exploreHead = document.getElementById("explore-copy");
     if (exploreHead && home.explore) {
       exploreHead.innerHTML = "<h2 id='explore-heading'>" + home.explore.h2 + "</h2><p class='muted'>" + home.explore.lede + "</p>";
@@ -797,6 +874,16 @@
       "<header class='page-head'><p class='kicker'>" + page.kicker + "</p><h1>" + page.h1 + "</h1><p class='lede'>" + page.lede + "</p></header>" +
       "<hr class='rule'>" +
       "<p class='legend'>" + page.privacy + "</p>" +
+      "<section class='doors-inline' aria-labelledby='participate-doors'>" +
+      "<h2 id='participate-doors'>Specialised doors in this ecosystem</h2>" +
+      "<p class='muted'>If you already know who you are, use the matching door. The form below remains a general interest note. It downloads a file to your device and does not take money.</p>" +
+      "<div class='explore-grid doors-grid'>" +
+                    "<a class='explore-card' href='https://bks-pujo-sponsor.vercel.app/'><p class='kicker'>Organisations</p><h3>Sponsors</h3><p>Express sponsor interest. No payment.</p></a>" +
+      "<a class='explore-card' href='https://bks-pujo-government.vercel.app/'><p class='kicker'>Institutions</p><h3>Government &amp; Influencers</h3><p>Request a briefing. No endorsement claimed.</p></a>" +
+      "<a class='explore-card' href='https://bks-pujo-farmtech-agritech.vercel.app/'><p class='kicker'>Livelihood</p><h3>Farmers / FarmTech + AgriTech</h3><p>Express farmer interest. Not enrolment.</p></a>" +
+      "<a class='explore-card' href='https://bks-pujo-public.vercel.app/'><p class='kicker'>Gathering</p><h3>Public / Puja</h3><p>Explore the Puja. Venue still TBA.</p></a>" +
+      "<a class='explore-card' href='https://bks-pujo-nrb.vercel.app/'><p class='kicker'>Diaspora</p><h3>NRB / Supporters</h3><p>Express supporter interest. No UPI or 80G here.</p></a>" +
+      "</div></section>" +
       "<div class='grid cols-2'>" + paths + "</div>" +
       "<form id='interest-form' class='interest-form' novalidate>" +
       "<h2>" + page.form.h2 + "</h2>" +
@@ -1021,7 +1108,25 @@
 
   function updateMeta() {
     const ui = state.ui[state.lang];
-    const title = ui && ui.metaTags ? ui.metaTags.title : document.title;
+    const page = pageFromHash();
+    const pageTitles = {
+      home: null,
+      puja: "The Puja",
+      ifs: "Integrated Farming",
+      participate: "Participate",
+      krishak: "Bharatiya Krishak Samaj",
+      mission: "The Mission",
+      programme: "Programme",
+      contact: "Contact",
+      community: "Stories",
+      sources: "Sources",
+      accessibility: "Accessibility",
+      sustainability: "Sustainability",
+      locator: "Find a gathering"
+    };
+    const baseTitle = ui && ui.metaTags ? ui.metaTags.title : document.title;
+    const pageLabel = pageTitles[page];
+    const title = pageLabel ? pageLabel + " | Bharatiya Krishak Samaj Pujo" : baseTitle;
     const descText = ui && ui.metaTags ? ui.metaTags.description : "";
     document.title = title;
     const desc = document.querySelector('meta[name="description"]');

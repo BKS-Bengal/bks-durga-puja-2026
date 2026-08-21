@@ -5,42 +5,42 @@
   },
   "kicker": "5,000 फार्म पहल",
   "h1": "अभियान",
-  "lede": "5,000 नॉन-रेजिडेंट बंगाली बंगाल के गाँवों में 5,000 समेकित मॉडल फार्म स्थापित करें — दुर्गा पूजा 2026 के जीवंत प्रदर्शन से यात्रा।",
-  "notice": "एक गाँव फार्म। एक एनआरबी संरक्षक। प्रति फार्म ₹1 लाख बीज।",
+  "lede": "A mobilisation target of about 5,000 Non-Resident Bengali patrons alongside about 5,000 village integrated farms — launching from a live showcase at Durga Puja 2026. These figures are a goal, not a completed count, and ₹1 lakh is proposed seed-support, not money already collected.",
+  "notice": "One village farm. One NRB patron. ₹1 lakh proposed seed per farm. Not collected on this website.",
   "stats": [
     {
       "id": "farmers",
-      "badge": "फार्म",
+      "badge": "FARMS",
       "value": "5,000",
-      "label": "गाँव समेकित फार्म",
-      "body": "2–3 अग्रणी किसान या FPO टीमें भूमि, श्रम और कार्यशील पूँजी देती हैं।"
+      "label": "village integrated farms (target)",
+      "body": "Local teams of 2–3 progressive farmers or FPOs put in land, labour and working capital."
     },
     {
       "id": "patrons",
-      "badge": "संरक्षक",
+      "badge": "PATRONS",
       "value": "5,000",
-      "label": "नॉन-रेजिडेंट बंगाली संरक्षक",
-      "body": "बंगाल के गाँव से जुड़े कोई भी — विदेश में हों या कोलकाता में।"
+      "label": "Non-Resident Bengali patrons (target)",
+      "body": "Anyone with a native village in Bengal — whether they live abroad or in Kolkata."
     },
     {
       "id": "seed",
-      "badge": "बीज",
-      "value": "₹1 लाख",
-      "label": "प्रति फार्म",
-      "body": "एक बार में, या वर्ष में हर दो महीने ₹20,000।"
+      "badge": "SEED",
+      "value": "₹1 lakh",
+      "label": "per farm",
+      "body": "In full, or ₹20,000 every two months over the year."
     },
     {
       "id": "total",
-      "badge": "पैमाना",
-      "value": "₹50 करोड़",
-      "label": "5,000 × ₹1 लाख",
-      "body": "पूजा 2026 से पूजा 2027 तक बंगाल के कृषि पुनरुत्थान का बीज।"
+      "badge": "TARGET SCALE",
+      "value": "₹50 crore",
+      "label": "5,000 × ₹1 lakh (arithmetic of the target)",
+      "body": "The mobilisation aim between Puja 2026 and Puja 2027. Not funds already raised."
     }
   ],
   "how": {
     "h2": "लोग कैसे शामिल होते हैं",
-    "body": "एक गाँव फार्म अपनाइए, क्लस्टर या ज़ोनल पूजा संरक्षक बनिए, या पैतृक ज़िला लिखिए ताकि बीकेएस आपको आपकी मिट्टी से मिलाए। प्रत्येक फार्म के साथ डिजिटल अनुसरण।",
-    "cta": "गाँव का फार्म अपनाएँ",
+    "body": "Express interest in a village farm, or in cluster or zonal Puja patronage, or name your ancestral district. This website does not complete a pairing or take payment.",
+    "cta": "Learn how support works",
     "href": "#fund"
   }
 }
