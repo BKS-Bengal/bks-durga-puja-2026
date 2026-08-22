@@ -3,261 +3,125 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Take part from wherever you are | Supporters NRB | Bharatiya Krishak Samaj Pujo</title>
-  <meta name="description" content="Non-Resident Bengalis and supporters outside Bengal can express interest in seeding one village integrated farm. About 5,000 farms is a target. This page does not take payment.">
+  <title>Supporters / NRB | Bharatiya Krishak Samaj Pujo</title>
+  <meta name="description" content="From wherever you are, take part in Bengal’s farming story. Express interest in proposed seed-support for a village integrated farm. About 5,000 farms is a vision. No payment taken here.">
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="google" content="notranslate">
   <meta name="author" content="KarmYog for the 21st Century">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Take part from wherever you are | Supporters NRB">
-  <meta property="og:description" content="Express supporter interest in a village integrated farm from wherever you are. About 5,000 farms is a target. No payment is taken here.">
-  <meta property="og:locale" content="en_IN">
-  <meta name="theme-color" content="#1b2430">
-  <link rel="canonical" href="https://bks-pujo-nrb.vercel.app/">
+  <meta property="og:title" content="Distance does not have to mean disconnection.">
+  <meta property="og:description" content="From wherever you are, this Pujo is a way to take part in Bengal’s farming story.">
+  <meta property="og:image" content="assets/idol-durga-2025.jpg">
+  <meta name="theme-color" content="#1a0c08">
+  <link rel="icon" href="assets/bks-seal-96.png" type="image/png">
+  <link rel="preload" as="image" href="assets/idol-durga-2025.jpg">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="chrome.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
+<body data-audience="nrb">
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-  <header class="mast">
-    <div class="mast-inner">
-      <a class="wordmark" href="#main">
-        <span class="wordmark-event">Bharatiya Krishak Samaj Pujo</span>
-        <span class="wordmark-door">Supporters / NRB</span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" id="nav-toggle">
-        <span class="nav-toggle-box" aria-hidden="true">
-          <span class="nav-toggle-line"></span>
-          <span class="nav-toggle-line"></span>
-        </span>
-        <span class="nav-toggle-text">Menu</span>
-      </button>
-
-      <nav class="nav" id="site-nav" aria-label="On this page">
-        <ul class="nav-list">
-          <li><a href="#why">Why NRBs</a></li>
-          <li><a href="#puja">The Puja</a></li>
-          <li><a href="#farmer">Farmer</a></li>
-          <li><a href="#vision">Target</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#interest">Interest</a></li>
-        </ul>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-row">
+        <a class="brand-lockup brand-lockup--bks" href="https://bks-durga-puja-2026.vercel.app/site/" aria-label="Bharatiya Krishak Samaj Pujo">
+          <span class="seal">
+            <img src="assets/bks-seal-96.png" width="52" height="52" alt="">
+          </span>
+          <span class="wordmark" data-i18n="brand.event">Bharatiya Krishak Samaj Pujo</span>
+        </a>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <div class="brand-lockup brand-lockup--karmyog">
+          <img class="karmyog-mark" src="assets/karmyog-21st-century-256.png" width="44" height="44" alt="">
+          <span class="brand-sub">Organised by KarmYog for the 21st Century</span>
+        </div>
+        <div class="header-tools">
+          <div class="lang-bar" role="group" aria-label="Language" data-i18n-aria="lang.label">
+            <button type="button" data-lang="en" aria-pressed="true">English</button>
+            <button type="button" data-lang="bn" aria-pressed="false">বাংলা</button>
+            <button type="button" data-lang="hi" aria-pressed="false">हिन्दी</button>
+          </div>
+          <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-drawer">
+            <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="sr-only" data-i18n="ui.menu">Menu</span>
+          </button>
+        </div>
+      </div>
+      <nav class="nav-desktop" aria-label="On this page">
+        <a href="#belong">Belonging</a>
+        <a href="#ifs">Integrated Farming</a>
+        <a href="#lakh">₹1 lakh</a>
+        <a href="#fivek">5,000</a>
+        <a href="#venue">Munshir Bheri</a>
+        <a href="#invite">Interest</a>
+        <a href="#faq">FAQ</a>
       </nav>
-
-      <p class="lang-note" title="Bengali and Hindi translations are pending" aria-label="Language English. Bengali and Hindi pending.">EN</p>
-
-      <a class="back-link" href="https://bks-durga-puja-2026.vercel.app">Main Pujo site</a>
     </div>
   </header>
 
+  <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+  <div class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-labelledby="nav-drawer-title" hidden>
+    <div class="nav-drawer-head">
+      <p class="nav-drawer-title" id="nav-drawer-title" data-i18n="ui.menu">Menu</p>
+      <button type="button" class="nav-close" id="nav-close">
+        <span aria-hidden="true">×</span>
+        <span class="sr-only" data-i18n="ui.close">Close menu</span>
+      </button>
+    </div>
+    <nav class="nav-drawer-list" aria-label="On this page">
+      <a href="#belong">Belonging</a>
+      <a href="#puja">The Puja</a>
+      <a href="#annadata">Annadata</a>
+      <a href="#ifs">Integrated Farming</a>
+      <a href="#lakh">₹1 lakh</a>
+      <a href="#fivek">5,000</a>
+      <a href="#venue">Munshir Bheri</a>
+      <a href="#bio">Living Bengal</a>
+      <a href="#invite">Interest</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://bks-durga-puja-2026.vercel.app/site/" data-i18n="ui.back">Back to Bharatiya Krishak Samaj Pujo</a>
+    </nav>
+  </div>
+
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="hero-eyebrow">For Non-Resident Bengalis and supporters</p>
-        <h1 id="hero-title"><span class="hero-line">Take part in Bengal&rsquo;s farming story</span> <em>from wherever you are.</em></h1>
-        <p class="hero-sub">If your native village is in Bengal, you can stand with a farm without standing in it every day.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#interest">Express Supporter Interest</a>
-          <a class="btn btn-ghost" href="#vision">How support works</a>
-        </div>
-      </div>
-      <figure class="hero-photo">
+    <section class="hero" data-audience="nrb" aria-labelledby="hero-title">
+      <div class="hero-media">
         <img
-          src="assets/aarti-2025.jpg"
-          width="720"
-          height="480"
-          alt="Evening aarti procession through a bamboo pavilion at Durga Puja Mahotsav 2025, IIT Kharagpur Research Park."
+          class="hero-poster"
+          src="assets/idol-durga-2025.jpg"
+          width="1600"
+          height="900"
+          alt="Durga idol at Durga Puja Mahotsav 2025, IIT Kharagpur Research Park, organised by KarmYog for the 21st Century Foundation. Historical reference photograph, not the 2026 pandal."
+          fetchpriority="high"
         >
-        <figcaption>Historical 2025 reference. Aarti at Durga Puja Mahotsav 2025, IIT Kharagpur Research Park, organised by KarmYog for the 21st Century Foundation. Not a 2026 farm photograph.</figcaption>
-      </figure>
-    </section>
-
-    <section class="block block-letter" id="why" aria-labelledby="why-title">
-      <h2 id="why-title">You can stand with a village farm without standing in the village every day.</h2>
-      <p>The working definition already on this project: a Non-Resident Bengali is anyone with roots in a native village. That includes people who live abroad, people who live in other Indian cities, and people who live in a Kolkata high-rise. This is not a visa category and not a legal NRI product.</p>
-      <p>The role is patronage of a named farm when pairing is real, not a souvenir from a pandal. Pairing is intended later. It is not a live matching workflow on this website.</p>
-    </section>
-
-    <section class="block block-statement" id="puja" aria-labelledby="puja-title">
-      <h2 id="puja-title">The festival is the public week. You need not stand in the pandal to take part.</h2>
-      <p>Bharatiya Krishak Samaj Pujo is a seasonal gathering in Kolkata. Civic dates on this project are 16-20 October 2026. The exact pandal address is still to be announced.</p>
-      <p>That week is when the farmer, the award, and the live farm can be seen in public. Belonging is not geography-only. Interest can be expressed from wherever you are.</p>
-    </section>
-
-    <section class="block block-split" id="farmer" aria-labelledby="farmer-title">
-      <div class="split-main">
-        <h2 id="farmer-title">The person who grows the food should not stay unnamed.</h2>
-        <p>Recognition, including Ashtami awards, is how this Pujo insists the farmer is part of the gathering. Patronage is meant to sit beside a local farmer team that still puts in land, labour, and working capital.</p>
-        <p>One farm, one patron is the intended model. Bharatiya Krishak Samaj, West Bengal is meant to pair a supporter with a local team later. This page does not allocate a farm, name a village for you, or confirm an adoption.</p>
+        <div class="hero-video-slot" id="hero-video-slot" hidden></div>
+        <div class="hero-scrim" aria-hidden="true"></div>
       </div>
-      <aside class="split-note" aria-label="Intended pairing">
-        <p class="note-label">Intended, not live</p>
-        <p>A named farm beside a local team. Not a match made by this website. Not a souvenir from the festival week.</p>
-      </aside>
-    </section>
-
-    <section class="block block-loop" id="ifs" aria-labelledby="ifs-title">
-      <h2 id="ifs-title">The farm you would seed is a loop, not a slogan.</h2>
-      <p class="measure">An Integrated Farming System keeps several enterprises on one small holding. Leftover from one part becomes input for the next. Mix, scale, and results vary. This page does not enrol a farm.</p>
-      <ul class="loop-list">
-        <li>
-          <h3>Water and fish</h3>
-          <p>A pond as harvest and reservoir, not a decorative tank.</p>
-        </li>
-        <li>
-          <h3>Bund horticulture</h3>
-          <p>Raised edges planted so the water line also feeds fruit and greens.</p>
-        </li>
-        <li>
-          <h3>Livestock beside the pond</h3>
-          <p>Animals and birds whose leftover returns as feed, slurry, or compost.</p>
-        </li>
-        <li>
-          <h3>Soil from the farm itself</h3>
-          <p>Compost and bio-inputs made on the holding, so bought chemicals are not the whole story.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="block block-pending" id="transformation" aria-labelledby="transform-title">
-      <h2 id="transform-title">A farm you may eventually follow. The picture is not finished.</h2>
-      <p class="measure">A live integrated-farm demonstration is being built in the East Kolkata Wetlands, 500 metres from Sector V. It is intended as a working pavilion, not only a festive facade. Whether a dump-yard story belongs to this plot is pending confirmation.</p>
-      <p class="measure">Photographs of a completed transformation are not published here. A later portal to follow a farm from afar is future work. There is no login on this website.</p>
-      <div class="empty-frames" role="group" aria-label="Photographs pending confirmation">
-        <figure class="empty-frame">
-          <div class="empty-frame-slot" aria-hidden="true"></div>
-          <figcaption>Before. Photograph pending confirmation.</figcaption>
-        </figure>
-        <figure class="empty-frame">
-          <div class="empty-frame-slot" aria-hidden="true"></div>
-          <figcaption>Build in progress. East Kolkata Wetlands, being built.</figcaption>
-        </figure>
-        <figure class="empty-frame">
-          <div class="empty-frame-slot" aria-hidden="true"></div>
-          <figcaption>Follow from afar. Portal not live.</figcaption>
-        </figure>
+      <div class="hero-inner">
+        <div class="hero-copy" id="hero-copy">
+          <p class="kicker">For Non-Resident Bengalis and supporters</p>
+          <h1 id="hero-title">Distance does not have to mean disconnection.</h1>
+          <p class="lede">From wherever you are, this Pujo is a way to take part in Bengal’s farming story.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#invite">Express Supporter Interest</a>
+            <a class="btn btn-ghost" href="#lakh">How proposed seed-support is meant to work</a>
+          </div>
+          <p class="hero-credit">Historical reference footage from Durga Puja Mahotsav 2025.</p>
+        </div>
       </div>
     </section>
-
-    <section class="block block-target" id="vision" aria-labelledby="vision-title">
-      <p class="target-kicker">Mobilisation target, not a headcount</p>
-      <h2 id="vision-title"><span class="target-num">5,000</span> patrons beside <span class="target-num">5,000</span> farms.</h2>
-      <p class="measure">That pairing is the mobilisation already published on this project, from Puja 2026 toward Puja 2027. It is a goal. It is not a claim that 5,000 farms or 5,000 patrons already exist.</p>
-      <p class="measure">Rs 1 lakh is the proposed seed for one village farm, or Rs 20,000 every two months. Those figures are proposed. They are not collected on this page. They are not a guaranteed grant.</p>
-      <dl class="ledger">
-        <div>
-          <dt>Confirmed on this page</dt>
-          <dd>Organiser, organising partner, civic window, and a local interest file. No payment.</dd>
-        </div>
-        <div>
-          <dt>Proposed or pending</dt>
-          <dd>The 5,000 pairing, the seed amount, live matching, 80G paperwork, and a follow-from-afar portal.</dd>
-        </div>
-      </dl>
-    </section>
-
-    <section class="block block-faq" id="faq" aria-labelledby="faq-title">
-      <h2 id="faq-title">Questions people ask from far away</h2>
-      <div class="faq-list">
-        <details>
-          <summary>Who is this for?</summary>
-          <p>Non-Resident Bengalis and supporters outside Bengal, and India-based supporters with a native village in Bengal. The public label is Supporter / NRB. It is not a passport test.</p>
-        </details>
-        <details>
-          <summary>Why should NRBs take part?</summary>
-          <p>If your native village is in Bengal, this Pujo is a way to take part in Bengal&rsquo;s farming story from wherever you are. Belonging is not only a seat in the pandal.</p>
-        </details>
-        <details>
-          <summary>What does participation mean on this page?</summary>
-          <p>You express interest in seeding a village integrated farm. The form downloads a file to your device. Pairing with a local farmer team is intended later. This is not live allocation, adoption, or payment.</p>
-        </details>
-        <details>
-          <summary>How does this connect to the farmer?</summary>
-          <p>The festival names the farmer, including recognition such as Ashtami awards. Patronage is meant to sit beside a local team that still puts in land, labour, and working capital.</p>
-        </details>
-        <details>
-          <summary>What is the larger vision?</summary>
-          <p>A closed-loop village farm, shown as a demonstration being built, and as a model that about 5,000 patrons might later seed beside about 5,000 farms. That scale is a target.</p>
-        </details>
-        <details>
-          <summary>Have 5,000 supporters already joined?</summary>
-          <p>No. About 5,000 patrons and about 5,000 farms is a mobilisation target, not a completed count.</p>
-        </details>
-        <details>
-          <summary>Can I pay on this page?</summary>
-          <p>No. There is no UPI, card, gateway, or cash collection here. Rs 1 lakh, or Rs 20,000 every two months, is proposed seed-support, not money taken on this website.</p>
-        </details>
-        <details>
-          <summary>What happens after I download the file?</summary>
-          <p>The file stays on your device. This website does not upload it. You may send <code>bks-pujo-nrb-interest.json</code> to Bharatiya Krishak Samaj separately, for example at contact@bkswbengal.org. Sending it is your choice.</p>
-        </details>
-        <details>
-          <summary>Are 80G or tax documents available?</summary>
-          <p>To be confirmed. They are not issued on this website. Any tax pathway would be confirmed only if a contribution is later completed off this website.</p>
-        </details>
-        <details>
-          <summary>What is confirmed, and what is only proposed?</summary>
-          <p>Confirmed here: organised by KarmYog for the 21st Century; Bharatiya Krishak Samaj is the organising partner, not the title sponsor; civic dates 16-20 October 2026 in Kolkata; venue to be announced; this page takes no payment; the form only downloads a local file. Proposed or pending: the 5,000 pairing, the seed amount, live matching, 80G, transformation photographs, and a follow-from-afar portal.</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="block block-form" id="interest" aria-labelledby="interest-title">
-      <h2 id="interest-title">Express supporter interest</h2>
-      <p class="measure">Rs 1 lakh is the proposed seed-support figure for one village farm, or Rs 20,000 every two months. That amount is not collected here. Submit downloads <code>bks-pujo-nrb-interest.json</code> to your device. Nothing is uploaded.</p>
-      <form class="interest-form" id="nrb-interest-form" novalidate>
-        <div class="field">
-          <label for="field-name">Your name</label>
-          <input id="field-name" name="name" type="text" autocomplete="name" required>
-        </div>
-        <div class="field">
-          <label for="field-email">Email</label>
-          <input id="field-email" name="email" type="email" autocomplete="email" required>
-        </div>
-        <div class="field">
-          <label for="field-phone">Phone</label>
-          <input id="field-phone" name="phone" type="tel" autocomplete="tel" required>
-        </div>
-        <div class="field">
-          <label for="field-village">Native village / para</label>
-          <input id="field-village" name="native_village" type="text" required>
-          <p class="field-help">The village your family is from, if you know it. This page does not match you to a farm.</p>
-        </div>
-        <div class="field">
-          <label for="field-now">Where you live now <span class="optional">(optional)</span></label>
-          <input id="field-now" name="lives_now" type="text" autocomplete="address-level2">
-        </div>
-        <input type="hidden" name="role" value="supporter-nrb">
-        <label class="consent">
-          <input id="field-consent" name="consent" type="checkbox" value="yes" required>
-          <span>This website does not submit your details to Bharatiya Krishak Samaj. The information is downloaded as a file to your device. If you choose to send that file, later handling is outside this website. I understand that nothing here takes money.</span>
-        </label>
-        <div class="form-actions">
-          <button class="btn btn-primary" type="submit">Express Supporter Interest</button>
-        </div>
-        <p class="form-trust">No UPI. No card. No 80G certificate on this page. 80G remains to be confirmed.</p>
-        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-      </form>
-    </section>
+    <div class="hero-letter" id="hero-letter"></div>
+    <div id="story"></div>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
-      <p class="footer-org">Organised by KarmYog for the 21st Century.</p>
-      <p>Bharatiya Krishak Samaj is the organising partner, not the title sponsor. The title-sponsor place remains open.</p>
-      <p>Bharatiya Krishak Samaj Pujo. Sharadiya 2026. Kolkata, West Bengal. Venue to be announced.</p>
-      <p class="footer-contact">
-        <a href="mailto:contact@bkswbengal.org">contact@bkswbengal.org</a>
-        <span aria-hidden="true"> / </span>
-        <a href="tel:+918655246764">+91 86552 46764</a>
-      </p>
-      <p>English is the language of this page. Bengali and Hindi are pending.</p>
-      <p><a href="https://bks-durga-puja-2026.vercel.app">Back to the main Pujo site</a></p>
-      <p class="footer-trust">Nothing on this page takes money. About 5,000 farms is a target. Rs 1 lakh is proposed seed-support, not a collection.</p>
-    </div>
+    <div class="wrap" id="site-footer-inner"></div>
   </footer>
 
-  <script src="app.js" defer></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+  <script src="chrome.js"></script>
+  <script src="campaign.js"></script>
 </body>
 </html>

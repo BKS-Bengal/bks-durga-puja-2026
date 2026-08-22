@@ -7,8 +7,10 @@
     { "source": "/sponsors", "destination": "/site/sponsors/index.html" },
     { "source": "/farmers", "destination": "/site/farmers/index.html" },
     { "source": "/stakeholders", "destination": "/site/stakeholders/index.html" },
+    { "source": "/stakeholders/:path*", "destination": "/site/stakeholders/:path*" },
     { "source": "/public", "destination": "/site/public/index.html" },
     { "source": "/nrb", "destination": "/site/nrb/index.html" },
+    { "source": "/nrb/:path*", "destination": "/site/nrb/:path*" },
     { "source": "/start", "destination": "/site/start/index.html" }
   ],
   "headers": [
