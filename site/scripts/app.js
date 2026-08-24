@@ -16,7 +16,7 @@
     "Paschim Bardhaman", "Paschim Medinipur", "Purba Bardhaman",
     "Purba Medinipur", "Purulia", "South 24 Parganas", "Uttar Dinajpur"
   ];
-  const HOME_SECTIONS = ["nrb", "sambhavana", "about", "demo", "model", "fund", "sponsor", "village", "faq", "theme", "awards", "record", "nominate", "visit", "press", "ifs-tease", "prep", "story-arc", "story-bridge", "initiative", "doors"];
+  const HOME_SECTIONS = ["nrb", "sambhavana", "about", "demo", "model", "fund", "sponsor", "village", "faq", "theme", "awards", "record", "memories", "nominate", "visit", "press", "ifs-tease", "prep", "story-arc", "story-bridge", "initiative", "doors"];
   const state = {
     lang: "en",
     heroId: "H1",

@@ -38,6 +38,7 @@ window.BKS_I18N = {
         "The organisations",
         "Munshir Bheri",
         "Request a Briefing",
+        "Puja Memories",
         "FAQ",
         "Back to Bharatiya Krishak Samaj Pujo"
       ]
@@ -586,6 +587,7 @@ window.BKS_I18N = {
         "সংস্থা",
         "Munshir Bheri",
         "ব্রিফিং অনুরোধ করুন",
+        "পুজোর স্মৃতি",
         "প্রশ্নোত্তর",
         "Bharatiya Krishak Samaj Pujo-তে ফিরুন"
       ]
@@ -1134,6 +1136,7 @@ window.BKS_I18N = {
         "संस्थाएँ",
         "Munshir Bheri",
         "ब्रीफिंग का अनुरोध करें",
+        "पूजा स्मृतियाँ",
         "प्रश्नोत्तर",
         "Bharatiya Krishak Samaj Pujo पर लौटें"
       ]

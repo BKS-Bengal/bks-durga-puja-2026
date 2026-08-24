@@ -190,6 +190,7 @@
       "<p class='cta-row'><a class='btn btn-secondary' href='https://www.telegraphindia.com/west-bengal/kolkata/innovation-mantra-for-iit-kharagpur-research-park-puja-in-new-town-prnt/cid/2125070' rel='noopener noreferrer'>" +
       escapeHtml(d.recPressCta) + "</a><a class='btn btn-secondary' href='https://www.bkswbengal.org' rel='noopener noreferrer'>" +
       escapeHtml(d.recOrgCta) + "</a></p></section>" +
+      "<section class='campaign-section bks-memories' id='memories' data-bks-memories='gallery'></section>" +
 
       "<section class='campaign-section' id='sponsor-puja'>" +
       "<p class='kicker'>" + escapeHtml(d.sponsorEyebrow) + "</p><h2>" + escapeHtml(d.sponsorTitle) + "</h2>" +

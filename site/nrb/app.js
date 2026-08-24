@@ -1,8 +1,8 @@
 window.BKS_PAGE = {
   id: "nrb",
   formFile: "bks-pujo-nrb-interest.json",
-  navIds: ["belong", "puja", "annadata", "ifs", "path", "lakh", "fivek", "venue", "invite", "faq"],
-  navDesktopIds: ["belong", "ifs", "lakh", "fivek", "venue", "invite", "faq"],
+  navIds: ["belong", "puja", "annadata", "ifs", "path", "lakh", "fivek", "venue", "invite", "memories", "faq"],
+  navDesktopIds: ["belong", "ifs", "lakh", "fivek", "venue", "invite", "memories", "faq"],
   story: [
     { id: "belong", key: "belong", layout: "editorial" },
     {

@@ -1,8 +1,8 @@
 window.BKS_PAGE = {
   id: "gov",
   formFile: "bks-pujo-briefing-request.json",
-  navIds: ["what", "annadata", "ifs", "building", "enables", "farmtech", "karmyog", "venue", "invite", "faq"],
-  navDesktopIds: ["what", "ifs", "enables", "venue", "invite", "faq"],
+  navIds: ["what", "annadata", "ifs", "building", "enables", "farmtech", "karmyog", "venue", "invite", "memories", "faq"],
+  navDesktopIds: ["what", "ifs", "enables", "venue", "invite", "memories", "faq"],
   story: [
     { id: "what", key: "what", layout: "editorial" },
     { id: "annadata", key: "annadata", layout: "split", img: "assets/conch-aarti-2025.jpg", alt: "Conch aarti at Durga Puja Mahotsav 2025. Historical reference. Not the 2026 pandal." },

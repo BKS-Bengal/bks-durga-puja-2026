@@ -3,348 +3,464 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Walk the Integrated Farming loop | FarmTech + AgriTech | Bharatiya Krishak Samaj Pujo</title>
-  <meta name="description" content="Farmer and FarmTech + AgriTech page for Bharatiya Krishak Samaj Pujo. Integrated Farming as a leftover-becomes-input loop. A live East Kolkata Wetlands farm is being built. Express Farmer Interest downloads a local file. Not enrolment. No payment. Rs 1 lakh is not guaranteed.">
+  <title>Farmers &amp; Integrated Farming | Bharatiya Krishak Samaj Pujo</title>
+  <meta name="description" content="Integrated Farming for farmers — crop, livestock, fishery, water, compost and careful FarmTech + AgriTech tools. Express interest. Live farm being built at Munshir Bheri.">
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="google" content="notranslate">
   <meta name="author" content="KarmYog for the 21st Century">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Walk the Integrated Farming loop | FarmTech + AgriTech">
-  <meta property="og:description" content="A farmer-facing Integrated Farming page. Careful FarmTech and AgriTech tools in the IFS model. Live farm being built. Interest note only. No enrolment and no payment.">
-  <meta property="og:image" content="assets/prep-2026.jpg">
+  <meta property="og:title" content="A farming livelihood you can walk.">
+  <meta property="og:description" content="Leftover becomes input. Express Farmer Interest. Not enrolment. No payment.">
+  <meta property="og:image" content="assets/idol-durga-2025.jpg">
   <meta name="theme-color" content="#163a26">
-  <link rel="icon" href="assets/karmyog-21st-century-128.png" type="image/png">
+  <link rel="icon" href="assets/bks-seal-96.png" type="image/png">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="chrome.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="memories.css">
 </head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
+<body data-audience="farm">
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-  <header class="mast">
-    <div class="mast-inner">
-      <a class="mast-back" href="https://bks-durga-puja-2026.vercel.app">Back to the Pujo</a>
-      <p class="mast-id">Integrated Farming <span>FarmTech + AgriTech</span></p>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" id="nav-toggle">
-        <span class="nav-toggle-bars" aria-hidden="true"></span>
-        <span class="visually-hidden">Menu</span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="On this page">
-        <a href="#story">Story</a>
-        <a href="#loop">Loop</a>
-        <a href="#farmtech">FarmTech</a>
-        <a href="#demo">Farm</a>
-        <a href="#participate" aria-label="Express Farmer Interest">Interest</a>
-        <a href="#faq">FAQ</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-row">
+        <a class="brand-lockup brand-lockup--bks" href="https://bks-durga-puja-2026.vercel.app/site/" aria-label="Bharatiya Krishak Samaj Pujo">
+          <span class="seal">
+            <img src="assets/bks-seal-96.png" width="52" height="52" alt="">
+          </span>
+          <span class="wordmark" data-i18n="brand.event">Bharatiya Krishak Samaj Pujo</span>
+        </a>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <div class="brand-lockup brand-lockup--karmyog">
+          <img class="karmyog-mark" src="assets/karmyog-21st-century-256.png" width="44" height="44" alt="">
+          <span class="brand-sub" data-i18n="brand.organiser">Organised by KarmYog for the 21st Century</span>
+        </div>
+        <div class="header-tools">
+          <div class="lang-bar" role="group" aria-label="Language" data-i18n-aria="lang.label">
+            <button type="button" data-lang="en" aria-pressed="true">English</button>
+            <button type="button" data-lang="bn" aria-pressed="false">বাংলা</button>
+            <button type="button" data-lang="hi" aria-pressed="false">हिन्दी</button>
+          </div>
+          <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-drawer">
+            <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="sr-only" data-i18n="nav.menu">Menu</span>
+          </button>
+        </div>
+      </div>
+      <nav class="nav-desktop" aria-label="On this page">
+        <a href="#story" data-i18n="nav.story">Story</a>
+        <a href="#loop" data-i18n="nav.loop">Loop</a>
+        <a href="#pillars" data-i18n="nav.pillars">Pillars</a>
+        <a href="#farmtech" data-i18n="nav.tools">FarmTech</a>
+        <a href="#farm" data-i18n="nav.farm">Farm</a>
+        <a href="#participate" data-i18n="nav.interest">Interest</a>
+        <a href="#memories" data-i18n="nav.memories">Puja Memories</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
       </nav>
     </div>
   </header>
 
+  <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+  <div class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-labelledby="nav-drawer-title" hidden>
+    <div class="nav-drawer-head">
+      <p class="nav-drawer-title" id="nav-drawer-title" data-i18n="nav.menu">Menu</p>
+      <button type="button" class="nav-close" id="nav-close">
+        <span aria-hidden="true">×</span>
+        <span class="sr-only" data-i18n="nav.close">Close menu</span>
+      </button>
+    </div>
+    <nav class="nav-drawer-list" aria-label="On this page">
+      <a href="#story" data-i18n="nav.story">Story</a>
+      <a href="#loop" data-i18n="nav.loop">Loop</a>
+      <a href="#pillars" data-i18n="nav.pillars">Pillars</a>
+      <a href="#farmtech" data-i18n="nav.tools">FarmTech</a>
+      <a href="#farm" data-i18n="nav.farm">Farm</a>
+      <a href="#participate" data-i18n="nav.interest">Interest</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="https://bks-durga-puja-2026.vercel.app/site/" data-i18n="nav.back">Back to the Pujo</a>
+    </nav>
+  </div>
+
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">For farmers</p>
-        <h1 id="hero-title">A farming livelihood you can walk.</h1>
-        <p class="hero-lede">This Pujo names the farmer, then shows a working Integrated Farming loop. The live farm is being built.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#participate">Express Farmer Interest</a>
-          <a class="btn btn-ghost" href="#demo">See the live farm</a>
-        </div>
-      </div>
-      <figure class="hero-plate">
+    <section class="hero" data-audience="farm" aria-labelledby="hero-title">
+      <div class="hero-media">
         <img
-          src="assets/prep-2026.jpg"
-          width="1024"
-          height="368"
-          alt="People and stacked bamboo at the East Kolkata Wetlands site on 19 August 2026, during preparation. Not a finished farm."
+          class="hero-photo"
+          src="assets/idol-durga-2025.jpg"
+          width="1600"
+          height="900"
+          alt="Durga idol at Durga Puja Mahotsav 2025, IIT Kharagpur Research Park, organised by KarmYog for the 21st Century Foundation. Historical reference photograph, not the 2026 pandal."
+          data-i18n-alt="hero.alt"
+          fetchpriority="high"
         >
-        <figcaption>19 August 2026 preparation. Current site prep. Not a finished 2026 farm.</figcaption>
-      </figure>
-    </section>
-
-    <section class="story" id="story" aria-labelledby="story-title">
-      <h2 id="story-title">The Puja is the gathering. The farm is the work that follows.</h2>
-      <ol class="story-list">
-        <li>
-          <h3>The Puja</h3>
-          <p>Sharadiya 2026 is dated 16-20 October 2026 in Kolkata, West Bengal. The exact pandal address is still to be announced. The gathering is organised as Bharatiya Krishak Samaj Pujo. Organised by KarmYog for the 21st Century. Bharatiya Krishak Samaj is the organising partner, not the title sponsor.</p>
-        </li>
-        <li>
-          <h3>The annadata</h3>
-          <p>The farmer is the person who feeds the household. This gathering is meant to put that person in view, so the farm story is allowed to stand next to the festival. Recognition is not a substitute for a working farm.</p>
-        </li>
-        <li>
-          <h3>Recognition</h3>
-          <p>An award ceremony on Ashtami evening is meant for farmers the state does not usually photograph. Nominations on the main Pujo site have no entry fee. If you farm, or know a farmer, that nomination lives on the main site. This page is the livelihood door, not the awards desk.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="loop" id="loop" aria-labelledby="loop-title">
-      <h2 id="loop-title">Leftover becomes the next input.</h2>
-      <p class="section-lede">One standing crop, often paddy, meets weather, price and bought inputs at once. An integrated farm keeps several enterprises on the same holding so one leftover can feed the next. This is a circular model. It is not a guaranteed zero-waste farm and not a guaranteed income.</p>
-      <div class="loop-grid">
-        <article>
-          <h3>Crop / Horticulture</h3>
-          <p>Cereals, pulses, oilseeds and fodder on the field. Vegetables, fruit and homestead trees on bunds and the house plot. Residue can move to livestock or compost.</p>
-        </article>
-        <article>
-          <h3>Livestock / Poultry</h3>
-          <p>Dairy beside the water where the sketch shows it. Poultry and duckery on the same holding. Manure can move to soil, energy or compost. Duck and fish sit together in the model, not as a promise.</p>
-        </article>
-        <article>
-          <h3>Fishery / Aquaculture / Water</h3>
-          <p>The pond is reservoir and fishery. Water can serve crop, fish and horticulture. Pond silt can return to the beds. That transfer is the point of the loop.</p>
-        </article>
-        <article>
-          <h3>Compost / Soil</h3>
-          <p>Residue, manure and silt come back as compost and bio-inputs. Soil is where the loop closes. Bought fertiliser is what the model tries to reduce, not a figure anyone is owed.</p>
-        </article>
-        <article>
-          <h3>Bee / Mushroom</h3>
-          <p>Allied livelihoods on the same holding. They sit beside the main loop. They are not a second farm and not a required kit.</p>
-        </article>
-        <article>
-          <h3>Household / Market</h3>
-          <p>Produce, milk, eggs, fish and fruit can feed the house and move toward local markets or an FPO. Cash returning to the household is the livelihood test, not a brochure claim.</p>
-        </article>
+        <div class="hero-scrim" aria-hidden="true"></div>
       </div>
-      <div class="transfers">
-        <h3>How the loop moves</h3>
-        <ul>
-          <li>Crop residue to livestock or compost</li>
-          <li>Manure to soil, energy or fertiliser</li>
-          <li>Pond silt to fields</li>
-          <li>Water to crop, fishery and horticulture</li>
-          <li>Produce to household and market</li>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="kicker" data-i18n="hero.eyebrow">For farmers and FarmTech + AgriTech readers</p>
+          <h1 id="hero-title" data-i18n="hero.title">A farming livelihood you can walk — not a slogan on a pandal wall.</h1>
+          <p class="lede" data-i18n="hero.lede">This Pujo puts the annadata in view, then shows Integrated Farming as a working system on small land. A live farm is being built at the Puja venue, Munshir Bheri.</p>
+          <dl class="hero-meta">
+            <div>
+              <dt data-i18n="hero.whenLabel">When</dt>
+              <dd data-i18n="hero.when">16-20 October 2026</dd>
+            </div>
+            <div>
+              <dt data-i18n="hero.whereLabel">Where</dt>
+              <dd data-i18n="hero.whereShort">Munshir Bheri, Salt Lake Sector V, Kolkata – 700091</dd>
+            </div>
+          </dl>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#participate" data-i18n="cta.primary">Express Farmer Interest</a>
+            <a class="btn btn-ghost" href="#loop" data-i18n="cta.secondary">See how the farm loops</a>
+          </div>
+          <p class="hero-credit" data-i18n="hero.credit">Pictured: Durga Puja Mahotsav 2025 at the IIT Kharagpur Research Park, organised by KarmYog for the 21st Century Foundation. Historical / reference. Not the 2026 pandal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="story" aria-labelledby="story-title" data-reveal>
+      <div class="wrap-wide story-split">
+        <div>
+          <h2 id="story-title" data-i18n="story.title">The Puja names the farmer. This page shows the livelihood that follows.</h2>
+          <p data-i18n="story.body1">Bharatiya Krishak Samaj Pujo is a Durga Puja that names the farmer inside the gathering. Recognition and awards for unnamed farmers belong to the public week.</p>
+          <p data-i18n="story.body2">This experience’s job is different: to show the livelihood that follows once the farmer is in view. You are reading a farming brief that sits beside the Puja, not a decoration brief.</p>
+        </div>
+        <aside class="paper-card idea-card">
+          <p class="idea-line" data-i18n="story.idea">Leftover becomes input.</p>
+          <p data-i18n="story.ideaNote">The useful idea is simple, old, and practical. One activity on the holding is meant to feed another.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--challenge" id="challenge" aria-labelledby="challenge-title" data-reveal>
+      <div class="wrap-wide">
+        <h2 id="challenge-title" data-i18n="challenge.title">One standing crop can carry the whole year’s risk.</h2>
+        <p class="section-lede" data-i18n="challenge.body">Often that crop is paddy. Market price, weather, flood, delayed rain and bought inputs can hit that one crop all at once. Between harvests, cash can run thin. That is how many small holdings actually live.</p>
+        <p data-i18n="challenge.answer">Integrated Farming answers with a different shape: several enterprises on the same land, so work, water and cash can move through the year. Mix, scale and results vary. The invitation is to understand the model, and to see a live farm being built where the idea can be walked.</p>
+      </div>
+    </section>
+
+    <section class="section section--loop" id="loop" aria-labelledby="loop-title" data-reveal>
+      <div class="wrap-wide">
+        <h2 id="loop-title" data-i18n="loop.title">Leftover becomes the next input.</h2>
+        <p class="section-lede" data-i18n="loop.lede">See the farm as a living system. The holding is designed so one activity can feed another. Closed loop is the design intention. Outcomes vary. It is not a promise of zero waste or fixed income.</p>
+
+        <ol class="loop-flow">
+          <li>
+            <p class="flow-from" data-i18n="loop.t1from">Crop residue</p>
+            <p class="flow-to" data-i18n="loop.t1to">Livestock / compost</p>
+            <p data-i18n="loop.t1rel">Straw and stalks can feed animals or beds.</p>
+          </li>
+          <li>
+            <p class="flow-from" data-i18n="loop.t2from">Manure</p>
+            <p class="flow-to" data-i18n="loop.t2to">Energy / organic fertiliser</p>
+            <p data-i18n="loop.t2rel">Biogas where installed; slurry to soil and pond plankton.</p>
+          </li>
+          <li>
+            <p class="flow-from" data-i18n="loop.t3from">Pond silt</p>
+            <p class="flow-to" data-i18n="loop.t3to">Fields</p>
+            <p data-i18n="loop.t3rel">Nutrient-dense silt to vegetable and crop beds.</p>
+          </li>
+          <li>
+            <p class="flow-from" data-i18n="loop.t4from">Horticulture greens</p>
+            <p class="flow-to" data-i18n="loop.t4to">Fishery / poultry feed</p>
+            <p data-i18n="loop.t4rel">Surplus greens can supplement feed.</p>
+          </li>
+          <li>
+            <p class="flow-from" data-i18n="loop.t5from">Water</p>
+            <p class="flow-to" data-i18n="loop.t5to">Crop, fish, horticulture</p>
+            <p data-i18n="loop.t5rel">One water system serving several enterprises.</p>
+          </li>
+          <li>
+            <p class="flow-from" data-i18n="loop.t6from">Produce</p>
+            <p class="flow-to" data-i18n="loop.t6to">Household and market</p>
+            <p data-i18n="loop.t6rel">Food and cash returning to the family.</p>
+          </li>
+        </ol>
+
+        <div class="loop-grid loop-enterprises">
+          <article>
+            <h3 data-i18n="loop.cropTitle">Crop</h3>
+            <p data-i18n="loop.cropBody">Cereals, pulses, oilseeds and fodder. Residue can become livestock feed or compost.</p>
+          </article>
+          <article>
+            <h3 data-i18n="loop.hortTitle">Horticulture</h3>
+            <p data-i18n="loop.hortBody">Vegetables, fruit and homestead trees, including multi-tier planting on pond bunds.</p>
+          </article>
+          <article>
+            <h3 data-i18n="loop.liveTitle">Livestock and poultry</h3>
+            <p data-i18n="loop.liveBody">Small dairy and related animals. Poultry and duckery on the same holding. Manure and droppings return to compost, soil or the pond–soil system where designed that way.</p>
+          </article>
+          <article>
+            <h3 data-i18n="loop.fishTitle">Fishery, aquaculture and water</h3>
+            <p data-i18n="loop.fishBody">The pond is both water bank and production unit. Harvest, storage and nutrient exchange with horticulture and livestock layouts.</p>
+          </article>
+          <article>
+            <h3 data-i18n="loop.soilTitle">Compost and soil</h3>
+            <p data-i18n="loop.soilBody">Biomass returns. Soil health is a reason the model exists: work over seasons, not a one-week festival claim.</p>
+          </article>
+          <article>
+            <h3 data-i18n="loop.houseTitle">Household, market, bee and mushroom</h3>
+            <p data-i18n="loop.houseBody">The farm feeds the household first. Surplus moves to market. This page does not invent a guaranteed buyer. Bee and mushroom are allied livelihoods where they fit. They are not mandatory on every holding.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pillars" aria-labelledby="pillars-title" data-reveal>
+      <div class="wrap-wide">
+        <h2 id="pillars-title" data-i18n="pillars.title">Five pillars of the illustrative farm sketch</h2>
+        <p class="section-lede" data-i18n="pillars.lede">An illustrative Bharatiya Krishak Samaj model for about 1 to 2.5 acre holdings. This is not a mandatory farm size, not an eligibility rule, and not a promise of income. Mix, scale and results vary.</p>
+        <ol class="pillars">
+          <li>
+            <span class="pillar-letter" aria-hidden="true">A</span>
+            <div>
+              <h3 data-i18n="pillars.aTitle">Aquaculture and water harvesting</h3>
+              <p data-i18n="pillars.aBody">A pond as rainwater store and fishery. Native carps such as Rohu, Katla, Mrigal and other indigenous fish where suitable. Nutrient-rich pond water can support careful irrigation.</p>
+            </div>
+          </li>
+          <li>
+            <span class="pillar-letter" aria-hidden="true">B</span>
+            <div>
+              <h3 data-i18n="pillars.bTitle">Bund and embankment multi-tier horticulture</h3>
+              <p data-i18n="pillars.bBody">Raised bunds planted in tiers: canopy trees such as coconut, betel nut, drumstick and papaya; climbing vegetables on trellises; ground crops such as turmeric, ginger and leafy greens.</p>
+            </div>
+          </li>
+          <li>
+            <span class="pillar-letter" aria-hidden="true">C</span>
+            <div>
+              <h3 data-i18n="pillars.cTitle">Livestock and poultry</h3>
+              <p data-i18n="pillars.cBody">Small dairy units and poultry or duckery beside or over the pond where layout allows. Duck–fish and manure–compost relationships are part of the model sketch.</p>
+            </div>
+          </li>
+          <li>
+            <span class="pillar-letter" aria-hidden="true">D</span>
+            <div>
+              <h3 data-i18n="pillars.dTitle">Bio-inputs and soil regeneration</h3>
+              <p data-i18n="pillars.dBody">Composting, vermicompost and related bio-input work so biomass returns to soil rather than leaving the farm unused.</p>
+            </div>
+          </li>
+          <li>
+            <span class="pillar-letter" aria-hidden="true">E</span>
+            <div>
+              <h3 data-i18n="pillars.eTitle">Careful technology (FarmTech + AgriTech)</h3>
+              <p data-i18n="pillars.eBody">Soil moisture monitoring and drip, solar pond aeration, crop-health diagnostics and yield tracking where they help. Model-based. Not a promise that every tool is already installed on every farm.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--tools" id="farmtech" aria-labelledby="farmtech-title" data-reveal>
+      <div class="wrap-wide">
+        <h2 id="farmtech-title" data-i18n="tools.title">FarmTech + AgriTech: careful tools on this kind of farm</h2>
+        <p class="section-lede" data-i18n="tools.lede">FarmTech and AgriTech means careful tools inside the Integrated Farm, not a software product pitch. The examples below are illustrative categories in the model sketch. They are not a kit shipped when you express interest, and this page does not list vendors or sell an app.</p>
+        <ul class="tool-list">
+          <li>
+            <h3 data-i18n="tools.soilTitle">Watch the soil</h3>
+            <p data-i18n="tools.soilBody">Moisture and drip observation where it can help use water carefully and reduce a bought input.</p>
+          </li>
+          <li>
+            <h3 data-i18n="tools.pondTitle">Keep the pond alive</h3>
+            <p data-i18n="tools.pondBody">Aeration and water-quality observation where pond activity is part of the loop.</p>
+          </li>
+          <li>
+            <h3 data-i18n="tools.cropTitle">Read the crop</h3>
+            <p data-i18n="tools.cropBody">Observation and diagnostics to notice crop conditions earlier. Not a named product.</p>
+          </li>
+          <li>
+            <h3 data-i18n="tools.liveTitle">Care for livestock</h3>
+            <p data-i18n="tools.liveBody">Watch daily yield and animal health where dairy or poultry sits in the loop. Illustrative. Not an installed gadget kit.</p>
+          </li>
         </ul>
       </div>
     </section>
 
-    <section class="model" id="model" aria-labelledby="model-title">
-      <p class="model-stamp">ILLUSTRATIVE MODEL</p>
-      <h2 id="model-title">Indicative potential. Not a confirmed result.</h2>
-      <p class="section-lede">These numbers already sit on the project as a working sketch. Outcomes vary by farm size, location, management, crop mix, input costs, yields and market conditions.</p>
-      <dl class="model-grid">
-        <div>
-          <dt>About 1 to 2.5 acres</dt>
-          <dd>Holding sketch in the model. Not an eligibility rule for this page.</dd>
+    <section class="section" id="farm" aria-labelledby="farm-title" data-reveal>
+      <div class="wrap-wide visit-grid">
+        <div class="venue-block">
+          <h2 id="farm-title" data-i18n="farm.title">A live farm is being built at the Puja place.</h2>
+          <p class="section-lede" data-i18n="farm.lede">The farm is being built. It is not a finished showpiece. You are invited to follow it as it becomes a place you can walk. The same address is the confirmed Puja venue.</p>
+          <p class="status-pill" data-i18n="farm.status">Being built</p>
+          <address>
+            Munshir Bheri Management / Fishermen's Committee<br>
+            Near Sukantanagar / Salt Lake Sector V<br>
+            (East Kolkata Wetlands)<br>
+            Kolkata – 700091, West Bengal
+          </address>
+          <p>
+            <a
+              class="maps-link"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Munshir%20Bheri%20Management%20Fishermen%27s%20Committee%2C%20Near%20Sukantanagar%2C%20Salt%20Lake%20Sector%20V%2C%20East%20Kolkata%20Wetlands%2C%20Kolkata%20700091%2C%20West%20Bengal"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="farm.maps"
+            >View on Google Maps</a>
+          </p>
+          <p data-i18n="farm.visitNote">Come for the Puja at this address. The live farm on the same ground is still being built.</p>
         </div>
-        <div>
-          <dt>365-day cash flow</dt>
-          <dd>Daily, weekly, monthly and seasonal returns imagined together. Indicative potential.</dd>
-        </div>
-        <div>
-          <dt>3x-5x income range</dt>
-          <dd>Against a single-crop year in the sketch. Not a guarantee.</dd>
-        </div>
-        <div>
-          <dt>Rs 2-3.5 lakh</dt>
-          <dd>Illustrative net range per acre per year in the same sketch. Not paid here.</dd>
-        </div>
-        <div>
-          <dt>50-70% input-cost language</dt>
-          <dd>Model-based talk of bought-in costs falling when leftover becomes input. Not a guarantee.</dd>
-        </div>
-      </dl>
-    </section>
-
-    <section class="farmtech" id="farmtech" aria-labelledby="farmtech-title">
-      <h2 id="farmtech-title">FarmTech + AgriTech are careful tools in the IFS model.</h2>
-      <p>On this page, FarmTech and AgriTech name the technology layer already written into Integrated Farming: monitoring, drip, pond energy and diagnostics where they earn their keep on a small holding. That is a model-based sketch. A fuller public definition is to be confirmed. This page does not list vendors, does not sell an app, and does not claim a live farmer network.</p>
-      <ul class="tool-list">
-        <li>
-          <strong>Watch the soil and water</strong>
-          Moisture sensing and drip, used when they save a bought input.
-        </li>
-        <li>
-          <strong>Keep the pond alive</strong>
-          Solar aeration in the fishery sketch, used when the water needs it.
-        </li>
-        <li>
-          <strong>Read the crop</strong>
-          Digital diagnostics in the same illustrative layer, not a named product.
-        </li>
-      </ul>
-    </section>
-
-    <section class="demo" id="demo" aria-labelledby="demo-title">
-      <h2 id="demo-title">A live farm is being built in the East Kolkata Wetlands.</h2>
-      <p class="section-lede">Five hundred metres from Sector V. Status: being built. The 2026 pavilion is intended as a working farm, not only a festive facade. It is not open as a finished demonstration.</p>
-      <dl class="demo-facts">
-        <div>
-          <dt>Place</dt>
-          <dd>East Kolkata Wetlands, 500 m from Sector V</dd>
-        </div>
-        <div>
-          <dt>Status</dt>
-          <dd>Being built</dd>
-        </div>
-        <div>
-          <dt>What the photo shows</dt>
-          <dd>19 August 2026 preparation. Not the finished farm.</dd>
-        </div>
-        <div>
-          <dt>Dump-yard story</dt>
-          <dd>Whether that transformation and this wetland plot are the same land is pending confirmation.</dd>
-        </div>
-      </dl>
-    </section>
-
-    <section class="transform" id="transformation" aria-labelledby="transform-title">
-      <h2 id="transform-title">Transformation frames stay empty until photographs are approved.</h2>
-      <p class="section-lede">This sequence is the intended story. Before-photographs, the named plot, and completion status are not yet approved. Do not read these frames as a finished documentary.</p>
-      <ol class="frames">
-        <li>
-          <div class="frame-slot" aria-hidden="true">Photograph pending</div>
-          <h3>How the site stood</h3>
-          <p>The intended opening is a difficult-looking place. No before-photograph is published here.</p>
-        </li>
-        <li>
-          <div class="frame-slot" aria-hidden="true">Photograph pending</div>
-          <h3>Work shifted for access</h3>
-          <p>The team moved to the side people can reach. The map of that decision is still to be confirmed.</p>
-        </li>
-        <li>
-          <div class="frame-slot" aria-hidden="true">Photograph pending</div>
-          <h3>What is being developed</h3>
-          <p>A live integrated farm: crop, water, animals and market on one holding. Not a painted backdrop.</p>
-        </li>
-        <li>
-          <div class="frame-slot" aria-hidden="true">Photograph pending</div>
-          <h3>Visible milestones</h3>
-          <p>A public progress feed waits for verified stills when the team posts them. Nothing is invented in the meantime.</p>
-        </li>
-        <li>
-          <div class="frame-slot" aria-hidden="true">Photograph pending</div>
-          <h3>The emerging model</h3>
-          <p>Leftover becomes input. That is the farm people should later be able to walk.</p>
-        </li>
-        <li>
-          <div class="frame-slot" aria-hidden="true">Photograph pending</div>
-          <h3>The larger aim</h3>
-          <p>About 5,000 village farms is a mobilisation target. Not a result already achieved.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="scale" id="scale" aria-labelledby="scale-title">
-      <p class="scale-kicker">TARGET</p>
-      <p class="scale-num" aria-hidden="true">5000</p>
-      <h2 id="scale-title">About 5,000 village farms is the mobilisation goal.</h2>
-      <p>That figure is already published on this project, between Puja 2026 and Puja 2027. It is not a completed count. Your role on this page is the farmer on the land. How patrons attach is a separate door. This page does not enrol you into a paid programme.</p>
-    </section>
-
-    <section class="join" id="participate" aria-labelledby="join-title">
-      <div class="join-copy">
-        <h2 id="join-title">Express Farmer Interest</h2>
-        <p>If you farm in West Bengal and want to be considered when a real intake exists, leave a name. This is not enrolment. This is not a promise of Rs 1 lakh. Rs 1 lakh is proposed seed-support in the patron model. It is not a farmer grant paid on this page.</p>
-        <ul class="states">
-          <li><strong>Interest</strong> Live here. Downloads a file to this device.</li>
-          <li><strong>Enrolment</strong> Not yet available.</li>
-          <li><strong>Approved participation</strong> Not yet available.</li>
-        </ul>
-        <p class="join-note">Nothing on this page takes money. The form is not sent to a server. You may later send the downloaded file outside this website.</p>
+        <figure class="photo">
+          <img
+            src="assets/prep-2026.jpg"
+            width="1024"
+            height="640"
+            alt="People and stacked bamboo at the East Kolkata Wetlands site on 19 August 2026, during preparation. Not a finished farm."
+            data-i18n-alt="farm.prepAlt"
+          >
+          <figcaption data-i18n="farm.prepCaption">19 August 2026 preparation. Work is underway. Not a finished 2026 farm or pandal.</figcaption>
+        </figure>
       </div>
-      <form class="interest-form" id="farmer-form" novalidate>
-        <input type="hidden" name="role" value="farmer">
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" autocomplete="name" required>
-          <p class="field-error" id="name-error" hidden>Please add a name.</p>
-        </div>
-        <div class="field">
-          <label for="locality">Locality / village / area</label>
-          <input id="locality" name="locality" type="text" autocomplete="address-level3" required>
-          <p class="field-error" id="locality-error" hidden>Please add a locality, village or area.</p>
-        </div>
-        <div class="field">
-          <label for="district">District (if you know it)</label>
-          <input id="district" name="district" type="text" autocomplete="address-level2">
-        </div>
-        <div class="field">
-          <label for="message">Anything you want us to know</label>
-          <textarea id="message" name="message" rows="4"></textarea>
-        </div>
-        <div class="field field-consent">
-          <label>
-            <input id="consent" name="consent" type="checkbox" required>
-            <span>This website does not submit your details to BKS. The information is downloaded as a file to your device. If you choose to send that file, subsequent handling is outside this website.</span>
-          </label>
-          <p class="field-error" id="consent-error" hidden>Please confirm you understand this is not stored on a server.</p>
-        </div>
-        <button class="btn btn-primary" type="submit">Download interest note</button>
-        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-      </form>
     </section>
 
-    <section class="faq" id="faq" aria-labelledby="faq-title">
-      <h2 id="faq-title">Questions this page should answer</h2>
-      <div class="faq-list">
-        <details>
-          <summary>What is Integrated Farming here?</summary>
-          <p>Several enterprises on one holding so leftover becomes the next input: crop, horticulture, livestock, poultry, fishery, water, compost, soil, bee, mushroom, household and market. See the loop above.</p>
-        </details>
-        <details>
-          <summary>Who is this page for?</summary>
-          <p>Practising farmers in West Bengal, local teams and FPOs, and FarmTech / AgriTech readers who need to understand the IFS model. It is not a vendor catalogue.</p>
-        </details>
-        <details>
-          <summary>What is the farmer’s role?</summary>
-          <p>The farmer is the person on the land. Interest now is a name-note. Land, labour and working capital in the later mobilisation sketch sit with identified local teams. Formal intake is not yet available.</p>
-        </details>
-        <details>
-          <summary>What does FarmTech mean here?</summary>
-          <p>The careful-tools layer already in the project model: monitoring, drip, pond energy and diagnostics where they earn their keep. A fuller public definition is to be confirmed.</p>
-        </details>
-        <details>
-          <summary>What does AgriTech mean here?</summary>
-          <p>Agricultural technology in that same model-based sketch. It is not a named vendor programme on this page. Fuller public definition is to be confirmed.</p>
-        </details>
-        <details>
-          <summary>Is the live farm finished?</summary>
-          <p>No. A demonstration in the East Kolkata Wetlands, 500 metres from Sector V, is being built. The 19 August 2026 photograph is preparation, not a completed farm.</p>
-        </details>
-        <details>
-          <summary>What is the transformation story?</summary>
-          <p>The intended story is a difficult-looking site becoming a working integrated farm. Frames stay empty until photographs and plot identity are approved. Pending confirmation.</p>
-        </details>
-        <details>
-          <summary>What is the 5,000-farm vision?</summary>
-          <p>About 5,000 village farms is a mobilisation target between Puja 2026 and Puja 2027. It is not a completed count.</p>
-        </details>
-        <details>
-          <summary>Is Rs 1 lakh guaranteed if I fill this form?</summary>
-          <p>No. Rs 1 lakh is proposed seed-support in the patron model. It is not a farmer grant paid on this page. Filling the form does not award money.</p>
-        </details>
-        <details>
-          <summary>Is this interest or enrolment?</summary>
-          <p>Interest only. The file downloads to your device. Enrolment and approved participation are not yet available. This is not farmer registration.</p>
-        </details>
-        <details>
-          <summary>What is illustrative, and what is confirmed?</summary>
-          <p>Confirmed on file: the EKW location 500 m from Sector V is being built; Ashtami awards with no entry fee nominations on the main site; interest is a local download. Illustrative / indicative: 1-2.5 acre sketch, 365-day cash, 3x-5x, 50-70%, Rs 2-3.5 lakh, and the FarmTech tool list. Outcomes vary by size, location, management, crop mix, costs, yields and markets.</p>
-        </details>
-        <details>
-          <summary>Does this page take payment?</summary>
-          <p>No. Nothing on this page takes money. There is no UPI, no 80G receipt, and no government scheme claimed here.</p>
-        </details>
+    <section class="section" id="vision" aria-labelledby="vision-title" data-reveal>
+      <div class="wrap-wide">
+        <h2 id="vision-title" data-i18n="vision.title">A longer invitation beside the week</h2>
+        <p class="section-lede" data-i18n="vision.body">About 5,000 village integrated farms is a vision to work toward, not a completed count. Local teams of about 2 to 3 progressive farmers or FPOs still put in land, labour and working capital. Proposed seed-support sits beside that work, not instead of it. ₹1 lakh is not a farmer grant paid here.</p>
+      </div>
+    </section>
+
+    <section class="section section--join" id="participate" aria-labelledby="join-title" data-reveal>
+      <div class="wrap-wide join-grid">
+        <div>
+          <h2 id="join-title" data-i18n="join.title">Express Farmer Interest</h2>
+          <p data-i18n="join.lede">If this loop is the kind of farm you want to understand, start the conversation.</p>
+          <p class="pay-note" data-i18n="join.honesty">This starts a conversation. It does not enrol you. It does not take payment. It does not pay ₹1 lakh. ₹1 lakh is proposed seed in the wider supporter story, not a farmer grant paid here.</p>
+          <ol class="plain-list join-steps">
+            <li data-i18n="join.s1">Read the model carefully.</li>
+            <li data-i18n="join.s2">Follow the live farm as it becomes inspectable.</li>
+            <li data-i18n="join.s3">Express Farmer Interest.</li>
+            <li data-i18n="join.s4">Use public nomination routes on the main Pujo site if you wish to nominate a farmer for recognition. There is no entry fee.</li>
+          </ol>
+          <p data-i18n="join.email">Write to contact@bkswbengal.org if you wish to continue.</p>
+        </div>
+        <form class="form paper-card" id="farmer-form" novalidate>
+          <input type="hidden" name="role" value="farmer">
+          <div class="field">
+            <label for="name" data-i18n="form.name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <p class="error" id="name-error" hidden data-i18n="form.nameError">Please add a name.</p>
+          </div>
+          <div class="field">
+            <label for="locality" data-i18n="form.locality">Locality / village / area</label>
+            <input id="locality" name="locality" type="text" autocomplete="address-level3" required>
+            <p class="error" id="locality-error" hidden data-i18n="form.localityError">Please add a locality, village or area.</p>
+          </div>
+          <div class="field">
+            <label for="district" data-i18n="form.district">District (if you know it)</label>
+            <input id="district" name="district" type="text" autocomplete="address-level2">
+          </div>
+          <div class="field">
+            <label for="message" data-i18n="form.message">Anything you want us to know</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <div class="field">
+            <label class="consent">
+              <input id="consent" name="consent" type="checkbox" required>
+              <span data-i18n="form.consent">I understand this starts a conversation. It does not enrol me and it does not take payment.</span>
+            </label>
+            <p class="error" id="consent-error" hidden data-i18n="form.consentError">Please confirm you understand this is interest, not enrolment.</p>
+          </div>
+          <button class="btn btn-primary" type="submit" data-i18n="cta.primary">Express Farmer Interest</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    
+    <section class="bks-memories" id="memories" aria-label="Puja Memories"></section>
+<section class="section" id="faq" aria-labelledby="faq-title" data-reveal>
+      <div class="wrap-wide">
+        <h2 id="faq-title" data-i18n="faq.title">Questions farmers usually ask</h2>
+        <div class="faq-list">
+          <details>
+            <summary data-i18n="faq.q1">How does the Puja connect with farming?</summary>
+            <p data-i18n="faq.a1">The Puja names the farmer inside the gathering. This page then shows the livelihood that follows: Integrated Farming, a live farm being built at the same place, and a conversation if you wish to continue.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q2">What is Integrated Farming?</summary>
+            <p data-i18n="faq.a2">Several farm activities on the same land, designed so leftover from one can help another.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q3">What is FarmTech + AgriTech here?</summary>
+            <p data-i18n="faq.a3">Careful tools on the farm: monitoring, drip, pond energy, diagnostics, where they help. Not a named vendor programme. Not a kit shipped from this page.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q4">Do I need every enterprise listed?</summary>
+            <p data-i18n="faq.a4">No. Mix varies. Start from what land, water, labour and market allow.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q5">Do I need a large farm?</summary>
+            <p data-i18n="faq.a5">No. About 1 to 2.5 acre is an illustrative working sketch, not a mandatory size.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q6">Is technology mandatory?</summary>
+            <p data-i18n="faq.a6">No. Tools sit in the model where they earn their keep. They are not required to express interest.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q7">Is this a commercial product or vendor catalogue?</summary>
+            <p data-i18n="faq.a7">No. This page does not sell an app and does not list vendors.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q8">Where is Munshir Bheri?</summary>
+            <p data-i18n="faq.a8">Munshir Bheri Management / Fishermen's Committee, Near Sukantanagar / Salt Lake Sector V, (East Kolkata Wetlands), Kolkata – 700091, West Bengal. It is the confirmed Puja venue. A live farm is being built at the same place.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q9">Can I visit?</summary>
+            <p data-i18n="faq.a9">The Puja is at this address during the civic window, 16-20 October 2026. The live farm on the same ground is still being built, not a finished showpiece.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q10">Is the farm already complete?</summary>
+            <p data-i18n="faq.a10">No. Status is being built. The 19 August 2026 photograph is preparation, not a completed farm.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q11">Is ₹1 lakh being paid here?</summary>
+            <p data-i18n="faq.a11">No. That is proposed seed in the wider supporter story, not a farmer grant paid here.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q12">Is this farmer enrolment?</summary>
+            <p data-i18n="faq.a12">No. Expressing interest starts a conversation. It does not enrol you into a finished programme.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q13">Is this a government scheme?</summary>
+            <p data-i18n="faq.a13">No.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q14">What happens after I express interest?</summary>
+            <p data-i18n="faq.a14">You share your interest with the team. Nothing is enrolled automatically. If you wish to continue, write to contact@bkswbengal.org.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q15">Who organises Bharatiya Krishak Samaj Pujo?</summary>
+            <p data-i18n="faq.a15">Organised by KarmYog for the 21st Century. Organising partner: Bharatiya Krishak Samaj.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q16">Is this a guaranteed income programme?</summary>
+            <p data-i18n="faq.a16">No. Outcomes vary by land, water, labour, management, market and crop mix.</p>
+          </details>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-brand">
-      <img src="assets/karmyog-21st-century-128.png" width="56" height="56" alt="KarmYog for the 21st Century">
-      <p>Organised by <strong>KarmYog for the 21st Century</strong>. Bharatiya Krishak Samaj is the organising partner. Title sponsorship is pending confirmation.</p>
+    <div class="wrap-wide">
+      <p class="foot-brand" data-i18n="brand.event">Bharatiya Krishak Samaj Pujo</p>
+      <p data-i18n="footer.line">Bharatiya Krishak Samaj Pujo 2026. Organised by KarmYog for the 21st Century. Organising partner: Bharatiya Krishak Samaj.</p>
+      <p>
+        <a href="mailto:contact@bkswbengal.org">contact@bkswbengal.org</a>
+        <span> · </span>
+        <span>+91 86552 46764</span>
+      </p>
+      <p class="footer-back">
+        <a href="https://bks-durga-puja-2026.vercel.app/site/" data-i18n="nav.back">Back to Bharatiya Krishak Samaj Pujo</a>
+      </p>
     </div>
-    <p class="footer-lang">English is live. Bangla and Hindi for this page are pending native review.</p>
-    <p class="footer-contact">
-      <a href="mailto:contact@bkswbengal.org">contact@bkswbengal.org</a>
-      <span>+91 86552 46764</span>
-    </p>
-    <address>Bharatiya Krishak Samaj, West Bengal. F 127, Downtown Mall, Uniworld City, New Town, Kolkata 700 156.</address>
-    <p class="footer-back"><a href="https://bks-durga-puja-2026.vercel.app">Back to Bharatiya Krishak Samaj Pujo</a></p>
   </footer>
 
+  <script src="i18n.js"></script>
+  <script src="chrome.js"></script>
   <script src="app.js"></script>
+  <script src="memories.js" defer></script>
 </body>
 </html>

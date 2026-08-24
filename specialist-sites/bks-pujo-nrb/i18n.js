@@ -38,6 +38,7 @@ window.BKS_I18N = {
         "The 5,000-farm vision",
         "Munshir Bheri",
         "Express Supporter Interest",
+        "Puja Memories",
         "FAQ",
         "Back to Bharatiya Krishak Samaj Pujo"
       ]
@@ -658,6 +659,7 @@ window.BKS_I18N = {
         "৫,০০০ খামারের দৃষ্টি",
         "Munshir Bheri",
         "সমর্থক আগ্রহ জানান",
+        "পুজোর স্মৃতি",
         "প্রশ্নোত্তর",
         "Bharatiya Krishak Samaj Pujo-তে ফিরুন"
       ]
@@ -1278,6 +1280,7 @@ window.BKS_I18N = {
         "5,000-फार्म दृष्टि",
         "Munshir Bheri",
         "समर्थक रुचि व्यक्त करें",
+        "पूजा स्मृतियाँ",
         "प्रश्नोत्तर",
         "Bharatiya Krishak Samaj Pujo पर लौटें"
       ]

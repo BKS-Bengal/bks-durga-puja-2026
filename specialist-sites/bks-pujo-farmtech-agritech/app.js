@@ -7,40 +7,33 @@
     return document.getElementById(id);
   }
 
+  function currentLang() {
+    if (window.BKS_CHROME && typeof window.BKS_CHROME.readLang === "function") {
+      return window.BKS_CHROME.readLang();
+    }
+    return document.documentElement.lang || "en";
+  }
+
+  function pack() {
+    var root = window.BKS_I18N || {};
+    var code = currentLang();
+    return root[code] || root.en || {};
+  }
+
+  function msg(path, fallback) {
+    var cur = pack();
+    var parts = path.split(".");
+    for (var i = 0; i < parts.length; i += 1) {
+      if (cur == null) return fallback;
+      cur = cur[parts[i]];
+    }
+    return cur == null ? fallback : cur;
+  }
+
   function setHidden(el, hidden) {
     if (!el) return;
     if (hidden) el.setAttribute("hidden", "");
     else el.removeAttribute("hidden");
-  }
-
-  function bindNav() {
-    var toggle = $("nav-toggle");
-    var nav = $("site-nav");
-    var mast = document.querySelector(".mast");
-    if (!toggle || !nav || !mast) return;
-
-    function close() {
-      mast.classList.remove("is-open");
-      toggle.setAttribute("aria-expanded", "false");
-    }
-
-    function open() {
-      mast.classList.add("is-open");
-      toggle.setAttribute("aria-expanded", "true");
-    }
-
-    toggle.addEventListener("click", function () {
-      if (mast.classList.contains("is-open")) close();
-      else open();
-    });
-
-    nav.querySelectorAll("a").forEach(function (link) {
-      link.addEventListener("click", close);
-    });
-
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") close();
-    });
   }
 
   function payloadFrom(form) {
@@ -54,11 +47,11 @@
     data.form = "bks-pujo-farmer-interest";
     data.createdAt = new Date().toISOString();
     data.note =
-      "Downloaded locally from the FarmTech + AgriTech Integrated Farming page. Not submitted to a server. Not enrolment. Not a promise of Rs 1 lakh.";
+      "Local interest note from the FarmTech + AgriTech page. Not enrolment. Not a promise of Rs 1 lakh.";
     return data;
   }
 
-  function downloadJson(filename, payload) {
+  function downloadFile(filename, payload) {
     var blob = new Blob([JSON.stringify(payload, null, 2)], {
       type: "application/json"
     });
@@ -90,14 +83,16 @@
       fields.forEach(function (item) {
         var input = $(item.id);
         var error = $(item.error);
+        var wrap = input ? input.closest(".field") : null;
         var ok = input && input.checkValidity();
         setHidden(error, ok);
+        if (wrap) wrap.classList.toggle("invalid", !ok);
         if (!ok) valid = false;
       });
 
       if (!valid) {
         if (status) {
-          status.textContent = "Please complete the required fields.";
+          status.textContent = msg("form.needFields", "Please complete the required fields.");
           status.classList.add("is-error");
         }
         var first = form.querySelector(":invalid");
@@ -105,17 +100,18 @@
         return;
       }
 
-      downloadJson(FILENAME, payloadFrom(form));
+      downloadFile(FILENAME, payloadFrom(form));
       if (status) {
         status.classList.remove("is-error");
-        status.textContent =
-          "The information has been downloaded as a file to your device. It has not been uploaded. This is not enrolment. Rs 1 lakh is not promised.";
+        status.textContent = msg(
+          "form.success",
+          "Thank you. If you wish to continue, write to contact@bkswbengal.org."
+        );
       }
     });
   }
 
   function boot() {
-    bindNav();
     bindForm();
   }
 

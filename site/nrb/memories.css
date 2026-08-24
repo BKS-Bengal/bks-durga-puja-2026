@@ -1,0 +1,272 @@
+/* Shared 2025 Puja Memories — one visual family across all BKS Pujo doors. */
+.bks-memories {
+  --mem-ink: var(--color-text-primary, #201a10);
+  --mem-muted: var(--color-text-muted, #5a4e36);
+  --mem-paper: var(--color-surface-card, #fffdf7);
+  --mem-wash: var(--color-surface-default, #f6f1e4);
+  --mem-gold: var(--color-brand-secondary, #c98a1f);
+  --mem-forest: var(--color-brand-primary, #163a26);
+  --mem-sindoor: var(--fest-sindoor, #8f2d1e);
+  --mem-line: var(--color-border-default, #ddd0ab);
+  --mem-display: var(--font-display, "Baloo Da 2", "Nirmala UI", Georgia, serif);
+  --mem-text: var(--font-text, "Hind Siliguri", "Hind", "Nirmala UI", Georgia, serif);
+  position: relative;
+  padding: clamp(2.4rem, 5vw, 4.4rem) 0;
+  color: var(--mem-ink);
+  background:
+    radial-gradient(1200px 280px at 12% 0%, rgba(201, 138, 31, 0.08), transparent 60%),
+    var(--mem-wash);
+  overflow-x: clip;
+}
+
+.bks-memories * { box-sizing: border-box; }
+
+.bks-memories__wrap {
+  width: min(72rem, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.bks-memories__cred {
+  max-width: 42rem;
+  margin-bottom: 2.4rem;
+}
+
+.bks-memories__kicker {
+  margin: 0 0 0.55rem;
+  font-family: var(--mem-text);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mem-sindoor);
+}
+
+.bks-memories h2 {
+  margin: 0 0 0.7rem;
+  font-family: var(--mem-display);
+  font-size: clamp(1.45rem, 2.8vw, 2.05rem);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.bks-memories__lead,
+.bks-memories__note {
+  margin: 0 0 0.85rem;
+  font-family: var(--mem-text);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--mem-muted);
+}
+
+.bks-memories__note {
+  font-size: 0.92rem;
+  max-width: 40rem;
+}
+
+.bks-memories__video {
+  margin: 0 0 2.6rem;
+  background: #120c08;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(32, 26, 16, 0.12);
+}
+
+.bks-memories__video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #120c08;
+}
+
+.bks-memories__video-frame iframe,
+.bks-memories__video-frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+}
+
+.bks-memories__play {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: linear-gradient(180deg, rgba(18, 12, 8, 0.15), rgba(18, 12, 8, 0.55));
+  color: #fffdf7;
+  cursor: pointer;
+  font-family: var(--mem-text);
+}
+
+.bks-memories__play:focus-visible,
+.bks-memories button:focus-visible,
+.bks-memories a:focus-visible,
+.bks-memories__tile:focus-visible {
+  outline: 3px solid var(--mem-gold);
+  outline-offset: 3px;
+}
+
+.bks-memories__play-mark {
+  display: grid;
+  place-items: center;
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 999px;
+  background: rgba(246, 241, 228, 0.94);
+  color: #163a26;
+  font-size: 1.4rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+.bks-memories__play span.bks-memories__play-copy {
+  position: absolute;
+  left: 1.1rem;
+  bottom: 1rem;
+  max-width: min(36rem, 86%);
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.bks-memories__group {
+  margin: 0 0 2.5rem;
+}
+
+.bks-memories__group h3 {
+  margin: 0 0 0.35rem;
+  font-family: var(--mem-display);
+  font-size: 1.15rem;
+}
+
+.bks-memories__group p {
+  margin: 0 0 1rem;
+  max-width: 40rem;
+  color: var(--mem-muted);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.bks-memories__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .bks-memories__grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+  .bks-memories__tile { grid-column: span 4; }
+  .bks-memories__tile--wide { grid-column: span 8; }
+  .bks-memories__tile--hero { grid-column: span 12; }
+}
+
+.bks-memories__tile {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #1a120c;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  color: inherit;
+  width: 100%;
+}
+
+.bks-memories__tile img {
+  display: block;
+  width: 100%;
+  height: 14.5rem;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .bks-memories__tile img { height: 16.5rem; }
+  .bks-memories__tile--wide img,
+  .bks-memories__tile--hero img { height: 22rem; }
+}
+
+.bks-memories__cap {
+  margin: 0;
+  padding: 0.7rem 0.85rem 0.9rem;
+  background: var(--mem-paper);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--mem-muted);
+}
+
+.bks-memories__lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(12, 8, 6, 0.88);
+}
+
+.bks-memories__lightbox[hidden] { display: none; }
+
+.bks-memories__lightbox-card {
+  width: min(68rem, 100%);
+  max-height: calc(100dvh - 2rem);
+  overflow: auto;
+  background: #0f0b08;
+  color: #f6f1e4;
+  border-radius: 12px;
+}
+
+.bks-memories__lightbox-card img {
+  width: 100%;
+  max-height: 72dvh;
+  object-fit: contain;
+  background: #0a0705;
+}
+
+.bks-memories__lightbox-card p {
+  margin: 0;
+  padding: 0.9rem 1rem 1.1rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.bks-memories__lightbox-tools {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.bks-memories__lightbox-tools button,
+.bks-memories__navbtn {
+  min-width: 48px;
+  min-height: 48px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(246, 241, 228, 0.92);
+  color: #163a26;
+  font: inherit;
+  cursor: pointer;
+}
+
+.bks-memories__navbtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bks-memories__navbtn.is-prev { left: 0.6rem; }
+.bks-memories__navbtn.is-next { right: 0.6rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bks-memories__tile img { height: auto; }
+  html { scroll-behavior: auto; }
+}
