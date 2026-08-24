@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="chrome.css">
   <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
   <link rel="stylesheet" href="memories.css">
+  <link rel="stylesheet" href="ifs.css?v=ifs2">
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
@@ -52,6 +53,7 @@
       <nav class="nav-desktop" data-i18n-aria="nav.onPage" aria-label="On this page">
         <a href="#puja" data-i18n="nav.puja">The Puja</a>
         <a href="#farmer" data-i18n="nav.farmer">Farmer</a>
+        <a href="#ifs" data-i18n="nav.ifs">Integrated Farming</a>
         <a href="#visit" data-i18n="nav.visit">Visit</a>
         <a href="#memories" data-i18n="nav.memories">Puja Memories</a>
         <a href="#faq" data-i18n="nav.faq">FAQ</a>
@@ -199,21 +201,7 @@
       </div>
     </section>
 
-    <section class="section" id="ifs" aria-labelledby="ifs-title">
-      <div class="wrap-wide">
-        <div class="ifs-grid">
-          <article class="paper-card" data-reveal>
-            <h2 id="ifs-title" data-i18n="ifs.title">Integrated Farming, in brief</h2>
-            <p data-i18n="ifs.body">Once the farmer is in view, the next question is livelihood. See how a farm can connect crop, livestock, water and market - so what leaves one part of the system can become useful to another. This public experience keeps that explanation short.</p>
-            <p><a class="maps-link" href="https://bks-pujo-farmtech-agritech.vercel.app/" data-i18n="ifs.link">See the farm model on the Farmers / FarmTech + AgriTech door</a></p>
-          </article>
-          <aside class="note-panel" data-reveal>
-            <h3 data-i18n="ifs.asideTitle">This is still a Puja</h3>
-            <p data-i18n="ifs.asideBody">It is not an agriculture conference. The farmer belongs because the gathering names the person who grows food. The farm is what can be shown after that naming.</p>
-          </aside>
-        </div>
-      </div>
-    </section>
+    <section class="bks-ifs" id="ifs" data-ifs-audience="public" aria-labelledby="ifs-title"></section>
 
     <section class="section" id="story" aria-labelledby="story-title">
       <div class="wrap-wide">
@@ -332,5 +320,6 @@
   <script src="i18n.js"></script>
   <script src="chrome.js"></script>
   <script src="memories.js" defer></script>
+  <script src="ifs.js?v=ifs2" defer></script>
 </body>
 </html>

@@ -743,8 +743,10 @@
   }
 
   function renderIfs() {
-    const page = state.ifs[state.lang];
     const rootEl = document.getElementById("ifs-body");
+    if (rootEl) rootEl.setAttribute("data-ifs-audience", "main");
+    return;
+    const page = state.ifs[state.lang];
     if (!page || !rootEl) return;
     const contrast = (page.what.contrast || []).map((card) =>
       "<article class='ifs-contrast-card ifs-contrast-card--" + escapeHtml(card.id) + "'><h3>" +

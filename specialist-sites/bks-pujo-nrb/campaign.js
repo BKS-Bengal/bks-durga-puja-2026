@@ -537,7 +537,7 @@
     renderNav(p, cfg);
     var story = $("#story");
     if (story) {
-      story.innerHTML = renderStory(p, cfg) + "<section id='memories' class='bks-memories'></section>" + renderForm(p, cfg) + renderFaq(p);
+      story.innerHTML = renderStory(p, cfg) + "<section id='ifs' class='bks-ifs' data-ifs-audience='" + (document.body.getAttribute("data-audience") || "nrb") + "'></section><section id='memories' class='bks-memories'></section>" + renderForm(p, cfg) + renderFaq(p);
     }
     var foot = $("#site-footer-inner");
     if (foot) foot.innerHTML = renderFooter(p);

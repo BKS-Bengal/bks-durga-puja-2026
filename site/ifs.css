@@ -1,0 +1,146 @@
+/* Shared Integrated Farming knowledge section — all BKS Pujo doors. */
+.bks-ifs {
+  --ifs-ink: var(--color-text-primary, #201a10);
+  --ifs-muted: var(--color-text-muted, #5a4e36);
+  --ifs-paper: var(--color-surface-card, #fffdf7);
+  --ifs-wash: var(--color-surface-default, #f6f1e4);
+  --ifs-gold: var(--color-brand-secondary, #c98a1f);
+  --ifs-forest: var(--color-brand-primary, #163a26);
+  --ifs-sindoor: var(--fest-sindoor, #8f2d1e);
+  --ifs-line: var(--color-border-default, #ddd0ab);
+  --ifs-display: var(--font-display, "Baloo Da 2", "Nirmala UI", Georgia, serif);
+  --ifs-text: var(--font-text, "Hind Siliguri", "Hind", "Nirmala UI", Georgia, serif);
+  color: var(--ifs-ink);
+  background:
+    radial-gradient(900px 240px at 88% 0%, rgba(22, 58, 38, 0.06), transparent 55%),
+    var(--ifs-wash);
+  padding: clamp(2.2rem, 5vw, 4.2rem) 0;
+}
+.bks-ifs * { box-sizing: border-box; }
+.bks-ifs__wrap {
+  width: min(72rem, calc(100% - 2rem));
+  margin: 0 auto;
+}
+.bks-ifs__kicker {
+  margin: 0 0 0.5rem;
+  font-family: var(--ifs-text);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ifs-sindoor);
+}
+.bks-ifs h2,
+.bks-ifs h3 {
+  font-family: var(--ifs-display);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.bks-ifs h2 {
+  margin: 0 0 0.7rem;
+  font-size: clamp(1.45rem, 2.8vw, 2.15rem);
+  font-weight: 650;
+  line-height: 1.2;
+}
+.bks-ifs h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.12rem;
+  font-weight: 650;
+}
+.bks-ifs p,
+.bks-ifs li {
+  font-family: var(--ifs-text);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ifs-muted);
+}
+.bks-ifs__lede {
+  max-width: 42rem;
+  margin: 0 0 1.1rem;
+  font-size: 1.12rem;
+  color: var(--ifs-ink);
+}
+.bks-ifs__frame {
+  margin: 0 0 1.8rem;
+  background: var(--ifs-paper);
+  border: 1px solid var(--ifs-line);
+  border-radius: 2px;
+  box-shadow: 0 12px 28px rgba(32, 26, 16, 0.08);
+  overflow: hidden;
+}
+.bks-ifs__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 28rem;
+  object-fit: cover;
+}
+.bks-ifs__frame figcaption {
+  margin: 0;
+  padding: 0.75rem 1rem 0.95rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--ifs-muted);
+  background: var(--ifs-paper);
+}
+.bks-ifs__block { margin: 0 0 2.1rem; max-width: 46rem; }
+.bks-ifs__block h3 { color: var(--ifs-forest); }
+.bks-ifs__block p { margin: 0 0 0.9rem; }
+.bks-ifs__block p:last-child { margin-bottom: 0; }
+.bks-ifs__block h3 + p { margin-top: 0; }
+.bks-ifs__grid {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1rem 0 0;
+}
+@media (min-width: 720px) {
+  .bks-ifs__grid { grid-template-columns: 1fr 1fr; }
+}
+.bks-ifs__card {
+  margin: 0;
+  padding: 1rem 1.05rem 1.1rem;
+  background: var(--ifs-paper);
+  border: 1px solid var(--ifs-line);
+  border-radius: 2px;
+}
+.bks-ifs__card p { margin: 0; font-size: 0.98rem; }
+.bks-ifs__loop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.bks-ifs__loop li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0.35rem 0.7rem;
+  background: var(--ifs-paper);
+  border: 1px solid var(--ifs-line);
+  color: var(--ifs-forest);
+  font-size: 0.92rem;
+  line-height: 1.3;
+}
+.bks-ifs__loop li::after {
+  content: "→";
+  color: var(--ifs-gold);
+  font-size: 0.85rem;
+}
+.bks-ifs__loop li:last-child::after { content: none; }
+.bks-ifs__note {
+  margin: 0.85rem 0 0;
+  font-size: 0.92rem;
+}
+.bks-ifs a {
+  color: var(--ifs-forest);
+  font-weight: 600;
+}
+.bks-ifs a:focus-visible {
+  outline: 3px solid var(--ifs-gold);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bks-ifs { scroll-margin-top: 5rem; }
+}
