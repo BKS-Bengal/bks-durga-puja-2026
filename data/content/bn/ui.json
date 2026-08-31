@@ -30,6 +30,8 @@
   },
   "nav": {
     "home": "প্রথম পাতা",
+    "bksBengal": "BKS Bengal",
+    "jaiKisan": "জয় কিষাণ বেঙ্গল রত্ন",
     "thePuja": "পূজা",
     "krishakSamaj": "ভারতীয় কৃষক সমাজ",
     "integratedFarming": "সমন্বিত চাষ",
@@ -38,6 +40,7 @@
     "theme": "থিম",
     "awards": "পুরস্কার",
     "record": "২০২৫-এর নজির",
+    "memories": "২০২৫-এর পুজোর স্মৃতি",
     "nominate": "Nominate",
     "sponsor": "বাল্ক স্পনসর",
     "visit": "প্যান্ডেল",

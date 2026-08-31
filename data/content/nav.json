@@ -1,10 +1,10 @@
 {
-  "note": "Navigation source of truth. Desktop is five destinations. Drawer uses groups so homepage anchors and standalone pages are distinguishable.",
+  "note": "Navigation source of truth. Desktop destinations plus Puja Memories of 2025 (home section). Drawer uses groups so homepage anchors and standalone pages are distinguishable.",
   "groups": [
     {
       "id": "puja",
       "labelPath": ["navGroups", "thePuja"],
-      "items": ["puja", "programme", "theme", "awards", "record"]
+      "items": ["puja", "programme", "theme", "awards", "record", "memories"]
     },
     {
       "id": "initiative",
@@ -24,10 +24,13 @@
   ],
   "items": [
     { "id": "home", "href": "#home", "labelPath": ["nav", "home"], "desktop": true, "kind": "home" },
+    { "id": "bks-bengal", "href": "https://bkswbengal.org/", "labelPath": ["nav", "bksBengal"], "desktop": true, "kind": "external" },
+    { "id": "jai-kisan", "href": "https://jaikishan-bengal-ratna.vercel.app/", "labelPath": ["nav", "jaiKisan"], "desktop": true, "kind": "external" },
     { "id": "puja", "href": "#puja", "labelPath": ["nav", "thePuja"], "desktop": true, "kind": "page" },
     { "id": "ifs", "href": "#ifs", "labelPath": ["nav", "integratedFarming"], "desktop": true, "kind": "page" },
     { "id": "participate", "href": "#participate", "labelPath": ["nav", "participate"], "desktop": true, "kind": "page" },
     { "id": "krishak", "href": "#krishak", "labelPath": ["nav", "krishakSamaj"], "desktop": true, "kind": "page" },
+    { "id": "memories", "href": "#memories", "labelPath": ["nav", "memories"], "desktop": true, "homeSection": true, "kind": "section" },
     { "id": "demo", "href": "#demo", "labelPath": ["nav", "demo"], "desktop": false, "homeSection": true, "kind": "section" },
     { "id": "fund", "href": "#fund", "labelPath": ["nav", "fund"], "desktop": false, "homeSection": true, "kind": "section" },
     { "id": "nominate", "href": "#nominate", "labelPath": ["nav", "nominate"], "desktop": false, "homeSection": true, "kind": "section" },
