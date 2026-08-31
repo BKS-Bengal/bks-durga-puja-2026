@@ -30,6 +30,8 @@
   },
   "nav": {
     "home": "मुखपृष्ठ",
+    "bksBengal": "BKS Bengal",
+    "jaiKisan": "जय किसान बंगाल रत्न",
     "thePuja": "पूजा",
     "krishakSamaj": "भारतीय कृषक समाज",
     "integratedFarming": "समेकित कृषि",
@@ -38,6 +40,7 @@
     "theme": "थीम",
     "awards": "पुरस्कार",
     "record": "2025 का ब्योरा",
+    "memories": "2025 की पूजा स्मृतियाँ",
     "nominate": "Nominate",
     "sponsor": "बल्क प्रायोजक",
     "visit": "पंडाल",

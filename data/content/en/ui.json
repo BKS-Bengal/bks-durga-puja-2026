@@ -29,6 +29,8 @@
   },
   "nav": {
     "home": "Home",
+    "bksBengal": "BKS Bengal",
+    "jaiKisan": "Jai Kisan Bengal Ratna",
     "thePuja": "The Puja",
     "krishakSamaj": "Bharatiya Krishak Samaj",
     "integratedFarming": "Integrated Farming",
@@ -37,6 +39,7 @@
     "theme": "The theme",
     "awards": "Awards",
     "record": "2025 record",
+    "memories": "Puja Memories of 2025",
     "nominate": "Nominate",
     "sponsor": "Bulk sponsor",
     "visit": "Visit",
