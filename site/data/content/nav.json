@@ -25,6 +25,7 @@
   "items": [
     { "id": "home", "href": "#home", "labelPath": ["nav", "home"], "desktop": true, "kind": "home" },
     { "id": "bks-bengal", "href": "https://bkswbengal.org/", "labelPath": ["nav", "bksBengal"], "desktop": true, "kind": "external" },
+    { "id": "jai-kisan", "href": "https://jaikishan-bengal-ratna.vercel.app/", "labelPath": ["nav", "jaiKisan"], "desktop": true, "kind": "external" },
     { "id": "puja", "href": "#puja", "labelPath": ["nav", "thePuja"], "desktop": true, "kind": "page" },
     { "id": "ifs", "href": "#ifs", "labelPath": ["nav", "integratedFarming"], "desktop": true, "kind": "page" },
     { "id": "participate", "href": "#participate", "labelPath": ["nav", "participate"], "desktop": true, "kind": "page" },
