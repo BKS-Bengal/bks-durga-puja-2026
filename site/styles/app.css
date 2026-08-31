@@ -267,6 +267,59 @@ summary:focus-visible {
   font-weight: 800;
   color: var(--color-brand-primary);
 }
+
+/* Jai Kisan Bengal Ratna — same colorful campaign cue as bkswbengal.org */
+.nav-desktop a.nav-jai-kisan,
+.nav-drawer-list a.nav-jai-kisan {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+}
+.nav-jai-kisan__label {
+  font-family: var(--font-promo);
+  font-size: 1.05em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  background-image: linear-gradient(
+    110deg,
+    #0f7a3f 0%,
+    #c98a1f 28%,
+    #d4481a 52%,
+    #1f6fb5 76%,
+    #0f7a3f 100%
+  );
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: jai-kisan-shimmer 4.5s ease-in-out infinite;
+}
+.nav-desktop a.nav-jai-kisan:hover .nav-jai-kisan__label,
+.nav-desktop a.nav-jai-kisan:focus-visible .nav-jai-kisan__label,
+.nav-drawer-list a.nav-jai-kisan:hover .nav-jai-kisan__label,
+.nav-drawer-list a.nav-jai-kisan:focus-visible .nav-jai-kisan__label {
+  animation-duration: 2.2s;
+}
+.nav-jai-kisan .nav-ext-mark {
+  color: #c98a1f;
+  opacity: 0.9;
+  font-size: 0.85em;
+}
+@keyframes jai-kisan-shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-jai-kisan__label {
+    animation: none;
+    background-image: none;
+    color: #a6461f;
+  }
+}
+
 .nav-desktop a[aria-current="page"] {
   background: color-mix(in srgb, var(--color-text-on-brand) 16%, transparent);
 }

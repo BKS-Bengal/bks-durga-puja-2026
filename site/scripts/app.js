@@ -201,10 +201,20 @@
             ? (ui.crumbPage || "Site")
             : "";
       const kindHtml = withKind && kindLabel ? " <span class='nav-kind'>" + kindLabel + "</span>" : "";
+      const promoClass = item.id === "jai-kisan"
+        ? "nav-jai-kisan"
+        : item.id === "bks-bengal"
+          ? "nav-bks-bengal"
+          : external
+            ? "nav-external"
+            : "";
+      const labelHtml = item.id === "jai-kisan"
+        ? "<span class='nav-jai-kisan__label'>" + label + "</span><span class='nav-ext-mark' aria-hidden='true'>↗</span>"
+        : label;
       const attrs = external
-        ? " rel='noopener noreferrer' class='nav-bks-bengal'"
+        ? " rel='noopener noreferrer'" + (promoClass ? " class='" + promoClass + "'" : "")
         : " data-nav-kind='" + kind + "'";
-      return "<a href='" + item.href + "'" + attrs + ">" + label + kindHtml + "</a>";
+      return "<a href='" + item.href + "'" + attrs + ">" + labelHtml + kindHtml + "</a>";
     }
 
     if (desktop) {
@@ -213,6 +223,12 @@
     if (drawerList) {
       const used = { home: true };
       let html = itemLink(byId.home || { id: "home", href: "#home", labelPath: ["nav", "home"] }, false);
+      ["bks-bengal", "jai-kisan"].forEach(function (id) {
+        const item = byId[id];
+        if (!item) return;
+        used[id] = true;
+        html += itemLink(item, false);
+      });
       const audienceLabel = (ui.navGroups && ui.navGroups.participate) || "Participate";
       html += "<p class='nav-group-label' id='nav-g-audience'>" + audienceLabel + "</p>";
       html += "<div class='nav-group' role='group' aria-labelledby='nav-g-audience'>";

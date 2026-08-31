@@ -26,6 +26,7 @@
 
   --font-display: "Baloo Da 2", "Nirmala UI", "Noto Sans Bengali", system-ui, sans-serif;
   --font-text: "Hind Siliguri", "Hind", "Nirmala UI", "Noto Sans", "Segoe UI", system-ui, sans-serif;
+  --font-promo: "Galada", var(--font-display), cursive;
 
   --size-body: 1.0625rem;
   --size-h1: clamp(2rem, 5vw, 3.2rem);
