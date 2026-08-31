@@ -258,6 +258,15 @@ summary:focus-visible {
   border-radius: 8px;
 }
 .nav-desktop a { color: var(--color-text-on-brand); }
+.nav-desktop a.nav-bks-bengal {
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.nav-drawer-list a.nav-bks-bengal {
+  font-weight: 800;
+  color: var(--color-brand-primary);
+}
 .nav-desktop a[aria-current="page"] {
   background: color-mix(in srgb, var(--color-text-on-brand) 16%, transparent);
 }

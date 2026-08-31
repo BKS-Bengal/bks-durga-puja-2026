@@ -185,10 +185,26 @@
 
     function itemLink(item, withKind) {
       const label = getByPath(ui, item.labelPath) || item.id;
-      const kind = item.homeSection ? "section" : (item.id === "home" ? "home" : "page");
-      const kindLabel = kind === "section" ? (ui.crumbSection || "On this page") : (kind === "page" ? (ui.crumbPage || "Page") : "");
+      const external = /^https?:\/\//i.test(item.href || "");
+      const kind = external
+        ? "external"
+        : item.homeSection
+          ? "section"
+          : item.id === "home"
+            ? "home"
+            : "page";
+      const kindLabel = kind === "section"
+        ? (ui.crumbSection || "On this page")
+        : kind === "page"
+          ? (ui.crumbPage || "Page")
+          : kind === "external"
+            ? (ui.crumbPage || "Site")
+            : "";
       const kindHtml = withKind && kindLabel ? " <span class='nav-kind'>" + kindLabel + "</span>" : "";
-      return "<a href='" + item.href + "' data-nav-kind='" + kind + "'>" + label + kindHtml + "</a>";
+      const attrs = external
+        ? " rel='noopener noreferrer' class='nav-bks-bengal'"
+        : " data-nav-kind='" + kind + "'";
+      return "<a href='" + item.href + "'" + attrs + ">" + label + kindHtml + "</a>";
     }
 
     if (desktop) {
