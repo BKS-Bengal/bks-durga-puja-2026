@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>নিবন্ধন | প্রত্যাবর্তন ২০২৬</title>
+  <meta name="description" content="প্রত্যাবর্তন ২০২৬ — কৃষি-ক্রিয়েটর ও মিডিয়া কনক্লেভ। ৮ সেপ্টেম্বর ২০২৬, নিউ টাউন, কলকাতা।">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0f2818">
+  <link rel="icon" href="../assets/protyaborton-wordmark-official.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="../fonts.css">
+  <link rel="stylesheet" href="../chrome.css">
+  <link rel="stylesheet" href="register.css">
+</head>
+<body class="lang-bn">
+  <a class="skip" href="#registration-form" data-i18n="skip">মূল ফর্মে যান</a>
+
+  <header class="register-header-min">
+    <a href="../" class="back-link" data-i18n="back">প্রত্যাবর্তনে ফিরে যান</a>
+    <a href="../" aria-label="Protyaborton">
+      <img src="../assets/protyaborton-wordmark-official.jpg" width="140" height="46" alt="Protyaborton">
+    </a>
+    <div class="lang-bar" role="group" aria-label="ভাষা" data-i18n-aria="lang.label">
+      <button type="button" data-lang="bn" aria-pressed="true">বাংলা</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <main id="main" class="register-page wrap-wide">
+    <div class="register-hero">
+      <h1 data-i18n="header.title">প্রত্যাবর্তন ২০২৬-এর জন্য নিবন্ধন</h1>
+      <p class="register-subtitle" data-i18n="header.subtitle">কৃষি-ক্রিয়েটর ও মিডিয়া কনক্লেভ ২০২৬</p>
+      <div class="register-event-meta">
+        <p><strong data-i18n="header.when">মঙ্গলবার, ৮ সেপ্টেম্বর ২০২৬</strong></p>
+        <p data-i18n="header.time">বিকেল ৩:৩০ – ৬:৩০ (IST)</p>
+        <p data-i18n="header.where">ইউনিওয়ার্ল্ড ক্লাব, ইউনিওয়ার্ল্ড সিটি, নিউ টাউন, কলকাতা ৭০০১৫৬</p>
+        <p data-i18n="header.post">পরে — ক্রিয়েটর নেটওয়ার্কিং ও স্টুডিও রেকর্ডিং</p>
+      </div>
+    </div>
+
+    <div id="registration-success" class="register-success" hidden tabindex="-1">
+      <h2 data-i18n="success.title">নিবন্ধন গৃহীত হয়েছে</h2>
+      <p data-i18n="success.message">আপনার নিবন্ধন আমরা পেয়েছি।</p>
+      <div class="event-card">
+        <strong data-i18n="success.event">প্রত্যাবর্তন ২০২৬</strong>
+        <span data-i18n="success.date">৮ সেপ্টেম্বর ২০২৬</span><br>
+        <span data-i18n="success.venue">ইউনিওয়ার্ল্ড ক্লাব, নিউ টাউন, কলকাতা</span>
+      </div>
+      <div class="register-success-actions">
+        <a class="btn btn-primary" href="../" data-i18n="success.back">প্রত্যাবর্তনে ফিরে যান</a>
+        <a class="btn btn-dark" href="mailto:contact@bkswbengal.org" data-i18n="success.contact">ইভেন্ট টিমের সঙ্গে যোগাযোগ</a>
+      </div>
+    </div>
+
+    <div id="registration-form-wrap">
+      <div id="form-alert" class="register-alert register-alert--error" hidden tabindex="-1" role="alert"></div>
+
+      <form id="registration-form" class="register-form" novalidate>
+        <div class="register-hp" aria-hidden="true">
+          <label for="website_hp">Website</label>
+          <input type="text" id="website_hp" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <fieldset class="register-section">
+          <legend><span class="register-section-num">01</span> <span data-i18n="sections.details">আপনার তথ্য</span></legend>
+          <div class="register-fields">
+            <div class="register-field">
+              <label for="full_name" data-i18n="fields.fullName">পূর্ণ নাম</label>
+              <input type="text" id="full_name" name="full_name" required autocomplete="name" maxlength="120">
+              <p class="field-error" id="full_name-error" role="alert"></p>
+            </div>
+            <div class="register-fields register-fields--two">
+              <div class="register-field">
+                <label for="mobile" data-i18n="fields.mobile">মোবাইল নম্বর</label>
+                <input type="tel" id="mobile" name="mobile" required autocomplete="tel" inputmode="tel" maxlength="20">
+                <p class="field-error" id="mobile-error" role="alert"></p>
+              </div>
+              <div class="register-field">
+                <label for="email" data-i18n="fields.email">ইমেইল ঠিকানা</label>
+                <input type="email" id="email" name="email" required autocomplete="email" maxlength="254">
+                <p class="field-error" id="email-error" role="alert"></p>
+              </div>
+            </div>
+            <div class="register-field">
+              <label for="participant_type" data-i18n="fields.participantType">অংশগ্রহণকারীর ধরন</label>
+              <select id="participant_type" name="participant_type" required>
+                <option value="" data-i18n="select">নির্বাচন করুন</option>
+                <option value="agri_digital_creator" data-i18n="participantTypes.agri_digital_creator">কৃষি-ডিজিটাল ক্রিয়েটর</option>
+                <option value="youtuber" data-i18n="participantTypes.youtuber">ইউটিউবার</option>
+                <option value="rural_vlogger" data-i18n="participantTypes.rural_vlogger">গ্রামীণ ভ্লগার</option>
+                <option value="journalist" data-i18n="participantTypes.journalist">সাংবাদিক</option>
+                <option value="media_editor" data-i18n="participantTypes.media_editor">মিডিয়া সম্পাদক</option>
+                <option value="other" data-i18n="participantTypes.other">অন্যান্য</option>
+              </select>
+              <p class="field-error" id="participant_type-error" role="alert"></p>
+            </div>
+            <div class="register-fields register-fields--two">
+              <div class="register-field">
+                <label for="city" data-i18n="fields.city">শহর</label>
+                <input type="text" id="city" name="city" required autocomplete="address-level2" maxlength="80">
+                <p class="field-error" id="city-error" role="alert"></p>
+              </div>
+              <div class="register-field">
+                <label for="district" data-i18n="fields.district">জেলা (ঐচ্ছিক)</label>
+                <input type="text" id="district" name="district" autocomplete="address-level1" maxlength="80">
+                <p class="field-error" id="district-error" role="alert"></p>
+              </div>
+            </div>
+            <div class="register-field is-hidden" id="field-other-type">
+              <label for="other_participant_type" data-i18n="fields.otherType">অনুগ্রহ করে উল্লেখ করুন</label>
+              <input type="text" id="other_participant_type" name="other_participant_type" maxlength="80">
+              <p class="field-error" id="other_participant_type-error" role="alert"></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="register-section">
+          <legend><span class="register-section-num">02</span> <span data-i18n="sections.work">আপনার কাজ / সংস্থা</span></legend>
+          <div class="register-fields">
+            <div class="register-field is-hidden" id="field-organisation">
+              <label for="organisation" data-i18n="fields.organisation">সংস্থা / প্রকাশনা</label>
+              <input type="text" id="organisation" name="organisation" maxlength="160">
+              <p class="field-error" id="organisation-error" role="alert"></p>
+            </div>
+            <div class="register-field is-hidden" id="field-channel">
+              <label for="channel_or_publication" data-i18n="fields.channel">চ্যানেল / ক্রিয়েটর নাম</label>
+              <input type="text" id="channel_or_publication" name="channel_or_publication" maxlength="160">
+              <p class="field-error" id="channel_or_publication-error" role="alert"></p>
+            </div>
+            <div class="register-field is-hidden" id="field-role">
+              <label for="role_or_designation" data-i18n="fields.role">পদবি / ভূমিকা</label>
+              <input type="text" id="role_or_designation" name="role_or_designation" maxlength="120">
+              <p class="field-error" id="role_or_designation-error" role="alert"></p>
+            </div>
+            <div class="register-field">
+              <label for="website_or_social" id="website-label" data-i18n="fields.website">ওয়েবসাইট / সোশ্যাল / চ্যানেল লিংক</label>
+              <input type="url" id="website_or_social" name="website_or_social" inputmode="url" maxlength="500" placeholder="https://">
+              <p class="field-error" id="website_or_social-error" role="alert"></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="register-section">
+          <legend><span class="register-section-num">03</span> <span data-i18n="sections.interests">আপনার আগ্রহ</span></legend>
+          <div class="register-field">
+            <span class="field-label" id="interest-label" data-i18n="fields.interestArea">আগ্রহের ক্ষেত্র</span>
+            <div class="register-checkboxes" role="group" aria-labelledby="interest-label">
+              <div class="register-check">
+                <input type="checkbox" id="int_jkr" name="interest_area" value="jai_kisan_bengal_ratna">
+                <label for="int_jkr" data-i18n="interests.jai_kisan_bengal_ratna">জয় কিষাণ বেঙ্গল রত্ন</label>
+              </div>
+              <div class="register-check">
+                <input type="checkbox" id="int_if" name="interest_area" value="integrated_farming">
+                <label for="int_if" data-i18n="interests.integrated_farming">সমন্বিত কৃষি</label>
+              </div>
+              <div class="register-check">
+                <input type="checkbox" id="int_wal" name="interest_area" value="women_agri_leaders">
+                <label for="int_wal" data-i18n="interests.women_agri_leaders">নারী কৃষি-নেতৃত্ব</label>
+              </div>
+              <div class="register-check">
+                <input type="checkbox" id="int_org" name="interest_area" value="organic_regenerative">
+                <label for="int_org" data-i18n="interests.organic_regenerative">জৈব ও পুনর্জন্ম কৃষি</label>
+              </div>
+              <div class="register-check">
+                <input type="checkbox" id="int_ai" name="interest_area" value="ai_grassroots">
+                <label for="int_ai" data-i18n="interests.ai_grassroots">গ্রাসরুট কৃষিতে AI</label>
+              </div>
+              <div class="register-check">
+                <input type="checkbox" id="int_voice" name="interest_area" value="voice_first_ai">
+                <label for="int_voice" data-i18n="interests.voice_first_ai">ভয়েস-ফার্স্ট AI পরামর্শ</label>
+              </div>
+              <div class="register-check">
+                <input type="checkbox" id="int_dma" name="interest_area" value="direct_market_access">
+                <label for="int_dma" data-i18n="interests.direct_market_access">সরাসরি বাজার প্রবেশ</label>
+              </div>
+              <div class="register-check">
+                <input type="checkbox" id="int_prp" name="interest_area" value="predictive_resource_planning">
+                <label for="int_prp" data-i18n="interests.predictive_resource_planning">ভবিষ্যদ্বাণীমূলক সম্পদ পরিকল্পনা</label>
+              </div>
+              <div class="register-check">
+                <input type="checkbox" id="int_cc" name="interest_area" value="creator_collaboration">
+                <label for="int_cc" data-i18n="interests.creator_collaboration">ক্রিয়েটর সহযোগিতা</label>
+              </div>
+              <div class="register-check">
+                <input type="checkbox" id="int_mj" name="interest_area" value="media_journalism">
+                <label for="int_mj" data-i18n="interests.media_journalism">মিডিয়া ও সাংবাদিকতা</label>
+              </div>
+              <div class="register-check">
+                <input type="checkbox" id="int_pod" name="interest_area" value="podcast_studio">
+                <label for="int_pod" data-i18n="interests.podcast_studio">পডকাস্ট / স্টুডিও রেকর্ডিং</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="register-section">
+          <legend><span class="register-section-num">04</span> <span data-i18n="sections.attendance">উপস্থিতি ও সম্মতি</span></legend>
+          <div class="register-check">
+            <input type="checkbox" id="attendance_confirmation" name="attendance_confirmation" value="yes" required>
+            <label for="attendance_confirmation" data-i18n="attendance.label">আমি প্রত্যাবর্তন ২০২৬-এ উপস্থিত থাকার পরিকল্পনা করছি।</label>
+          </div>
+          <p class="field-error" id="attendance_confirmation-error" role="alert"></p>
+          <div class="register-consent register-check">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent" data-i18n="consent.label">আমি নিশ্চিত করছি যে প্রদত্ত তথ্য সঠিক এবং প্রত্যাবর্তন ২০২৬ সম্পর্কিত যোগাযোগের জন্য আমি সম্মত।</label>
+          </div>
+          <p class="field-error" id="consent-error" role="alert"></p>
+        </fieldset>
+
+        <div class="register-actions">
+          <button type="submit" class="btn btn-primary" id="submit-btn" data-i18n="submit">কনক্লেভে নিবন্ধন করুন</button>
+        </div>
+      </form>
+
+      <aside class="register-contact">
+        <h3 data-i18n="contact.title">সাহায্য দরকার?</h3>
+        <p data-i18n="contact.general">সাধারণ জিজ্ঞাসা: contact@bkswbengal.org</p>
+        <p data-i18n="contact.media">মিডিয়া ও টেক: dipayan.ghosh@ky21c.org, ram@ky21c.org</p>
+        <p>Dipayan Ghosh: <a href="tel:+918597560693">+91 85975 60693</a></p>
+        <p>Ram Badrinathan: <a href="tel:+919167719898">+91 91677 19898</a></p>
+      </aside>
+    </div>
+  </main>
+
+  <script src="register-i18n.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>
